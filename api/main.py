@@ -22,7 +22,16 @@ from api.routes import compose, health, library, recipes, users  # noqa: E402
 
 @asynccontextmanager
 async def lifespan(_app: FastAPI):
+    from alembic import command
+    from alembic.config import Config
+
     from app.composition.library_v01 import load_library
+    from app.db.config import get_database_url
+
+    # Garante schema atualizado mesmo se o Start Command do Render não rodar Alembic.
+    alembic_cfg = Config(str(_ROOT / "alembic.ini"))
+    alembic_cfg.set_main_option("sqlalchemy.url", get_database_url())
+    command.upgrade(alembic_cfg, "head")
 
     load_library()
     yield
