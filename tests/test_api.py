@@ -20,8 +20,9 @@ def test_health():
     response = client.get("/health")
     assert response.status_code == 200
     body = response.json()
-    assert body["status"] == "ok"
+    assert body["status"] in {"ok", "degraded"}
     assert body["library_version"] == "0.1.0"
+    assert "database" in body
 
 
 def test_library_summary():

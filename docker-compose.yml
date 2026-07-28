@@ -1,0 +1,21 @@
+services:
+  db:
+    image: postgres:16-alpine
+    container_name: laje-signature-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: laje
+      POSTGRES_PASSWORD: laje
+      POSTGRES_DB: laje_signature
+    ports:
+      - "5432:5432"
+    volumes:
+      - laje_pg_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U laje -d laje_signature"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+volumes:
+  laje_pg_data:

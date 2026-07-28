@@ -10,6 +10,7 @@ from app.schemas import CookingRequest, FinalRecipe
 class HealthResponse(BaseModel):
     status: str
     library_version: str
+    database: str = "unknown"
 
 
 class LibrarySummary(BaseModel):

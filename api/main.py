@@ -17,12 +17,11 @@ if str(_ROOT) not in sys.path:
 load_dotenv(_ROOT / ".env")
 load_dotenv(_ROOT.parent / ".env")
 
-from api.routes import compose, health, library, recipes  # noqa: E402
+from api.routes import compose, health, library, recipes, users  # noqa: E402
 
 
 @asynccontextmanager
 async def lifespan(_app: FastAPI):
-    # Pré-carrega a biblioteca na subida
     from app.composition.library_v01 import load_library
 
     load_library()
@@ -48,6 +47,7 @@ app.add_middleware(
         "http://127.0.0.1:5173",
         "http://localhost:8000",
         "http://127.0.0.1:8000",
+        "https://laje-signature-web.vercel.app",
     ],
     allow_credentials=True,
     allow_methods=["*"],
@@ -58,6 +58,7 @@ app.include_router(health.router)
 app.include_router(library.router)
 app.include_router(compose.router)
 app.include_router(recipes.router)
+app.include_router(users.router)
 
 
 @app.get("/")

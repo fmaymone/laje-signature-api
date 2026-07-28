@@ -1,19 +1,24 @@
 [project]
-name = "laje-signature"
+name = "laje-signature-api"
 version = "0.1.0"
-description = "Alta culinária nordestina do restaurante Laje — composição por blocos de sabor com LangGraph."
+description = "Laje Signature API — composição culinária nordestina + persistência."
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
+    "alembic>=1.14",
+    "bcrypt>=4.2",
+    "email-validator>=2.2",
     "fastapi>=0.115",
     "langchain>=1.0",
     "langchain-openai>=1.0",
     "langchain-text-splitters>=1.0",
     "langgraph>=1.0",
     "numpy>=2.0",
+    "psycopg[binary]>=3.2",
     "pydantic>=2.0",
     "python-dotenv>=1.0",
     "pyyaml>=6.0",
+    "sqlalchemy>=2.0",
     "uvicorn[standard]>=0.32",
 ]
 

@@ -14,28 +14,34 @@ Não é um “chat que inventa receitas”. O centro é uma **biblioteca de dado
 ## Estrutura do repositório
 
 ```
-laje-signature/
-├── api/                 # FastAPI (consumo pelo app)
-├── app/                 # Domínio: grafo, composição, CLI
-├── data/
-│   └── library/         # ★ Biblioteca canônica de sabor (dados)
+laje-signature-api/
+├── api/                 # FastAPI (HTTP)
+├── app/
+│   ├── db/              # SQLAlchemy models + sessão
+│   ├── composition/     # blocos de sabor
+│   └── ...
+├── alembic/             # migrações
+├── data/library/        # biblioteca canônica de sabor
+├── docker-compose.yml   # Postgres local
 ├── docs/
-│   └── DATA.md          # Dicionário dos datasets
-├── knowledge/           # Perfil do chef + RAG (receitas/técnicas)
-├── scripts/             # Utilitários / diagnóstico
+├── knowledge/
+├── scripts/
 ├── tests/
-├── main.py              # Demo / --chat
-└── requirements.txt
+└── main.py
 ```
 
 ## Início rápido
 
 ```bash
-cd laje-signature
+cd laje-signature-api
 cp .env.example .env
 # OPENAI_API_KEY=...
+# DATABASE_URL=... (SQLite local ou Postgres)
 
 uv sync
+
+# Banco (migrações)
+uv run alembic upgrade head
 
 # CLI interativo
 uv run python -m app.cli
@@ -43,7 +49,23 @@ uv run python -m app.cli
 # API
 uv run uvicorn api.main:app --reload --port 8000
 # Docs: http://localhost:8000/docs
+
+# Produção (Render): https://laje-signature-api.onrender.com
 ```
+
+### Banco de dados
+
+- ORM: SQLAlchemy 2 + Alembic  
+- Local rápido: SQLite (`laje_signature.db`)  
+- Recomendado: Postgres via Docker:
+
+```bash
+docker compose up -d
+# DATABASE_URL=postgresql+psycopg://laje:laje@localhost:5432/laje_signature
+uv run alembic upgrade head
+```
+
+Entidade inicial: **`users`** (`app/db/models/user.py`).
 
 ## Dados
 
@@ -78,13 +100,17 @@ Pedido
 
 | Método | Endpoint | Uso |
 |--------|----------|-----|
-| GET | `/health` | Saúde |
+| GET | `/health` | Saúde (biblioteca + DB) |
 | GET | `/v1/library/summary` | Contagens |
 | GET | `/v1/library/{collection}` | Catálogo (`?q=`) |
 | POST | `/v1/compose/preview` | Preview sem LLM |
 | POST | `/v1/chat/parse` | Texto → pedido |
 | POST | `/v1/recipes/generate` | Receita síncrona |
 | POST | `/v1/recipes/generate/stream` | SSE com etapas |
+| POST | `/v1/users` | Criar usuário |
+| GET | `/v1/users` | Listar usuários |
+| GET | `/v1/users/{id}` | Detalhe |
+| PATCH | `/v1/users/{id}` | Atualizar |
 
 ## Filosofia
 
