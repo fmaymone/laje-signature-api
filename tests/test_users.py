@@ -19,6 +19,7 @@ def client(tmp_path, monkeypatch):
     db_file = tmp_path / "test.db"
     url = f"sqlite:///{db_file}"
     monkeypatch.setenv("DATABASE_URL", url)
+    monkeypatch.setenv("SKIP_DB_MIGRATE", "1")
     get_database_url.cache_clear()
     engine = configure_engine(url)
     Base.metadata.create_all(bind=engine)

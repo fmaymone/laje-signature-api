@@ -17,21 +17,24 @@ if str(_ROOT) not in sys.path:
 load_dotenv(_ROOT / ".env")
 load_dotenv(_ROOT.parent / ".env")
 
-from api.routes import compose, health, library, recipes, users  # noqa: E402
+from api.routes import auth, compose, health, library, recipes, users  # noqa: E402
 
 
 @asynccontextmanager
 async def lifespan(_app: FastAPI):
+    import os
+
     from alembic import command
     from alembic.config import Config
 
     from app.composition.library_v01 import load_library
     from app.db.config import get_database_url
 
-    # Garante schema atualizado mesmo se o Start Command do Render não rodar Alembic.
-    alembic_cfg = Config(str(_ROOT / "alembic.ini"))
-    alembic_cfg.set_main_option("sqlalchemy.url", get_database_url())
-    command.upgrade(alembic_cfg, "head")
+    # Em testes usamos create_all; em runtime migramos via Alembic.
+    if os.getenv("SKIP_DB_MIGRATE", "").lower() not in {"1", "true", "yes"}:
+        alembic_cfg = Config(str(_ROOT / "alembic.ini"))
+        alembic_cfg.set_main_option("sqlalchemy.url", get_database_url())
+        command.upgrade(alembic_cfg, "head")
 
     load_library()
     yield
@@ -64,6 +67,7 @@ app.add_middleware(
 )
 
 app.include_router(health.router)
+app.include_router(auth.router)
 app.include_router(library.router)
 app.include_router(compose.router)
 app.include_router(recipes.router)
