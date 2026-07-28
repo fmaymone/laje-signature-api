@@ -1,0 +1,201 @@
+acidity_sources:
+- id: suco_de_limao_galego
+  name: Suco de limão-galego
+  source_ingredient_id: limao_galego
+  acidity_style: aguda_fresca
+  intensity: 9
+  application:
+  - finalização
+  - molho
+  - conserva
+  dose_guardrail: Adicionar progressivamente e provar; doçura, gordura e sal alteram a percepção.
+- id: suco_e_raspa_de_limao_cravo
+  name: Suco e raspa de limão-cravo
+  source_ingredient_id: limao_cravo
+  acidity_style: aguda_aromatica
+  intensity: 9
+  application:
+  - finalização
+  - molho
+  - conserva
+  dose_guardrail: Adicionar progressivamente e provar; doçura, gordura e sal alteram a percepção.
+- id: caju_fresco_prensado
+  name: Caju fresco prensado
+  source_ingredient_id: caju
+  acidity_style: frutada_astringente
+  intensity: 7
+  application:
+  - finalização
+  - molho
+  - conserva
+  dose_guardrail: Adicionar progressivamente e provar; doçura, gordura e sal alteram a percepção.
+- id: vinagre_de_caju
+  name: Vinagre de caju
+  source_ingredient_id: caju
+  acidity_style: fermentada_seca
+  intensity: 8
+  application:
+  - finalização
+  - molho
+  - conserva
+  dose_guardrail: Adicionar progressivamente e provar; doçura, gordura e sal alteram a percepção.
+- id: caju_lactofermentado
+  name: Caju lactofermentado
+  source_ingredient_id: caju
+  acidity_style: fermentada_umami
+  intensity: 7
+  application:
+  - finalização
+  - molho
+  - conserva
+  dose_guardrail: Adicionar progressivamente e provar; doçura, gordura e sal alteram a percepção.
+- id: polpa_de_umbu
+  name: Polpa de umbu
+  source_ingredient_id: umbu
+  acidity_style: frutada_aguda
+  intensity: 9
+  application:
+  - finalização
+  - molho
+  - conserva
+  dose_guardrail: Adicionar progressivamente e provar; doçura, gordura e sal alteram a percepção.
+- id: polpa_de_caja
+  name: Polpa de cajá
+  source_ingredient_id: caja
+  acidity_style: frutada_aromatica
+  intensity: 9
+  application:
+  - finalização
+  - molho
+  - conserva
+  dose_guardrail: Adicionar progressivamente e provar; doçura, gordura e sal alteram a percepção.
+- id: polpa_de_umbu_caja
+  name: Polpa de umbu-cajá
+  source_ingredient_id: umbu_caja
+  acidity_style: frutada_aromatica
+  intensity: 9
+  application:
+  - finalização
+  - molho
+  - conserva
+  dose_guardrail: Adicionar progressivamente e provar; doçura, gordura e sal alteram a percepção.
+- id: seriguela_verde
+  name: Seriguela verde
+  source_ingredient_id: seriguela
+  acidity_style: frutada_verde
+  intensity: 8
+  application:
+  - finalização
+  - molho
+  - conserva
+  dose_guardrail: Adicionar progressivamente e provar; doçura, gordura e sal alteram a percepção.
+- id: acerola
+  name: Acerola
+  source_ingredient_id: acerola
+  acidity_style: aguda_frutada
+  intensity: 9
+  application:
+  - finalização
+  - molho
+  - conserva
+  dose_guardrail: Adicionar progressivamente e provar; doçura, gordura e sal alteram a percepção.
+- id: maracuja_do_mato
+  name: Maracujá-do-mato
+  source_ingredient_id: maracuja_do_mato
+  acidity_style: aguda_aromatica
+  intensity: 8
+  application:
+  - finalização
+  - molho
+  - conserva
+  dose_guardrail: Adicionar progressivamente e provar; doçura, gordura e sal alteram a percepção.
+- id: maracuja_amarelo
+  name: Maracujá-amarelo
+  source_ingredient_id: maracuja_amarelo
+  acidity_style: aguda_aromatica
+  intensity: 9
+  application:
+  - finalização
+  - molho
+  - conserva
+  dose_guardrail: Adicionar progressivamente e provar; doçura, gordura e sal alteram a percepção.
+- id: tamarindo
+  name: Tamarindo
+  source_ingredient_id: tamarindo
+  acidity_style: profunda_doce_acida
+  intensity: 9
+  application:
+  - finalização
+  - molho
+  - conserva
+  dose_guardrail: Adicionar progressivamente e provar; doçura, gordura e sal alteram a percepção.
+- id: mangaba_pouco_madura
+  name: Mangaba pouco madura
+  source_ingredient_id: mangaba
+  acidity_style: lactica_frutada
+  intensity: 7
+  application:
+  - finalização
+  - molho
+  - conserva
+  dose_guardrail: Adicionar progressivamente e provar; doçura, gordura e sal alteram a percepção.
+- id: pitanga
+  name: Pitanga
+  source_ingredient_id: pitanga
+  acidity_style: frutada_amarga
+  intensity: 7
+  application:
+  - finalização
+  - molho
+  - conserva
+  dose_guardrail: Adicionar progressivamente e provar; doçura, gordura e sal alteram a percepção.
+- id: abacaxi_perola
+  name: Abacaxi-pérola
+  source_ingredient_id: abacaxi_perola
+  acidity_style: doce_acida
+  intensity: 7
+  application:
+  - finalização
+  - molho
+  - conserva
+  dose_guardrail: Adicionar progressivamente e provar; doçura, gordura e sal alteram a percepção.
+- id: tomate_reduzido
+  name: Tomate reduzido
+  source_ingredient_id: tomate
+  acidity_style: umami_acida
+  intensity: 6
+  application:
+  - finalização
+  - molho
+  - conserva
+  dose_guardrail: Adicionar progressivamente e provar; doçura, gordura e sal alteram a percepção.
+- id: vinagre_de_cana
+  name: Vinagre de cana
+  source_ingredient_id: mel_de_engenho
+  acidity_style: fermentada_seca
+  intensity: 8
+  application:
+  - finalização
+  - molho
+  - conserva
+  dose_guardrail: Adicionar progressivamente e provar; doçura, gordura e sal alteram a percepção.
+- id: picles_de_maxixe
+  name: Picles de maxixe
+  source_ingredient_id: maxixe
+  acidity_style: fermentada_crocante
+  intensity: 7
+  application:
+  - finalização
+  - molho
+  - conserva
+  dose_guardrail: Adicionar progressivamente e provar; doçura, gordura e sal alteram a percepção.
+- id: vinagreira_refogada_rapidamente
+  name: Vinagreira refogada rapidamente
+  source_ingredient_id: vinagreira
+  acidity_style: folhosa_acida
+  intensity: 7
+  application:
+  - finalização
+  - molho
+  - conserva
+  dose_guardrail: Adicionar progressivamente e provar; doçura, gordura e sal alteram a percepção.

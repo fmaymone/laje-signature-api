@@ -1,0 +1,125 @@
+conflict_rules:
+- id: delicate_fish_vs_heavy_dende
+  conflict:
+  - peixe_delicado
+  - dende_em_excesso
+  reason: O dendê pode ocultar peixes delicados.
+  resolution: Reduzir dose ou escolher peixe mais intenso.
+- id: coconut_plus_nata_overfat
+  conflict:
+  - leite_de_coco
+  - nata
+  - manteiga_de_garrafa_em_excesso
+  reason: Três gorduras arredondam e pesam o prato.
+  resolution: Escolher uma gordura dominante e elevar acidez.
+- id: carne_sol_plus_coalho_salt
+  conflict:
+  - carne_de_sol
+  - queijo_coalho
+  - sal_adicionado
+  reason: Risco alto de salinidade excessiva.
+  resolution: Dessalgar, reduzir queijo ou eliminar sal adicional.
+- id: sweet_base_plus_sweet_glaze
+  conflict:
+  - base_doce
+  - glace_de_rapadura_sem_acido
+  reason: Doçura sem contraponto.
+  resolution: Adicionar tamarindo, caju, umbu ou cítrico.
+- id: multiple_purees
+  conflict:
+  - pure_1
+  - pure_2
+  reason: Texturas redundantes e prato monótono.
+  resolution: Manter um purê e trocar o outro por elemento firme/crocante.
+- id: multiple_farofas
+  conflict:
+  - farofa
+  - chips
+  - crosta_seca_em_excesso
+  reason: Secura e ruído de textura.
+  resolution: Escolher um contraste principal.
+- id: acid_overload
+  conflict:
+  - tres_fontes_acidas_intensas
+  reason: Acidez competitiva e pouco legível.
+  resolution: Definir uma acidez estrutural e uma final.
+- id: aroma_overload
+  conflict:
+  - dende
+  - cominho
+  - alfavaca
+  - pimenta_de_cheiro_em_altas_doses
+  reason: Famílias aromáticas competem.
+  resolution: Escolher uma família principal e uma secundária.
+- id: caju_plus_tamarind_same_role
+  conflict:
+  - caju
+  - tamarindo
+  - mesma_funcao_no_mesmo_molho
+  reason: Duas frutas ácidas profundas podem borrar identidade.
+  resolution: Usar uma como base e a outra apenas em microdose ou retirar.
+- id: delicate_crustacean_overcook
+  conflict:
+  - crustaceo
+  - cozimento_longo
+  reason: Perda de doçura e textura.
+  resolution: Cozimento curto; usar cascas no caldo separadamente.
+- id: octopus_under_tenderized
+  conflict:
+  - polvo
+  - brasa_sem_precozimento_controlado
+  reason: Textura dura.
+  resolution: Cozinhar até maciez antes da finalização na brasa.
+- id: cassava_unsafe
+  conflict:
+  - mandioca_brava
+  - preparo_domestico_nao_validado
+  reason: Risco alimentar.
+  resolution: Usar macaxeira/mandioca mansa comercial e técnica segura.
+- id: foraged_cactus_unknown
+  conflict:
+  - cacto_nao_identificado
+  - consumo
+  reason: Risco de identificação e preparo inadequados.
+  resolution: Usar somente fruto/palma alimentícia de fornecedor confiável.
+- id: raw_wild_shellfish
+  conflict:
+  - molusco_cru
+  - origem_nao_controlada
+  reason: Risco sanitário.
+  resolution: Exigir origem segura e cadeia fria; cozinhar quando houver dúvida.
+- id: fruit_acid_dairy_split
+  conflict:
+  - acido_forte
+  - laticinio_quente_sem_emulsao
+  reason: Pode talhar.
+  resolution: Controlar temperatura, adicionar ácido no final ou estabilizar emulsão.
+- id: high_salt_reduction
+  conflict:
+  - caldo_salgado
+  - reducao_longa
+  reason: A redução concentra sal.
+  resolution: Usar caldo pouco salgado e ajustar apenas no final.
+- id: coentro_cooked_too_long
+  conflict:
+  - coentro
+  - cozimento_longo
+  reason: Perda de frescor e aroma.
+  resolution: Usar talos no cozimento e folhas no final.
+- id: coconut_overreduction
+  conflict:
+  - leite_de_coco
+  - fogo_alto_prolongado
+  reason: Separação de gordura e sabor pesado.
+  resolution: Reduzir com controle e emulsificar.
+- id: too_many_components
+  conflict:
+  - componentes_maior_que_6
+  reason: Perda de foco e execução difícil.
+  resolution: Fundir funções e remover decoração sem função.
+- id: seasonal_illegal_supply
+  conflict:
+  - pescado_em_defeso
+  - origem_sem_documentacao
+  reason: Risco legal e ambiental.
+  resolution: Não comprar; usar espécie permitida ou produto documentado.

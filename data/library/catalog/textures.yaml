@@ -1,0 +1,122 @@
+textures:
+- id: farofa_crocante_de_flocao
+  name: Farofa crocante de flocão
+  ingredient_ids:
+  - flocao_de_milho
+  - manteiga_de_garrafa
+  texture_signature: crocante_seco
+  best_use: contraste com componentes cremosos, macios ou suculentos
+- id: castanha_de_caju_tostada
+  name: Castanha-de-caju tostada
+  ingredient_ids:
+  - castanha_de_caju
+  texture_signature: crocante_gorduroso
+  best_use: contraste com componentes cremosos, macios ou suculentos
+- id: milho_tostado_na_brasa
+  name: Milho tostado na brasa
+  ingredient_ids:
+  - milho_verde
+  texture_signature: crocante_suculento
+  best_use: contraste com componentes cremosos, macios ou suculentos
+- id: chips_de_macaxeira
+  name: Chips de macaxeira
+  ingredient_ids:
+  - macaxeira
+  texture_signature: crocante_seco
+  best_use: contraste com componentes cremosos, macios ou suculentos
+- id: palha_de_batata_doce
+  name: Palha de batata-doce
+  ingredient_ids:
+  - batata_doce
+  texture_signature: crocante_doce
+  best_use: contraste com componentes cremosos, macios ou suculentos
+- id: coco_fresco_tostado
+  name: Coco fresco tostado
+  ingredient_ids:
+  - coco_fresco
+  texture_signature: crocante_gorduroso
+  best_use: contraste com componentes cremosos, macios ou suculentos
+- id: pele_de_peixe_crocante
+  name: Pele de peixe crocante
+  ingredient_ids:
+  - sirigado
+  texture_signature: crocante_umami
+  best_use: contraste com componentes cremosos, macios ou suculentos
+- id: torresmo_leve
+  name: Torresmo leve
+  ingredient_ids:
+  - toucinho
+  texture_signature: crocante_gorduroso
+  best_use: contraste com componentes cremosos, macios ou suculentos
+- id: queijo_coalho_tostado
+  name: Queijo coalho tostado
+  ingredient_ids:
+  - queijo_coalho
+  texture_signature: crosta_elastico
+  best_use: contraste com componentes cremosos, macios ou suculentos
+- id: tapioca_crocante
+  name: Tapioca crocante
+  ingredient_ids:
+  - goma_de_tapioca
+  texture_signature: crocante_neutro
+  best_use: contraste com componentes cremosos, macios ou suculentos
+- id: farinha_d_agua_hidratada_na_hora
+  name: Farinha-d'água hidratada na hora
+  ingredient_ids:
+  - farinha_d_agua
+  texture_signature: granulado_suculento
+  best_use: contraste com componentes cremosos, macios ou suculentos
+- id: maxixe_cru_laminado
+  name: Maxixe cru laminado
+  ingredient_ids:
+  - maxixe
+  texture_signature: crocante_fresco
+  best_use: contraste com componentes cremosos, macios ou suculentos
+- id: feijao_verde_al_dente
+  name: Feijão-verde al dente
+  ingredient_ids:
+  - feijao_verde
+  texture_signature: firme_cremoso
+  best_use: contraste com componentes cremosos, macios ou suculentos
+- id: cebola_roxa_curtida
+  name: Cebola-roxa curtida
+  ingredient_ids:
+  - cebola_roxa
+  texture_signature: crocante_acido
+  best_use: contraste com componentes cremosos, macios ou suculentos
+- id: gergelim_tostado
+  name: Gergelim tostado
+  ingredient_ids:
+  - gergelim
+  texture_signature: crocante_aromatico
+  best_use: contraste com componentes cremosos, macios ou suculentos
+- id: amendoim_torrado
+  name: Amendoim torrado
+  ingredient_ids:
+  - amendoim
+  texture_signature: crocante_gorduroso
+  best_use: contraste com componentes cremosos, macios ou suculentos
+- id: licuri_tostado
+  name: Licuri tostado
+  ingredient_ids:
+  - licuri
+  texture_signature: crocante_aromatico
+  best_use: contraste com componentes cremosos, macios ou suculentos
+- id: crosta_de_xerem
+  name: Crosta de xerém
+  ingredient_ids:
+  - xerem
+  texture_signature: crocante_granulado
+  best_use: contraste com componentes cremosos, macios ou suculentos
+- id: quiabo_grelhado
+  name: Quiabo grelhado
+  ingredient_ids:
+  - quiabo
+  texture_signature: firme_suculento
+  best_use: contraste com componentes cremosos, macios ou suculentos
+- id: banana_da_terra_crocante
+  name: Banana-da-terra crocante
+  ingredient_ids:
+  - banana_da_terra
+  texture_signature: crocante_doce
+  best_use: contraste com componentes cremosos, macios ou suculentos

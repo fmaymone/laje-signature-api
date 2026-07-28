@@ -1,0 +1,104 @@
+# Catálogo de ingredientes do Ceará — corpus RAG (somente leitura via agente).
+# Use como referência de identidade regional; quantidades e técnicas ficam nas fichas.
+
+region: Ceará
+language: pt-BR
+
+ingredients:
+  seafood:
+    - name: sirigado
+      aliases: [badejo-do-sirigado]
+      notes: Peixe firme, boa brasa e porções altas; aparas para caldo curto.
+    - name: cioba
+      notes: Peixe de sabor limpo; funciona grelhado ou em peixada enxuta.
+    - name: pargo
+      notes: Carne branca firme; preferir ponto suculento.
+    - name: cavala
+      notes: Mais oleosa; brasa e acidez clara equilibram.
+    - name: serra
+      notes: Peixe costeiro; bom em escabeche leve ou grelha.
+    - name: lagosta
+      notes: Protagonista; manteiga de garrafa e limão bastam — evitar sobrecarga.
+    - name: camarão
+      notes: Fresco ou seco; cascas para fundo. Preferir ponto justo.
+    - name: caranguejo
+      notes: Carne doce; caldo e aproveitamento das cascas.
+    - name: ostra
+      notes: Servir crua temperada ou levemente aquecida; acidez e coentro.
+    - name: sururu
+      notes: Molusco de mangue; caldos e molhos curtos.
+
+  proteins_land:
+    - name: carne de sol
+      notes: Dessalgar conforme cura; contrastar com gordura e acidez.
+    - name: queijo coalho
+      notes: Grelhar até marca; não derrete como mussarela — textura é o ponto.
+    - name: galinha caipira
+      notes: Caldos longos e aproveitamento integral.
+
+  staples:
+    - name: milho verde
+      notes: Purê, creme tostado, espiga na brasa, sabugo para fundo.
+    - name: feijão verde
+      aliases: [feijão-de-corda, feijão macassar]
+      notes: Base do baião; cocção al dente vegetal, não pasta.
+    - name: arroz
+      notes: Baião e acompanhamentos; torrar levemente eleva aroma.
+    - name: mandioca
+      aliases: [aipim, macaxeira]
+      notes: Purê, chips, farofa; escorrer bem para não colar.
+    - name: farinha d'água
+      notes: Farofas e espessamentos rústicos.
+    - name: goma de tapioca
+      aliases: [goma, polvilho fresco]
+      notes: Beiju/tapioca; também espessante em molhos leves a frio.
+    - name: banana da terra
+      notes: Madura na brasa ou chips; doce que pede acidez/sal.
+
+  fats_and_dairy:
+    - name: manteiga de garrafa
+      notes: Gordura de assinatura; emulsões e finalização — dose controlada.
+    - name: leite de coco
+      notes: Usar com parcimônia; não transformar tudo em “molho de coco”.
+    - name: coco fresco
+      notes: Ralado tostado, água, óleo — textura e aroma.
+
+  caju_and_sweets:
+    - name: castanha de caju
+      notes: Purês, farofas, leites vegetais, crocantes.
+    - name: caju
+      notes: Polpa ácida-doce; reduz bem em gastrique leve.
+    - name: cajuína
+      notes: Reduções e molhos; acidez e tipicidade cearense.
+    - name: rapadura
+      notes: Doce controlado em molhos agrodoces; ralar fino.
+    - name: mel de engenho
+      notes: Finalização pontual; não adoçar o prato inteiro.
+
+  aromatics:
+    - name: coentro
+      notes: Folhas no passe; talos em caldos. Não cozinhar demais.
+    - name: limão
+      notes: Acidez clara — preferir no final e nos molhos.
+    - name: pimenta-de-cheiro
+      notes: Aroma e picância controlada; retirar sementes se necessário.
+    - name: cebola branca
+      notes: Base de suados e baião.
+    - name: alho
+      notes: Fundo aromático; não queimar na brasa.
+
+pairings:
+  - [sirigado, milho, manteiga de garrafa, limão]
+  - [lagosta, manteiga de garrafa, limão, coentro]
+  - [carne de sol, queijo coalho, banana da terra]
+  - [camarão, cajuína, castanha de caju]
+  - [feijão verde, arroz, queijo coalho, manteiga de garrafa]
+  - [caranguejo, coco, coentro, limão]
+  - [mandioca, castanha de caju, coentro]
+
+principles:
+  - O ingrediente cearense deve ser protagonista, não enfeite “regional”.
+  - Preferir três componentes fortes a muitos elementos tipicamente turísticos.
+  - Brasa, redução e aproveitamento de aparas antes de técnicas só para impressionar.
+  - Acidez (limão, caju, cajuína) equilibra manteiga de garrafa e peixes oleosos.
+  - Não confundir cozinha cearense contemporânea com cópia de moqueca baiana.

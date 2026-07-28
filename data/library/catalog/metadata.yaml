@@ -1,0 +1,8 @@
+library_name: Biblioteca de Blocos de Sabor do Nordeste — Fernando
+version: 0.1.0
+language: pt-BR
+generated_on: '2026-07-28'
+scope_note: Nordestino inclui ingredientes nativos, tradicionais, costeiros e amplamente produzidos/encontrados
+  na região.
+sensory_scale: 0-10; valores são heurísticos para composição e devem ser calibrados por quantidade, maturação e
+  técnica.

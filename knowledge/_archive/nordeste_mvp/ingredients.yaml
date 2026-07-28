@@ -1,0 +1,358 @@
+# Biblioteca de ingredientes nordestinos — eixo do motor de composição.
+# Pontuações 0–10. O agente não altera este arquivo silenciosamente.
+
+ingredients:
+  # —— Protagonistas ——
+  - id: sirigado
+    name: sirigado
+    roles: [protagonist]
+    delicacy: 7
+    regional_availability: 9
+    sensory_profile: {umami: 7, saltiness: 2, fat: 3, aroma: 4, freshness: 5}
+    texture_profile: {firm: 7, juicy: 6, tender: 5}
+    notes: Peixe firme; brasa e aparas para glace.
+
+  - id: pargo
+    name: pargo
+    roles: [protagonist]
+    delicacy: 7
+    regional_availability: 8
+    sensory_profile: {umami: 6, fat: 3, aroma: 4, freshness: 5}
+    texture_profile: {firm: 7, juicy: 6}
+
+  - id: cioba
+    name: cioba
+    roles: [protagonist]
+    delicacy: 7
+    regional_availability: 8
+    sensory_profile: {umami: 6, fat: 2, aroma: 4, freshness: 6}
+    texture_profile: {firm: 6, juicy: 6}
+
+  - id: camarao
+    name: camarão
+    aliases: [camarao]
+    roles: [protagonist, sauce]
+    delicacy: 6
+    regional_availability: 9
+    sensory_profile: {umami: 8, sweetness: 3, saltiness: 3, aroma: 6}
+    texture_profile: {firm: 6, juicy: 5, chewy: 3}
+
+  - id: lagosta
+    name: lagosta
+    roles: [protagonist]
+    delicacy: 8
+    regional_availability: 7
+    sensory_profile: {umami: 7, sweetness: 4, fat: 2, aroma: 5}
+    texture_profile: {firm: 7, juicy: 5}
+
+  - id: carne_de_sol
+    name: carne de sol
+    roles: [protagonist]
+    delicacy: 4
+    regional_availability: 10
+    sensory_profile: {saltiness: 8, umami: 7, fat: 4, aroma: 5}
+    texture_profile: {firm: 7, chewy: 4, tender: 4}
+    notes: Dessalga controla o orçamento de sal do prato.
+
+  - id: bode
+    name: bode
+    roles: [protagonist]
+    delicacy: 3
+    regional_availability: 8
+    sensory_profile: {umami: 7, fat: 5, aroma: 6, saltiness: 3}
+    texture_profile: {firm: 6, tender: 5, chewy: 4}
+
+  - id: porco
+    name: porco
+    roles: [protagonist]
+    delicacy: 3
+    regional_availability: 9
+    sensory_profile: {fat: 7, umami: 6, saltiness: 3, sweetness: 2}
+    texture_profile: {juicy: 6, tender: 6, crispy: 3}
+
+  - id: galinha_caipira
+    name: galinha caipira
+    roles: [protagonist]
+    delicacy: 4
+    regional_availability: 9
+    sensory_profile: {umami: 6, fat: 4, aroma: 5}
+    texture_profile: {firm: 5, tender: 6}
+
+  - id: jerimum
+    name: jerimum
+    aliases: [abóbora, abobora]
+    roles: [protagonist, base]
+    delicacy: 5
+    regional_availability: 10
+    sensory_profile: {sweetness: 6, umami: 2, aroma: 4}
+    texture_profile: {creamy: 6, tender: 7}
+
+  - id: milho
+    name: milho
+    roles: [protagonist, base, texture]
+    delicacy: 5
+    regional_availability: 10
+    sensory_profile: {sweetness: 6, aroma: 4, umami: 2}
+    texture_profile: {creamy: 5, crunchy: 4, juicy: 4}
+
+  - id: feijao_verde
+    name: feijão-verde
+    aliases: [feijão de corda, feijao verde, feijão-de-corda]
+    roles: [protagonist, base]
+    delicacy: 4
+    regional_availability: 10
+    sensory_profile: {umami: 4, saltiness: 1, aroma: 3}
+    texture_profile: {tender: 6, firm: 4}
+
+  - id: macaxeira
+    name: macaxeira
+    aliases: [mandioca, aipim]
+    roles: [base, texture]
+    delicacy: 4
+    regional_availability: 10
+    sensory_profile: {sweetness: 2, aroma: 2}
+    texture_profile: {creamy: 7, crispy: 3, firm: 4}
+
+  # —— Gorduras / laticínios ——
+  - id: manteiga_de_garrafa
+    name: manteiga de garrafa
+    roles: [sauce, aroma]
+    delicacy: 3
+    regional_availability: 10
+    sensory_profile: {fat: 9, aroma: 7, saltiness: 2}
+    texture_profile: {creamy: 6}
+
+  - id: nata
+    name: nata
+    roles: [sauce, base]
+    delicacy: 4
+    regional_availability: 8
+    sensory_profile: {fat: 8, sweetness: 2, aroma: 3}
+    texture_profile: {creamy: 8}
+
+  - id: leite_de_coco
+    name: leite de coco
+    roles: [sauce, base]
+    delicacy: 5
+    regional_availability: 9
+    sensory_profile: {fat: 8, sweetness: 4, aroma: 6}
+    texture_profile: {creamy: 8}
+
+  - id: coco_fresco
+    name: coco fresco
+    roles: [texture, aroma, sauce]
+    delicacy: 5
+    regional_availability: 10
+    sensory_profile: {fat: 6, sweetness: 3, aroma: 7}
+    texture_profile: {crunchy: 5, creamy: 4}
+
+  - id: queijo_coalho
+    name: queijo coalho
+    roles: [protagonist, texture, base]
+    delicacy: 4
+    regional_availability: 10
+    sensory_profile: {saltiness: 6, fat: 5, umami: 4, aroma: 4}
+    texture_profile: {firm: 7, chewy: 4, crispy: 3}
+
+  # —— Acidez / frutas ——
+  - id: limao_galego
+    name: limão-galego
+    aliases: [limao galego, limão galego]
+    roles: [acidity, aroma]
+    delicacy: 6
+    regional_availability: 9
+    sensory_profile: {acidity: 9, aroma: 8, bitterness: 2, freshness: 9}
+    texture_profile: {}
+
+  - id: limao_cravo
+    name: limão-cravo
+    roles: [acidity, aroma]
+    delicacy: 6
+    regional_availability: 8
+    sensory_profile: {acidity: 8, aroma: 9, bitterness: 3, freshness: 8}
+
+  - id: limao_taiti
+    name: limão-taiti
+    aliases: [limão, limao]
+    roles: [acidity, aroma]
+    delicacy: 6
+    regional_availability: 10
+    sensory_profile: {acidity: 8, aroma: 6, freshness: 8}
+
+  - id: caju
+    name: caju
+    roles: [acidity, aroma]
+    delicacy: 5
+    regional_availability: 10
+    sensory_profile: {acidity: 7, sweetness: 5, aroma: 7, freshness: 7}
+
+  - id: cajuina
+    name: cajuína
+    aliases: [cajuina]
+    roles: [acidity, sauce]
+    delicacy: 5
+    regional_availability: 9
+    sensory_profile: {acidity: 6, sweetness: 5, aroma: 6}
+
+  - id: umbu
+    name: umbu
+    roles: [acidity]
+    delicacy: 5
+    regional_availability: 8
+    sensory_profile: {acidity: 8, sweetness: 3, aroma: 6, freshness: 7}
+
+  - id: seriguela
+    name: seriguela
+    roles: [acidity]
+    delicacy: 5
+    regional_availability: 8
+    sensory_profile: {acidity: 7, sweetness: 4, aroma: 7, freshness: 7}
+
+  - id: caja
+    name: cajá
+    aliases: [caja]
+    roles: [acidity]
+    delicacy: 5
+    regional_availability: 8
+    sensory_profile: {acidity: 8, sweetness: 3, aroma: 6}
+
+  - id: tamarindo
+    name: tamarindo
+    roles: [acidity, sauce]
+    delicacy: 4
+    regional_availability: 8
+    sensory_profile: {acidity: 8, sweetness: 3, bitterness: 2}
+
+  - id: acerola
+    name: acerola
+    roles: [acidity]
+    delicacy: 5
+    regional_availability: 9
+    sensory_profile: {acidity: 9, sweetness: 3, freshness: 8}
+
+  - id: vinagre_de_caju
+    name: vinagre de caju
+    roles: [acidity]
+    delicacy: 4
+    regional_availability: 8
+    sensory_profile: {acidity: 8, aroma: 5, freshness: 4}
+
+  - id: tomate
+    name: tomate
+    roles: [acidity, sauce]
+    delicacy: 5
+    regional_availability: 9
+    sensory_profile: {acidity: 5, sweetness: 4, umami: 4, freshness: 5}
+
+  # —— Texturas / farinhas ——
+  - id: castanha_de_caju
+    name: castanha-de-caju
+    aliases: [castanha de caju]
+    roles: [texture, sauce, base]
+    delicacy: 4
+    regional_availability: 10
+    sensory_profile: {fat: 7, sweetness: 2, umami: 3, aroma: 5}
+    texture_profile: {crunchy: 8, creamy: 5}
+
+  - id: farinha_dagua
+    name: farinha d'água
+    aliases: [farinha dagua, farinha d água]
+    roles: [texture, base]
+    delicacy: 3
+    regional_availability: 10
+    sensory_profile: {aroma: 2}
+    texture_profile: {crunchy: 6, creamy: 3}
+
+  - id: flocao
+    name: flocão
+    aliases: [flocao de milho]
+    roles: [texture]
+    delicacy: 3
+    regional_availability: 10
+    sensory_profile: {sweetness: 2}
+    texture_profile: {crunchy: 7, crispy: 6}
+
+  - id: goma_tapioca
+    name: goma de tapioca
+    roles: [base, texture]
+    delicacy: 4
+    regional_availability: 10
+    sensory_profile: {}
+    texture_profile: {chewy: 6, crispy: 4}
+
+  - id: cuscuz
+    name: cuscuz
+    roles: [base]
+    delicacy: 4
+    regional_availability: 10
+    sensory_profile: {sweetness: 1}
+    texture_profile: {tender: 5}
+
+  - id: xerem
+    name: xerém
+    aliases: [xerem]
+    roles: [base]
+    delicacy: 4
+    regional_availability: 9
+    sensory_profile: {sweetness: 2}
+    texture_profile: {creamy: 5, firm: 3}
+
+  - id: rapadura
+    name: rapadura
+    roles: [sauce]
+    delicacy: 3
+    regional_availability: 10
+    sensory_profile: {sweetness: 9, aroma: 5}
+    notes: Usar com parcimônia; sempre com acidez.
+
+  - id: melaco
+    name: melaço
+    aliases: [mel de engenho]
+    roles: [sauce]
+    delicacy: 3
+    regional_availability: 9
+    sensory_profile: {sweetness: 8, bitterness: 2, aroma: 5}
+
+  # —— Aromáticos ——
+  - id: coentro
+    name: coentro
+    roles: [aroma, acidity]
+    delicacy: 6
+    regional_availability: 10
+    sensory_profile: {aroma: 9, freshness: 9, heat: 0}
+    texture_profile: {}
+
+  - id: cebolinha
+    name: cebolinha
+    roles: [aroma]
+    delicacy: 6
+    regional_availability: 10
+    sensory_profile: {aroma: 7, freshness: 8}
+
+  - id: pimenta_de_cheiro
+    name: pimenta-de-cheiro
+    roles: [aroma, heat]
+    delicacy: 5
+    regional_availability: 10
+    sensory_profile: {heat: 4, aroma: 9, freshness: 6}
+
+  - id: alfavaca
+    name: alfavaca
+    roles: [aroma]
+    delicacy: 6
+    regional_availability: 7
+    sensory_profile: {aroma: 8, freshness: 7}
+
+  - id: cebola
+    name: cebola
+    roles: [aroma, sauce, base]
+    delicacy: 4
+    regional_availability: 10
+    sensory_profile: {sweetness: 3, aroma: 5}
+
+  - id: alho
+    name: alho
+    roles: [aroma, sauce]
+    delicacy: 4
+    regional_availability: 10
+    sensory_profile: {aroma: 7, heat: 1}

@@ -1,0 +1,262 @@
+protagonists:
+- id: sirigado
+  ingredient_id: sirigado
+  profile: delicado_firme
+  preferred_methods:
+  - brasa
+  - forno
+  - cura_leve
+  preferred_pairings:
+  - coco
+  - milho
+  - caju
+  - limão
+  - macaxeira
+  intensity_guardrail: Molhos não devem ocultar o protagonista; ajustar intensidade ao perfil.
+- id: cioba
+  ingredient_id: cioba
+  profile: delicado
+  preferred_methods:
+  - cru
+  - brasa
+  - forno
+  preferred_pairings:
+  - caju
+  - cajá
+  - coco
+  - coentro
+  intensity_guardrail: Molhos não devem ocultar o protagonista; ajustar intensidade ao perfil.
+- id: pargo
+  ingredient_id: pargo
+  profile: delicado
+  preferred_methods:
+  - brasa
+  - forno
+  - caldeirada
+  preferred_pairings:
+  - tomate
+  - coco
+  - limão
+  - vinagreira
+  intensity_guardrail: Molhos não devem ocultar o protagonista; ajustar intensidade ao perfil.
+- id: camurim
+  ingredient_id: camurim
+  profile: delicado_firme
+  preferred_methods:
+  - brasa
+  - forno
+  - panela
+  preferred_pairings:
+  - coco
+  - caju
+  - jerimum
+  - limão
+  intensity_guardrail: Molhos não devem ocultar o protagonista; ajustar intensidade ao perfil.
+- id: cavala
+  ingredient_id: cavala
+  profile: gorduroso_intenso
+  preferred_methods:
+  - cura
+  - brasa
+  - confit
+  preferred_pairings:
+  - tamarindo
+  - caju
+  - cebola-roxa
+  - vinagreira
+  intensity_guardrail: Molhos não devem ocultar o protagonista; ajustar intensidade ao perfil.
+- id: pescada_amarela
+  ingredient_id: pescada_amarela
+  profile: delicado
+  preferred_methods:
+  - forno
+  - fritura
+  - panela
+  preferred_pairings:
+  - coco
+  - milho
+  - tomate
+  - coentro
+  intensity_guardrail: Molhos não devem ocultar o protagonista; ajustar intensidade ao perfil.
+- id: camarao_branco
+  ingredient_id: camarao_branco
+  profile: doce_umami
+  preferred_methods:
+  - saltear
+  - brasa
+  - caldo
+  preferred_pairings:
+  - coco
+  - dendê
+  - caju
+  - milho
+  intensity_guardrail: Molhos não devem ocultar o protagonista; ajustar intensidade ao perfil.
+- id: lagosta_vermelha
+  ingredient_id: lagosta_vermelha
+  profile: doce_nobre
+  preferred_methods:
+  - brasa
+  - manteiga
+  - caldo
+  preferred_pairings:
+  - coco
+  - caju
+  - jerimum
+  - limão-cravo
+  intensity_guardrail: Molhos não devem ocultar o protagonista; ajustar intensidade ao perfil.
+- id: polvo
+  ingredient_id: polvo
+  profile: intenso_firme
+  preferred_methods:
+  - cozimento_controlado
+  - brasa
+  - ensopado
+  preferred_pairings:
+  - tamarindo
+  - feijão-verde
+  - caju
+  - tomate
+  intensity_guardrail: Molhos não devem ocultar o protagonista; ajustar intensidade ao perfil.
+- id: sururu
+  ingredient_id: sururu
+  profile: marinho_intenso
+  preferred_methods:
+  - ensopado
+  - caldo
+  - saltear
+  preferred_pairings:
+  - coco
+  - dendê
+  - vinagreira
+  - tomate
+  intensity_guardrail: Molhos não devem ocultar o protagonista; ajustar intensidade ao perfil.
+- id: caranguejo_uca
+  ingredient_id: caranguejo_uca
+  profile: marinho_doce
+  preferred_methods:
+  - caldo
+  - recheio
+  - ensopado
+  preferred_pairings:
+  - coco
+  - macaxeira
+  - pimenta-de-cheiro
+  - tomate
+  intensity_guardrail: Molhos não devem ocultar o protagonista; ajustar intensidade ao perfil.
+- id: tilapia
+  ingredient_id: tilapia
+  profile: suave
+  preferred_methods:
+  - brasa
+  - fritura
+  - forno
+  preferred_pairings:
+  - milho
+  - caju
+  - jerimum
+  - limão
+  intensity_guardrail: Molhos não devem ocultar o protagonista; ajustar intensidade ao perfil.
+- id: carne_de_sol
+  ingredient_id: carne_de_sol
+  profile: salgado_intenso
+  preferred_methods:
+  - brasa
+  - panela
+  - desfiar
+  preferred_pairings:
+  - macaxeira
+  - nata
+  - caju
+  - feijão-verde
+  intensity_guardrail: Molhos não devem ocultar o protagonista; ajustar intensidade ao perfil.
+- id: bode
+  ingredient_id: bode
+  profile: intenso
+  preferred_methods:
+  - brasa
+  - panela
+  - baixa_temperatura
+  preferred_pairings:
+  - cominho
+  - tamarindo
+  - jerimum
+  - fava
+  intensity_guardrail: Molhos não devem ocultar o protagonista; ajustar intensidade ao perfil.
+- id: cordeiro
+  ingredient_id: cordeiro
+  profile: gorduroso_aromatico
+  preferred_methods:
+  - brasa
+  - panela
+  - baixa_temperatura
+  preferred_pairings:
+  - umbu
+  - hortelã_local
+  - jerimum
+  - arroz-vermelho
+  intensity_guardrail: Molhos não devem ocultar o protagonista; ajustar intensidade ao perfil.
+- id: porco
+  ingredient_id: porco
+  profile: gorduroso
+  preferred_methods:
+  - brasa
+  - confit
+  - forno
+  preferred_pairings:
+  - tamarindo
+  - rapadura
+  - caju
+  - feijão
+  intensity_guardrail: Molhos não devem ocultar o protagonista; ajustar intensidade ao perfil.
+- id: galinha_caipira
+  ingredient_id: galinha_caipira
+  profile: umami_firme
+  preferred_methods:
+  - panela
+  - caldo
+  - brasa
+  preferred_pairings:
+  - milho
+  - quiabo
+  - cominho
+  - jerimum
+  intensity_guardrail: Molhos não devem ocultar o protagonista; ajustar intensidade ao perfil.
+- id: jerimum
+  ingredient_id: jerimum
+  profile: doce_terroso
+  preferred_methods:
+  - assar
+  - brasa
+  - purê
+  preferred_pairings:
+  - castanha-de-caju
+  - vinagreira
+  - queijo-coalho
+  - pimenta
+  intensity_guardrail: Molhos não devem ocultar o protagonista; ajustar intensidade ao perfil.
+- id: jaca
+  ingredient_id: jaca
+  profile: doce_fibroso
+  preferred_methods:
+  - assar
+  - desfiar
+  - brasa
+  preferred_pairings:
+  - tamarindo
+  - coco
+  - dendê
+  - pimenta
+  intensity_guardrail: Molhos não devem ocultar o protagonista; ajustar intensidade ao perfil.
+- id: queijo_coalho
+  ingredient_id: queijo_coalho
+  profile: salgado_lacteo
+  preferred_methods:
+  - grelhar
+  - gratinar
+  - fundir
+  preferred_pairings:
+  - mel-de-engenho
+  - caju
+  - milho
+  - jerimum
+  intensity_guardrail: Molhos não devem ocultar o protagonista; ajustar intensidade ao perfil.

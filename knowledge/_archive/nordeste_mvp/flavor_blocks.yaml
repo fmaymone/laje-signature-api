@@ -1,0 +1,355 @@
+blocks:
+  - id: sirigado_brasa_leve
+    name: Sirigado curado leve na brasa
+    description: Protagonista de peixe firme com crosta de brasa e miolo suculento.
+    regional_availability: 9
+    culinary_roles: [protagonist]
+    forms: [filé grelhado, posta na brasa]
+    compatible_protagonists: [sirigado, pargo, cioba]
+    compatible_blocks: [creme_milho_tm7, glace_aparas_manteiga_garrafa, vinagrete_caju_pimenta, farofa_flocao_castanha]
+    conflicting_blocks: [gastrique_rapadura_tamarindo]
+    ingredients:
+      - {ingredient: sirigado, technique: cura leve + grelha, function: [protagonist, umami, brasa], intensity: 8}
+      - {ingredient: limão-taiti, technique: tempero breve, function: [acidity], intensity: 2, notes: Não marinar longo}
+      - {ingredient: manteiga de garrafa, technique: pincelada fina, function: [fat], intensity: 2}
+    sensory_profile: {umami: 7, fat: 3, saltiness: 3, aroma: 6, acidity: 2, freshness: 4}
+    texture_profile: {firm: 7, juicy: 6, crispy: 3}
+
+  - id: creme_milho_tm7
+    name: Creme de milho verde (TM7)
+    description: Base cremosa e doce-vegetal; corpo do prato sem pesar demais.
+    regional_availability: 10
+    culinary_roles: [base]
+    forms: [creme fino, creme rústico, purê de milho]
+    compatible_protagonists: [sirigado, pargo, camarão, lagosta, carne de sol]
+    compatible_blocks: [glace_aparas_manteiga_garrafa, milho_tostado, vinagrete_caju_pimenta]
+    conflicting_blocks: [pure_jerimum]
+    ingredients:
+      - {ingredient: milho, technique: cocção + processar TM7, function: [base, sweetness, creamy], intensity: 7}
+      - {ingredient: manteiga de garrafa, technique: emulsão final, function: [fat], intensity: 4}
+    sensory_profile: {sweetness: 6, fat: 5, aroma: 4, umami: 2}
+    texture_profile: {creamy: 8}
+
+  - id: glace_aparas_manteiga_garrafa
+    name: Glace de aparas com manteiga de garrafa
+    description: Ligação umami entre peixe e base; redução curta emulsionada.
+    regional_availability: 9
+    culinary_roles: [sauce]
+    forms: [glace, caldo curto, emulsão]
+    compatible_protagonists: [sirigado, pargo, cioba, camarão]
+    compatible_blocks: [sirigado_brasa_leve, creme_milho_tm7]
+    conflicting_blocks: [coco_tostado_acido]
+    ingredients:
+      - {ingredient: sirigado, technique: fundo de aparas + redução, function: [umami, sauce], intensity: 7}
+      - {ingredient: manteiga de garrafa, technique: montar fora do fogo forte, function: [fat, sauce], intensity: 5}
+      - {ingredient: limão-galego, technique: acidez final, function: [acidity], intensity: 3}
+    sensory_profile: {umami: 8, fat: 6, saltiness: 5, acidity: 4, aroma: 5}
+    texture_profile: {creamy: 4, juicy: 3}
+
+  - id: coco_tostado_acido
+    name: Coco tostado acidulado
+    description: Família coco + cítrico + pimenta-de-cheiro; vira molho, creme ou crocante.
+    regional_availability: 9
+    culinary_roles: [sauce, acidity, texture]
+    forms: [molho de coco acidulado, creme de coco, coco tostado crocante, emulsão coco-limão, leite de coco reduzido]
+    compatible_protagonists: [sirigado, camarão, lagosta, jerimum, milho]
+    compatible_blocks: [creme_milho_tm7, pure_macaxeira, aroma_pimenta_cheiro_cebolinha]
+    conflicting_blocks: [glace_aparas_manteiga_garrafa, nata_manteiga_garrafa]
+    ingredients:
+      - {ingredient: leite de coco, technique: redução, function: [fat, sauce], intensity: 7}
+      - {ingredient: coco fresco, technique: tostagem, function: [texture, aroma], intensity: 5}
+      - {ingredient: limão-galego, technique: finalização, function: [acidity, freshness], intensity: 7}
+      - {ingredient: pimenta-de-cheiro, technique: infusão breve, function: [aroma, heat], intensity: 4}
+      - {ingredient: coentro, technique: passe, function: [aroma, freshness], intensity: 5}
+    sensory_profile: {acidity: 7, saltiness: 2, sweetness: 4, bitterness: 1, umami: 3, fat: 8, aroma: 8, heat: 3, freshness: 7}
+    texture_profile: {creamy: 6, crunchy: 5}
+
+  - id: vinagrete_caju_pimenta
+    name: Vinagrete de caju, limão-galego e pimenta-de-cheiro
+    description: Multifunção — acidez, frescor, aroma, umidade e leve crocância.
+    regional_availability: 10
+    culinary_roles: [acidity, aroma, texture]
+    forms: [vinagrete, salsa fresca, molho cru]
+    compatible_protagonists: [sirigado, camarão, lagosta, carne de sol, milho]
+    compatible_blocks: [sirigado_brasa_leve, creme_milho_tm7, carne_sol_grelhada]
+    conflicting_blocks: []
+    ingredients:
+      - {ingredient: caju, technique: brunoise / corte fino, function: [acidity, sweetness, texture], intensity: 6}
+      - {ingredient: limão-galego, technique: tempero a cru, function: [acidity, freshness], intensity: 7}
+      - {ingredient: pimenta-de-cheiro, technique: a cru, function: [aroma, heat], intensity: 4}
+      - {ingredient: coentro, technique: a cru, function: [aroma, freshness], intensity: 6}
+      - {ingredient: cebola, technique: concassé fino, function: [texture, aroma], intensity: 3}
+    sensory_profile: {acidity: 8, sweetness: 4, aroma: 8, freshness: 9, heat: 3, fat: 1}
+    texture_profile: {crunchy: 5, juicy: 4}
+
+  - id: farofa_flocao_castanha
+    name: Farofa crocante de flocão e castanha-de-caju
+    description: Contraste seco/tostado; absorve molho sem virar pasta.
+    regional_availability: 10
+    culinary_roles: [texture]
+    forms: [farofa seca, crumble, polvilho tostado]
+    compatible_protagonists: [sirigado, camarão, carne de sol, porco]
+    compatible_blocks: [creme_milho_tm7, glace_aparas_manteiga_garrafa, pure_macaxeira]
+    conflicting_blocks: []
+    ingredients:
+      - {ingredient: flocão, technique: tostagem, function: [texture, crispy], intensity: 7}
+      - {ingredient: castanha-de-caju, technique: tostagem + picar, function: [texture, fat], intensity: 6}
+      - {ingredient: manteiga de garrafa, technique: suado leve, function: [fat, aroma], intensity: 3}
+    sensory_profile: {fat: 4, sweetness: 2, aroma: 5, saltiness: 2}
+    texture_profile: {crunchy: 8, crispy: 7}
+
+  - id: carne_sol_grelhada
+    name: Carne de sol grelhada
+    description: Protagonista salgado; exige acidez e cuidado com orçamento de sal.
+    regional_availability: 10
+    culinary_roles: [protagonist]
+    forms: [fatias na brasa, cubos grelhados]
+    compatible_protagonists: [carne de sol]
+    compatible_blocks: [pure_macaxeira, vinagrete_umbu_caju, coalho_brasa, farofa_castanha]
+    conflicting_blocks: []
+    ingredients:
+      - {ingredient: carne de sol, technique: dessalga + grelha, function: [protagonist, saltiness, umami], intensity: 8}
+      - {ingredient: manteiga de garrafa, technique: finalização, function: [fat], intensity: 3}
+    sensory_profile: {saltiness: 8, umami: 7, fat: 4, aroma: 5}
+    texture_profile: {firm: 7, chewy: 4}
+
+  - id: pure_macaxeira
+    name: Purê de macaxeira
+    description: Base amilácea neutra-doce; sustenta proteínas intensas.
+    regional_availability: 10
+    culinary_roles: [base]
+    forms: [purê liso, purê rústico]
+    compatible_protagonists: [carne de sol, porco, sirigado, galinha caipira]
+    compatible_blocks: [carne_sol_grelhada, gastrique_rapadura_tamarindo, farofa_farinha_dagua]
+    conflicting_blocks: [creme_milho_tm7]
+    ingredients:
+      - {ingredient: macaxeira, technique: cocção + processar, function: [base, creamy], intensity: 7}
+      - {ingredient: manteiga de garrafa, technique: emulsão, function: [fat], intensity: 4}
+    sensory_profile: {sweetness: 2, fat: 4, aroma: 2}
+    texture_profile: {creamy: 8}
+
+  - id: nata_manteiga_garrafa
+    name: Nata com manteiga de garrafa
+    description: Ligação gordurosa para carnes salgadas; exige fruta ácida.
+    regional_availability: 8
+    culinary_roles: [sauce]
+    forms: [molho curto, banho de nata]
+    compatible_protagonists: [carne de sol, galinha caipira]
+    compatible_blocks: [vinagrete_umbu_caju, pure_macaxeira]
+    conflicting_blocks: [coco_tostado_acido]
+    ingredients:
+      - {ingredient: nata, technique: redução leve, function: [fat, sauce], intensity: 7}
+      - {ingredient: manteiga de garrafa, technique: montar, function: [fat, aroma], intensity: 5}
+      - {ingredient: cebola, technique: suado, function: [aroma, sweetness], intensity: 3}
+    sensory_profile: {fat: 9, sweetness: 2, saltiness: 2, aroma: 4}
+    texture_profile: {creamy: 8}
+
+  - id: vinagrete_umbu_caju
+    name: Vinagrete de umbu e caju
+    description: Acidez de fruta do sertão; corta sal e gordura da carne de sol.
+    regional_availability: 8
+    culinary_roles: [acidity, aroma]
+    forms: [vinagrete, molho fresco]
+    compatible_protagonists: [carne de sol, queijo coalho, porco]
+    compatible_blocks: [carne_sol_grelhada, nata_manteiga_garrafa]
+    conflicting_blocks: []
+    ingredients:
+      - {ingredient: umbu, technique: a cru / brunoise, function: [acidity, freshness], intensity: 8}
+      - {ingredient: caju, technique: a cru, function: [acidity, sweetness], intensity: 5}
+      - {ingredient: coentro, technique: passe, function: [aroma], intensity: 5}
+    sensory_profile: {acidity: 8, sweetness: 4, freshness: 8, aroma: 6}
+    texture_profile: {juicy: 5, crunchy: 3}
+
+  - id: coalho_brasa
+    name: Queijo coalho na brasa
+    description: Pode ser protagonista, textura ou suporte salgado-lácteo.
+    regional_availability: 10
+    culinary_roles: [texture, protagonist]
+    forms: [bastão grelhado, fatia marcada]
+    compatible_protagonists: [carne de sol, milho, camarão]
+    compatible_blocks: [creme_milho_tm7, milho_tostado]
+    conflicting_blocks: []
+    ingredients:
+      - {ingredient: queijo coalho, technique: grelha, function: [texture, saltiness], intensity: 7}
+    sensory_profile: {saltiness: 6, fat: 5, umami: 4, aroma: 4}
+    texture_profile: {firm: 7, crispy: 4, chewy: 3}
+
+  - id: farofa_castanha
+    name: Farofa de castanha-de-caju
+    description: Textura seca com gordura de castanha.
+    regional_availability: 10
+    culinary_roles: [texture]
+    forms: [farofa]
+    compatible_protagonists: [carne de sol, sirigado, porco]
+    compatible_blocks: [pure_macaxeira, carne_sol_grelhada]
+    conflicting_blocks: []
+    ingredients:
+      - {ingredient: castanha-de-caju, technique: tostagem, function: [texture, fat], intensity: 7}
+      - {ingredient: farinha d'água, technique: tostagem, function: [texture], intensity: 5}
+      - {ingredient: manteiga de garrafa, technique: suado, function: [fat], intensity: 3}
+    sensory_profile: {fat: 5, aroma: 4, saltiness: 2}
+    texture_profile: {crunchy: 8}
+
+  - id: manteiga_garrafa_emulsionada
+    name: Emulsão de manteiga de garrafa
+    description: Ligação simples e aromática; boa com milho e peixes.
+    regional_availability: 10
+    culinary_roles: [sauce]
+    forms: [emulsão, beurre monté regional]
+    compatible_protagonists: [milho, sirigado, lagosta, camarão]
+    compatible_blocks: [creme_milho_tm7, aroma_pimenta_cheiro_cebolinha]
+    conflicting_blocks: []
+    ingredients:
+      - {ingredient: manteiga de garrafa, technique: emulsão, function: [fat, sauce], intensity: 8}
+      - {ingredient: limão-galego, technique: montar, function: [acidity], intensity: 4}
+    sensory_profile: {fat: 8, acidity: 4, aroma: 6, saltiness: 2}
+    texture_profile: {creamy: 6}
+
+  - id: aroma_pimenta_cheiro_cebolinha
+    name: Acabamento de pimenta-de-cheiro e cebolinha
+    description: Aroma e frescor no passe; picância controlada.
+    regional_availability: 10
+    culinary_roles: [aroma]
+    forms: [passe fresco, óleo aromático]
+    compatible_protagonists: [milho, camarão, sirigado, carne de sol]
+    compatible_blocks: [creme_milho_tm7, coalho_brasa]
+    conflicting_blocks: []
+    ingredients:
+      - {ingredient: pimenta-de-cheiro, technique: a cru / óleo, function: [aroma, heat], intensity: 5}
+      - {ingredient: cebolinha, technique: passe, function: [aroma, freshness], intensity: 6}
+    sensory_profile: {aroma: 9, heat: 4, freshness: 8}
+    texture_profile: {}
+
+  - id: milho_tostado
+    name: Milho tostado / chamuscado
+    description: Contraste dentro da família do milho — evita base só cremosa.
+    regional_availability: 10
+    culinary_roles: [texture]
+    forms: [grãos tostados, espiga na brasa]
+    compatible_protagonists: [milho, sirigado, camarão]
+    compatible_blocks: [creme_milho_tm7]
+    conflicting_blocks: []
+    ingredients:
+      - {ingredient: milho, technique: brasa / tostagem, function: [texture, sweetness, aroma], intensity: 6}
+    sensory_profile: {sweetness: 5, aroma: 6, bitterness: 1}
+    texture_profile: {crunchy: 6, juicy: 4}
+
+  - id: pure_jerimum
+    name: Purê de jerimum
+    description: Base doce-vegetal; pede acidez e textura seca.
+    regional_availability: 10
+    culinary_roles: [base, protagonist]
+    forms: [purê, creme]
+    compatible_protagonists: [jerimum, porco, camarão]
+    compatible_blocks: [molho_castanha_caju, acidez_vinagre_caju, castanha_tostada]
+    conflicting_blocks: [creme_milho_tm7]
+    ingredients:
+      - {ingredient: jerimum, technique: assar + processar, function: [base, sweetness], intensity: 7}
+      - {ingredient: manteiga de garrafa, technique: emulsão, function: [fat], intensity: 3}
+    sensory_profile: {sweetness: 7, fat: 3, aroma: 4}
+    texture_profile: {creamy: 8}
+
+  - id: molho_castanha_caju
+    name: Molho de castanha-de-caju
+    description: Ligação gordurosa vegetal; alternativa a laticínios.
+    regional_availability: 10
+    culinary_roles: [sauce]
+    forms: [molho, creme de castanha]
+    compatible_protagonists: [jerimum, sirigado, milho]
+    compatible_blocks: [pure_jerimum, acidez_vinagre_caju]
+    conflicting_blocks: []
+    ingredients:
+      - {ingredient: castanha-de-caju, technique: hidratar + processar, function: [fat, sauce, umami], intensity: 7}
+      - {ingredient: limão-galego, technique: acidez, function: [acidity], intensity: 4}
+    sensory_profile: {fat: 7, umami: 3, acidity: 3, sweetness: 2}
+    texture_profile: {creamy: 7}
+
+  - id: acidez_vinagre_caju
+    name: Ponto de vinagre de caju
+    description: Acidez fermentada limpa para bases doces.
+    regional_availability: 8
+    culinary_roles: [acidity]
+    forms: [redução leve, tempero final]
+    compatible_protagonists: [jerimum, porco, carne de sol]
+    compatible_blocks: [pure_jerimum, molho_castanha_caju]
+    conflicting_blocks: []
+    ingredients:
+      - {ingredient: vinagre de caju, technique: redução / finalização, function: [acidity], intensity: 7}
+    sensory_profile: {acidity: 8, aroma: 4, freshness: 3}
+    texture_profile: {}
+
+  - id: castanha_tostada
+    name: Castanha-de-caju tostada
+    description: Textura pura — crocante e oleaginosa.
+    regional_availability: 10
+    culinary_roles: [texture]
+    forms: [picada, farofa grossa]
+    compatible_protagonists: [jerimum, camarão, sirigado]
+    compatible_blocks: [pure_jerimum, molho_castanha_caju]
+    conflicting_blocks: []
+    ingredients:
+      - {ingredient: castanha-de-caju, technique: tostagem, function: [texture], intensity: 8}
+    sensory_profile: {fat: 6, aroma: 5}
+    texture_profile: {crunchy: 9}
+
+  - id: aroma_coentro_limao
+    name: Coentro e limão no passe
+    description: Frescor padrão nordestino no acabamento.
+    regional_availability: 10
+    culinary_roles: [aroma, acidity]
+    forms: [passe, raspas + folhas]
+    compatible_protagonists: [sirigado, camarão, porco, jerimum]
+    compatible_blocks: []
+    conflicting_blocks: []
+    ingredients:
+      - {ingredient: coentro, technique: passe, function: [aroma, freshness], intensity: 7}
+      - {ingredient: limão-galego, technique: raspas / gotas, function: [acidity, aroma], intensity: 5}
+    sensory_profile: {aroma: 9, freshness: 9, acidity: 5}
+    texture_profile: {}
+
+  - id: porco_brasa
+    name: Porco na brasa
+    description: Protagonista gorduroso; pede gastrique ácido-doce.
+    regional_availability: 9
+    culinary_roles: [protagonist]
+    forms: [costela, lombo, barriga]
+    compatible_protagonists: [porco]
+    compatible_blocks: [gastrique_rapadura_tamarindo, pure_macaxeira, farofa_farinha_dagua]
+    conflicting_blocks: []
+    ingredients:
+      - {ingredient: porco, technique: brasa / baixa temp + brasa, function: [protagonist, fat, umami], intensity: 8}
+    sensory_profile: {fat: 8, umami: 6, saltiness: 3, aroma: 6}
+    texture_profile: {juicy: 7, crispy: 4, tender: 6}
+
+  - id: gastrique_rapadura_tamarindo
+    name: Gastrique de rapadura e tamarindo
+    description: Doçura + acidez alta; equilibra gordura de porco.
+    regional_availability: 9
+    culinary_roles: [sauce, acidity]
+    forms: [gastrique, molho agrodoce]
+    compatible_protagonists: [porco, galinha caipira]
+    compatible_blocks: [porco_brasa, pure_macaxeira]
+    conflicting_blocks: [sirigado_brasa_leve]
+    ingredients:
+      - {ingredient: rapadura, technique: derreter / reduzir, function: [sweetness, sauce], intensity: 6}
+      - {ingredient: tamarindo, technique: redução, function: [acidity, sauce], intensity: 8}
+      - {ingredient: limão-taiti, technique: final, function: [acidity], intensity: 3}
+      - {ingredient: pimenta-de-cheiro, technique: infusão, function: [heat, aroma], intensity: 4}
+    sensory_profile: {sweetness: 6, acidity: 8, fat: 1, heat: 4, aroma: 5}
+    texture_profile: {juicy: 4}
+
+  - id: farofa_farinha_dagua
+    name: Farofa de farinha d'água
+    description: Textura clássica seca para carnes e molhos.
+    regional_availability: 10
+    culinary_roles: [texture]
+    forms: [farofa seca, farofa úmida leve]
+    compatible_protagonists: [porco, carne de sol, galinha caipira]
+    compatible_blocks: [porco_brasa, gastrique_rapadura_tamarindo]
+    conflicting_blocks: []
+    ingredients:
+      - {ingredient: farinha d'água, technique: tostagem, function: [texture], intensity: 7}
+      - {ingredient: manteiga de garrafa, technique: suado, function: [fat], intensity: 3}
+      - {ingredient: cebola, technique: suado, function: [aroma], intensity: 3}
+    sensory_profile: {fat: 3, aroma: 4, saltiness: 2}
+    texture_profile: {crunchy: 7}

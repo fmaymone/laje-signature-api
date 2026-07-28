@@ -1,0 +1,303 @@
+bases:
+- id: creme_de_milho_verde
+  name: Creme de milho verde
+  ingredient_ids:
+  - milho_verde
+  - manteiga_de_garrafa
+  external_or_derived: []
+  textures:
+  - cremoso
+  - doce
+  primary_equipment: tm7
+  best_with:
+  - peixes
+  - crustáceos
+  - carnes
+  - vegetais
+- id: cuscuz_de_flocao
+  name: Cuscuz de flocão
+  ingredient_ids:
+  - flocao_de_milho
+  external_or_derived: []
+  textures:
+  - granulado
+  - leve
+  primary_equipment: cuscuzeira
+  best_with:
+  - peixes
+  - crustáceos
+  - carnes
+  - vegetais
+- id: xerem_cremoso
+  name: Xerém cremoso
+  ingredient_ids:
+  - xerem
+  external_or_derived:
+  - caldo
+  textures:
+  - cremoso
+  - granulado
+  primary_equipment: panela
+  best_with:
+  - peixes
+  - crustáceos
+  - carnes
+  - vegetais
+- id: pure_de_macaxeira
+  name: Purê de macaxeira
+  ingredient_ids:
+  - macaxeira
+  - manteiga_de_garrafa
+  external_or_derived: []
+  textures:
+  - cremoso
+  - denso
+  primary_equipment: tm7
+  best_with:
+  - peixes
+  - crustáceos
+  - carnes
+  - vegetais
+- id: macaxeira_assada_e_prensada
+  name: Macaxeira assada e prensada
+  ingredient_ids:
+  - macaxeira
+  - manteiga_de_garrafa
+  external_or_derived: []
+  textures:
+  - crocante
+  - macio
+  primary_equipment: forno
+  best_with:
+  - peixes
+  - crustáceos
+  - carnes
+  - vegetais
+- id: arroz_vermelho_soltinho
+  name: Arroz vermelho soltinho
+  ingredient_ids:
+  - arroz_vermelho
+  external_or_derived: []
+  textures:
+  - solto
+  - mastigável
+  primary_equipment: panela
+  best_with:
+  - peixes
+  - crustáceos
+  - carnes
+  - vegetais
+- id: arroz_de_coco
+  name: Arroz de coco
+  ingredient_ids:
+  - arroz_vermelho
+  - leite_de_coco
+  external_or_derived: []
+  textures:
+  - cremoso
+  - aromático
+  primary_equipment: panela
+  best_with:
+  - peixes
+  - crustáceos
+  - carnes
+  - vegetais
+- id: baiao_leve
+  name: Baião leve
+  ingredient_ids:
+  - feijao_verde
+  - arroz_vermelho
+  - queijo_coalho
+  external_or_derived: []
+  textures:
+  - cremoso
+  - granulado
+  primary_equipment: panela
+  best_with:
+  - peixes
+  - crustáceos
+  - carnes
+  - vegetais
+- id: feijao_verde_cremoso
+  name: Feijão-verde cremoso
+  ingredient_ids:
+  - feijao_verde
+  - nata
+  external_or_derived: []
+  textures:
+  - cremoso
+  - firme
+  primary_equipment: panela
+  best_with:
+  - peixes
+  - crustáceos
+  - carnes
+  - vegetais
+- id: pure_de_jerimum_assado
+  name: Purê de jerimum assado
+  ingredient_ids:
+  - jerimum
+  - manteiga_de_garrafa
+  external_or_derived: []
+  textures:
+  - cremoso
+  - doce
+  primary_equipment: tm7
+  best_with:
+  - peixes
+  - crustáceos
+  - carnes
+  - vegetais
+- id: pirao_de_peixe
+  name: Pirão de peixe
+  ingredient_ids:
+  - farinha_de_mandioca
+  external_or_derived:
+  - caldo_de_peixe
+  textures:
+  - cremoso
+  - elástico
+  primary_equipment: panela
+  best_with:
+  - peixes
+  - crustáceos
+  - carnes
+  - vegetais
+- id: pirao_de_queijo_coalho
+  name: Pirão de queijo coalho
+  ingredient_ids:
+  - queijo_coalho
+  - farinha_de_mandioca
+  external_or_derived:
+  - leite
+  textures:
+  - cremoso
+  - salgado
+  primary_equipment: panela
+  best_with:
+  - peixes
+  - crustáceos
+  - carnes
+  - vegetais
+- id: farofa_umida_de_cebola
+  name: Farofa úmida de cebola
+  ingredient_ids:
+  - farinha_de_mandioca
+  - cebola_roxa
+  - manteiga_de_garrafa
+  external_or_derived: []
+  textures:
+  - granulado
+  - úmido
+  primary_equipment: panela
+  best_with:
+  - peixes
+  - crustáceos
+  - carnes
+  - vegetais
+- id: tapioca_de_chapa
+  name: Tapioca de chapa
+  ingredient_ids:
+  - goma_de_tapioca
+  external_or_derived: []
+  textures:
+  - elástico
+  - tostado
+  primary_equipment: chapa
+  best_with:
+  - peixes
+  - crustáceos
+  - carnes
+  - vegetais
+- id: inhame_cremoso
+  name: Inhame cremoso
+  ingredient_ids:
+  - inhame
+  - nata
+  external_or_derived: []
+  textures:
+  - cremoso
+  - neutro
+  primary_equipment: tm7
+  best_with:
+  - peixes
+  - crustáceos
+  - carnes
+  - vegetais
+- id: batata_doce_na_brasa
+  name: Batata-doce na brasa
+  ingredient_ids:
+  - batata_doce
+  - manteiga_de_garrafa
+  external_or_derived: []
+  textures:
+  - caramelizado
+  - macio
+  primary_equipment: brasa
+  best_with:
+  - peixes
+  - crustáceos
+  - carnes
+  - vegetais
+- id: vatapa_leve_de_castanha
+  name: Vatapá leve de castanha
+  ingredient_ids:
+  - castanha_de_caju
+  - leite_de_coco
+  - farinha_de_mandioca
+  external_or_derived: []
+  textures:
+  - cremoso
+  - aromático
+  primary_equipment: tm7
+  best_with:
+  - peixes
+  - crustáceos
+  - carnes
+  - vegetais
+- id: arroz_de_cuxa_simplificado
+  name: Arroz de cuxá simplificado
+  ingredient_ids:
+  - arroz_vermelho
+  - vinagreira
+  - gergelim
+  external_or_derived: []
+  textures:
+  - solto
+  - ácido
+  primary_equipment: panela
+  best_with:
+  - peixes
+  - crustáceos
+  - carnes
+  - vegetais
+- id: creme_de_fava
+  name: Creme de fava
+  ingredient_ids:
+  - fava
+  - manteiga_de_garrafa
+  external_or_derived: []
+  textures:
+  - cremoso
+  - umami
+  primary_equipment: tm7
+  best_with:
+  - peixes
+  - crustáceos
+  - carnes
+  - vegetais
+- id: banana_da_terra_assada
+  name: Banana-da-terra assada
+  ingredient_ids:
+  - banana_da_terra
+  - manteiga_de_garrafa
+  external_or_derived: []
+  textures:
+  - caramelizado
+  - firme
+  primary_equipment: forno
+  best_with:
+  - peixes
+  - crustáceos
+  - carnes
+  - vegetais

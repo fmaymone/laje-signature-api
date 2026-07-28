@@ -1,0 +1,83 @@
+families:
+  - id: mar_coco_citrico
+    name: Mar, coco e cítricos
+    core: [peixe, camarão, lagosta, coco, limão, coentro, pimenta-de-cheiro]
+    supports: [milho, macaxeira, jerimum, castanha-de-caju]
+    sensory_direction:
+      fat: high
+      acidity: medium_high
+      aroma: high
+      umami: medium
+    preferred_block_ids:
+      - sirigado_brasa_leve
+      - creme_milho_tm7
+      - glace_aparas_manteiga_garrafa
+      - coco_tostado_acido
+      - vinagrete_caju_pimenta
+      - farofa_flocao_castanha
+
+  - id: carne_sol_nata_fruta_acida
+    name: Carne de sol, nata e acidez de fruta
+    core: [carne de sol, nata, manteiga de garrafa, cebola, caju, umbu, seriguela]
+    supports: [macaxeira, jerimum, feijão-verde, queijo coalho]
+    sensory_direction:
+      saltiness: high
+      fat: high
+      acidity: high
+      sweetness: low_medium
+    preferred_block_ids:
+      - carne_sol_grelhada
+      - pure_macaxeira
+      - nata_manteiga_garrafa
+      - vinagrete_umbu_caju
+      - coalho_brasa
+      - farofa_castanha
+
+  - id: milho_coalho_pimenta
+    name: Milho, queijo coalho e pimenta-de-cheiro
+    core: [milho, queijo coalho, manteiga de garrafa, pimenta-de-cheiro, cebolinha]
+    supports: [camarão, carne de sol, jerimum, feijão-verde]
+    sensory_direction:
+      sweetness: medium
+      saltiness: medium
+      fat: medium_high
+      aroma: high
+    preferred_block_ids:
+      - creme_milho_tm7
+      - coalho_brasa
+      - manteiga_garrafa_emulsionada
+      - aroma_pimenta_cheiro_cebolinha
+      - milho_tostado
+
+  - id: jerimum_castanha_fermentado
+    name: Jerimum, castanha e fermentado
+    core: [jerimum, castanha-de-caju, manteiga de garrafa, pimenta]
+    supports: [vinagre de caju, limão-galego, tomate, umbu]
+    acid_options: [vinagre de caju, limão-galego, tomate fermentado, umbu]
+    sensory_direction:
+      sweetness: medium_high
+      fat: medium
+      acidity: medium_high
+      texture: contrasting
+    preferred_block_ids:
+      - pure_jerimum
+      - molho_castanha_caju
+      - acidez_vinagre_caju
+      - castanha_tostada
+      - aroma_coentro_limao
+
+  - id: porco_rapadura_fruta_acida
+    name: Porco, rapadura e fruta ácida
+    core: [porco, rapadura, tamarindo, caju, limão, pimenta]
+    supports: [macaxeira, feijão-verde, jerimum, farinha d'água]
+    sensory_direction:
+      fat: high
+      sweetness: medium
+      acidity: high
+      heat: medium
+    preferred_block_ids:
+      - porco_brasa
+      - pure_macaxeira
+      - gastrique_rapadura_tamarindo
+      - farofa_farinha_dagua
+      - aroma_coentro_limao

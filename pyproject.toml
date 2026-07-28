@@ -1,0 +1,28 @@
+[project]
+name = "laje-signature"
+version = "0.1.0"
+description = "Alta culinária nordestina do restaurante Laje — composição por blocos de sabor com LangGraph."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi>=0.115",
+    "langchain>=1.0",
+    "langchain-openai>=1.0",
+    "langchain-text-splitters>=1.0",
+    "langgraph>=1.0",
+    "numpy>=2.0",
+    "pydantic>=2.0",
+    "python-dotenv>=1.0",
+    "pyyaml>=6.0",
+    "uvicorn[standard]>=0.32",
+]
+
+[dependency-groups]
+dev = [
+    "httpx>=0.27",
+    "pytest>=8.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

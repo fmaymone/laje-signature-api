@@ -1,0 +1,2624 @@
+ingredients:
+- id: sirigado
+  name: Sirigado
+  aliases:
+  - badejo-preto
+  category: peixe
+  regional_status: costeiro_tradicional
+  availability_zones:
+  - litoral
+  culinary_roles:
+  - protagonista
+  - caldo
+  - brasa
+  sensory_profile:
+    acidity: 1
+    saltiness: 2
+    sweetness: 1
+    bitterness: 1
+    umami: 8
+    fat: 3
+    heat: 0
+    aroma: 6
+    freshness: 5
+  recommended_techniques: &id001
+  - brasa
+  - grelha
+  - forno
+  - cura_leve
+  - caldo_com_aparas
+  seasonality_ref: sirigado
+  notes: null
+- id: cioba
+  name: Cioba
+  aliases: []
+  category: peixe
+  regional_status: costeiro_tradicional
+  availability_zones:
+  - litoral
+  culinary_roles:
+  - protagonista
+  - cru
+  - brasa
+  sensory_profile:
+    acidity: 1
+    saltiness: 2
+    sweetness: 1
+    bitterness: 1
+    umami: 7
+    fat: 2
+    heat: 0
+    aroma: 5
+    freshness: 7
+  recommended_techniques: *id001
+  seasonality_ref: cioba
+  notes: null
+- id: pargo
+  name: Pargo
+  aliases: []
+  category: peixe
+  regional_status: costeiro_tradicional
+  availability_zones:
+  - litoral
+  - meio-norte
+  culinary_roles:
+  - protagonista
+  - caldo
+  - brasa
+  sensory_profile:
+    acidity: 1
+    saltiness: 2
+    sweetness: 1
+    bitterness: 1
+    umami: 7
+    fat: 2
+    heat: 0
+    aroma: 5
+    freshness: 5
+  recommended_techniques: *id001
+  seasonality_ref: pargo
+  notes: null
+- id: cavala
+  name: Cavala
+  aliases: []
+  category: peixe
+  regional_status: costeiro_tradicional
+  availability_zones:
+  - litoral
+  culinary_roles:
+  - protagonista
+  - cura
+  - brasa
+  sensory_profile:
+    acidity: 1
+    saltiness: 2
+    sweetness: 1
+    bitterness: 1
+    umami: 8
+    fat: 7
+    heat: 0
+    aroma: 7
+    freshness: 5
+  recommended_techniques: *id001
+  seasonality_ref: cavala
+  notes: null
+- id: serra
+  name: Serra
+  aliases:
+  - cavala-serra
+  category: peixe
+  regional_status: costeiro_tradicional
+  availability_zones:
+  - litoral
+  culinary_roles:
+  - protagonista
+  - cura
+  - brasa
+  sensory_profile:
+    acidity: 1
+    saltiness: 2
+    sweetness: 1
+    bitterness: 1
+    umami: 8
+    fat: 6
+    heat: 0
+    aroma: 5
+    freshness: 5
+  recommended_techniques: *id001
+  seasonality_ref: serra
+  notes: null
+- id: camurim
+  name: Camurim
+  aliases:
+  - robalo
+  category: peixe
+  regional_status: costeiro_tradicional
+  availability_zones:
+  - litoral
+  - estuarios
+  culinary_roles:
+  - protagonista
+  - caldo
+  - brasa
+  sensory_profile:
+    acidity: 1
+    saltiness: 2
+    sweetness: 1
+    bitterness: 1
+    umami: 7
+    fat: 3
+    heat: 0
+    aroma: 5
+    freshness: 7
+  recommended_techniques: *id001
+  seasonality_ref: camurim
+  notes: null
+- id: pescada_amarela
+  name: Pescada-amarela
+  aliases: []
+  category: peixe
+  regional_status: costeiro_tradicional
+  availability_zones:
+  - litoral
+  - meio-norte
+  culinary_roles:
+  - protagonista
+  - caldo
+  - fritura
+  sensory_profile:
+    acidity: 1
+    saltiness: 2
+    sweetness: 1
+    bitterness: 1
+    umami: 7
+    fat: 2
+    heat: 0
+    aroma: 5
+    freshness: 5
+  recommended_techniques: *id001
+  seasonality_ref: pescada_amarela
+  notes: null
+- id: ariaco
+  name: Ariacó
+  aliases: []
+  category: peixe
+  regional_status: costeiro_tradicional
+  availability_zones:
+  - litoral
+  culinary_roles:
+  - protagonista
+  - caldo
+  - brasa
+  sensory_profile:
+    acidity: 1
+    saltiness: 2
+    sweetness: 1
+    bitterness: 1
+    umami: 7
+    fat: 2
+    heat: 0
+    aroma: 5
+    freshness: 5
+  recommended_techniques: *id001
+  seasonality_ref: ariaco
+  notes: null
+- id: guaiuba
+  name: Guaiúba
+  aliases: []
+  category: peixe
+  regional_status: costeiro_tradicional
+  availability_zones:
+  - litoral
+  culinary_roles:
+  - protagonista
+  - caldo
+  - brasa
+  sensory_profile:
+    acidity: 1
+    saltiness: 2
+    sweetness: 1
+    bitterness: 1
+    umami: 7
+    fat: 2
+    heat: 0
+    aroma: 5
+    freshness: 5
+  recommended_techniques: *id001
+  seasonality_ref: guaiuba
+  notes: null
+- id: xareu
+  name: Xaréu
+  aliases: []
+  category: peixe
+  regional_status: costeiro_tradicional
+  availability_zones:
+  - litoral
+  culinary_roles:
+  - protagonista
+  - cura
+  - brasa
+  sensory_profile:
+    acidity: 1
+    saltiness: 2
+    sweetness: 1
+    bitterness: 1
+    umami: 8
+    fat: 5
+    heat: 0
+    aroma: 7
+    freshness: 5
+  recommended_techniques: *id001
+  seasonality_ref: xareu
+  notes: null
+- id: peixe_voador
+  name: Peixe-voador
+  aliases: []
+  category: peixe
+  regional_status: costeiro_tradicional
+  availability_zones:
+  - litoral
+  - ilhas
+  culinary_roles:
+  - protagonista
+  - fritura
+  - caldo
+  sensory_profile:
+    acidity: 1
+    saltiness: 2
+    sweetness: 1
+    bitterness: 1
+    umami: 7
+    fat: 3
+    heat: 0
+    aroma: 5
+    freshness: 5
+  recommended_techniques: *id001
+  seasonality_ref: peixe_voador
+  notes: null
+- id: tilapia
+  name: Tilápia
+  aliases: []
+  category: peixe
+  regional_status: aquicultura_regional
+  availability_zones:
+  - sertão
+  - agreste
+  - litoral
+  culinary_roles:
+  - protagonista
+  - fritura
+  - brasa
+  sensory_profile:
+    acidity: 1
+    saltiness: 2
+    sweetness: 1
+    bitterness: 1
+    umami: 5
+    fat: 2
+    heat: 0
+    aroma: 4
+    freshness: 5
+  recommended_techniques: *id001
+  seasonality_ref: tilapia
+  notes: null
+- id: camarao_branco
+  name: Camarão-branco
+  aliases: []
+  category: crustaceo
+  regional_status: costeiro_tradicional
+  availability_zones:
+  - litoral
+  - estuarios
+  culinary_roles:
+  - protagonista
+  - caldo
+  - salteado
+  sensory_profile:
+    acidity: 1
+    saltiness: 3
+    sweetness: 4
+    bitterness: 1
+    umami: 8
+    fat: 2
+    heat: 0
+    aroma: 6
+    freshness: 5
+  recommended_techniques: &id002
+  - saltear
+  - brasa
+  - caldo_com_cascas
+  - cozimento_curto
+  seasonality_ref: camarao_branco
+  notes: null
+- id: camarao_rosa
+  name: Camarão-rosa
+  aliases: []
+  category: crustaceo
+  regional_status: costeiro_tradicional
+  availability_zones:
+  - litoral
+  - estuarios
+  culinary_roles:
+  - protagonista
+  - caldo
+  - salteado
+  sensory_profile:
+    acidity: 1
+    saltiness: 3
+    sweetness: 4
+    bitterness: 1
+    umami: 9
+    fat: 2
+    heat: 0
+    aroma: 6
+    freshness: 5
+  recommended_techniques: *id002
+  seasonality_ref: camarao_rosa
+  notes: null
+- id: lagosta_vermelha
+  name: Lagosta-vermelha
+  aliases: []
+  category: crustaceo
+  regional_status: costeiro_emblematico
+  availability_zones:
+  - litoral
+  culinary_roles:
+  - protagonista
+  - caldo
+  - brasa
+  sensory_profile:
+    acidity: 1
+    saltiness: 3
+    sweetness: 4
+    bitterness: 1
+    umami: 9
+    fat: 2
+    heat: 0
+    aroma: 7
+    freshness: 5
+  recommended_techniques: *id002
+  seasonality_ref: lagosta_vermelha
+  notes: null
+- id: lagosta_verde
+  name: Lagosta-verde
+  aliases: []
+  category: crustaceo
+  regional_status: costeiro_emblematico
+  availability_zones:
+  - litoral
+  culinary_roles:
+  - protagonista
+  - caldo
+  - brasa
+  sensory_profile:
+    acidity: 1
+    saltiness: 3
+    sweetness: 4
+    bitterness: 1
+    umami: 9
+    fat: 2
+    heat: 0
+    aroma: 7
+    freshness: 5
+  recommended_techniques: *id002
+  seasonality_ref: lagosta_verde
+  notes: null
+- id: caranguejo_uca
+  name: Caranguejo-uçá
+  aliases: []
+  category: crustaceo
+  regional_status: manguezal_tradicional
+  availability_zones:
+  - manguezal
+  - litoral
+  culinary_roles:
+  - protagonista
+  - caldo
+  - recheio
+  sensory_profile:
+    acidity: 1
+    saltiness: 3
+    sweetness: 3
+    bitterness: 1
+    umami: 9
+    fat: 2
+    heat: 0
+    aroma: 8
+    freshness: 5
+  recommended_techniques: *id002
+  seasonality_ref: caranguejo_uca
+  notes: null
+- id: siri
+  name: Siri
+  aliases: []
+  category: crustaceo
+  regional_status: costeiro_tradicional
+  availability_zones:
+  - manguezal
+  - litoral
+  culinary_roles:
+  - protagonista
+  - caldo
+  - recheio
+  sensory_profile:
+    acidity: 1
+    saltiness: 3
+    sweetness: 3
+    bitterness: 1
+    umami: 8
+    fat: 2
+    heat: 0
+    aroma: 6
+    freshness: 5
+  recommended_techniques: *id002
+  seasonality_ref: siri
+  notes: null
+- id: sururu
+  name: Sururu
+  aliases: []
+  category: molusco
+  regional_status: costeiro_tradicional
+  availability_zones:
+  - manguezal
+  - litoral
+  culinary_roles:
+  - protagonista
+  - caldo
+  - ensopado
+  sensory_profile:
+    acidity: 1
+    saltiness: 4
+    sweetness: 1
+    bitterness: 1
+    umami: 9
+    fat: 2
+    heat: 0
+    aroma: 8
+    freshness: 5
+  recommended_techniques: &id003
+  - brasa
+  - ensopado
+  - cozimento_controlado
+  seasonality_ref: sururu
+  notes: null
+- id: ostra_do_mangue
+  name: Ostra-do-mangue
+  aliases: []
+  category: molusco
+  regional_status: manguezal_tradicional
+  availability_zones:
+  - manguezal
+  - litoral
+  culinary_roles:
+  - protagonista
+  - cru
+  - brasa
+  sensory_profile:
+    acidity: 1
+    saltiness: 5
+    sweetness: 1
+    bitterness: 1
+    umami: 9
+    fat: 2
+    heat: 0
+    aroma: 6
+    freshness: 8
+  recommended_techniques: *id003
+  seasonality_ref: ostra_do_mangue
+  notes: null
+- id: polvo
+  name: Polvo
+  aliases: []
+  category: molusco
+  regional_status: costeiro_disponivel
+  availability_zones:
+  - litoral
+  culinary_roles:
+  - protagonista
+  - brasa
+  - ensopado
+  sensory_profile:
+    acidity: 1
+    saltiness: 3
+    sweetness: 1
+    bitterness: 1
+    umami: 8
+    fat: 1
+    heat: 0
+    aroma: 6
+    freshness: 5
+  recommended_techniques: *id003
+  seasonality_ref: polvo
+  notes: null
+- id: lula
+  name: Lula
+  aliases: []
+  category: molusco
+  regional_status: costeiro_disponivel
+  availability_zones:
+  - litoral
+  culinary_roles:
+  - protagonista
+  - fritura
+  - brasa
+  sensory_profile:
+    acidity: 1
+    saltiness: 3
+    sweetness: 1
+    bitterness: 1
+    umami: 7
+    fat: 1
+    heat: 0
+    aroma: 6
+    freshness: 5
+  recommended_techniques: *id003
+  seasonality_ref: lula
+  notes: null
+- id: carne_de_sol
+  name: Carne-de-sol
+  aliases: []
+  category: carne
+  regional_status: sertanejo_emblematico
+  availability_zones:
+  - sertão
+  - agreste
+  - litoral
+  culinary_roles:
+  - protagonista
+  - recheio
+  - caldo
+  sensory_profile:
+    acidity: 1
+    saltiness: 8
+    sweetness: 1
+    bitterness: 1
+    umami: 9
+    fat: 5
+    heat: 0
+    aroma: 6
+    freshness: 2
+  recommended_techniques: &id004
+  - brasa
+  - panela
+  - baixa_temperatura
+  - desfiar
+  seasonality_ref: carne_de_sol
+  notes: null
+- id: charque
+  name: Charque
+  aliases: []
+  category: carne
+  regional_status: sertanejo_tradicional
+  availability_zones:
+  - sertão
+  - agreste
+  - litoral
+  culinary_roles:
+  - protagonista
+  - recheio
+  - caldo
+  sensory_profile:
+    acidity: 1
+    saltiness: 9
+    sweetness: 1
+    bitterness: 1
+    umami: 9
+    fat: 4
+    heat: 0
+    aroma: 6
+    freshness: 2
+  recommended_techniques: *id004
+  seasonality_ref: charque
+  notes: null
+- id: bode
+  name: Bode
+  aliases: []
+  category: carne
+  regional_status: sertanejo_emblematico
+  availability_zones:
+  - sertão
+  - agreste
+  culinary_roles:
+  - protagonista
+  - ensopado
+  - brasa
+  sensory_profile:
+    acidity: 1
+    saltiness: 3
+    sweetness: 1
+    bitterness: 1
+    umami: 9
+    fat: 5
+    heat: 0
+    aroma: 8
+    freshness: 2
+  recommended_techniques: *id004
+  seasonality_ref: bode
+  notes: null
+- id: cordeiro
+  name: Cordeiro
+  aliases: []
+  category: carne
+  regional_status: sertanejo_tradicional
+  availability_zones:
+  - sertão
+  - agreste
+  culinary_roles:
+  - protagonista
+  - ensopado
+  - brasa
+  sensory_profile:
+    acidity: 1
+    saltiness: 3
+    sweetness: 1
+    bitterness: 1
+    umami: 8
+    fat: 6
+    heat: 0
+    aroma: 7
+    freshness: 2
+  recommended_techniques: *id004
+  seasonality_ref: cordeiro
+  notes: null
+- id: porco
+  name: Porco
+  aliases: []
+  category: carne
+  regional_status: regional_disponivel
+  availability_zones:
+  - sertão
+  - agreste
+  - litoral
+  culinary_roles:
+  - protagonista
+  - brasa
+  - confit
+  sensory_profile:
+    acidity: 1
+    saltiness: 3
+    sweetness: 1
+    bitterness: 1
+    umami: 8
+    fat: 8
+    heat: 0
+    aroma: 6
+    freshness: 2
+  recommended_techniques: *id004
+  seasonality_ref: porco
+  notes: null
+- id: galinha_caipira
+  name: Galinha-caipira
+  aliases: []
+  category: carne
+  regional_status: sertanejo_tradicional
+  availability_zones:
+  - sertão
+  - agreste
+  - litoral
+  culinary_roles:
+  - protagonista
+  - caldo
+  - ensopado
+  sensory_profile:
+    acidity: 1
+    saltiness: 3
+    sweetness: 1
+    bitterness: 1
+    umami: 8
+    fat: 5
+    heat: 0
+    aroma: 7
+    freshness: 2
+  recommended_techniques: *id004
+  seasonality_ref: galinha_caipira
+  notes: null
+- id: toucinho
+  name: Toucinho
+  aliases: []
+  category: carne
+  regional_status: sertanejo_tradicional
+  availability_zones:
+  - sertão
+  - agreste
+  culinary_roles:
+  - gordura
+  - textura
+  - tempero
+  sensory_profile:
+    acidity: 1
+    saltiness: 5
+    sweetness: 1
+    bitterness: 1
+    umami: 7
+    fat: 10
+    heat: 0
+    aroma: 6
+    freshness: 2
+  recommended_techniques: *id004
+  seasonality_ref: toucinho
+  notes: null
+- id: manteiga_de_garrafa
+  name: Manteiga-de-garrafa
+  aliases: []
+  category: gordura
+  regional_status: sertanejo_emblematico
+  availability_zones:
+  - sertão
+  - agreste
+  - litoral
+  culinary_roles:
+  - gordura
+  - molho
+  - finalização
+  sensory_profile:
+    acidity: 0
+    saltiness: 1
+    sweetness: 0
+    bitterness: 0
+    umami: 3
+    fat: 10
+    heat: 0
+    aroma: 8
+    freshness: 0
+  recommended_techniques: &id006
+  - emulsionar
+  - finalizar
+  - infusionar
+  seasonality_ref: manteiga_de_garrafa
+  notes: null
+- id: nata
+  name: Nata
+  aliases: []
+  category: laticinio
+  regional_status: sertanejo_tradicional
+  availability_zones:
+  - sertão
+  - agreste
+  - litoral
+  culinary_roles:
+  - molho
+  - base
+  - sobremesa
+  sensory_profile:
+    acidity: 2
+    saltiness: 5
+    sweetness: 3
+    bitterness: 1
+    umami: 6
+    fat: 9
+    heat: 0
+    aroma: 5
+    freshness: 1
+  recommended_techniques: &id005
+  - gratinar
+  - emulsionar
+  - grelhar
+  seasonality_ref: nata
+  notes: null
+- id: queijo_coalho
+  name: Queijo-coalho
+  aliases: []
+  category: laticinio
+  regional_status: sertanejo_emblematico
+  availability_zones:
+  - sertão
+  - agreste
+  - litoral
+  culinary_roles:
+  - protagonista
+  - textura
+  - base
+  sensory_profile:
+    acidity: 2
+    saltiness: 7
+    sweetness: 2
+    bitterness: 1
+    umami: 7
+    fat: 7
+    heat: 0
+    aroma: 5
+    freshness: 1
+  recommended_techniques: *id005
+  seasonality_ref: queijo_coalho
+  notes: null
+- id: queijo_manteiga
+  name: Queijo-manteiga
+  aliases: []
+  category: laticinio
+  regional_status: sertanejo_tradicional
+  availability_zones:
+  - sertão
+  - agreste
+  culinary_roles:
+  - molho
+  - base
+  - finalização
+  sensory_profile:
+    acidity: 2
+    saltiness: 6
+    sweetness: 2
+    bitterness: 1
+    umami: 7
+    fat: 9
+    heat: 0
+    aroma: 5
+    freshness: 1
+  recommended_techniques: *id005
+  seasonality_ref: queijo_manteiga
+  notes: null
+- id: requeijao_do_sertao
+  name: Requeijão-do-sertão
+  aliases: []
+  category: laticinio
+  regional_status: sertanejo_tradicional
+  availability_zones:
+  - sertão
+  - agreste
+  culinary_roles:
+  - molho
+  - base
+  - finalização
+  sensory_profile:
+    acidity: 2
+    saltiness: 6
+    sweetness: 2
+    bitterness: 1
+    umami: 7
+    fat: 9
+    heat: 0
+    aroma: 5
+    freshness: 1
+  recommended_techniques: *id005
+  seasonality_ref: requeijao_do_sertao
+  notes: null
+- id: leite_de_coco
+  name: Leite-de-coco
+  aliases: []
+  category: gordura
+  regional_status: litoraneo_tradicional
+  availability_zones:
+  - litoral
+  - mata
+  - agreste
+  culinary_roles:
+  - molho
+  - base
+  - emulsão
+  sensory_profile:
+    acidity: 0
+    saltiness: 1
+    sweetness: 4
+    bitterness: 0
+    umami: 2
+    fat: 9
+    heat: 0
+    aroma: 8
+    freshness: 0
+  recommended_techniques: *id006
+  seasonality_ref: leite_de_coco
+  notes: null
+- id: coco_fresco
+  name: Coco-fresco
+  aliases: []
+  category: fruta_doce
+  regional_status: litoraneo_tradicional
+  availability_zones:
+  - litoral
+  - mata
+  culinary_roles:
+  - textura
+  - molho
+  - aroma
+  sensory_profile:
+    acidity: 3
+    saltiness: 1
+    sweetness: 5
+    bitterness: 1
+    umami: 1
+    fat: 8
+    heat: 0
+    aroma: 8
+    freshness: 7
+  recommended_techniques: &id011
+  - assar
+  - grelhar
+  - reduzir
+  - fermentar
+  seasonality_ref: coco_fresco
+  notes: null
+- id: milho_verde
+  name: Milho-verde
+  aliases: []
+  category: cereal
+  regional_status: regional_emblematico
+  availability_zones:
+  - sertão
+  - agreste
+  - litoral
+  culinary_roles:
+  - base
+  - textura
+  - doçura
+  sensory_profile:
+    acidity: 1
+    saltiness: 1
+    sweetness: 7
+    bitterness: 1
+    umami: 2
+    fat: 2
+    heat: 0
+    aroma: 4
+    freshness: 6
+  recommended_techniques: &id007
+  - hidratar
+  - tostar
+  - cozinhar
+  - fermentar
+  seasonality_ref: milho_verde
+  notes: null
+- id: flocao_de_milho
+  name: Flocão-de-milho
+  aliases: []
+  category: cereal
+  regional_status: regional_emblematico
+  availability_zones:
+  - sertão
+  - agreste
+  - litoral
+  culinary_roles:
+  - base
+  - textura
+  - empanado
+  sensory_profile:
+    acidity: 1
+    saltiness: 1
+    sweetness: 4
+    bitterness: 1
+    umami: 2
+    fat: 2
+    heat: 0
+    aroma: 5
+    freshness: 2
+  recommended_techniques: *id007
+  seasonality_ref: flocao_de_milho
+  notes: null
+- id: xerem
+  name: Xerém
+  aliases: []
+  category: cereal
+  regional_status: regional_tradicional
+  availability_zones:
+  - sertão
+  - agreste
+  - litoral
+  culinary_roles:
+  - base
+  - textura
+  - espessante
+  sensory_profile:
+    acidity: 1
+    saltiness: 1
+    sweetness: 4
+    bitterness: 1
+    umami: 2
+    fat: 2
+    heat: 0
+    aroma: 5
+    freshness: 2
+  recommended_techniques: *id007
+  seasonality_ref: xerem
+  notes: null
+- id: macaxeira
+  name: Macaxeira
+  aliases:
+  - mandioca-mansa
+  - aipim
+  category: raiz_tuberculo
+  regional_status: regional_emblematico
+  availability_zones:
+  - sertão
+  - agreste
+  - litoral
+  - mata
+  culinary_roles:
+  - base
+  - textura
+  - massa
+  sensory_profile:
+    acidity: 1
+    saltiness: 1
+    sweetness: 5
+    bitterness: 1
+    umami: 2
+    fat: 1
+    heat: 0
+    aroma: 3
+    freshness: 2
+  recommended_techniques: &id009
+  - cozinhar
+  - assar
+  - fritar
+  - processar
+  seasonality_ref: macaxeira
+  notes: null
+- id: farinha_de_mandioca
+  name: Farinha-de-mandioca
+  aliases: []
+  category: cereal
+  regional_status: regional_emblematico
+  availability_zones:
+  - sertão
+  - agreste
+  - litoral
+  - mata
+  culinary_roles:
+  - base
+  - textura
+  - espessante
+  sensory_profile:
+    acidity: 1
+    saltiness: 1
+    sweetness: 2
+    bitterness: 1
+    umami: 2
+    fat: 2
+    heat: 0
+    aroma: 5
+    freshness: 2
+  recommended_techniques: *id007
+  seasonality_ref: farinha_de_mandioca
+  notes: null
+- id: farinha_d_agua
+  name: Farinha-d'água
+  aliases: []
+  category: cereal
+  regional_status: meio_norte_tradicional
+  availability_zones:
+  - meio-norte
+  - litoral
+  culinary_roles:
+  - base
+  - textura
+  - espessante
+  sensory_profile:
+    acidity: 1
+    saltiness: 1
+    sweetness: 2
+    bitterness: 1
+    umami: 2
+    fat: 2
+    heat: 0
+    aroma: 6
+    freshness: 2
+  recommended_techniques: *id007
+  seasonality_ref: farinha_d_agua
+  notes: null
+- id: goma_de_tapioca
+  name: Goma-de-tapioca
+  aliases: []
+  category: cereal
+  regional_status: regional_emblematico
+  availability_zones:
+  - sertão
+  - agreste
+  - litoral
+  - mata
+  culinary_roles:
+  - base
+  - textura
+  - massa
+  sensory_profile:
+    acidity: 1
+    saltiness: 1
+    sweetness: 2
+    bitterness: 1
+    umami: 2
+    fat: 2
+    heat: 0
+    aroma: 2
+    freshness: 2
+  recommended_techniques: *id007
+  seasonality_ref: goma_de_tapioca
+  notes: null
+- id: puba
+  name: Puba
+  aliases: []
+  category: cereal
+  regional_status: regional_tradicional
+  availability_zones:
+  - mata
+  - agreste
+  - litoral
+  culinary_roles:
+  - base
+  - massa
+  - fermentado
+  sensory_profile:
+    acidity: 3
+    saltiness: 1
+    sweetness: 5
+    bitterness: 1
+    umami: 2
+    fat: 2
+    heat: 0
+    aroma: 6
+    freshness: 2
+  recommended_techniques: *id007
+  seasonality_ref: puba
+  notes: null
+- id: feijao_verde
+  name: Feijão-verde
+  aliases: []
+  category: leguminosa
+  regional_status: regional_emblematico
+  availability_zones:
+  - sertão
+  - agreste
+  - litoral
+  culinary_roles:
+  - base
+  - textura
+  - protagonista_vegetal
+  sensory_profile:
+    acidity: 1
+    saltiness: 1
+    sweetness: 3
+    bitterness: 1
+    umami: 6
+    fat: 1
+    heat: 0
+    aroma: 4
+    freshness: 6
+  recommended_techniques: &id008
+  - cozinhar
+  - refogar
+  - fermentar
+  seasonality_ref: feijao_verde
+  notes: null
+- id: feijao_de_corda
+  name: Feijão-de-corda
+  aliases: []
+  category: leguminosa
+  regional_status: regional_emblematico
+  availability_zones:
+  - sertão
+  - agreste
+  - litoral
+  culinary_roles:
+  - base
+  - textura
+  - protagonista_vegetal
+  sensory_profile:
+    acidity: 1
+    saltiness: 1
+    sweetness: 3
+    bitterness: 1
+    umami: 6
+    fat: 1
+    heat: 0
+    aroma: 4
+    freshness: 3
+  recommended_techniques: *id008
+  seasonality_ref: feijao_de_corda
+  notes: null
+- id: feijao_fradinho
+  name: Feijão-fradinho
+  aliases: []
+  category: leguminosa
+  regional_status: regional_emblematico
+  availability_zones:
+  - litoral
+  - mata
+  - agreste
+  culinary_roles:
+  - base
+  - massa
+  - protagonista_vegetal
+  sensory_profile:
+    acidity: 1
+    saltiness: 1
+    sweetness: 3
+    bitterness: 1
+    umami: 6
+    fat: 1
+    heat: 0
+    aroma: 4
+    freshness: 3
+  recommended_techniques: *id008
+  seasonality_ref: feijao_fradinho
+  notes: null
+- id: fava
+  name: Fava
+  aliases: []
+  category: leguminosa
+  regional_status: sertanejo_tradicional
+  availability_zones:
+  - sertão
+  - agreste
+  culinary_roles:
+  - base
+  - protagonista_vegetal
+  - caldo
+  sensory_profile:
+    acidity: 1
+    saltiness: 1
+    sweetness: 3
+    bitterness: 1
+    umami: 7
+    fat: 1
+    heat: 0
+    aroma: 4
+    freshness: 3
+  recommended_techniques: *id008
+  seasonality_ref: fava
+  notes: null
+- id: arroz_vermelho
+  name: Arroz-vermelho
+  aliases: []
+  category: cereal
+  regional_status: regional_tradicional
+  availability_zones:
+  - sertão
+  - agreste
+  culinary_roles:
+  - base
+  - textura
+  - guarnição
+  sensory_profile:
+    acidity: 1
+    saltiness: 1
+    sweetness: 3
+    bitterness: 1
+    umami: 2
+    fat: 2
+    heat: 0
+    aroma: 6
+    freshness: 2
+  recommended_techniques: *id007
+  seasonality_ref: arroz_vermelho
+  notes: null
+- id: batata_doce
+  name: Batata-doce
+  aliases: []
+  category: raiz_tuberculo
+  regional_status: regional_disponivel
+  availability_zones:
+  - sertão
+  - agreste
+  - litoral
+  culinary_roles:
+  - base
+  - textura
+  - doçura
+  sensory_profile:
+    acidity: 1
+    saltiness: 1
+    sweetness: 7
+    bitterness: 1
+    umami: 2
+    fat: 1
+    heat: 0
+    aroma: 3
+    freshness: 2
+  recommended_techniques: *id009
+  seasonality_ref: batata_doce
+  notes: null
+- id: inhame
+  name: Inhame
+  aliases: []
+  category: raiz_tuberculo
+  regional_status: regional_tradicional
+  availability_zones:
+  - mata
+  - agreste
+  - litoral
+  culinary_roles:
+  - base
+  - textura
+  - espessante
+  sensory_profile:
+    acidity: 1
+    saltiness: 1
+    sweetness: 4
+    bitterness: 1
+    umami: 2
+    fat: 1
+    heat: 0
+    aroma: 3
+    freshness: 2
+  recommended_techniques: *id009
+  seasonality_ref: inhame
+  notes: null
+- id: jerimum
+  name: Jerimum
+  aliases:
+  - abóbora
+  category: hortalica
+  regional_status: regional_emblematico
+  availability_zones:
+  - sertão
+  - agreste
+  - litoral
+  culinary_roles:
+  - base
+  - protagonista_vegetal
+  - doçura
+  sensory_profile:
+    acidity: 2
+    saltiness: 1
+    sweetness: 7
+    bitterness: 2
+    umami: 3
+    fat: 0
+    heat: 0
+    aroma: 5
+    freshness: 4
+  recommended_techniques: &id010
+  - assar
+  - grelhar
+  - conservar
+  - cru
+  seasonality_ref: jerimum
+  notes: null
+- id: maxixe
+  name: Maxixe
+  aliases: []
+  category: hortalica
+  regional_status: regional_tradicional
+  availability_zones:
+  - sertão
+  - agreste
+  - litoral
+  culinary_roles:
+  - textura
+  - acidez
+  - frescor
+  sensory_profile:
+    acidity: 2
+    saltiness: 1
+    sweetness: 3
+    bitterness: 3
+    umami: 3
+    fat: 0
+    heat: 0
+    aroma: 5
+    freshness: 8
+  recommended_techniques: *id010
+  seasonality_ref: maxixe
+  notes: null
+- id: quiabo
+  name: Quiabo
+  aliases: []
+  category: hortalica
+  regional_status: regional_tradicional
+  availability_zones:
+  - litoral
+  - mata
+  - agreste
+  culinary_roles:
+  - textura
+  - espessante
+  - protagonista_vegetal
+  sensory_profile:
+    acidity: 2
+    saltiness: 1
+    sweetness: 3
+    bitterness: 2
+    umami: 4
+    fat: 0
+    heat: 0
+    aroma: 5
+    freshness: 6
+  recommended_techniques: *id010
+  seasonality_ref: quiabo
+  notes: null
+- id: vinagreira
+  name: Vinagreira
+  aliases:
+  - hibisco-vinagreira
+  category: erva_aromatica
+  regional_status: maranhense_emblematica
+  availability_zones:
+  - meio-norte
+  - mata
+  culinary_roles:
+  - acidez
+  - aroma
+  - folha
+  sensory_profile:
+    acidity: 7
+    saltiness: 0
+    sweetness: 1
+    bitterness: 3
+    umami: 1
+    fat: 0
+    heat: 0
+    aroma: 8
+    freshness: 10
+  recommended_techniques: &id014
+  - cru
+  - infusionar
+  - óleo_verde
+  seasonality_ref: vinagreira
+  notes: null
+- id: palma_alimenticia
+  name: Palma alimentícia
+  aliases:
+  - palma-forrageira-food-grade
+  category: hortalica
+  regional_status: caatinga_adaptada
+  availability_zones:
+  - sertão
+  culinary_roles:
+  - protagonista_vegetal
+  - base
+  - textura
+  sensory_profile:
+    acidity: 2
+    saltiness: 1
+    sweetness: 3
+    bitterness: 2
+    umami: 3
+    fat: 0
+    heat: 0
+    aroma: 5
+    freshness: 7
+  recommended_techniques: *id010
+  seasonality_ref: palma_alimenticia
+  notes: Use origem identificada e produto próprio para consumo.
+- id: caju
+  name: Caju
+  aliases: []
+  category: fruta_acida
+  regional_status: nativo_emblematico
+  availability_zones:
+  - litoral
+  - sertão
+  - agreste
+  culinary_roles:
+  - acidez
+  - fruta
+  - molho
+  sensory_profile:
+    acidity: 7
+    saltiness: 1
+    sweetness: 6
+    bitterness: 2
+    umami: 1
+    fat: 0
+    heat: 0
+    aroma: 9
+    freshness: 9
+  recommended_techniques: &id012
+  - cru
+  - reduzir
+  - fermentar
+  - conservar
+  seasonality_ref: caju
+  notes: null
+- id: castanha_de_caju
+  name: Castanha-de-caju
+  aliases: []
+  category: castanha_semente
+  regional_status: nativo_emblematico
+  availability_zones:
+  - litoral
+  - sertão
+  - agreste
+  culinary_roles:
+  - textura
+  - molho
+  - gordura
+  sensory_profile:
+    acidity: 1
+    saltiness: 1
+    sweetness: 3
+    bitterness: 2
+    umami: 6
+    fat: 8
+    heat: 0
+    aroma: 8
+    freshness: 1
+  recommended_techniques: &id013
+  - tostar
+  - triturar
+  - emulsionar
+  seasonality_ref: castanha_de_caju
+  notes: null
+- id: cajuina
+  name: Cajuína
+  aliases: []
+  category: fruta_doce
+  regional_status: piauiense_emblematica
+  availability_zones:
+  - meio-norte
+  - sertão
+  culinary_roles:
+  - bebida
+  - redução
+  - doçura
+  sensory_profile:
+    acidity: 3
+    saltiness: 1
+    sweetness: 7
+    bitterness: 1
+    umami: 1
+    fat: 0
+    heat: 0
+    aroma: 7
+    freshness: 7
+  recommended_techniques: *id011
+  seasonality_ref: cajuina
+  notes: null
+- id: umbu
+  name: Umbu
+  aliases:
+  - imbu
+  category: fruta_acida
+  regional_status: caatinga_nativa
+  availability_zones:
+  - sertão
+  culinary_roles:
+  - acidez
+  - fruta
+  - molho
+  sensory_profile:
+    acidity: 9
+    saltiness: 1
+    sweetness: 4
+    bitterness: 2
+    umami: 1
+    fat: 0
+    heat: 0
+    aroma: 8
+    freshness: 9
+  recommended_techniques: *id012
+  seasonality_ref: umbu
+  notes: null
+- id: caja
+  name: Cajá
+  aliases:
+  - taperebá
+  category: fruta_acida
+  regional_status: nativo_regional
+  availability_zones:
+  - litoral
+  - mata
+  - agreste
+  culinary_roles:
+  - acidez
+  - fruta
+  - molho
+  sensory_profile:
+    acidity: 9
+    saltiness: 1
+    sweetness: 5
+    bitterness: 2
+    umami: 1
+    fat: 0
+    heat: 0
+    aroma: 9
+    freshness: 9
+  recommended_techniques: *id012
+  seasonality_ref: caja
+  notes: null
+- id: umbu_caja
+  name: Umbu-cajá
+  aliases: []
+  category: fruta_acida
+  regional_status: hibrido_regional
+  availability_zones:
+  - sertão
+  - agreste
+  - mata
+  culinary_roles:
+  - acidez
+  - fruta
+  - molho
+  sensory_profile:
+    acidity: 9
+    saltiness: 1
+    sweetness: 5
+    bitterness: 2
+    umami: 1
+    fat: 0
+    heat: 0
+    aroma: 9
+    freshness: 9
+  recommended_techniques: *id012
+  seasonality_ref: umbu_caja
+  notes: null
+- id: seriguela
+  name: Seriguela
+  aliases:
+  - ciriguela
+  category: fruta_acida
+  regional_status: naturalizada_tradicional
+  availability_zones:
+  - sertão
+  - agreste
+  - litoral
+  culinary_roles:
+  - acidez
+  - fruta
+  - molho
+  sensory_profile:
+    acidity: 7
+    saltiness: 1
+    sweetness: 7
+    bitterness: 2
+    umami: 1
+    fat: 0
+    heat: 0
+    aroma: 8
+    freshness: 9
+  recommended_techniques: *id012
+  seasonality_ref: seriguela
+  notes: null
+- id: mangaba
+  name: Mangaba
+  aliases: []
+  category: fruta_acida
+  regional_status: nativo_regional
+  availability_zones:
+  - litoral
+  - tabuleiros
+  culinary_roles:
+  - acidez
+  - fruta
+  - molho
+  sensory_profile:
+    acidity: 6
+    saltiness: 1
+    sweetness: 7
+    bitterness: 2
+    umami: 1
+    fat: 0
+    heat: 0
+    aroma: 9
+    freshness: 9
+  recommended_techniques: *id012
+  seasonality_ref: mangaba
+  notes: null
+- id: pitanga
+  name: Pitanga
+  aliases: []
+  category: fruta_acida
+  regional_status: nativo_regional
+  availability_zones:
+  - litoral
+  - mata
+  - agreste
+  culinary_roles:
+  - acidez
+  - fruta
+  - molho
+  sensory_profile:
+    acidity: 7
+    saltiness: 1
+    sweetness: 6
+    bitterness: 3
+    umami: 1
+    fat: 0
+    heat: 0
+    aroma: 9
+    freshness: 9
+  recommended_techniques: *id012
+  seasonality_ref: pitanga
+  notes: null
+- id: acerola
+  name: Acerola
+  aliases: []
+  category: fruta_acida
+  regional_status: cultivada_regional
+  availability_zones:
+  - litoral
+  - sertão_irrigado
+  - agreste
+  culinary_roles:
+  - acidez
+  - fruta
+  - molho
+  sensory_profile:
+    acidity: 9
+    saltiness: 1
+    sweetness: 4
+    bitterness: 2
+    umami: 1
+    fat: 0
+    heat: 0
+    aroma: 7
+    freshness: 9
+  recommended_techniques: *id012
+  seasonality_ref: acerola
+  notes: null
+- id: maracuja_do_mato
+  name: Maracujá-do-mato
+  aliases:
+  - maracujá-da-caatinga
+  category: fruta_acida
+  regional_status: caatinga_nativa
+  availability_zones:
+  - sertão
+  culinary_roles:
+  - acidez
+  - fruta
+  - molho
+  sensory_profile:
+    acidity: 8
+    saltiness: 1
+    sweetness: 4
+    bitterness: 2
+    umami: 1
+    fat: 0
+    heat: 0
+    aroma: 9
+    freshness: 9
+  recommended_techniques: *id012
+  seasonality_ref: maracuja_do_mato
+  notes: null
+- id: maracuja_amarelo
+  name: Maracujá-amarelo
+  aliases: []
+  category: fruta_acida
+  regional_status: cultivada_regional
+  availability_zones:
+  - litoral
+  - sertão_irrigado
+  - agreste
+  culinary_roles:
+  - acidez
+  - fruta
+  - molho
+  sensory_profile:
+    acidity: 9
+    saltiness: 1
+    sweetness: 4
+    bitterness: 2
+    umami: 1
+    fat: 0
+    heat: 0
+    aroma: 9
+    freshness: 9
+  recommended_techniques: *id012
+  seasonality_ref: maracuja_amarelo
+  notes: null
+- id: limao_galego
+  name: Limão-galego
+  aliases: []
+  category: fruta_acida
+  regional_status: regional_tradicional
+  availability_zones:
+  - litoral
+  - sertão_irrigado
+  - agreste
+  culinary_roles:
+  - acidez
+  - aroma
+  - cura
+  sensory_profile:
+    acidity: 10
+    saltiness: 1
+    sweetness: 1
+    bitterness: 2
+    umami: 1
+    fat: 0
+    heat: 0
+    aroma: 9
+    freshness: 9
+  recommended_techniques: *id012
+  seasonality_ref: limao_galego
+  notes: null
+- id: limao_cravo
+  name: Limão-cravo
+  aliases:
+  - limão-rosa
+  category: fruta_acida
+  regional_status: regional_tradicional
+  availability_zones:
+  - litoral
+  - sertão_irrigado
+  - agreste
+  culinary_roles:
+  - acidez
+  - aroma
+  - cura
+  sensory_profile:
+    acidity: 9
+    saltiness: 1
+    sweetness: 2
+    bitterness: 2
+    umami: 1
+    fat: 0
+    heat: 0
+    aroma: 10
+    freshness: 9
+  recommended_techniques: *id012
+  seasonality_ref: limao_cravo
+  notes: null
+- id: tamarindo
+  name: Tamarindo
+  aliases: []
+  category: fruta_acida
+  regional_status: naturalizada_tradicional
+  availability_zones:
+  - sertão
+  - agreste
+  - litoral
+  culinary_roles:
+  - acidez
+  - molho
+  - doçura
+  sensory_profile:
+    acidity: 9
+    saltiness: 1
+    sweetness: 6
+    bitterness: 2
+    umami: 1
+    fat: 0
+    heat: 0
+    aroma: 8
+    freshness: 9
+  recommended_techniques: *id012
+  seasonality_ref: tamarindo
+  notes: null
+- id: graviola
+  name: Graviola
+  aliases: []
+  category: fruta_doce
+  regional_status: cultivada_regional
+  availability_zones:
+  - litoral
+  - mata
+  - agreste
+  culinary_roles:
+  - fruta
+  - molho
+  - sobremesa
+  sensory_profile:
+    acidity: 4
+    saltiness: 1
+    sweetness: 8
+    bitterness: 1
+    umami: 1
+    fat: 0
+    heat: 0
+    aroma: 8
+    freshness: 7
+  recommended_techniques: *id011
+  seasonality_ref: graviola
+  notes: null
+- id: pinha
+  name: Pinha
+  aliases:
+  - fruta-do-conde
+  category: fruta_doce
+  regional_status: cultivada_regional
+  availability_zones:
+  - sertão_irrigado
+  - agreste
+  culinary_roles:
+  - fruta
+  - sobremesa
+  - doçura
+  sensory_profile:
+    acidity: 3
+    saltiness: 1
+    sweetness: 9
+    bitterness: 1
+    umami: 1
+    fat: 0
+    heat: 0
+    aroma: 8
+    freshness: 7
+  recommended_techniques: *id011
+  seasonality_ref: pinha
+  notes: null
+- id: jenipapo
+  name: Jenipapo
+  aliases: []
+  category: fruta_acida
+  regional_status: nativo_regional
+  availability_zones:
+  - mata
+  - agreste
+  - meio-norte
+  culinary_roles:
+  - fruta
+  - fermentado
+  - molho
+  sensory_profile:
+    acidity: 5
+    saltiness: 1
+    sweetness: 6
+    bitterness: 3
+    umami: 1
+    fat: 0
+    heat: 0
+    aroma: 8
+    freshness: 9
+  recommended_techniques: *id012
+  seasonality_ref: jenipapo
+  notes: null
+- id: bacuri
+  name: Bacuri
+  aliases: []
+  category: fruta_acida
+  regional_status: meio_norte_nativo
+  availability_zones:
+  - meio-norte
+  culinary_roles:
+  - fruta
+  - molho
+  - sobremesa
+  sensory_profile:
+    acidity: 6
+    saltiness: 1
+    sweetness: 7
+    bitterness: 2
+    umami: 1
+    fat: 0
+    heat: 0
+    aroma: 10
+    freshness: 9
+  recommended_techniques: *id012
+  seasonality_ref: bacuri
+  notes: null
+- id: murici
+  name: Murici
+  aliases: []
+  category: fruta_acida
+  regional_status: nativo_regional
+  availability_zones:
+  - litoral
+  - cerrado_nordestino
+  - meio-norte
+  culinary_roles:
+  - fruta
+  - molho
+  - fermentado
+  sensory_profile:
+    acidity: 6
+    saltiness: 1
+    sweetness: 6
+    bitterness: 2
+    umami: 1
+    fat: 0
+    heat: 0
+    aroma: 10
+    freshness: 9
+  recommended_techniques: *id012
+  seasonality_ref: murici
+  notes: null
+- id: buriti
+  name: Buriti
+  aliases: []
+  category: fruta_doce
+  regional_status: meio_norte_nativo
+  availability_zones:
+  - meio-norte
+  - cerrado_nordestino
+  culinary_roles:
+  - fruta
+  - gordura
+  - molho
+  sensory_profile:
+    acidity: 3
+    saltiness: 1
+    sweetness: 7
+    bitterness: 1
+    umami: 1
+    fat: 5
+    heat: 0
+    aroma: 9
+    freshness: 7
+  recommended_techniques: *id011
+  seasonality_ref: buriti
+  notes: null
+- id: licuri
+  name: Licuri
+  aliases: []
+  category: castanha_semente
+  regional_status: caatinga_nativo
+  availability_zones:
+  - sertão_baiano
+  culinary_roles:
+  - textura
+  - gordura
+  - molho
+  sensory_profile:
+    acidity: 1
+    saltiness: 1
+    sweetness: 3
+    bitterness: 2
+    umami: 5
+    fat: 9
+    heat: 0
+    aroma: 9
+    freshness: 1
+  recommended_techniques: *id013
+  seasonality_ref: licuri
+  notes: null
+- id: manga_espada
+  name: Manga-espada
+  aliases: []
+  category: fruta_doce
+  regional_status: cultivada_tradicional
+  availability_zones:
+  - litoral
+  - sertão_irrigado
+  - agreste
+  culinary_roles:
+  - fruta
+  - acidez_verde
+  - molho
+  sensory_profile:
+    acidity: 4
+    saltiness: 1
+    sweetness: 8
+    bitterness: 1
+    umami: 1
+    fat: 0
+    heat: 0
+    aroma: 9
+    freshness: 7
+  recommended_techniques: *id011
+  seasonality_ref: manga_espada
+  notes: null
+- id: abacaxi_perola
+  name: Abacaxi-pérola
+  aliases: []
+  category: fruta_acida
+  regional_status: cultivada_regional
+  availability_zones:
+  - litoral
+  - mata
+  - agreste
+  culinary_roles:
+  - acidez
+  - fruta
+  - molho
+  sensory_profile:
+    acidity: 7
+    saltiness: 1
+    sweetness: 8
+    bitterness: 2
+    umami: 1
+    fat: 0
+    heat: 0
+    aroma: 8
+    freshness: 9
+  recommended_techniques: *id012
+  seasonality_ref: abacaxi_perola
+  notes: null
+- id: banana_da_terra
+  name: Banana-da-terra
+  aliases: []
+  category: fruta_doce
+  regional_status: regional_tradicional
+  availability_zones:
+  - litoral
+  - mata
+  - agreste
+  culinary_roles:
+  - base
+  - textura
+  - doçura
+  sensory_profile:
+    acidity: 3
+    saltiness: 1
+    sweetness: 8
+    bitterness: 1
+    umami: 1
+    fat: 0
+    heat: 0
+    aroma: 7
+    freshness: 7
+  recommended_techniques: *id011
+  seasonality_ref: banana_da_terra
+  notes: null
+- id: jaca
+  name: Jaca
+  aliases: []
+  category: fruta_doce
+  regional_status: cultivada_tradicional
+  availability_zones:
+  - mata
+  - litoral
+  - agreste
+  culinary_roles:
+  - fruta
+  - protagonista_vegetal
+  - textura
+  sensory_profile:
+    acidity: 3
+    saltiness: 1
+    sweetness: 9
+    bitterness: 1
+    umami: 1
+    fat: 0
+    heat: 0
+    aroma: 9
+    freshness: 7
+  recommended_techniques: *id011
+  seasonality_ref: jaca
+  notes: null
+- id: araca
+  name: Araçá
+  aliases: []
+  category: fruta_acida
+  regional_status: nativo_regional
+  availability_zones:
+  - litoral
+  - mata
+  - agreste
+  culinary_roles:
+  - acidez
+  - fruta
+  - molho
+  sensory_profile:
+    acidity: 7
+    saltiness: 1
+    sweetness: 5
+    bitterness: 2
+    umami: 1
+    fat: 0
+    heat: 0
+    aroma: 9
+    freshness: 9
+  recommended_techniques: *id012
+  seasonality_ref: araca
+  notes: null
+- id: fruto_do_mandacaru
+  name: Fruto-do-mandacaru
+  aliases: []
+  category: fruta_doce
+  regional_status: caatinga_nativo
+  availability_zones:
+  - sertão
+  culinary_roles:
+  - fruta
+  - frescor
+  - molho
+  sensory_profile:
+    acidity: 3
+    saltiness: 1
+    sweetness: 6
+    bitterness: 1
+    umami: 1
+    fat: 0
+    heat: 0
+    aroma: 6
+    freshness: 8
+  recommended_techniques: *id011
+  seasonality_ref: fruto_do_mandacaru
+  notes: Use origem identificada e produto próprio para consumo.
+- id: coentro
+  name: Coentro
+  aliases: []
+  category: erva_aromatica
+  regional_status: regional_emblematico
+  availability_zones:
+  - litoral
+  - sertão
+  - agreste
+  - mata
+  culinary_roles:
+  - aroma
+  - frescor
+  - finalização
+  sensory_profile:
+    acidity: 1
+    saltiness: 0
+    sweetness: 1
+    bitterness: 2
+    umami: 1
+    fat: 0
+    heat: 0
+    aroma: 10
+    freshness: 10
+  recommended_techniques: *id014
+  seasonality_ref: coentro
+  notes: null
+- id: cebolinha
+  name: Cebolinha
+  aliases: []
+  category: erva_aromatica
+  regional_status: regional_tradicional
+  availability_zones:
+  - litoral
+  - sertão
+  - agreste
+  - mata
+  culinary_roles:
+  - aroma
+  - frescor
+  - finalização
+  sensory_profile:
+    acidity: 1
+    saltiness: 0
+    sweetness: 1
+    bitterness: 2
+    umami: 1
+    fat: 0
+    heat: 0
+    aroma: 8
+    freshness: 9
+  recommended_techniques: *id014
+  seasonality_ref: cebolinha
+  notes: null
+- id: pimenta_de_cheiro
+  name: Pimenta-de-cheiro
+  aliases: []
+  category: pimenta
+  regional_status: regional_emblematico
+  availability_zones:
+  - litoral
+  - sertão
+  - agreste
+  - mata
+  culinary_roles:
+  - aroma
+  - calor
+  - frescor
+  sensory_profile:
+    acidity: 2
+    saltiness: 1
+    sweetness: 2
+    bitterness: 1
+    umami: 2
+    fat: 0
+    heat: 3
+    aroma: 10
+    freshness: 8
+  recommended_techniques: &id015
+  - cru
+  - conservar
+  - fermentar
+  - infusionar
+  seasonality_ref: pimenta_de_cheiro
+  notes: null
+- id: pimenta_malagueta
+  name: Pimenta-malagueta
+  aliases: []
+  category: pimenta
+  regional_status: regional_tradicional
+  availability_zones:
+  - litoral
+  - sertão
+  - agreste
+  - mata
+  culinary_roles:
+  - calor
+  - molho
+  - conserva
+  sensory_profile:
+    acidity: 2
+    saltiness: 1
+    sweetness: 2
+    bitterness: 1
+    umami: 2
+    fat: 0
+    heat: 10
+    aroma: 8
+    freshness: 8
+  recommended_techniques: *id015
+  seasonality_ref: pimenta_malagueta
+  notes: null
+- id: alfavaca
+  name: Alfavaca
+  aliases: []
+  category: erva_aromatica
+  regional_status: regional_tradicional
+  availability_zones:
+  - litoral
+  - mata
+  - agreste
+  culinary_roles:
+  - aroma
+  - frescor
+  - caldo
+  sensory_profile:
+    acidity: 1
+    saltiness: 0
+    sweetness: 1
+    bitterness: 2
+    umami: 1
+    fat: 0
+    heat: 0
+    aroma: 10
+    freshness: 9
+  recommended_techniques: *id014
+  seasonality_ref: alfavaca
+  notes: null
+- id: alho
+  name: Alho
+  aliases: []
+  category: condimento
+  regional_status: regional_disponivel
+  availability_zones:
+  - litoral
+  - sertão
+  - agreste
+  - mata
+  culinary_roles:
+  - aroma
+  - base_aromatica
+  - molho
+  sensory_profile:
+    acidity: 2
+    saltiness: 2
+    sweetness: 3
+    bitterness: 2
+    umami: 4
+    fat: 2
+    heat: 1
+    aroma: 9
+    freshness: 3
+  recommended_techniques: &id016
+  - tostar
+  - refogar
+  - infusionar
+  seasonality_ref: alho
+  notes: null
+- id: cebola_roxa
+  name: Cebola-roxa
+  aliases: []
+  category: hortalica
+  regional_status: regional_disponivel
+  availability_zones:
+  - litoral
+  - sertão_irrigado
+  - agreste
+  culinary_roles:
+  - aroma
+  - acidez
+  - textura
+  sensory_profile:
+    acidity: 2
+    saltiness: 1
+    sweetness: 5
+    bitterness: 2
+    umami: 3
+    fat: 0
+    heat: 0
+    aroma: 7
+    freshness: 6
+  recommended_techniques: *id010
+  seasonality_ref: cebola_roxa
+  notes: null
+- id: tomate
+  name: Tomate
+  aliases: []
+  category: hortalica
+  regional_status: regional_disponivel
+  availability_zones:
+  - litoral
+  - sertão_irrigado
+  - agreste
+  culinary_roles:
+  - acidez
+  - umami
+  - molho
+  sensory_profile:
+    acidity: 6
+    saltiness: 1
+    sweetness: 4
+    bitterness: 2
+    umami: 6
+    fat: 0
+    heat: 0
+    aroma: 5
+    freshness: 6
+  recommended_techniques: *id010
+  seasonality_ref: tomate
+  notes: null
+- id: pimentao
+  name: Pimentão
+  aliases: []
+  category: hortalica
+  regional_status: regional_disponivel
+  availability_zones:
+  - litoral
+  - sertão_irrigado
+  - agreste
+  culinary_roles:
+  - aroma
+  - doçura
+  - molho
+  sensory_profile:
+    acidity: 2
+    saltiness: 1
+    sweetness: 5
+    bitterness: 2
+    umami: 3
+    fat: 0
+    heat: 0
+    aroma: 8
+    freshness: 6
+  recommended_techniques: *id010
+  seasonality_ref: pimentao
+  notes: null
+- id: azeite_de_dende
+  name: Azeite-de-dendê
+  aliases: []
+  category: gordura
+  regional_status: baiano_emblematico
+  availability_zones:
+  - litoral_baiano
+  - mata
+  culinary_roles:
+  - gordura
+  - aroma
+  - cor
+  sensory_profile:
+    acidity: 0
+    saltiness: 1
+    sweetness: 0
+    bitterness: 0
+    umami: 2
+    fat: 10
+    heat: 0
+    aroma: 10
+    freshness: 0
+  recommended_techniques: *id006
+  seasonality_ref: azeite_de_dende
+  notes: null
+- id: amendoim
+  name: Amendoim
+  aliases: []
+  category: castanha_semente
+  regional_status: regional_tradicional
+  availability_zones:
+  - sertão
+  - agreste
+  - litoral
+  culinary_roles:
+  - textura
+  - molho
+  - gordura
+  sensory_profile:
+    acidity: 1
+    saltiness: 1
+    sweetness: 3
+    bitterness: 2
+    umami: 5
+    fat: 8
+    heat: 0
+    aroma: 8
+    freshness: 1
+  recommended_techniques: *id013
+  seasonality_ref: amendoim
+  notes: null
+- id: gergelim
+  name: Gergelim
+  aliases: []
+  category: castanha_semente
+  regional_status: regional_disponivel
+  availability_zones:
+  - sertão
+  - agreste
+  culinary_roles:
+  - textura
+  - aroma
+  - gordura
+  sensory_profile:
+    acidity: 1
+    saltiness: 1
+    sweetness: 3
+    bitterness: 2
+    umami: 5
+    fat: 8
+    heat: 0
+    aroma: 8
+    freshness: 1
+  recommended_techniques: *id013
+  seasonality_ref: gergelim
+  notes: null
+- id: cominho
+  name: Cominho
+  aliases: []
+  category: condimento
+  regional_status: sertanejo_emblematico
+  availability_zones:
+  - sertão
+  - agreste
+  - litoral
+  culinary_roles:
+  - aroma
+  - tempero
+  - base_aromatica
+  sensory_profile:
+    acidity: 2
+    saltiness: 2
+    sweetness: 3
+    bitterness: 3
+    umami: 4
+    fat: 2
+    heat: 1
+    aroma: 10
+    freshness: 3
+  recommended_techniques: *id016
+  seasonality_ref: cominho
+  notes: null
+- id: colorau
+  name: Colorau
+  aliases:
+  - urucum-em-pó
+  category: condimento
+  regional_status: regional_tradicional
+  availability_zones:
+  - sertão
+  - agreste
+  - litoral
+  culinary_roles:
+  - cor
+  - aroma
+  - tempero
+  sensory_profile:
+    acidity: 2
+    saltiness: 2
+    sweetness: 3
+    bitterness: 2
+    umami: 4
+    fat: 2
+    heat: 1
+    aroma: 6
+    freshness: 3
+  recommended_techniques: *id016
+  seasonality_ref: colorau
+  notes: null
+- id: rapadura
+  name: Rapadura
+  aliases: []
+  category: acucar
+  regional_status: sertanejo_emblematico
+  availability_zones:
+  - sertão
+  - agreste
+  culinary_roles:
+  - doçura
+  - molho
+  - caramelização
+  sensory_profile:
+    acidity: 1
+    saltiness: 0
+    sweetness: 10
+    bitterness: 2
+    umami: 1
+    fat: 0
+    heat: 0
+    aroma: 8
+    freshness: 0
+  recommended_techniques: &id017
+  - caramelizar
+  - reduzir
+  - glacear
+  seasonality_ref: rapadura
+  notes: null
+- id: mel_de_engenho
+  name: Mel-de-engenho
+  aliases:
+  - melado-de-cana
+  category: acucar
+  regional_status: zona_da_mata_tradicional
+  availability_zones:
+  - mata
+  - agreste
+  culinary_roles:
+  - doçura
+  - molho
+  - caramelização
+  sensory_profile:
+    acidity: 1
+    saltiness: 0
+    sweetness: 10
+    bitterness: 3
+    umami: 1
+    fat: 0
+    heat: 0
+    aroma: 9
+    freshness: 0
+  recommended_techniques: *id017
+  seasonality_ref: mel_de_engenho
+  notes: null

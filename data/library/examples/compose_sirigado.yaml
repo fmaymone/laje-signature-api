@@ -1,0 +1,17 @@
+request:
+  protagonist_id: sirigado
+  servings: 6
+  equipment: [thermomix_tm7, churrasqueira, forno_elettromec_sem_vapor]
+  desired_direction: "cearense contemporâneo, poucos componentes, brasa e acidez clara"
+selected_blocks:
+  - sirigado_milho_e_brasa
+  - peixe_caju_e_coentro
+  - farofa_de_flocao_castanha_e_manteiga
+validation_targets:
+  acidity: [6, 8]
+  saltiness: [4, 6]
+  sweetness: [3, 6]
+  umami: [7, 9]
+  fat: [4, 7]
+  freshness: [6, 9]
+  texture_contrast_min: 7

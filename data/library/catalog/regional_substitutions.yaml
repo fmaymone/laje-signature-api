@@ -1,0 +1,203 @@
+regional_substitutions:
+- id: parmesao
+  original: Parmesão
+  regional_options:
+  - Queijo coalho curado
+  - queijo manteiga
+  function: sal_umami_laticinio
+  note: Substituir por função, não por aparência; recalibrar intensidade e umidade.
+- id: avela
+  original: Avelã
+  regional_options:
+  - Castanha-de-caju
+  - licuri
+  function: gordura_crocancia
+  note: Substituir por função, não por aparência; recalibrar intensidade e umidade.
+- id: noz
+  original: Noz
+  regional_options:
+  - Castanha-de-caju, amendoim
+  - licuri
+  function: gordura_textura
+  note: Substituir por função, não por aparência; recalibrar intensidade e umidade.
+- id: maple_syrup
+  original: Maple syrup
+  regional_options:
+  - Mel de engenho
+  - rapadura dissolvida
+  function: doçura_caramelo
+  note: Substituir por função, não por aparência; recalibrar intensidade e umidade.
+- id: panko
+  original: Panko
+  regional_options:
+  - Flocão tostado, farinha de mandioca
+  - tapioca crocante
+  function: crocancia
+  note: Substituir por função, não por aparência; recalibrar intensidade e umidade.
+- id: polenta
+  original: Polenta
+  regional_options:
+  - Xerém, creme de milho
+  - cuscuz
+  function: base_milho
+  note: Substituir por função, não por aparência; recalibrar intensidade e umidade.
+- id: batata_inglesa
+  original: Batata inglesa
+  regional_options:
+  - Macaxeira, inhame
+  - batata-doce
+  function: base_amido
+  note: Substituir por função, não por aparência; recalibrar intensidade e umidade.
+- id: creme_de_leite
+  original: Creme de leite
+  regional_options:
+  - Nata, leite de coco
+  - requeijão do sertão
+  function: gordura_cremosidade
+  note: Substituir por função, não por aparência; recalibrar intensidade e umidade.
+- id: manteiga_comum
+  original: Manteiga comum
+  regional_options:
+  - Manteiga-de-garrafa, conforme o prato
+  function: gordura_aroma
+  note: Substituir por função, não por aparência; recalibrar intensidade e umidade.
+- id: limao_siciliano
+  original: Limão siciliano
+  regional_options:
+  - Limão-cravo
+  - galego
+  function: acidez_aroma
+  note: Substituir por função, não por aparência; recalibrar intensidade e umidade.
+- id: vinagre_de_vinho
+  original: Vinagre de vinho
+  regional_options:
+  - Vinagre de caju
+  - de cana
+  function: acidez_fermentada
+  note: Substituir por função, não por aparência; recalibrar intensidade e umidade.
+- id: balsamico
+  original: Balsâmico
+  regional_options:
+  - Redução de cajuína com vinagre de cana
+  function: doce_acido
+  note: Substituir por função, não por aparência; recalibrar intensidade e umidade.
+- id: cranberry
+  original: Cranberry
+  regional_options:
+  - Acerola, pitanga
+  - seriguela
+  function: fruta_acida
+  note: Substituir por função, não por aparência; recalibrar intensidade e umidade.
+- id: damasco
+  original: Damasco
+  regional_options:
+  - Manga seca, caju passa
+  - banana-da-terra
+  function: fruta_doce
+  note: Substituir por função, não por aparência; recalibrar intensidade e umidade.
+- id: tamarillo
+  original: Tamarillo
+  regional_options:
+  - Tomate com cajá
+  - pitanga
+  function: fruta_umami_acida
+  note: Substituir por função, não por aparência; recalibrar intensidade e umidade.
+- id: alcaparra
+  original: Alcaparra
+  regional_options:
+  - Picles de maxixe
+  - botão de vinagreira em conserva
+  function: sal_acidez
+  note: Substituir por função, não por aparência; recalibrar intensidade e umidade.
+- id: azeitona
+  original: Azeitona
+  regional_options:
+  - Maxixe curtido, cebola curtida
+  - castanha salgada
+  function: sal_textura
+  note: Substituir por função, não por aparência; recalibrar intensidade e umidade.
+- id: tahine
+  original: Tahine
+  regional_options:
+  - Pasta de gergelim regional
+  - castanha-de-caju
+  function: gordura_emulsao
+  note: Substituir por função, não por aparência; recalibrar intensidade e umidade.
+- id: leite_de_amendoas
+  original: Leite de amêndoas
+  regional_options:
+  - Leite de castanha-de-caju
+  - coco
+  function: liquido_gordura
+  note: Substituir por função, não por aparência; recalibrar intensidade e umidade.
+- id: pistache
+  original: Pistache
+  regional_options:
+  - Licuri
+  - castanha-de-caju
+  function: textura_cor
+  note: Substituir por função, não por aparência; recalibrar intensidade e umidade.
+- id: cuscuz_marroquino
+  original: Cuscuz marroquino
+  regional_options:
+  - Xerém solto
+  - flocão hidratado
+  function: granulado_base
+  note: Substituir por função, não por aparência; recalibrar intensidade e umidade.
+- id: harissa
+  original: Harissa
+  regional_options:
+  - Pasta fermentada de malagueta com cominho
+  function: calor_aroma
+  note: Substituir por função, não por aparência; recalibrar intensidade e umidade.
+- id: chimichurri
+  original: Chimichurri
+  regional_options:
+  - Coentro, cebolinha, alho, limão e pimenta-de-cheiro
+  function: erva_acidez
+  note: Substituir por função, não por aparência; recalibrar intensidade e umidade.
+- id: pesto
+  original: Pesto
+  regional_options:
+  - Coentro/alfavaca com castanha-de-caju e queijo coalho curado
+  function: erva_gordura
+  note: Substituir por função, não por aparência; recalibrar intensidade e umidade.
+- id: miso
+  original: Miso
+  regional_options:
+  - Pasta fermentada de feijão-fradinho, quando disponível
+  function: umami_fermentado
+  note: Substituir por função, não por aparência; recalibrar intensidade e umidade.
+- id: molho_barbecue
+  original: Molho barbecue
+  regional_options:
+  - Rapadura, tamarindo, tomate e pimenta
+  function: doce_acido_defumado
+  note: Substituir por função, não por aparência; recalibrar intensidade e umidade.
+- id: pure_de_aipo_rabano
+  original: Purê de aipo-rábano
+  regional_options:
+  - Purê de inhame
+  - macaxeira
+  function: base_neutra
+  note: Substituir por função, não por aparência; recalibrar intensidade e umidade.
+- id: cebola_crispy_industrial
+  original: Cebola crispy industrial
+  regional_options:
+  - Cebola-roxa frita
+  - flocão tostado
+  function: crocancia
+  note: Substituir por função, não por aparência; recalibrar intensidade e umidade.
+- id: creme_azedo
+  original: Creme azedo
+  regional_options:
+  - Nata acidulada com limão, preparada e mantida sob refrigeração
+  function: gordura_acidez
+  note: Substituir por função, não por aparência; recalibrar intensidade e umidade.
+- id: pimenta_jalapeno
+  original: Pimenta jalapeño
+  regional_options:
+  - Pimenta-de-cheiro para aroma
+  - malagueta para calor
+  function: calor_aroma
+  note: Substituir por função, não por aparência; recalibrar intensidade e umidade.

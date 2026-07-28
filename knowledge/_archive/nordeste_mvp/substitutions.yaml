@@ -1,0 +1,55 @@
+substitutions:
+  - from_ingredient: parmesão
+    to_ingredient: queijo coalho
+    reason: Sal, umami e tipicidade nordestina sem importação italiana.
+    confidence: 0.85
+
+  - from_ingredient: avelã
+    to_ingredient: castanha-de-caju
+    reason: Gordura e crocância local.
+    confidence: 0.9
+
+  - from_ingredient: maple syrup
+    to_ingredient: rapadura
+    reason: Doçura caramelizada regional; usar com acidez.
+    confidence: 0.8
+
+  - from_ingredient: melado de maple
+    to_ingredient: melaço
+    reason: Equivalente regional de engenho.
+    confidence: 0.85
+
+  - from_ingredient: limão siciliano
+    to_ingredient: limão-galego
+    reason: Acidez e aroma disponíveis no Nordeste.
+    confidence: 0.9
+
+  - from_ingredient: limão
+    to_ingredient: limão-taiti
+    reason: Cítrico cotidiano; preferir galego/cravo quando houver.
+    confidence: 0.7
+
+  - from_ingredient: batata
+    to_ingredient: macaxeira
+    reason: Base amilácea regional.
+    confidence: 0.9
+
+  - from_ingredient: panko
+    to_ingredient: flocão
+    reason: Crocância tostada acessível.
+    confidence: 0.8
+
+  - from_ingredient: creme de leite
+    to_ingredient: nata
+    reason: Gordura láctea local quando disponível.
+    confidence: 0.75
+
+  - from_ingredient: manteiga
+    to_ingredient: manteiga de garrafa
+    reason: Gordura de assinatura nordestina.
+    confidence: 0.85
+
+  - from_ingredient: amêndoa
+    to_ingredient: castanha-de-caju
+    reason: Oleaginosa regional.
+    confidence: 0.85

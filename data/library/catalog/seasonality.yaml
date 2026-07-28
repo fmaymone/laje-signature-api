@@ -1,0 +1,880 @@
+seasonality:
+- ingredient_id: sirigado
+  peak_months: []
+  availability: variable_wild_or_farmed
+  confidence: medium
+  legal_restriction:
+    type: defeso
+    months:
+    - 8
+    - 9
+    note: Defeso federal indicado para sirigado/badejo-preto; verificar norma vigente antes da compra.
+  notes: Disponibilidade varia com captura, maré, cultivo, clima e regulação.
+- ingredient_id: cioba
+  peak_months: []
+  availability: variable_wild_or_farmed
+  confidence: medium
+  legal_restriction: null
+  notes: Disponibilidade varia com captura, maré, cultivo, clima e regulação.
+- ingredient_id: pargo
+  peak_months: []
+  availability: variable_wild_or_farmed
+  confidence: medium
+  legal_restriction:
+    type: defeso
+    months:
+    - 12
+    - 1
+    - 2
+    - 3
+    - 4
+    note: Defeso federal do pargo em parte relevante do litoral Norte/Nordeste; verificar abrangência e norma vigente.
+  notes: Disponibilidade varia com captura, maré, cultivo, clima e regulação.
+- ingredient_id: cavala
+  peak_months: []
+  availability: variable_wild_or_farmed
+  confidence: medium
+  legal_restriction: null
+  notes: Disponibilidade varia com captura, maré, cultivo, clima e regulação.
+- ingredient_id: serra
+  peak_months: []
+  availability: variable_wild_or_farmed
+  confidence: medium
+  legal_restriction: null
+  notes: Disponibilidade varia com captura, maré, cultivo, clima e regulação.
+- ingredient_id: camurim
+  peak_months: []
+  availability: variable_wild_or_farmed
+  confidence: medium
+  legal_restriction: null
+  notes: Disponibilidade varia com captura, maré, cultivo, clima e regulação.
+- ingredient_id: pescada_amarela
+  peak_months: []
+  availability: variable_wild_or_farmed
+  confidence: medium
+  legal_restriction: null
+  notes: Disponibilidade varia com captura, maré, cultivo, clima e regulação.
+- ingredient_id: ariaco
+  peak_months: []
+  availability: variable_wild_or_farmed
+  confidence: medium
+  legal_restriction: null
+  notes: Disponibilidade varia com captura, maré, cultivo, clima e regulação.
+- ingredient_id: guaiuba
+  peak_months: []
+  availability: variable_wild_or_farmed
+  confidence: medium
+  legal_restriction: null
+  notes: Disponibilidade varia com captura, maré, cultivo, clima e regulação.
+- ingredient_id: xareu
+  peak_months: []
+  availability: variable_wild_or_farmed
+  confidence: medium
+  legal_restriction: null
+  notes: Disponibilidade varia com captura, maré, cultivo, clima e regulação.
+- ingredient_id: peixe_voador
+  peak_months: []
+  availability: variable_wild_or_farmed
+  confidence: medium
+  legal_restriction: null
+  notes: Disponibilidade varia com captura, maré, cultivo, clima e regulação.
+- ingredient_id: tilapia
+  peak_months: []
+  availability: variable_wild_or_farmed
+  confidence: medium
+  legal_restriction: null
+  notes: Disponibilidade varia com captura, maré, cultivo, clima e regulação.
+- ingredient_id: camarao_branco
+  peak_months: []
+  availability: variable_wild_or_farmed
+  confidence: medium
+  legal_restriction: null
+  notes: Disponibilidade varia com captura, maré, cultivo, clima e regulação.
+- ingredient_id: camarao_rosa
+  peak_months: []
+  availability: variable_wild_or_farmed
+  confidence: medium
+  legal_restriction: null
+  notes: Disponibilidade varia com captura, maré, cultivo, clima e regulação.
+- ingredient_id: lagosta_vermelha
+  peak_months: []
+  availability: variable_wild_or_farmed
+  confidence: medium
+  legal_restriction:
+    type: defeso
+    months:
+    - 11
+    - 12
+    - 1
+    - 2
+    - 3
+    - 4
+    note: Defeso federal de lagostas; verificar norma vigente, origem e documentação.
+  notes: Disponibilidade varia com captura, maré, cultivo, clima e regulação.
+- ingredient_id: lagosta_verde
+  peak_months: []
+  availability: variable_wild_or_farmed
+  confidence: medium
+  legal_restriction:
+    type: defeso
+    months:
+    - 11
+    - 12
+    - 1
+    - 2
+    - 3
+    - 4
+    note: Defeso federal de lagostas; verificar norma vigente, origem e documentação.
+  notes: Disponibilidade varia com captura, maré, cultivo, clima e regulação.
+- ingredient_id: caranguejo_uca
+  peak_months: []
+  availability: variable_wild_or_farmed
+  confidence: medium
+  legal_restriction: null
+  notes: Disponibilidade varia com captura, maré, cultivo, clima e regulação.
+- ingredient_id: siri
+  peak_months: []
+  availability: variable_wild_or_farmed
+  confidence: medium
+  legal_restriction: null
+  notes: Disponibilidade varia com captura, maré, cultivo, clima e regulação.
+- ingredient_id: sururu
+  peak_months: []
+  availability: variable_wild_or_farmed
+  confidence: medium
+  legal_restriction: null
+  notes: Disponibilidade varia com captura, maré, cultivo, clima e regulação.
+- ingredient_id: ostra_do_mangue
+  peak_months: []
+  availability: variable_wild_or_farmed
+  confidence: medium
+  legal_restriction: null
+  notes: Disponibilidade varia com captura, maré, cultivo, clima e regulação.
+- ingredient_id: polvo
+  peak_months: []
+  availability: variable_wild_or_farmed
+  confidence: medium
+  legal_restriction: null
+  notes: Disponibilidade varia com captura, maré, cultivo, clima e regulação.
+- ingredient_id: lula
+  peak_months: []
+  availability: variable_wild_or_farmed
+  confidence: medium
+  legal_restriction: null
+  notes: Disponibilidade varia com captura, maré, cultivo, clima e regulação.
+- ingredient_id: carne_de_sol
+  peak_months: []
+  availability: year_round_processed_or_supply_chain
+  confidence: high
+  legal_restriction: null
+  notes: Produto processado ou de cadeia regular; qualidade ainda varia por lote e origem.
+- ingredient_id: charque
+  peak_months: []
+  availability: year_round_processed_or_supply_chain
+  confidence: high
+  legal_restriction: null
+  notes: Produto processado ou de cadeia regular; qualidade ainda varia por lote e origem.
+- ingredient_id: bode
+  peak_months: []
+  availability: year_round_processed_or_supply_chain
+  confidence: high
+  legal_restriction: null
+  notes: Produto processado ou de cadeia regular; qualidade ainda varia por lote e origem.
+- ingredient_id: cordeiro
+  peak_months: []
+  availability: year_round_processed_or_supply_chain
+  confidence: high
+  legal_restriction: null
+  notes: Produto processado ou de cadeia regular; qualidade ainda varia por lote e origem.
+- ingredient_id: porco
+  peak_months: []
+  availability: year_round_processed_or_supply_chain
+  confidence: high
+  legal_restriction: null
+  notes: Produto processado ou de cadeia regular; qualidade ainda varia por lote e origem.
+- ingredient_id: galinha_caipira
+  peak_months: []
+  availability: year_round_processed_or_supply_chain
+  confidence: high
+  legal_restriction: null
+  notes: Produto processado ou de cadeia regular; qualidade ainda varia por lote e origem.
+- ingredient_id: toucinho
+  peak_months: []
+  availability: year_round_processed_or_supply_chain
+  confidence: high
+  legal_restriction: null
+  notes: Produto processado ou de cadeia regular; qualidade ainda varia por lote e origem.
+- ingredient_id: manteiga_de_garrafa
+  peak_months: []
+  availability: year_round_processed_or_supply_chain
+  confidence: high
+  legal_restriction: null
+  notes: Produto processado ou de cadeia regular; qualidade ainda varia por lote e origem.
+- ingredient_id: nata
+  peak_months: []
+  availability: year_round_processed_or_supply_chain
+  confidence: high
+  legal_restriction: null
+  notes: Produto processado ou de cadeia regular; qualidade ainda varia por lote e origem.
+- ingredient_id: queijo_coalho
+  peak_months: []
+  availability: year_round_processed_or_supply_chain
+  confidence: high
+  legal_restriction: null
+  notes: Produto processado ou de cadeia regular; qualidade ainda varia por lote e origem.
+- ingredient_id: queijo_manteiga
+  peak_months: []
+  availability: year_round_processed_or_supply_chain
+  confidence: high
+  legal_restriction: null
+  notes: Produto processado ou de cadeia regular; qualidade ainda varia por lote e origem.
+- ingredient_id: requeijao_do_sertao
+  peak_months: []
+  availability: year_round_processed_or_supply_chain
+  confidence: high
+  legal_restriction: null
+  notes: Produto processado ou de cadeia regular; qualidade ainda varia por lote e origem.
+- ingredient_id: leite_de_coco
+  peak_months: []
+  availability: year_round_processed_or_supply_chain
+  confidence: high
+  legal_restriction: null
+  notes: Produto processado ou de cadeia regular; qualidade ainda varia por lote e origem.
+- ingredient_id: coco_fresco
+  peak_months: []
+  availability: variable
+  confidence: low
+  legal_restriction: null
+  notes: Sazonalidade local não consolidada nesta versão; validar com produtor/CEASA local.
+- ingredient_id: milho_verde
+  peak_months:
+  - 3
+  - 4
+  - 5
+  - 6
+  availability: seasonal_fresh
+  confidence: medium
+  legal_restriction: null
+  notes: Janela indicativa para o Nordeste; varia por estado, chuvas, cultivar e irrigação.
+- ingredient_id: flocao_de_milho
+  peak_months: []
+  availability: broad_with_local_peaks
+  confidence: medium
+  legal_restriction: null
+  notes: Geralmente disponível por cultivo regional, armazenamento ou irrigação; há picos locais.
+- ingredient_id: xerem
+  peak_months: []
+  availability: broad_with_local_peaks
+  confidence: medium
+  legal_restriction: null
+  notes: Geralmente disponível por cultivo regional, armazenamento ou irrigação; há picos locais.
+- ingredient_id: macaxeira
+  peak_months: []
+  availability: broad_with_local_peaks
+  confidence: medium
+  legal_restriction: null
+  notes: Geralmente disponível por cultivo regional, armazenamento ou irrigação; há picos locais.
+- ingredient_id: farinha_de_mandioca
+  peak_months: []
+  availability: broad_with_local_peaks
+  confidence: medium
+  legal_restriction: null
+  notes: Geralmente disponível por cultivo regional, armazenamento ou irrigação; há picos locais.
+- ingredient_id: farinha_d_agua
+  peak_months: []
+  availability: broad_with_local_peaks
+  confidence: medium
+  legal_restriction: null
+  notes: Geralmente disponível por cultivo regional, armazenamento ou irrigação; há picos locais.
+- ingredient_id: goma_de_tapioca
+  peak_months: []
+  availability: broad_with_local_peaks
+  confidence: medium
+  legal_restriction: null
+  notes: Geralmente disponível por cultivo regional, armazenamento ou irrigação; há picos locais.
+- ingredient_id: puba
+  peak_months: []
+  availability: broad_with_local_peaks
+  confidence: medium
+  legal_restriction: null
+  notes: Geralmente disponível por cultivo regional, armazenamento ou irrigação; há picos locais.
+- ingredient_id: feijao_verde
+  peak_months:
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  availability: seasonal_fresh
+  confidence: medium
+  legal_restriction: null
+  notes: Janela indicativa para o Nordeste; varia por estado, chuvas, cultivar e irrigação.
+- ingredient_id: feijao_de_corda
+  peak_months:
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  availability: seasonal_fresh
+  confidence: medium
+  legal_restriction: null
+  notes: Janela indicativa para o Nordeste; varia por estado, chuvas, cultivar e irrigação.
+- ingredient_id: feijao_fradinho
+  peak_months:
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  availability: seasonal_fresh
+  confidence: medium
+  legal_restriction: null
+  notes: Janela indicativa para o Nordeste; varia por estado, chuvas, cultivar e irrigação.
+- ingredient_id: fava
+  peak_months:
+  - 5
+  - 6
+  - 7
+  - 8
+  availability: seasonal_fresh
+  confidence: medium
+  legal_restriction: null
+  notes: Janela indicativa para o Nordeste; varia por estado, chuvas, cultivar e irrigação.
+- ingredient_id: arroz_vermelho
+  peak_months: []
+  availability: broad_with_local_peaks
+  confidence: medium
+  legal_restriction: null
+  notes: Geralmente disponível por cultivo regional, armazenamento ou irrigação; há picos locais.
+- ingredient_id: batata_doce
+  peak_months: []
+  availability: broad_with_local_peaks
+  confidence: medium
+  legal_restriction: null
+  notes: Geralmente disponível por cultivo regional, armazenamento ou irrigação; há picos locais.
+- ingredient_id: inhame
+  peak_months: []
+  availability: broad_with_local_peaks
+  confidence: medium
+  legal_restriction: null
+  notes: Geralmente disponível por cultivo regional, armazenamento ou irrigação; há picos locais.
+- ingredient_id: jerimum
+  peak_months:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+  - 12
+  availability: seasonal_fresh
+  confidence: medium
+  legal_restriction: null
+  notes: Janela indicativa para o Nordeste; varia por estado, chuvas, cultivar e irrigação.
+- ingredient_id: maxixe
+  peak_months:
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  availability: seasonal_fresh
+  confidence: medium
+  legal_restriction: null
+  notes: Janela indicativa para o Nordeste; varia por estado, chuvas, cultivar e irrigação.
+- ingredient_id: quiabo
+  peak_months:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+  - 12
+  availability: seasonal_fresh
+  confidence: medium
+  legal_restriction: null
+  notes: Janela indicativa para o Nordeste; varia por estado, chuvas, cultivar e irrigação.
+- ingredient_id: vinagreira
+  peak_months:
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+  - 12
+  availability: seasonal_fresh
+  confidence: medium
+  legal_restriction: null
+  notes: Janela indicativa para o Nordeste; varia por estado, chuvas, cultivar e irrigação.
+- ingredient_id: palma_alimenticia
+  peak_months:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+  - 12
+  availability: seasonal_fresh
+  confidence: medium
+  legal_restriction: null
+  notes: Janela indicativa para o Nordeste; varia por estado, chuvas, cultivar e irrigação.
+- ingredient_id: caju
+  peak_months:
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+  - 12
+  - 1
+  - 2
+  availability: seasonal_fresh
+  confidence: medium
+  legal_restriction: null
+  notes: Janela indicativa para o Nordeste; varia por estado, chuvas, cultivar e irrigação.
+- ingredient_id: castanha_de_caju
+  peak_months: []
+  availability: year_round_processed_or_supply_chain
+  confidence: high
+  legal_restriction: null
+  notes: Produto processado ou de cadeia regular; qualidade ainda varia por lote e origem.
+- ingredient_id: cajuina
+  peak_months: []
+  availability: variable
+  confidence: low
+  legal_restriction: null
+  notes: Sazonalidade local não consolidada nesta versão; validar com produtor/CEASA local.
+- ingredient_id: umbu
+  peak_months:
+  - 12
+  - 1
+  - 2
+  - 3
+  availability: seasonal_fresh
+  confidence: medium
+  legal_restriction: null
+  notes: Janela indicativa para o Nordeste; varia por estado, chuvas, cultivar e irrigação.
+- ingredient_id: caja
+  peak_months:
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  availability: seasonal_fresh
+  confidence: medium
+  legal_restriction: null
+  notes: Janela indicativa para o Nordeste; varia por estado, chuvas, cultivar e irrigação.
+- ingredient_id: umbu_caja
+  peak_months:
+  - 1
+  - 2
+  - 3
+  - 4
+  availability: seasonal_fresh
+  confidence: medium
+  legal_restriction: null
+  notes: Janela indicativa para o Nordeste; varia por estado, chuvas, cultivar e irrigação.
+- ingredient_id: seriguela
+  peak_months:
+  - 12
+  - 1
+  - 2
+  - 3
+  availability: seasonal_fresh
+  confidence: medium
+  legal_restriction: null
+  notes: Janela indicativa para o Nordeste; varia por estado, chuvas, cultivar e irrigação.
+- ingredient_id: mangaba
+  peak_months:
+  - 10
+  - 11
+  - 12
+  - 1
+  availability: seasonal_fresh
+  confidence: medium
+  legal_restriction: null
+  notes: Janela indicativa para o Nordeste; varia por estado, chuvas, cultivar e irrigação.
+- ingredient_id: pitanga
+  peak_months:
+  - 8
+  - 9
+  - 10
+  - 11
+  availability: seasonal_fresh
+  confidence: medium
+  legal_restriction: null
+  notes: Janela indicativa para o Nordeste; varia por estado, chuvas, cultivar e irrigação.
+- ingredient_id: acerola
+  peak_months:
+  - 1
+  - 2
+  - 3
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+  - 12
+  availability: seasonal_fresh
+  confidence: medium
+  legal_restriction: null
+  notes: Janela indicativa para o Nordeste; varia por estado, chuvas, cultivar e irrigação.
+- ingredient_id: maracuja_do_mato
+  peak_months:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  availability: seasonal_fresh
+  confidence: medium
+  legal_restriction: null
+  notes: Janela indicativa para o Nordeste; varia por estado, chuvas, cultivar e irrigação.
+- ingredient_id: maracuja_amarelo
+  peak_months:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  availability: seasonal_fresh
+  confidence: medium
+  legal_restriction: null
+  notes: Janela indicativa para o Nordeste; varia por estado, chuvas, cultivar e irrigação.
+- ingredient_id: limao_galego
+  peak_months:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+  - 12
+  availability: seasonal_fresh
+  confidence: medium
+  legal_restriction: null
+  notes: Janela indicativa para o Nordeste; varia por estado, chuvas, cultivar e irrigação.
+- ingredient_id: limao_cravo
+  peak_months:
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  availability: seasonal_fresh
+  confidence: medium
+  legal_restriction: null
+  notes: Janela indicativa para o Nordeste; varia por estado, chuvas, cultivar e irrigação.
+- ingredient_id: tamarindo
+  peak_months:
+  - 7
+  - 8
+  - 9
+  - 10
+  availability: seasonal_fresh
+  confidence: medium
+  legal_restriction: null
+  notes: Janela indicativa para o Nordeste; varia por estado, chuvas, cultivar e irrigação.
+- ingredient_id: graviola
+  peak_months:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+  - 12
+  availability: seasonal_fresh
+  confidence: medium
+  legal_restriction: null
+  notes: Janela indicativa para o Nordeste; varia por estado, chuvas, cultivar e irrigação.
+- ingredient_id: pinha
+  peak_months:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 10
+  - 11
+  - 12
+  availability: seasonal_fresh
+  confidence: medium
+  legal_restriction: null
+  notes: Janela indicativa para o Nordeste; varia por estado, chuvas, cultivar e irrigação.
+- ingredient_id: jenipapo
+  peak_months:
+  - 11
+  - 12
+  - 1
+  - 2
+  - 3
+  availability: seasonal_fresh
+  confidence: medium
+  legal_restriction: null
+  notes: Janela indicativa para o Nordeste; varia por estado, chuvas, cultivar e irrigação.
+- ingredient_id: bacuri
+  peak_months:
+  - 1
+  - 2
+  - 3
+  - 4
+  availability: seasonal_fresh
+  confidence: medium
+  legal_restriction: null
+  notes: Janela indicativa para o Nordeste; varia por estado, chuvas, cultivar e irrigação.
+- ingredient_id: murici
+  peak_months:
+  - 12
+  - 1
+  - 2
+  - 3
+  - 4
+  availability: seasonal_fresh
+  confidence: medium
+  legal_restriction: null
+  notes: Janela indicativa para o Nordeste; varia por estado, chuvas, cultivar e irrigação.
+- ingredient_id: buriti
+  peak_months:
+  - 12
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  availability: seasonal_fresh
+  confidence: medium
+  legal_restriction: null
+  notes: Janela indicativa para o Nordeste; varia por estado, chuvas, cultivar e irrigação.
+- ingredient_id: licuri
+  peak_months:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  availability: seasonal_fresh
+  confidence: medium
+  legal_restriction: null
+  notes: Janela indicativa para o Nordeste; varia por estado, chuvas, cultivar e irrigação.
+- ingredient_id: manga_espada
+  peak_months:
+  - 8
+  - 9
+  - 10
+  - 11
+  - 12
+  - 1
+  availability: seasonal_fresh
+  confidence: medium
+  legal_restriction: null
+  notes: Janela indicativa para o Nordeste; varia por estado, chuvas, cultivar e irrigação.
+- ingredient_id: abacaxi_perola
+  peak_months:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+  - 12
+  availability: seasonal_fresh
+  confidence: medium
+  legal_restriction: null
+  notes: Janela indicativa para o Nordeste; varia por estado, chuvas, cultivar e irrigação.
+- ingredient_id: banana_da_terra
+  peak_months:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+  - 12
+  availability: seasonal_fresh
+  confidence: medium
+  legal_restriction: null
+  notes: Janela indicativa para o Nordeste; varia por estado, chuvas, cultivar e irrigação.
+- ingredient_id: jaca
+  peak_months:
+  - 11
+  - 12
+  - 1
+  - 2
+  - 3
+  - 4
+  availability: seasonal_fresh
+  confidence: medium
+  legal_restriction: null
+  notes: Janela indicativa para o Nordeste; varia por estado, chuvas, cultivar e irrigação.
+- ingredient_id: araca
+  peak_months:
+  - 9
+  - 10
+  - 11
+  - 12
+  - 1
+  - 2
+  availability: seasonal_fresh
+  confidence: medium
+  legal_restriction: null
+  notes: Janela indicativa para o Nordeste; varia por estado, chuvas, cultivar e irrigação.
+- ingredient_id: fruto_do_mandacaru
+  peak_months:
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  availability: seasonal_fresh
+  confidence: medium
+  legal_restriction: null
+  notes: Janela indicativa para o Nordeste; varia por estado, chuvas, cultivar e irrigação.
+- ingredient_id: coentro
+  peak_months: []
+  availability: broad_with_local_peaks
+  confidence: medium
+  legal_restriction: null
+  notes: Geralmente disponível por cultivo regional, armazenamento ou irrigação; há picos locais.
+- ingredient_id: cebolinha
+  peak_months: []
+  availability: broad_with_local_peaks
+  confidence: medium
+  legal_restriction: null
+  notes: Geralmente disponível por cultivo regional, armazenamento ou irrigação; há picos locais.
+- ingredient_id: pimenta_de_cheiro
+  peak_months: []
+  availability: broad_with_local_peaks
+  confidence: medium
+  legal_restriction: null
+  notes: Geralmente disponível por cultivo regional, armazenamento ou irrigação; há picos locais.
+- ingredient_id: pimenta_malagueta
+  peak_months: []
+  availability: broad_with_local_peaks
+  confidence: medium
+  legal_restriction: null
+  notes: Geralmente disponível por cultivo regional, armazenamento ou irrigação; há picos locais.
+- ingredient_id: alfavaca
+  peak_months: []
+  availability: broad_with_local_peaks
+  confidence: medium
+  legal_restriction: null
+  notes: Geralmente disponível por cultivo regional, armazenamento ou irrigação; há picos locais.
+- ingredient_id: alho
+  peak_months: []
+  availability: year_round_processed_or_supply_chain
+  confidence: high
+  legal_restriction: null
+  notes: Produto processado ou de cadeia regular; qualidade ainda varia por lote e origem.
+- ingredient_id: cebola_roxa
+  peak_months: []
+  availability: broad_with_local_peaks
+  confidence: medium
+  legal_restriction: null
+  notes: Geralmente disponível por cultivo regional, armazenamento ou irrigação; há picos locais.
+- ingredient_id: tomate
+  peak_months: []
+  availability: broad_with_local_peaks
+  confidence: medium
+  legal_restriction: null
+  notes: Geralmente disponível por cultivo regional, armazenamento ou irrigação; há picos locais.
+- ingredient_id: pimentao
+  peak_months: []
+  availability: broad_with_local_peaks
+  confidence: medium
+  legal_restriction: null
+  notes: Geralmente disponível por cultivo regional, armazenamento ou irrigação; há picos locais.
+- ingredient_id: azeite_de_dende
+  peak_months: []
+  availability: year_round_processed_or_supply_chain
+  confidence: high
+  legal_restriction: null
+  notes: Produto processado ou de cadeia regular; qualidade ainda varia por lote e origem.
+- ingredient_id: amendoim
+  peak_months: []
+  availability: year_round_processed_or_supply_chain
+  confidence: high
+  legal_restriction: null
+  notes: Produto processado ou de cadeia regular; qualidade ainda varia por lote e origem.
+- ingredient_id: gergelim
+  peak_months: []
+  availability: year_round_processed_or_supply_chain
+  confidence: high
+  legal_restriction: null
+  notes: Produto processado ou de cadeia regular; qualidade ainda varia por lote e origem.
+- ingredient_id: cominho
+  peak_months: []
+  availability: year_round_processed_or_supply_chain
+  confidence: high
+  legal_restriction: null
+  notes: Produto processado ou de cadeia regular; qualidade ainda varia por lote e origem.
+- ingredient_id: colorau
+  peak_months: []
+  availability: year_round_processed_or_supply_chain
+  confidence: high
+  legal_restriction: null
+  notes: Produto processado ou de cadeia regular; qualidade ainda varia por lote e origem.
+- ingredient_id: rapadura
+  peak_months: []
+  availability: year_round_processed_or_supply_chain
+  confidence: high
+  legal_restriction: null
+  notes: Produto processado ou de cadeia regular; qualidade ainda varia por lote e origem.
+- ingredient_id: mel_de_engenho
+  peak_months: []
+  availability: year_round_processed_or_supply_chain
+  confidence: high
+  legal_restriction: null
+  notes: Produto processado ou de cadeia regular; qualidade ainda varia por lote e origem.

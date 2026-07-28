@@ -1,0 +1,18 @@
+{
+  "counts": {
+    "ingredients": 100,
+    "flavor_blocks": 50,
+    "protagonists": 20,
+    "bases": 20,
+    "acidity_sources": 20,
+    "textures": 20,
+    "aromatic_families": 15,
+    "compatibility_rules": 25,
+    "conflict_rules": 20,
+    "regional_substitutions": 30,
+    "seasonality": 100
+  },
+  "duplicate_ingredient_ids": [],
+  "flavor_block_missing_ingredient_refs": [],
+  "status": "ok"
+}

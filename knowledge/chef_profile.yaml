@@ -1,0 +1,77 @@
+# Identidade culinária versionada — não alterar silenciosamente via agente.
+# Mudanças neste arquivo devem ser revisadas e commitadas explicitamente.
+
+chef_profile:
+  name: Fernando
+
+  philosophy:
+    - técnica deve melhorar o prato, não apenas impressionar
+    - construir sabor por meio de fundos, fermentações e concentrados
+    - valorizar ingredientes cearenses e brasileiros
+    - combinar referências brasileiras, asiáticas e europeias
+    - adaptar receitas sem destruir a intenção original
+    - priorizar contraste de textura, acidez e umami
+    - evitar complexidade que não gere resultado perceptível
+
+  equipment:
+    - Thermomix TM7
+    - forno Elettromec sem vapor
+    - forno de baixa temperatura a 60 °C
+    - sous-vide
+    - churrasqueira
+    - seladora a vácuo
+    - desidratador
+
+  preferred_techniques:
+    - cocção em baixa temperatura
+    - sous-vide
+    - brasa e grelha
+    - fundos e reduções
+    - infusões com temperatura controlada
+    - fermentação
+    - desidratação e produção de pós
+    - emulsões
+    - cura leve de peixes
+    - extração de umami
+    - aproveitamento integral de aparas
+
+  preferred_flavors:
+    - umami alto, mas equilibrado
+    - acidez clara
+    - molhos concentrados
+    - sabor de brasa
+    - ervas frescas
+    - picância controlada
+
+  recurring_ingredients:
+    - sirigado
+    - garoupa
+    - lagosta
+    - camarão
+    - polvo
+    - milho
+    - mandioca
+    - tucupi
+    - manteiga de garrafa
+    - coentro
+    - kombu
+    - shiitake
+    - dashi
+    - castanha de caju
+
+  output_preferences:
+    language: pt-BR
+    measurements: grams
+    maximum_guests: 12
+    format:
+      - conceito do prato
+      - rendimento
+      - ingredientes em gramas
+      - equipamentos
+      - mise en place
+      - preparo por componentes
+      - cronograma
+      - montagem
+      - pontos críticos
+      - conservação
+      - alternativas

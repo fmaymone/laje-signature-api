@@ -1,0 +1,166 @@
+compatibility_rules:
+- id: fat_needs_acid
+  when:
+    fat_gte: 7
+    acidity_lt: 5
+  action: Adicionar acidez clara, reduzir gordura ou inserir elemento amargo/fresco.
+  priority: 10
+- id: soft_needs_crunch
+  when:
+    soft_components_gte: 2
+    crunch_components_lt: 1
+  action: Adicionar uma textura tostada, crocante ou firme.
+  priority: 9
+- id: delicate_protein_sauce_limit
+  when:
+    protagonist_profile: delicado
+    sauce_intensity_gt: 7
+  action: Reduzir intensidade do molho ou servir em menor dose.
+  priority: 10
+- id: salty_protagonist_salt_budget
+  when:
+    protagonist_in:
+    - carne_de_sol
+    - charque
+    - queijo_coalho
+  action: Reduzir sal nos demais componentes e usar acidez/frescor.
+  priority: 10
+- id: sweet_base_needs_counterpoint
+  when:
+    base_in:
+    - creme_de_milho_verde
+    - pure_de_jerimum_assado
+    - banana_da_terra_assada
+    acidity_lt: 5
+  action: Adicionar fruta ácida, cítrico, vinagreira ou tomate.
+  priority: 8
+- id: seafood_prefers_fresh_finish
+  when:
+    category_in:
+    - peixe
+    - crustaceo
+    - molusco
+    freshness_lt: 5
+  action: Adicionar erva fresca, cítrico ou vinagrete regional.
+  priority: 8
+- id: brasa_needs_moisture
+  when:
+    technique: brasa
+    sauce_or_juicy_components_lt: 1
+  action: Adicionar molho, glace, vinagrete ou base úmida.
+  priority: 7
+- id: coco_needs_acid
+  when:
+    ingredient: leite_de_coco
+    acidity_lt: 5
+  action: Combinar com limão, caju, cajá, tamarindo ou vinagreira.
+  priority: 9
+- id: dende_needs_brightness
+  when:
+    ingredient: azeite_de_dende
+    freshness_lt: 6
+  action: Finalizar com coentro, cítrico ou pimenta-de-cheiro fresca.
+  priority: 9
+- id: jerimum_needs_salt_or_acid
+  when:
+    ingredient: jerimum
+    saltiness_lt: 4
+    acidity_lt: 5
+  action: Adicionar queijo coalho, carne curada ou fonte ácida.
+  priority: 8
+- id: macaxeira_needs_aroma
+  when:
+    ingredient: macaxeira
+    aroma_lt: 5
+  action: Usar manteiga de garrafa, alho, ervas ou tostagem.
+  priority: 7
+- id: beans_need_freshness
+  when:
+    category: leguminosa
+    freshness_lt: 4
+  action: Adicionar cebola curtida, coentro, cebolinha ou fruta ácida.
+  priority: 7
+- id: fatty_fish_deep_acid
+  when:
+    protagonist_in:
+    - cavala
+    - serra
+    - xareu
+    - atum
+    acidity_lt: 7
+  action: Preferir tamarindo, caju, vinagreira, limão ou picles.
+  priority: 9
+- id: crustacean_sweetness_balance
+  when:
+    category: crustaceo
+    sweetness_gte: 5
+    acidity_lt: 5
+  action: Adicionar acidez aromática e controlar bases doces.
+  priority: 8
+- id: one_component_multiple_roles
+  when:
+    component_count_gt: 6
+  action: Priorizar componentes que cumpram duas ou mais funções sensoriais.
+  priority: 10
+- id: regional_substitution_first
+  when:
+    nonregional_ingredient: true
+  action: Buscar substituto regional com mesma função antes de aceitar o ingrediente.
+  priority: 8
+- id: apara_value
+  when:
+    animal_protagonist: true
+    scraps_available: true
+    umami_lt: 6
+  action: Usar aparas, cascas ou ossos em caldo/glace quando seguro e adequado.
+  priority: 7
+- id: cream_needs_texture
+  when:
+    texture: cremoso
+    texture_contrast_lt: 5
+  action: Adicionar castanha, flocão, coco, pele crocante ou vegetal firme.
+  priority: 8
+- id: high_heat_needs_fat_or_sweet
+  when:
+    heat_gte: 7
+    fat_lt: 3
+    sweetness_lt: 3
+  action: Adicionar gordura, doçura moderada ou reduzir picância.
+  priority: 7
+- id: acidity_layering
+  when:
+    acid_components_gte: 2
+  action: 'Usar estilos complementares: uma acidez estrutural e outra fresca de finalização.'
+  priority: 6
+- id: brasa_plus_fruit
+  when:
+    technique: brasa
+    fruit_acid_available: true
+  action: Considerar fruta regional ácida para cortar tostado e gordura.
+  priority: 6
+- id: dairy_with_tropical_acid
+  when:
+    category: laticinio
+    fruit_acid_available: true
+  action: Preferir caju, umbu, cajá, pitanga ou tamarindo em doses controladas.
+  priority: 6
+- id: cuscuz_moisture
+  when:
+    base: cuscuz_de_flocao
+    moisture_lt: 4
+  action: Adicionar molho, caldo, manteiga ou componente suculento.
+  priority: 8
+- id: farofa_moisture
+  when:
+    texture: farofa
+    dish_moisture_lt: 5
+  action: Evitar prato seco; aumentar molho ou componente suculento.
+  priority: 9
+- id: aromatic_finish_late
+  when:
+    ingredient_in:
+    - coentro
+    - cebolinha
+    - alfavaca
+  action: Adicionar majoritariamente no final para preservar aroma e frescor.
+  priority: 6

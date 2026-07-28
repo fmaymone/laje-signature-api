@@ -1,0 +1,182 @@
+aromatic_families:
+- id: verde_litoranea
+  name: Verde litorânea
+  ingredient_ids:
+  - coentro
+  - cebolinha
+  - limao_galego
+  signature: fresco_citrico
+  use:
+  - marinada
+  - molho
+  - finalização
+  intensity: 7
+- id: pimenta_de_cheiro_e_coentro
+  name: Pimenta-de-cheiro e coentro
+  ingredient_ids:
+  - pimenta_de_cheiro
+  - coentro
+  - cebolinha
+  signature: frutado_verde
+  use:
+  - marinada
+  - molho
+  - finalização
+  intensity: 7
+- id: alfavaca_e_tomate
+  name: Alfavaca e tomate
+  ingredient_ids:
+  - alfavaca
+  - tomate
+  - alho
+  signature: herbal_umami
+  use:
+  - marinada
+  - molho
+  - finalização
+  intensity: 7
+- id: coco_dende_e_coentro
+  name: Coco, dendê e coentro
+  ingredient_ids:
+  - leite_de_coco
+  - azeite_de_dende
+  - coentro
+  signature: quente_litoraneo
+  use:
+  - marinada
+  - molho
+  - finalização
+  intensity: 7
+- id: sertaneja_de_cominho
+  name: Sertaneja de cominho
+  ingredient_ids:
+  - cominho
+  - alho
+  - cebola_roxa
+  - colorau
+  signature: terroso_quente
+  use:
+  - marinada
+  - molho
+  - finalização
+  intensity: 7
+- id: manteiga_de_garrafa_e_cebola
+  name: Manteiga de garrafa e cebola
+  ingredient_ids:
+  - manteiga_de_garrafa
+  - cebola_roxa
+  - cebolinha
+  signature: lacteo_tostado
+  use:
+  - marinada
+  - molho
+  - finalização
+  intensity: 7
+- id: caju_e_pimenta_de_cheiro
+  name: Caju e pimenta-de-cheiro
+  ingredient_ids:
+  - caju
+  - pimenta_de_cheiro
+  - coentro
+  signature: frutado_fresco
+  use:
+  - marinada
+  - molho
+  - finalização
+  intensity: 7
+- id: umbu_e_alfavaca
+  name: Umbu e alfavaca
+  ingredient_ids:
+  - umbu
+  - alfavaca
+  - cebolinha
+  signature: acido_herbal
+  use:
+  - marinada
+  - molho
+  - finalização
+  intensity: 7
+- id: tamarindo_e_cominho
+  name: Tamarindo e cominho
+  ingredient_ids:
+  - tamarindo
+  - cominho
+  - alho
+  signature: profundo_especiado
+  use:
+  - marinada
+  - molho
+  - finalização
+  intensity: 7
+- id: rapadura_e_pimenta
+  name: Rapadura e pimenta
+  ingredient_ids:
+  - rapadura
+  - pimenta_malagueta
+  - limao_cravo
+  signature: doce_picante
+  use:
+  - marinada
+  - molho
+  - finalização
+  intensity: 7
+- id: castanha_e_coco_tostados
+  name: Castanha e coco tostados
+  ingredient_ids:
+  - castanha_de_caju
+  - coco_fresco
+  - gergelim
+  signature: tostado_gorduroso
+  use:
+  - marinada
+  - molho
+  - finalização
+  intensity: 7
+- id: vinagreira_e_gergelim
+  name: Vinagreira e gergelim
+  ingredient_ids:
+  - vinagreira
+  - gergelim
+  - cebolinha
+  signature: acido_nutty
+  use:
+  - marinada
+  - molho
+  - finalização
+  intensity: 7
+- id: limao_cravo_e_alho_tostado
+  name: Limão-cravo e alho tostado
+  ingredient_ids:
+  - limao_cravo
+  - alho
+  - manteiga_de_garrafa
+  signature: citrico_tostado
+  use:
+  - marinada
+  - molho
+  - finalização
+  intensity: 7
+- id: tomate_colorau_e_pimentao
+  name: Tomate, colorau e pimentão
+  ingredient_ids:
+  - tomate
+  - colorau
+  - pimentao
+  signature: doce_umami
+  use:
+  - marinada
+  - molho
+  - finalização
+  intensity: 7
+- id: jenipapo_e_especiarias_quentes
+  name: Jenipapo e especiarias quentes
+  ingredient_ids:
+  - jenipapo
+  - cominho
+  - mel_de_engenho
+  signature: frutado_terroso
+  use:
+  - marinada
+  - molho
+  - finalização
+  intensity: 7
