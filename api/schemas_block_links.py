@@ -46,3 +46,29 @@ class BlockLinkRead(BaseModel):
 class BlockLinkListResponse(BaseModel):
     items: list[BlockLinkRead]
     total: int
+
+
+class BlockLinkBulkItem(BaseModel):
+    target_block_id: str = Field(min_length=1, max_length=120)
+    weight: LinkWeight = 2
+    notes: str | None = None
+
+
+class BlockLinkBulkCreate(BaseModel):
+    source_block_id: str = Field(min_length=1, max_length=120)
+    links: list[BlockLinkBulkItem] = Field(min_length=1, max_length=200)
+
+    @model_validator(mode="after")
+    def no_self_links(self) -> BlockLinkBulkCreate:
+        source = self.source_block_id.strip()
+        for item in self.links:
+            if item.target_block_id.strip() == source:
+                raise ValueError("Não é possível ligar um bloco a si mesmo.")
+        return self
+
+
+class BlockLinkBulkResult(BaseModel):
+    created: int
+    updated: int
+    skipped: int
+    items: list[BlockLinkRead]

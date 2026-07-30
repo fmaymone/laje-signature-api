@@ -11,6 +11,8 @@ from sqlalchemy.orm import Session
 
 from api.routes.auth import get_current_user
 from api.schemas_block_links import (
+    BlockLinkBulkCreate,
+    BlockLinkBulkResult,
     BlockLinkCreate,
     BlockLinkListResponse,
     BlockLinkRead,
@@ -101,6 +103,71 @@ def create_block_link(
         ) from exc
     db.refresh(link)
     return link
+
+
+@router.post("/bulk", response_model=BlockLinkBulkResult)
+@router.post("/bulk/", response_model=BlockLinkBulkResult, include_in_schema=False)
+def bulk_upsert_block_links(
+    payload: BlockLinkBulkCreate,
+    db: Session = Depends(get_db),
+    user: User = Depends(get_current_user),
+) -> BlockLinkBulkResult:
+    """Cria ou atualiza várias combinações a partir de um bloco (estilo Flavor Bible)."""
+    source = payload.source_block_id.strip()
+    _ensure_block_exists(db, source)
+
+    created = 0
+    updated = 0
+    skipped = 0
+    results: list[BlockLink] = []
+    seen_targets: set[str] = set()
+
+    for item in payload.links:
+        target = item.target_block_id.strip()
+        if not target or target == source or target in seen_targets:
+            skipped += 1
+            continue
+        seen_targets.add(target)
+
+        if get_merged_flavor_block(target, db) is None:
+            skipped += 1
+            continue
+
+        existing = db.scalar(
+            select(BlockLink).where(
+                BlockLink.source_block_id == source,
+                BlockLink.target_block_id == target,
+            )
+        )
+        if existing is None:
+            link = BlockLink(
+                source_block_id=source,
+                target_block_id=target,
+                weight=int(item.weight),
+                notes=item.notes,
+                created_by=user.id,
+            )
+            db.add(link)
+            results.append(link)
+            created += 1
+        else:
+            existing.weight = int(item.weight)
+            if item.notes is not None:
+                existing.notes = item.notes
+            db.add(existing)
+            results.append(existing)
+            updated += 1
+
+    db.commit()
+    for link in results:
+        db.refresh(link)
+
+    return BlockLinkBulkResult(
+        created=created,
+        updated=updated,
+        skipped=skipped,
+        items=results,
+    )
 
 
 @router.put("/{link_id}", response_model=BlockLinkRead)

@@ -96,6 +96,46 @@ def test_block_link_crud_and_weight(client: TestClient):
     assert deleted.status_code == 204
 
 
+def test_block_links_bulk_upsert(client: TestClient):
+    headers = _auth_headers(client)
+
+    first = client.post(
+        "/v1/block-links/bulk",
+        headers=headers,
+        json={
+            "source_block_id": "camarao_branco",
+            "links": [
+                {"target_block_id": "coentro", "weight": 3},
+                {"target_block_id": "limao_galego", "weight": 2},
+                {"target_block_id": "bloco_inexistente_xyz", "weight": 2},
+            ],
+        },
+    )
+    assert first.status_code == 200, first.text
+    body = first.json()
+    assert body["created"] == 2
+    assert body["skipped"] == 1
+
+    second = client.post(
+        "/v1/block-links/bulk",
+        headers=headers,
+        json={
+            "source_block_id": "camarao_branco",
+            "links": [
+                {"target_block_id": "coentro", "weight": 2},
+                {"target_block_id": "pimenta_malagueta", "weight": 3},
+            ],
+        },
+    )
+    assert second.status_code == 200, second.text
+    assert second.json()["updated"] == 1
+    assert second.json()["created"] == 1
+
+    listed = client.get("/v1/block-links", params={"block_id": "camarao_branco"})
+    assert listed.status_code == 200
+    assert listed.json()["total"] >= 3
+
+
 def test_composition_edge_accepts_weight(client: TestClient):
     headers = _auth_headers(client)
     create = client.post(
