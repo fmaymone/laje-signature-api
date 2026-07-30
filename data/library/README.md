@@ -1,11 +1,11 @@
 # Biblioteca de Blocos de Sabor do Nordeste — Fernando
 
-Versão **0.1.0**. Fonte canônica dos dados do **Laje Signature**.
+Versão **0.2.0**. Fonte canônica dos dados do **Laje Signature**.
 
 ## Conteúdo
 
 - 100 ingredientes
-- 50 blocos de sabor
+- 100 blocos de sabor **atômicos** (1 ingrediente = 1 bloco)
 - 20 protagonistas · 20 bases · 20 acidez · 20 texturas
 - 15 famílias aromáticas
 - 25 regras de compatibilidade · 20 conflitos
@@ -43,5 +43,6 @@ No app, prefira `app.composition.library_v01.load_library()`.
 
 ## Filosofia
 
-Cada prato combina funções: protagonista, base, molho, acidez, textura, aroma.  
-Preferir poucos componentes com função clara.
+Cada **bloco é atômico** (um ingrediente / conceito).  
+O prato nasce da **composição** de vários blocos com funções claras: protagonista, base, molho, acidez, textura, aroma.  
+Preferir poucos blocos bem escolhidos a combinações pré-montadas.

@@ -14,7 +14,7 @@ def health() -> HealthResponse:
     version = (
         metadata.get("version")
         or metadata.get("library_version")
-        or "0.1.0"
+        or "0.2.0"
     )
     try:
         check_db_connection()

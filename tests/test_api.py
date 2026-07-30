@@ -21,7 +21,7 @@ def test_health():
     assert response.status_code == 200
     body = response.json()
     assert body["status"] in {"ok", "degraded"}
-    assert body["library_version"] == "0.1.0"
+    assert body["library_version"] == "0.2.0"
     assert "database" in body
 
 
@@ -29,7 +29,7 @@ def test_library_summary():
     response = client.get("/v1/library/summary")
     assert response.status_code == 200
     counts = response.json()["counts"]
-    assert counts["flavor_blocks"] == 50
+    assert counts["flavor_blocks"] == 100
     assert counts["ingredients"] == 100
 
 

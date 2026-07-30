@@ -1,4 +1,4 @@
-# Dados — Laje Signature / Biblioteca Nordeste v0.1.0
+# Dados — Laje Signature / Biblioteca Nordeste v0.2.0
 
 Este documento descreve os datasets em [`../data/library/`](../data/library/).
 
@@ -7,7 +7,7 @@ Este documento descreve os datasets em [`../data/library/`](../data/library/).
 | Coleção | Qtd | Arquivo | Papel |
 |---------|-----|---------|--------|
 | `ingredients` | 100 | `catalog/ingredients.yaml` | Ingredientes nordestinos + perfil sensorial |
-| `flavor_blocks` | 50 | `catalog/flavor_blocks.yaml` | Combinações prontas (núcleo do compositor) |
+| `flavor_blocks` | 100 | `catalog/flavor_blocks.yaml` | Blocos atômicos (1 ingrediente = 1 bloco) |
 | `protagonists` | 20 | `catalog/protagonists.yaml` | Proteínas/vegetais principais + guardrails |
 | `bases` | 20 | `catalog/bases.yaml` | Purês, cremes, cuscuz, xerém… |
 | `acidity_sources` | 20 | `catalog/acidity_sources.yaml` | Limão, caju, umbu, vinagres… |
@@ -92,5 +92,6 @@ Em [`../knowledge/`](../knowledge/):
 
 ## Versionamento
 
-- Versão atual da biblioteca: **0.1.0** (`metadata.version`)  
+- Versão atual da biblioteca: **0.2.0** (`metadata.version`)  
+- Combinações antigas (v0.1) arquivadas em `catalog/_archive_flavor_blocks_combo_v0_1.yaml`
 - Mudanças de schema ou rebalanceamento sensorial devem subir o minor/major e ser documentadas neste arquivo

@@ -1,4 +1,4 @@
-"""Carrega Biblioteca Fernando Nordeste v0.1.0."""
+"""Carrega Biblioteca Fernando Nordeste v0.2.0."""
 
 from __future__ import annotations
 

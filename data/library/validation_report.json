@@ -1,7 +1,7 @@
 {
   "counts": {
     "ingredients": 100,
-    "flavor_blocks": 50,
+    "flavor_blocks": 100,
     "protagonists": 20,
     "bases": 20,
     "acidity_sources": 20,

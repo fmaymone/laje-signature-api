@@ -10,7 +10,7 @@ from app.composition.library_v01 import load_library
 def test_library_v01_counts():
     lib = load_library()
     assert len(lib["ingredients"]) == 100
-    assert len(lib["flavor_blocks"]) == 50
+    assert len(lib["flavor_blocks"]) == 100
     assert len(lib["compatibility_rules"]) == 25
     assert len(lib["conflict_rules"]) == 20
     assert len(lib["acidity_sources"]) == 20

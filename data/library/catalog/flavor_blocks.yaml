@@ -1,145 +1,411 @@
 flavor_blocks:
-- id: mar_coco_e_limao_galego
-  name: Mar, coco e limão-galego
-  family: litoral
+- id: abacaxi_perola
+  name: Abacaxi-pérola
+  family: agreste
   ingredient_ids:
-  - leite_de_coco
-  - limao_galego
-  - coentro
-  - pimenta_de_cheiro
+  - abacaxi_perola
   culinary_roles:
-  - molho
   - acidez
-  - aroma
+  - fruta
+  - molho
   compatible_protagonists:
-  - sirigado
-  - cioba
-  - camurim
-  - camarao_branco
+  - carne_de_sol
+  - porco
   recommended_base_ids:
-  - creme_de_milho_verde
+  - cuscuz_de_flocao
   target_sensory_profile:
     acidity: 7
-    saltiness: 4
-    sweetness: 3
-    bitterness: 1
-    umami: 6
-    fat: 7
-    heat: 2
-    aroma: 9
-    freshness: 8
+    saltiness: 1
+    sweetness: 8
+    bitterness: 2
+    umami: 1
+    fat: 0
+    heat: 0
+    aroma: 8
+    freshness: 9
   texture_targets:
-  - cremoso
   - fresco
-  notes: ''
-- id: sirigado_milho_e_brasa
-  name: Sirigado, milho e brasa
+  - cremoso
+  - untuoso
+  notes: 'Bloco atômico: um ingrediente, função clara na composição.'
+- id: acerola
+  name: Acerola
+  family: agreste
+  ingredient_ids:
+  - acerola
+  culinary_roles:
+  - acidez
+  - fruta
+  - molho
+  compatible_protagonists:
+  - pato
+  - porco
+  - queijo_coalho
+  recommended_base_ids:
+  - batata_doce_na_brasa
+  target_sensory_profile:
+    acidity: 9
+    saltiness: 1
+    sweetness: 4
+    bitterness: 2
+    umami: 1
+    fat: 0
+    heat: 0
+    aroma: 7
+    freshness: 9
+  texture_targets:
+  - fresco
+  - cremoso
+  - untuoso
+  notes: 'Bloco atômico: um ingrediente, função clara na composição.'
+- id: alfavaca
+  name: Alfavaca
   family: litoral_sertão
   ingredient_ids:
-  - sirigado
-  - milho_verde
-  - manteiga_de_garrafa
-  - limao_cravo
+  - alfavaca
   culinary_roles:
-  - protagonista
-  - base
-  - brasa
-  - acidez
+  - aroma
+  - frescor
+  - caldo
   compatible_protagonists:
-  - sirigado
+  - bode
+  - peixes
+  - porco
+  - queijo_coalho
   recommended_base_ids:
   - creme_de_milho_verde
+  - macaxeira_assada_e_prensada
   target_sensory_profile:
-    acidity: 6
-    saltiness: 5
-    sweetness: 5
+    acidity: 1
+    saltiness: 0
+    sweetness: 1
     bitterness: 2
-    umami: 8
-    fat: 6
-    heat: 1
-    aroma: 8
-    freshness: 6
+    umami: 1
+    fat: 0
+    heat: 0
+    aroma: 10
+    freshness: 9
   texture_targets:
-  - firme
-  - cremoso
-  - tostado
-  notes: ''
-- id: peixe_macaxeira_e_glace_de_aparas
-  name: Peixe, macaxeira e glace de aparas
+  - aromático
+  - fresco
+  - leve
+  notes: 'Bloco atômico: um ingrediente, função clara na composição.'
+- id: alho
+  name: Alho
   family: litoral_sertão
   ingredient_ids:
-  - macaxeira
-  - manteiga_de_garrafa
-  - coentro
-  - limao_galego
+  - alho
   culinary_roles:
-  - base
-  - molho
-  - aproveitamento
-  compatible_protagonists:
-  - sirigado
-  - pargo
-  - pescada_amarela
-  recommended_base_ids:
-  - pure_de_macaxeira
-  target_sensory_profile:
-    acidity: 5
-    saltiness: 5
-    sweetness: 4
-    bitterness: 1
-    umami: 8
-    fat: 6
-    heat: 1
-    aroma: 7
-    freshness: 5
-  texture_targets:
-  - firme
-  - cremoso
-  notes: ''
-- id: peixe_caju_e_coentro
-  name: Peixe, caju e coentro
-  family: litoral
-  ingredient_ids:
-  - caju
-  - coentro
-  - cebola_roxa
-  - pimenta_de_cheiro
-  culinary_roles:
-  - acidez
-  - frescor
   - aroma
+  - base_aromatica
+  - molho
   compatible_protagonists:
-  - cioba
-  - sirigado
-  - camurim
+  - galinha_caipira
+  - peixes
+  - porco
+  - vegetais
   recommended_base_ids:
   - arroz_vermelho_soltinho
   target_sensory_profile:
-    acidity: 8
-    saltiness: 4
+    acidity: 2
+    saltiness: 2
+    sweetness: 3
+    bitterness: 2
+    umami: 4
+    fat: 2
+    heat: 1
+    aroma: 9
+    freshness: 3
+  texture_targets:
+  - aromático
+  - cremoso
+  - untuoso
+  notes: 'Bloco atômico: um ingrediente, função clara na composição.'
+- id: amendoim
+  name: Amendoim
+  family: litoral_sertão
+  ingredient_ids:
+  - amendoim
+  culinary_roles:
+  - textura
+  - molho
+  - gordura
+  compatible_protagonists: []
+  recommended_base_ids: []
+  target_sensory_profile:
+    acidity: 1
+    saltiness: 1
+    sweetness: 3
+    bitterness: 2
+    umami: 5
+    fat: 8
+    heat: 0
+    aroma: 8
+    freshness: 1
+  texture_targets:
+  - crocante
+  - cremoso
+  - untuoso
+  notes: 'Bloco atômico: um ingrediente, função clara na composição.'
+- id: araca
+  name: Araçá
+  family: agreste
+  ingredient_ids:
+  - araca
+  culinary_roles:
+  - acidez
+  - fruta
+  - molho
+  compatible_protagonists: []
+  recommended_base_ids: []
+  target_sensory_profile:
+    acidity: 7
+    saltiness: 1
     sweetness: 5
     bitterness: 2
-    umami: 6
-    fat: 3
-    heat: 2
-    aroma: 10
-    freshness: 10
+    umami: 1
+    fat: 0
+    heat: 0
+    aroma: 9
+    freshness: 9
   texture_targets:
-  - suculento
-  - crocante
-  notes: ''
-- id: peixe_caja_e_pimenta_de_cheiro
-  name: Peixe, cajá e pimenta-de-cheiro
+  - fresco
+  - cremoso
+  - untuoso
+  notes: 'Bloco atômico: um ingrediente, função clara na composição.'
+- id: ariaco
+  name: Ariacó
   family: litoral
   ingredient_ids:
-  - caja
-  - pimenta_de_cheiro
-  - coentro
-  - manteiga_de_garrafa
+  - ariaco
   culinary_roles:
-  - molho
-  - acidez
+  - protagonista
+  - caldo
+  - brasa
+  compatible_protagonists: []
+  recommended_base_ids: []
+  target_sensory_profile:
+    acidity: 1
+    saltiness: 2
+    sweetness: 1
+    bitterness: 1
+    umami: 7
+    fat: 2
+    heat: 0
+    aroma: 5
+    freshness: 5
+  texture_targets:
+  - firme
+  - tostado
+  notes: 'Bloco atômico: um ingrediente, função clara na composição.'
+- id: arroz_vermelho
+  name: Arroz-vermelho
+  family: sertão
+  ingredient_ids:
+  - arroz_vermelho
+  culinary_roles:
+  - base
+  - textura
+  - guarnição
+  compatible_protagonists:
+  - camurim
+  - cordeiro
+  - galinha_caipira
+  - pargo
+  - peixes
+  - pescada_amarela
+  - vegetais
+  recommended_base_ids:
+  - arroz_de_cuxa_simplificado
+  - arroz_vermelho_soltinho
+  target_sensory_profile:
+    acidity: 1
+    saltiness: 1
+    sweetness: 3
+    bitterness: 1
+    umami: 2
+    fat: 2
+    heat: 0
+    aroma: 6
+    freshness: 2
+  texture_targets:
+  - cremoso
+  - crocante
+  notes: 'Bloco atômico: um ingrediente, função clara na composição.'
+- id: azeite_de_dende
+  name: Azeite-de-dendê
+  family: sertão
+  ingredient_ids:
+  - azeite_de_dende
+  culinary_roles:
+  - gordura
   - aroma
+  - cor
+  compatible_protagonists:
+  - camarao_branco
+  - camarao_rosa
+  - jaca
+  - lagosta_vermelha
+  - sururu
+  recommended_base_ids:
+  - arroz_de_coco
+  target_sensory_profile:
+    acidity: 0
+    saltiness: 1
+    sweetness: 0
+    bitterness: 0
+    umami: 2
+    fat: 10
+    heat: 0
+    aroma: 10
+    freshness: 0
+  texture_targets:
+  - aromático
+  notes: 'Bloco atômico: um ingrediente, função clara na composição.'
+- id: bacuri
+  name: Bacuri
+  family: agreste
+  ingredient_ids:
+  - bacuri
+  culinary_roles:
+  - fruta
+  - molho
+  - sobremesa
+  compatible_protagonists:
+  - camarao_branco
+  - lagosta_vermelha
+  recommended_base_ids:
+  - arroz_de_coco
+  target_sensory_profile:
+    acidity: 6
+    saltiness: 1
+    sweetness: 7
+    bitterness: 2
+    umami: 1
+    fat: 0
+    heat: 0
+    aroma: 10
+    freshness: 9
+  texture_targets:
+  - cremoso
+  - untuoso
+  notes: 'Bloco atômico: um ingrediente, função clara na composição.'
+- id: banana_da_terra
+  name: Banana-da-terra
+  family: mata
+  ingredient_ids:
+  - banana_da_terra
+  culinary_roles:
+  - base
+  - textura
+  - doçura
+  compatible_protagonists:
+  - carne_de_sol
+  - porco
+  - vegetais
+  recommended_base_ids:
+  - banana_da_terra_assada
+  target_sensory_profile:
+    acidity: 3
+    saltiness: 1
+    sweetness: 8
+    bitterness: 1
+    umami: 1
+    fat: 0
+    heat: 0
+    aroma: 7
+    freshness: 7
+  texture_targets:
+  - cremoso
+  - crocante
+  notes: 'Bloco atômico: um ingrediente, função clara na composição.'
+- id: batata_doce
+  name: Batata-doce
+  family: litoral_sertão
+  ingredient_ids:
+  - batata_doce
+  culinary_roles:
+  - base
+  - textura
+  - doçura
+  compatible_protagonists: []
+  recommended_base_ids: []
+  target_sensory_profile:
+    acidity: 1
+    saltiness: 1
+    sweetness: 7
+    bitterness: 1
+    umami: 2
+    fat: 1
+    heat: 0
+    aroma: 3
+    freshness: 2
+  texture_targets:
+  - cremoso
+  - crocante
+  notes: 'Bloco atômico: um ingrediente, função clara na composição.'
+- id: bode
+  name: Bode
+  family: sertão
+  ingredient_ids:
+  - bode
+  culinary_roles:
+  - protagonista
+  - ensopado
+  - brasa
+  compatible_protagonists:
+  - bode
+  recommended_base_ids:
+  - creme_de_fava
+  - pure_de_jerimum_assado
+  target_sensory_profile:
+    acidity: 1
+    saltiness: 3
+    sweetness: 1
+    bitterness: 1
+    umami: 9
+    fat: 5
+    heat: 0
+    aroma: 8
+    freshness: 2
+  texture_targets:
+  - firme
+  - tostado
+  notes: 'Bloco atômico: um ingrediente, função clara na composição.'
+- id: buriti
+  name: Buriti
+  family: mata
+  ingredient_ids:
+  - buriti
+  culinary_roles:
+  - fruta
+  - gordura
+  - molho
+  compatible_protagonists: []
+  recommended_base_ids: []
+  target_sensory_profile:
+    acidity: 3
+    saltiness: 1
+    sweetness: 7
+    bitterness: 1
+    umami: 1
+    fat: 5
+    heat: 0
+    aroma: 9
+    freshness: 7
+  texture_targets:
+  - cremoso
+  - untuoso
+  notes: 'Bloco atômico: um ingrediente, função clara na composição.'
+- id: caja
+  name: Cajá
+  family: agreste
+  ingredient_ids:
+  - caja
+  culinary_roles:
+  - acidez
+  - fruta
+  - molho
   compatible_protagonists:
   - cioba
   - pescada_amarela
@@ -148,62 +414,295 @@ flavor_blocks:
   - cuscuz_de_flocao
   target_sensory_profile:
     acidity: 9
-    saltiness: 4
+    saltiness: 1
     sweetness: 5
-    bitterness: 1
-    umami: 6
-    fat: 5
-    heat: 3
-    aroma: 10
+    bitterness: 2
+    umami: 1
+    fat: 0
+    heat: 0
+    aroma: 9
     freshness: 9
   texture_targets:
-  - cremoso
   - fresco
-  notes: ''
-- id: peixe_jerimum_e_castanha
-  name: Peixe, jerimum e castanha
-  family: sertão_litoral
+  - cremoso
+  - untuoso
+  notes: 'Bloco atômico: um ingrediente, função clara na composição.'
+- id: caju
+  name: Caju
+  family: litoral_sertão
   ingredient_ids:
-  - jerimum
-  - castanha_de_caju
-  - limao_cravo
-  - coentro
+  - caju
   culinary_roles:
-  - base
-  - textura
   - acidez
+  - fruta
+  - molho
   compatible_protagonists:
-  - sirigado
+  - bode
+  - camarao_branco
   - camurim
+  - carne_de_sol
+  - cavala
+  - cioba
+  - cordeiro
+  - lagosta_verde
+  - lagosta_vermelha
+  - peixes
+  - polvo
+  - porco
+  - queijo_coalho
+  - sirigado
   - tilapia
+  - vegetais
   recommended_base_ids:
-  - pure_de_jerimum_assado
+  - arroz_vermelho_soltinho
+  - baiao_leve
+  - banana_da_terra_assada
+  - creme_de_fava
+  - cuscuz_de_flocao
+  - feijao_verde_cremoso
+  - pure_de_macaxeira
+  - tapioca_de_chapa
   target_sensory_profile:
-    acidity: 6
-    saltiness: 4
+    acidity: 7
+    saltiness: 1
     sweetness: 6
     bitterness: 2
-    umami: 6
-    fat: 6
-    heat: 1
-    aroma: 8
-    freshness: 6
+    umami: 1
+    fat: 0
+    heat: 0
+    aroma: 9
+    freshness: 9
   texture_targets:
+  - fresco
   - cremoso
+  - untuoso
+  notes: 'Bloco atômico: um ingrediente, função clara na composição.'
+- id: cajuina
+  name: Cajuína
+  family: sertão
+  ingredient_ids:
+  - cajuina
+  culinary_roles:
+  - bebida
+  - redução
+  - doçura
+  compatible_protagonists:
+  - camarao_branco
+  - camurim
+  - carne_de_sol
+  - cavala
+  - cioba
+  - lagosta_vermelha
+  - polvo
+  - porco
+  - queijo_coalho
+  - sirigado
+  - tilapia
+  recommended_base_ids: []
+  target_sensory_profile:
+    acidity: 3
+    saltiness: 1
+    sweetness: 7
+    bitterness: 1
+    umami: 1
+    fat: 0
+    heat: 0
+    aroma: 7
+    freshness: 7
+  texture_targets:
+  - neutro
+  notes: 'Bloco atômico: um ingrediente, função clara na composição.'
+- id: camarao_branco
+  name: Camarão-branco
+  family: litoral
+  ingredient_ids:
+  - camarao_branco
+  culinary_roles:
+  - protagonista
+  - caldo
+  - salteado
+  compatible_protagonists:
+  - camarao_branco
+  recommended_base_ids:
+  - creme_de_milho_verde
+  target_sensory_profile:
+    acidity: 1
+    saltiness: 3
+    sweetness: 4
+    bitterness: 1
+    umami: 8
+    fat: 2
+    heat: 0
+    aroma: 6
+    freshness: 5
+  texture_targets:
+  - firme
+  notes: 'Bloco atômico: um ingrediente, função clara na composição.'
+- id: camarao_rosa
+  name: Camarão-rosa
+  family: litoral
+  ingredient_ids:
+  - camarao_rosa
+  culinary_roles:
+  - protagonista
+  - caldo
+  - salteado
+  compatible_protagonists: []
+  recommended_base_ids: []
+  target_sensory_profile:
+    acidity: 1
+    saltiness: 3
+    sweetness: 4
+    bitterness: 1
+    umami: 9
+    fat: 2
+    heat: 0
+    aroma: 6
+    freshness: 5
+  texture_targets:
+  - firme
+  notes: 'Bloco atômico: um ingrediente, função clara na composição.'
+- id: camurim
+  name: Camurim
+  family: litoral
+  ingredient_ids:
+  - camurim
+  culinary_roles:
+  - protagonista
+  - caldo
+  - brasa
+  compatible_protagonists:
+  - camurim
+  recommended_base_ids: []
+  target_sensory_profile:
+    acidity: 1
+    saltiness: 2
+    sweetness: 1
+    bitterness: 1
+    umami: 7
+    fat: 3
+    heat: 0
+    aroma: 5
+    freshness: 7
+  texture_targets:
+  - firme
+  - tostado
+  notes: 'Bloco atômico: um ingrediente, função clara na composição.'
+- id: caranguejo_uca
+  name: Caranguejo-uçá
+  family: litoral
+  ingredient_ids:
+  - caranguejo_uca
+  culinary_roles:
+  - protagonista
+  - caldo
+  - recheio
+  compatible_protagonists:
+  - caranguejo_uca
+  recommended_base_ids:
+  - pure_de_macaxeira
+  target_sensory_profile:
+    acidity: 1
+    saltiness: 3
+    sweetness: 3
+    bitterness: 1
+    umami: 9
+    fat: 2
+    heat: 0
+    aroma: 8
+    freshness: 5
+  texture_targets:
+  - firme
+  notes: 'Bloco atômico: um ingrediente, função clara na composição.'
+- id: carne_de_sol
+  name: Carne-de-sol
+  family: litoral_sertão
+  ingredient_ids:
+  - carne_de_sol
+  culinary_roles:
+  - protagonista
+  - recheio
+  - caldo
+  compatible_protagonists:
+  - bode
+  - carne_de_sol
+  - porco
+  recommended_base_ids:
+  - creme_de_fava
+  - cuscuz_de_flocao
+  - feijao_verde_cremoso
+  - pure_de_jerimum_assado
+  - pure_de_macaxeira
+  target_sensory_profile:
+    acidity: 1
+    saltiness: 8
+    sweetness: 1
+    bitterness: 1
+    umami: 9
+    fat: 5
+    heat: 0
+    aroma: 6
+    freshness: 2
+  texture_targets:
+  - firme
+  notes: 'Bloco atômico: um ingrediente, função clara na composição.'
+- id: castanha_de_caju
+  name: Castanha-de-caju
+  family: litoral_sertão
+  ingredient_ids:
+  - castanha_de_caju
+  culinary_roles:
+  - textura
+  - molho
+  - gordura
+  compatible_protagonists:
+  - camarao_branco
+  - camurim
+  - carne_de_sol
+  - carnes
+  - cavala
+  - cioba
+  - cordeiro
+  - crustaceos
+  - jerimum
+  - lagosta_vermelha
+  - peixes
+  - polvo
+  - porco
+  - queijo_coalho
+  - sirigado
+  - tilapia
+  - vegetais
+  recommended_base_ids:
+  - arroz_de_coco
+  - arroz_vermelho_soltinho
+  - cuscuz_de_flocao
+  - farofa_umida_de_cebola
+  - pure_de_jerimum_assado
+  target_sensory_profile:
+    acidity: 1
+    saltiness: 1
+    sweetness: 3
+    bitterness: 2
+    umami: 6
+    fat: 8
+    heat: 0
+    aroma: 8
+    freshness: 1
+  texture_targets:
   - crocante
-  notes: ''
-- id: cavala_tamarindo_e_cebola_curtida
-  name: Cavala, tamarindo e cebola curtida
+  - cremoso
+  - untuoso
+  notes: 'Bloco atômico: um ingrediente, função clara na composição.'
+- id: cavala
+  name: Cavala
   family: litoral
   ingredient_ids:
   - cavala
-  - tamarindo
-  - cebola_roxa
-  - coentro
   culinary_roles:
   - protagonista
-  - acidez
-  - frescor
+  - cura
+  - brasa
   compatible_protagonists:
   - cavala
   - serra
@@ -211,1045 +710,1676 @@ flavor_blocks:
   recommended_base_ids:
   - batata_doce_na_brasa
   target_sensory_profile:
-    acidity: 9
-    saltiness: 5
-    sweetness: 5
-    bitterness: 2
-    umami: 9
-    fat: 6
-    heat: 2
-    aroma: 8
-    freshness: 8
-  texture_targets:
-  - gorduroso
-  - crocante
-  notes: ''
-- id: peixe_e_vinagreira_com_arroz_vermelho
-  name: Peixe e vinagreira com arroz vermelho
-  family: meio_norte
-  ingredient_ids:
-  - vinagreira
-  - arroz_vermelho
-  - gergelim
-  - cebolinha
-  culinary_roles:
-  - base
-  - acidez
-  - aroma
-  compatible_protagonists:
-  - pargo
-  - pescada_amarela
-  - camurim
-  recommended_base_ids:
-  - arroz_de_cuxa_simplificado
-  target_sensory_profile:
-    acidity: 7
-    saltiness: 4
-    sweetness: 3
-    bitterness: 3
-    umami: 6
-    fat: 3
-    heat: 1
-    aroma: 8
-    freshness: 8
-  texture_targets:
-  - solto
-  - folhoso
-  notes: ''
-- id: sururu_coco_e_tomate
-  name: Sururu, coco e tomate
-  family: litoral
-  ingredient_ids:
-  - sururu
-  - leite_de_coco
-  - tomate
-  - coentro
-  culinary_roles:
-  - protagonista
-  - molho
-  - umami
-  compatible_protagonists:
-  - sururu
-  recommended_base_ids:
-  - cuscuz_de_flocao
-  target_sensory_profile:
-    acidity: 5
-    saltiness: 6
-    sweetness: 3
+    acidity: 1
+    saltiness: 2
+    sweetness: 1
     bitterness: 1
-    umami: 9
+    umami: 8
     fat: 7
-    heat: 2
-    aroma: 9
+    heat: 0
+    aroma: 7
     freshness: 5
   texture_targets:
-  - cremoso
-  - granulado
-  notes: ''
-- id: crustaceo_dende_e_limao
-  name: Crustáceo, dendê e limão
-  family: baiano
+  - firme
+  - tostado
+  notes: 'Bloco atômico: um ingrediente, função clara na composição.'
+- id: cebola_roxa
+  name: Cebola-roxa
+  family: agreste
   ingredient_ids:
-  - azeite_de_dende
-  - limao_galego
-  - coentro
-  - pimenta_malagueta
+  - cebola_roxa
   culinary_roles:
-  - molho
-  - gordura
+  - aroma
   - acidez
+  - textura
+  compatible_protagonists:
+  - bode
+  - camurim
+  - carne_de_sol
+  - carnes
+  - cavala
+  - cioba
+  - peixes
+  - polvo
+  - porco
+  - queijo_coalho
+  - serra
+  - sirigado
+  - xareu
+  recommended_base_ids:
+  - arroz_vermelho_soltinho
+  - baiao_leve
+  - batata_doce_na_brasa
+  - creme_de_fava
+  - cuscuz_de_flocao
+  - feijao_verde_cremoso
+  - macaxeira_assada_e_prensada
+  - pure_de_macaxeira
+  target_sensory_profile:
+    acidity: 2
+    saltiness: 1
+    sweetness: 5
+    bitterness: 2
+    umami: 3
+    fat: 0
+    heat: 0
+    aroma: 7
+    freshness: 6
+  texture_targets:
+  - aromático
+  - fresco
+  - crocante
+  notes: 'Bloco atômico: um ingrediente, função clara na composição.'
+- id: cebolinha
+  name: Cebolinha
+  family: litoral_sertão
+  ingredient_ids:
+  - cebolinha
+  culinary_roles:
+  - aroma
+  - frescor
+  - finalização
+  compatible_protagonists:
+  - bode
+  - camarao_branco
+  - camurim
+  - carne_de_sol
+  - carnes
+  - cordeiro
+  - galinha_caipira
+  - jerimum
+  - lagosta_verde
+  - lagosta_vermelha
+  - pargo
+  - peixes
+  - pescada_amarela
+  - vegetais
+  recommended_base_ids:
+  - arroz_de_cuxa_simplificado
+  - arroz_vermelho_soltinho
+  - creme_de_milho_verde
+  - farofa_umida_de_cebola
+  - feijao_verde_cremoso
+  - pure_de_macaxeira
+  target_sensory_profile:
+    acidity: 1
+    saltiness: 0
+    sweetness: 1
+    bitterness: 2
+    umami: 1
+    fat: 0
+    heat: 0
+    aroma: 8
+    freshness: 9
+  texture_targets:
+  - aromático
+  - fresco
+  - leve
+  notes: 'Bloco atômico: um ingrediente, função clara na composição.'
+- id: charque
+  name: Charque
+  family: litoral_sertão
+  ingredient_ids:
+  - charque
+  culinary_roles:
+  - protagonista
+  - recheio
+  - caldo
+  compatible_protagonists: []
+  recommended_base_ids: []
+  target_sensory_profile:
+    acidity: 1
+    saltiness: 9
+    sweetness: 1
+    bitterness: 1
+    umami: 9
+    fat: 4
+    heat: 0
+    aroma: 6
+    freshness: 2
+  texture_targets:
+  - firme
+  notes: 'Bloco atômico: um ingrediente, função clara na composição.'
+- id: cioba
+  name: Cioba
+  family: litoral
+  ingredient_ids:
+  - cioba
+  culinary_roles:
+  - protagonista
+  - cru
+  - brasa
+  compatible_protagonists:
+  - cioba
+  recommended_base_ids: []
+  target_sensory_profile:
+    acidity: 1
+    saltiness: 2
+    sweetness: 1
+    bitterness: 1
+    umami: 7
+    fat: 2
+    heat: 0
+    aroma: 5
+    freshness: 7
+  texture_targets:
+  - firme
+  - fresco
+  - macio
+  notes: 'Bloco atômico: um ingrediente, função clara na composição.'
+- id: coco_fresco
+  name: Coco-fresco
+  family: mata
+  ingredient_ids:
+  - coco_fresco
+  culinary_roles:
+  - textura
+  - molho
+  - aroma
   compatible_protagonists:
   - camarao_branco
-  - camarao_rosa
+  - camurim
+  - caranguejo_uca
+  - cioba
+  - crustaceos
+  - jaca
+  - jerimum
   - lagosta_vermelha
+  - pargo
+  - peixes
+  - pescada_amarela
+  - sirigado
+  - sururu
   recommended_base_ids:
   - arroz_de_coco
   target_sensory_profile:
-    acidity: 7
-    saltiness: 5
-    sweetness: 3
-    bitterness: 2
-    umami: 8
-    fat: 9
-    heat: 5
-    aroma: 10
-    freshness: 7
-  texture_targets:
-  - cremoso
-  - suculento
-  notes: ''
-- id: camarao_milho_e_queijo_coalho
-  name: Camarão, milho e queijo coalho
-  family: litoral_sertão
-  ingredient_ids:
-  - camarao_branco
-  - milho_verde
-  - queijo_coalho
-  - pimenta_de_cheiro
-  culinary_roles:
-  - protagonista
-  - base
-  - sal
-  - aroma
-  compatible_protagonists:
-  - camarao_branco
-  recommended_base_ids:
-  - creme_de_milho_verde
-  target_sensory_profile:
-    acidity: 4
-    saltiness: 6
-    sweetness: 6
-    bitterness: 1
-    umami: 8
-    fat: 7
-    heat: 2
-    aroma: 9
-    freshness: 5
-  texture_targets:
-  - cremoso
-  - tostado
-  notes: ''
-- id: lagosta_caju_e_manteiga_de_garrafa
-  name: Lagosta, caju e manteiga de garrafa
-  family: litoral
-  ingredient_ids:
-  - lagosta_vermelha
-  - caju
-  - manteiga_de_garrafa
-  - cebolinha
-  culinary_roles:
-  - protagonista
-  - molho
-  - acidez
-  compatible_protagonists:
-  - lagosta_vermelha
-  - lagosta_verde
-  recommended_base_ids:
-  - pure_de_macaxeira
-  target_sensory_profile:
-    acidity: 7
-    saltiness: 5
+    acidity: 3
+    saltiness: 1
     sweetness: 5
     bitterness: 1
-    umami: 9
+    umami: 1
     fat: 8
-    heat: 1
-    aroma: 9
+    heat: 0
+    aroma: 8
     freshness: 7
   texture_targets:
-  - suculento
+  - crocante
   - cremoso
-  notes: ''
-- id: caranguejo_coco_e_macaxeira
-  name: Caranguejo, coco e macaxeira
-  family: manguezal
-  ingredient_ids:
-  - caranguejo_uca
-  - leite_de_coco
-  - macaxeira
-  - pimenta_de_cheiro
-  culinary_roles:
-  - protagonista
-  - molho
-  - base
-  compatible_protagonists:
-  - caranguejo_uca
-  recommended_base_ids:
-  - pure_de_macaxeira
-  target_sensory_profile:
-    acidity: 5
-    saltiness: 6
-    sweetness: 4
-    bitterness: 1
-    umami: 9
-    fat: 7
-    heat: 2
-    aroma: 9
-    freshness: 5
-  texture_targets:
-  - cremoso
-  - fibroso
-  notes: ''
-- id: polvo_feijao_verde_e_caju
-  name: Polvo, feijão-verde e caju
+  - untuoso
+  notes: 'Bloco atômico: um ingrediente, função clara na composição.'
+- id: coentro
+  name: Coentro
   family: litoral_sertão
   ingredient_ids:
-  - polvo
+  - coentro
+  culinary_roles:
+  - aroma
+  - frescor
+  - finalização
+  compatible_protagonists:
+  - bode
+  - camarao_branco
+  - camarao_rosa
+  - camurim
+  - carne_de_sol
+  - cavala
+  - cioba
+  - cordeiro
+  - crustaceos
   - feijao_verde
-  - caju
-  - cebola_roxa
+  - galinha_caipira
+  - jaca
+  - jerimum
+  - lagosta_vermelha
+  - pargo
+  - peixes
+  - pescada_amarela
+  - queijo_coalho
+  - serra
+  - sirigado
+  - sururu
+  - tilapia
+  - vegetais
+  - xareu
+  recommended_base_ids:
+  - arroz_de_coco
+  - arroz_vermelho_soltinho
+  - batata_doce_na_brasa
+  - creme_de_milho_verde
+  - cuscuz_de_flocao
+  - pure_de_jerimum_assado
+  - pure_de_macaxeira
+  target_sensory_profile:
+    acidity: 1
+    saltiness: 0
+    sweetness: 1
+    bitterness: 2
+    umami: 1
+    fat: 0
+    heat: 0
+    aroma: 10
+    freshness: 10
+  texture_targets:
+  - aromático
+  - fresco
+  - leve
+  notes: 'Bloco atômico: um ingrediente, função clara na composição.'
+- id: colorau
+  name: Colorau
+  family: litoral_sertão
+  ingredient_ids:
+  - colorau
+  culinary_roles:
+  - cor
+  - aroma
+  - tempero
+  compatible_protagonists:
+  - galinha_caipira
+  - peixes
+  - porco
+  - vegetais
+  recommended_base_ids:
+  - arroz_vermelho_soltinho
+  target_sensory_profile:
+    acidity: 2
+    saltiness: 2
+    sweetness: 3
+    bitterness: 2
+    umami: 4
+    fat: 2
+    heat: 1
+    aroma: 6
+    freshness: 3
+  texture_targets:
+  - aromático
+  notes: 'Bloco atômico: um ingrediente, função clara na composição.'
+- id: cominho
+  name: Cominho
+  family: litoral_sertão
+  ingredient_ids:
+  - cominho
+  culinary_roles:
+  - aroma
+  - tempero
+  - base_aromatica
+  compatible_protagonists:
+  - bode
+  - carne_de_sol
+  - galinha_caipira
+  - palma_alimenticia
+  - porco
+  recommended_base_ids:
+  - creme_de_fava
+  - cuscuz_de_flocao
+  - pure_de_jerimum_assado
+  - xerem_cremoso
+  target_sensory_profile:
+    acidity: 2
+    saltiness: 2
+    sweetness: 3
+    bitterness: 3
+    umami: 4
+    fat: 2
+    heat: 1
+    aroma: 10
+    freshness: 3
+  texture_targets:
+  - aromático
+  notes: 'Bloco atômico: um ingrediente, função clara na composição.'
+- id: cordeiro
+  name: Cordeiro
+  family: sertão
+  ingredient_ids:
+  - cordeiro
   culinary_roles:
   - protagonista
-  - base
-  - acidez
+  - ensopado
+  - brasa
   compatible_protagonists:
-  - polvo
+  - cordeiro
   recommended_base_ids:
-  - feijao_verde_cremoso
+  - arroz_vermelho_soltinho
+  - cuscuz_de_flocao
   target_sensory_profile:
-    acidity: 7
-    saltiness: 5
-    sweetness: 4
-    bitterness: 2
+    acidity: 1
+    saltiness: 3
+    sweetness: 1
+    bitterness: 1
     umami: 8
-    fat: 4
-    heat: 1
-    aroma: 8
-    freshness: 8
+    fat: 6
+    heat: 0
+    aroma: 7
+    freshness: 2
   texture_targets:
   - firme
+  - tostado
+  notes: 'Bloco atômico: um ingrediente, função clara na composição.'
+- id: farinha_d_agua
+  name: Farinha-d'água
+  family: sertão
+  ingredient_ids:
+  - farinha_d_agua
+  culinary_roles:
+  - base
+  - textura
+  - espessante
+  compatible_protagonists: []
+  recommended_base_ids: []
+  target_sensory_profile:
+    acidity: 1
+    saltiness: 1
+    sweetness: 2
+    bitterness: 1
+    umami: 2
+    fat: 2
+    heat: 0
+    aroma: 6
+    freshness: 2
+  texture_targets:
   - cremoso
   - crocante
-  notes: ''
-- id: lula_farinha_e_pimenta_de_cheiro
-  name: Lula, farinha e pimenta-de-cheiro
-  family: litoral
+  notes: 'Bloco atômico: um ingrediente, função clara na composição.'
+- id: farinha_de_mandioca
+  name: Farinha-de-mandioca
+  family: litoral_sertão
   ingredient_ids:
-  - lula
   - farinha_de_mandioca
-  - pimenta_de_cheiro
-  - limao_galego
   culinary_roles:
-  - protagonista
+  - base
   - textura
-  - acidez
+  - espessante
   compatible_protagonists:
   - lula
   recommended_base_ids:
   - farofa_umida_de_cebola
   target_sensory_profile:
-    acidity: 7
-    saltiness: 5
-    sweetness: 3
+    acidity: 1
+    saltiness: 1
+    sweetness: 2
     bitterness: 1
-    umami: 7
-    fat: 4
-    heat: 3
-    aroma: 9
-    freshness: 8
+    umami: 2
+    fat: 2
+    heat: 0
+    aroma: 5
+    freshness: 2
   texture_targets:
+  - cremoso
   - crocante
-  - macio
-  notes: ''
-- id: carne_de_sol_macaxeira_e_nata
-  name: Carne-de-sol, macaxeira e nata
+  notes: 'Bloco atômico: um ingrediente, função clara na composição.'
+- id: fava
+  name: Fava
   family: sertão
   ingredient_ids:
-  - carne_de_sol
-  - macaxeira
-  - nata
-  - cebola_roxa
-  culinary_roles:
-  - protagonista
-  - base
-  - molho
-  compatible_protagonists:
-  - carne_de_sol
-  recommended_base_ids:
-  - pure_de_macaxeira
-  target_sensory_profile:
-    acidity: 3
-    saltiness: 8
-    sweetness: 4
-    bitterness: 1
-    umami: 9
-    fat: 9
-    heat: 1
-    aroma: 8
-    freshness: 3
-  texture_targets:
-  - fibroso
-  - cremoso
-  notes: ''
-- id: carne_de_sol_caju_e_feijao_verde
-  name: Carne-de-sol, caju e feijão-verde
-  family: sertão
-  ingredient_ids:
-  - carne_de_sol
-  - caju
-  - feijao_verde
-  - cebolinha
-  culinary_roles:
-  - protagonista
-  - acidez
-  - base
-  compatible_protagonists:
-  - carne_de_sol
-  recommended_base_ids:
-  - feijao_verde_cremoso
-  target_sensory_profile:
-    acidity: 7
-    saltiness: 7
-    sweetness: 5
-    bitterness: 1
-    umami: 9
-    fat: 5
-    heat: 1
-    aroma: 8
-    freshness: 8
-  texture_targets:
-  - firme
-  - cremoso
-  notes: ''
-- id: carne_de_sol_jerimum_e_coalho
-  name: Carne-de-sol, jerimum e coalho
-  family: sertão
-  ingredient_ids:
-  - carne_de_sol
-  - jerimum
-  - queijo_coalho
-  - coentro
-  culinary_roles:
-  - protagonista
-  - base
-  - sal
-  compatible_protagonists:
-  - carne_de_sol
-  recommended_base_ids:
-  - pure_de_jerimum_assado
-  target_sensory_profile:
-    acidity: 4
-    saltiness: 8
-    sweetness: 6
-    bitterness: 1
-    umami: 9
-    fat: 7
-    heat: 1
-    aroma: 7
-    freshness: 4
-  texture_targets:
-  - cremoso
-  - tostado
-  notes: ''
-- id: bode_cominho_e_fava
-  name: Bode, cominho e fava
-  family: sertão
-  ingredient_ids:
-  - bode
-  - cominho
   - fava
-  - cebola_roxa
   culinary_roles:
-  - protagonista
-  - aroma
   - base
+  - protagonista_vegetal
+  - caldo
   compatible_protagonists:
   - bode
+  - carne_de_sol
   recommended_base_ids:
   - creme_de_fava
   target_sensory_profile:
-    acidity: 4
-    saltiness: 6
+    acidity: 1
+    saltiness: 1
     sweetness: 3
-    bitterness: 3
-    umami: 10
-    fat: 6
-    heat: 2
-    aroma: 10
+    bitterness: 1
+    umami: 7
+    fat: 1
+    heat: 0
+    aroma: 4
     freshness: 3
   texture_targets:
-  - macio
   - cremoso
-  notes: ''
-- id: bode_tamarindo_e_jerimum
-  name: Bode, tamarindo e jerimum
-  family: sertão
+  notes: 'Bloco atômico: um ingrediente, função clara na composição.'
+- id: feijao_de_corda
+  name: Feijão-de-corda
+  family: litoral_sertão
   ingredient_ids:
-  - bode
-  - tamarindo
-  - jerimum
-  - cominho
-  culinary_roles:
-  - protagonista
-  - acidez
-  - base
-  compatible_protagonists:
-  - bode
-  recommended_base_ids:
-  - pure_de_jerimum_assado
-  target_sensory_profile:
-    acidity: 8
-    saltiness: 6
-    sweetness: 6
-    bitterness: 3
-    umami: 9
-    fat: 6
-    heat: 2
-    aroma: 10
-    freshness: 5
-  texture_targets:
-  - macio
-  - cremoso
-  notes: ''
-- id: cordeiro_umbu_e_arroz_vermelho
-  name: Cordeiro, umbu e arroz vermelho
-  family: sertão
-  ingredient_ids:
-  - cordeiro
-  - umbu
-  - arroz_vermelho
-  - cebolinha
-  culinary_roles:
-  - protagonista
-  - acidez
-  - base
-  compatible_protagonists:
-  - cordeiro
-  recommended_base_ids:
-  - arroz_vermelho_soltinho
-  target_sensory_profile:
-    acidity: 8
-    saltiness: 5
-    sweetness: 4
-    bitterness: 2
-    umami: 9
-    fat: 7
-    heat: 1
-    aroma: 8
-    freshness: 7
-  texture_targets:
-  - suculento
-  - solto
-  notes: ''
-- id: cordeiro_caju_e_castanha
-  name: Cordeiro, caju e castanha
-  family: sertão_litoral
-  ingredient_ids:
-  - cordeiro
-  - caju
-  - castanha_de_caju
-  - coentro
-  culinary_roles:
-  - protagonista
-  - acidez
-  - textura
-  compatible_protagonists:
-  - cordeiro
-  recommended_base_ids:
-  - cuscuz_de_flocao
-  target_sensory_profile:
-    acidity: 7
-    saltiness: 5
-    sweetness: 5
-    bitterness: 2
-    umami: 8
-    fat: 7
-    heat: 1
-    aroma: 9
-    freshness: 7
-  texture_targets:
-  - suculento
-  - crocante
-  notes: ''
-- id: porco_rapadura_e_tamarindo
-  name: Porco, rapadura e tamarindo
-  family: sertão
-  ingredient_ids:
-  - porco
-  - rapadura
-  - tamarindo
-  - pimenta_malagueta
-  culinary_roles:
-  - protagonista
-  - glace
-  - acidez
-  compatible_protagonists:
-  - porco
-  recommended_base_ids:
-  - batata_doce_na_brasa
-  target_sensory_profile:
-    acidity: 8
-    saltiness: 5
-    sweetness: 7
-    bitterness: 2
-    umami: 8
-    fat: 8
-    heat: 5
-    aroma: 9
-    freshness: 4
-  texture_targets:
-  - crocante
-  - suculento
-  notes: ''
-- id: porco_caju_e_feijao_de_corda
-  name: Porco, caju e feijão-de-corda
-  family: sertão
-  ingredient_ids:
-  - porco
-  - caju
   - feijao_de_corda
-  - cebola_roxa
   culinary_roles:
-  - protagonista
-  - acidez
   - base
+  - textura
+  - protagonista_vegetal
   compatible_protagonists:
   - porco
   recommended_base_ids:
   - baiao_leve
   target_sensory_profile:
-    acidity: 7
-    saltiness: 6
-    sweetness: 5
-    bitterness: 2
-    umami: 9
-    fat: 7
-    heat: 1
-    aroma: 8
-    freshness: 7
+    acidity: 1
+    saltiness: 1
+    sweetness: 3
+    bitterness: 1
+    umami: 6
+    fat: 1
+    heat: 0
+    aroma: 4
+    freshness: 3
   texture_targets:
-  - suculento
-  - granulado
-  notes: ''
-- id: galinha_milho_e_quiabo
-  name: Galinha, milho e quiabo
+  - cremoso
+  - crocante
+  notes: 'Bloco atômico: um ingrediente, função clara na composição.'
+- id: feijao_fradinho
+  name: Feijão-fradinho
   family: sertão
   ingredient_ids:
-  - galinha_caipira
-  - milho_verde
-  - quiabo
-  - cominho
+  - feijao_fradinho
   culinary_roles:
-  - protagonista
+  - base
+  - massa
+  - protagonista_vegetal
+  compatible_protagonists:
+  - porco
+  recommended_base_ids: []
+  target_sensory_profile:
+    acidity: 1
+    saltiness: 1
+    sweetness: 3
+    bitterness: 1
+    umami: 6
+    fat: 1
+    heat: 0
+    aroma: 4
+    freshness: 3
+  texture_targets:
+  - cremoso
+  notes: 'Bloco atômico: um ingrediente, função clara na composição.'
+- id: feijao_verde
+  name: Feijão-verde
+  family: litoral_sertão
+  ingredient_ids:
+  - feijao_verde
+  culinary_roles:
   - base
   - textura
+  - protagonista_vegetal
   compatible_protagonists:
-  - galinha_caipira
+  - carne_de_sol
+  - feijao_verde
+  - polvo
+  - porco
   recommended_base_ids:
-  - xerem_cremoso
+  - cuscuz_de_flocao
+  - feijao_verde_cremoso
   target_sensory_profile:
-    acidity: 4
-    saltiness: 6
-    sweetness: 5
-    bitterness: 2
-    umami: 9
-    fat: 5
-    heat: 1
-    aroma: 9
-    freshness: 4
+    acidity: 1
+    saltiness: 1
+    sweetness: 3
+    bitterness: 1
+    umami: 6
+    fat: 1
+    heat: 0
+    aroma: 4
+    freshness: 6
   texture_targets:
-  - macio
   - cremoso
-  - firme
-  notes: ''
-- id: galinha_jerimum_e_pimenta_de_cheiro
-  name: Galinha, jerimum e pimenta-de-cheiro
+  - crocante
+  notes: 'Bloco atômico: um ingrediente, função clara na composição.'
+- id: flocao_de_milho
+  name: Flocão-de-milho
+  family: litoral_sertão
+  ingredient_ids:
+  - flocao_de_milho
+  culinary_roles:
+  - base
+  - textura
+  - empanado
+  compatible_protagonists:
+  - camarao_branco
+  - carnes
+  - galinha_caipira
+  - peixes
+  - pescada_amarela
+  - queijo_coalho
+  - sirigado
+  - tilapia
+  - vegetais
+  recommended_base_ids:
+  - farofa_umida_de_cebola
+  target_sensory_profile:
+    acidity: 1
+    saltiness: 1
+    sweetness: 4
+    bitterness: 1
+    umami: 2
+    fat: 2
+    heat: 0
+    aroma: 5
+    freshness: 2
+  texture_targets:
+  - cremoso
+  - crocante
+  notes: 'Bloco atômico: um ingrediente, função clara na composição.'
+- id: fruto_do_mandacaru
+  name: Fruto-do-mandacaru
   family: sertão
   ingredient_ids:
+  - fruto_do_mandacaru
+  culinary_roles:
+  - fruta
+  - frescor
+  - molho
+  compatible_protagonists:
+  - peixes
+  - queijo_coalho
+  - vegetais
+  recommended_base_ids:
+  - cuscuz_de_flocao
+  target_sensory_profile:
+    acidity: 3
+    saltiness: 1
+    sweetness: 6
+    bitterness: 1
+    umami: 1
+    fat: 0
+    heat: 0
+    aroma: 6
+    freshness: 8
+  texture_targets:
+  - fresco
+  - leve
+  - cremoso
+  notes: 'Bloco atômico: um ingrediente, função clara na composição.'
+- id: galinha_caipira
+  name: Galinha-caipira
+  family: litoral_sertão
+  ingredient_ids:
   - galinha_caipira
-  - jerimum
-  - pimenta_de_cheiro
-  - coentro
   culinary_roles:
   - protagonista
-  - base
-  - aroma
+  - caldo
+  - ensopado
   compatible_protagonists:
   - galinha_caipira
   recommended_base_ids:
   - pure_de_jerimum_assado
+  - xerem_cremoso
   target_sensory_profile:
-    acidity: 4
-    saltiness: 5
-    sweetness: 6
+    acidity: 1
+    saltiness: 3
+    sweetness: 1
     bitterness: 1
     umami: 8
     fat: 5
-    heat: 3
-    aroma: 10
-    freshness: 6
+    heat: 0
+    aroma: 7
+    freshness: 2
   texture_targets:
-  - macio
-  - cremoso
-  notes: ''
-- id: queijo_coalho_caju_e_mel_de_engenho
-  name: Queijo coalho, caju e mel de engenho
-  family: sertão_litoral
-  ingredient_ids:
-  - queijo_coalho
-  - caju
-  - mel_de_engenho
-  - pimenta_de_cheiro
-  culinary_roles:
-  - protagonista
-  - acidez
-  - doçura
-  compatible_protagonists:
-  - queijo_coalho
-  recommended_base_ids:
-  - tapioca_de_chapa
-  target_sensory_profile:
-    acidity: 7
-    saltiness: 7
-    sweetness: 7
-    bitterness: 2
-    umami: 7
-    fat: 7
-    heat: 2
-    aroma: 9
-    freshness: 6
-  texture_targets:
-  - tostado
-  - elástico
-  notes: ''
-- id: queijo_coalho_milho_e_tomate
-  name: Queijo coalho, milho e tomate
-  family: sertão
-  ingredient_ids:
-  - queijo_coalho
-  - milho_verde
-  - tomate
-  - alfavaca
-  culinary_roles:
-  - protagonista
-  - base
-  - acidez
-  compatible_protagonists:
-  - queijo_coalho
-  recommended_base_ids:
-  - creme_de_milho_verde
-  target_sensory_profile:
-    acidity: 5
-    saltiness: 7
-    sweetness: 5
-    bitterness: 2
-    umami: 7
-    fat: 7
-    heat: 1
-    aroma: 9
-    freshness: 5
-  texture_targets:
-  - tostado
-  - cremoso
-  notes: ''
-- id: jerimum_castanha_e_vinagreira
-  name: Jerimum, castanha e vinagreira
-  family: sertão_meio_norte
-  ingredient_ids:
-  - jerimum
-  - castanha_de_caju
-  - vinagreira
-  - pimenta_de_cheiro
-  culinary_roles:
-  - protagonista_vegetal
-  - textura
-  - acidez
-  compatible_protagonists:
-  - jerimum
-  recommended_base_ids:
-  - arroz_vermelho_soltinho
-  target_sensory_profile:
-    acidity: 7
-    saltiness: 4
-    sweetness: 6
-    bitterness: 3
-    umami: 6
-    fat: 6
-    heat: 2
-    aroma: 9
-    freshness: 8
-  texture_targets:
-  - cremoso
-  - crocante
-  notes: ''
-- id: jaca_dende_e_tamarindo
-  name: Jaca, dendê e tamarindo
-  family: baiano
-  ingredient_ids:
-  - jaca
-  - azeite_de_dende
-  - tamarindo
-  - coentro
-  culinary_roles:
-  - protagonista_vegetal
-  - gordura
-  - acidez
-  compatible_protagonists:
-  - jaca
-  recommended_base_ids:
-  - arroz_de_coco
-  target_sensory_profile:
-    acidity: 8
-    saltiness: 5
-    sweetness: 6
-    bitterness: 2
-    umami: 6
-    fat: 8
-    heat: 2
-    aroma: 10
-    freshness: 6
-  texture_targets:
-  - fibroso
-  - cremoso
-  notes: ''
-- id: palma_tomate_e_queijo_coalho
-  name: Palma, tomate e queijo coalho
-  family: sertão
-  ingredient_ids:
-  - palma_alimenticia
-  - tomate
-  - queijo_coalho
-  - cominho
-  culinary_roles:
-  - protagonista_vegetal
-  - acidez
-  - sal
-  compatible_protagonists:
-  - palma_alimenticia
-  recommended_base_ids:
-  - cuscuz_de_flocao
-  target_sensory_profile:
-    acidity: 5
-    saltiness: 6
-    sweetness: 4
-    bitterness: 2
-    umami: 6
-    fat: 5
-    heat: 1
-    aroma: 8
-    freshness: 7
-  texture_targets:
-  - suculento
-  - tostado
-  notes: ''
-- id: feijao_verde_coco_e_pimenta
-  name: Feijão-verde, coco e pimenta
-  family: sertão_litoral
-  ingredient_ids:
-  - feijao_verde
-  - leite_de_coco
-  - pimenta_de_cheiro
-  - coentro
-  culinary_roles:
-  - protagonista_vegetal
-  - molho
-  - aroma
-  compatible_protagonists:
-  - feijao_verde
-  recommended_base_ids:
-  - cuscuz_de_flocao
-  target_sensory_profile:
-    acidity: 4
-    saltiness: 5
-    sweetness: 5
-    bitterness: 1
-    umami: 7
-    fat: 7
-    heat: 3
-    aroma: 10
-    freshness: 6
-  texture_targets:
-  - cremoso
   - firme
-  notes: ''
-- id: fava_carne_de_sol_e_caju
-  name: Fava, carne-de-sol e caju
+  notes: 'Bloco atômico: um ingrediente, função clara na composição.'
+- id: gergelim
+  name: Gergelim
   family: sertão
   ingredient_ids:
-  - fava
-  - carne_de_sol
-  - caju
-  - cebola_roxa
-  culinary_roles:
-  - base
-  - protagonista
-  - acidez
-  compatible_protagonists:
-  - carne_de_sol
-  - bode
-  recommended_base_ids:
-  - creme_de_fava
-  target_sensory_profile:
-    acidity: 7
-    saltiness: 8
-    sweetness: 4
-    bitterness: 2
-    umami: 10
-    fat: 6
-    heat: 1
-    aroma: 8
-    freshness: 6
-  texture_targets:
-  - cremoso
-  - fibroso
-  notes: ''
-- id: milho_coalho_e_cebolinha
-  name: Milho, coalho e cebolinha
-  family: sertão
-  ingredient_ids:
-  - milho_verde
-  - queijo_coalho
-  - cebolinha
-  - manteiga_de_garrafa
-  culinary_roles:
-  - base
-  - sal
-  - aroma
-  compatible_protagonists:
-  - camarao_branco
-  - carne_de_sol
-  - jerimum
-  recommended_base_ids:
-  - creme_de_milho_verde
-  target_sensory_profile:
-    acidity: 3
-    saltiness: 7
-    sweetness: 6
-    bitterness: 1
-    umami: 7
-    fat: 8
-    heat: 1
-    aroma: 8
-    freshness: 4
-  texture_targets:
-  - cremoso
-  - tostado
-  notes: ''
-- id: arroz_vermelho_vinagreira_e_gergelim
-  name: Arroz vermelho, vinagreira e gergelim
-  family: meio_norte
-  ingredient_ids:
-  - arroz_vermelho
-  - vinagreira
   - gergelim
-  - cebolinha
   culinary_roles:
-  - base
-  - acidez
   - textura
+  - aroma
+  - gordura
   compatible_protagonists:
-  - peixes
+  - camurim
   - galinha_caipira
+  - pargo
+  - peixes
+  - pescada_amarela
   - vegetais
   recommended_base_ids:
   - arroz_de_cuxa_simplificado
   target_sensory_profile:
-    acidity: 7
-    saltiness: 4
+    acidity: 1
+    saltiness: 1
     sweetness: 3
-    bitterness: 3
-    umami: 6
-    fat: 4
-    heat: 1
-    aroma: 8
-    freshness: 8
-  texture_targets:
-  - solto
-  - crocante
-  notes: ''
-- id: coco_tostado_castanha_e_limao_cravo
-  name: Coco tostado, castanha e limão-cravo
-  family: litoral
-  ingredient_ids:
-  - coco_fresco
-  - castanha_de_caju
-  - limao_cravo
-  - coentro
-  culinary_roles:
-  - textura
-  - gordura
-  - acidez
-  compatible_protagonists:
-  - peixes
-  - crustaceos
-  - jerimum
-  recommended_base_ids:
-  - arroz_de_coco
-  target_sensory_profile:
-    acidity: 7
-    saltiness: 3
-    sweetness: 5
     bitterness: 2
     umami: 5
     fat: 8
-    heat: 1
-    aroma: 10
+    heat: 0
+    aroma: 8
+    freshness: 1
+  texture_targets:
+  - crocante
+  - aromático
+  notes: 'Bloco atômico: um ingrediente, função clara na composição.'
+- id: goma_de_tapioca
+  name: Goma-de-tapioca
+  family: litoral_sertão
+  ingredient_ids:
+  - goma_de_tapioca
+  culinary_roles:
+  - base
+  - textura
+  - massa
+  compatible_protagonists: []
+  recommended_base_ids: []
+  target_sensory_profile:
+    acidity: 1
+    saltiness: 1
+    sweetness: 2
+    bitterness: 1
+    umami: 2
+    fat: 2
+    heat: 0
+    aroma: 2
+    freshness: 2
+  texture_targets:
+  - cremoso
+  - crocante
+  notes: 'Bloco atômico: um ingrediente, função clara na composição.'
+- id: graviola
+  name: Graviola
+  family: mata
+  ingredient_ids:
+  - graviola
+  culinary_roles:
+  - fruta
+  - molho
+  - sobremesa
+  compatible_protagonists: []
+  recommended_base_ids: []
+  target_sensory_profile:
+    acidity: 4
+    saltiness: 1
+    sweetness: 8
+    bitterness: 1
+    umami: 1
+    fat: 0
+    heat: 0
+    aroma: 8
+    freshness: 7
+  texture_targets:
+  - cremoso
+  - untuoso
+  notes: 'Bloco atômico: um ingrediente, função clara na composição.'
+- id: guaiuba
+  name: Guaiúba
+  family: litoral
+  ingredient_ids:
+  - guaiuba
+  culinary_roles:
+  - protagonista
+  - caldo
+  - brasa
+  compatible_protagonists: []
+  recommended_base_ids: []
+  target_sensory_profile:
+    acidity: 1
+    saltiness: 2
+    sweetness: 1
+    bitterness: 1
+    umami: 7
+    fat: 2
+    heat: 0
+    aroma: 5
+    freshness: 5
+  texture_targets:
+  - firme
+  - tostado
+  notes: 'Bloco atômico: um ingrediente, função clara na composição.'
+- id: inhame
+  name: Inhame
+  family: sertão
+  ingredient_ids:
+  - inhame
+  culinary_roles:
+  - base
+  - textura
+  - espessante
+  compatible_protagonists: []
+  recommended_base_ids: []
+  target_sensory_profile:
+    acidity: 1
+    saltiness: 1
+    sweetness: 4
+    bitterness: 1
+    umami: 2
+    fat: 1
+    heat: 0
+    aroma: 3
+    freshness: 2
+  texture_targets:
+  - cremoso
+  - crocante
+  notes: 'Bloco atômico: um ingrediente, função clara na composição.'
+- id: jaca
+  name: Jaca
+  family: mata
+  ingredient_ids:
+  - jaca
+  culinary_roles:
+  - fruta
+  - protagonista_vegetal
+  - textura
+  compatible_protagonists:
+  - jaca
+  recommended_base_ids:
+  - arroz_de_coco
+  target_sensory_profile:
+    acidity: 3
+    saltiness: 1
+    sweetness: 9
+    bitterness: 1
+    umami: 1
+    fat: 0
+    heat: 0
+    aroma: 9
     freshness: 7
   texture_targets:
   - crocante
-  - cremoso
-  notes: ''
-- id: tomate_colorau_e_pimentao_assados
-  name: Tomate, colorau e pimentão assados
-  family: regional
+  notes: 'Bloco atômico: um ingrediente, função clara na composição.'
+- id: jenipapo
+  name: Jenipapo
+  family: agreste
   ingredient_ids:
-  - tomate
-  - colorau
-  - pimentao
-  - alho
+  - jenipapo
+  culinary_roles:
+  - fruta
+  - fermentado
+  - molho
+  compatible_protagonists: []
+  recommended_base_ids: []
+  target_sensory_profile:
+    acidity: 5
+    saltiness: 1
+    sweetness: 6
+    bitterness: 3
+    umami: 1
+    fat: 0
+    heat: 0
+    aroma: 8
+    freshness: 9
+  texture_targets:
+  - cremoso
+  - untuoso
+  notes: 'Bloco atômico: um ingrediente, função clara na composição.'
+- id: jerimum
+  name: Jerimum
+  family: litoral_sertão
+  ingredient_ids:
+  - jerimum
+  culinary_roles:
+  - base
+  - protagonista_vegetal
+  - doçura
+  compatible_protagonists:
+  - bode
+  - camurim
+  - carne_de_sol
+  - cordeiro
+  - galinha_caipira
+  - jerimum
+  - lagosta_vermelha
+  - peixes
+  - queijo_coalho
+  - sirigado
+  - tilapia
+  recommended_base_ids:
+  - arroz_vermelho_soltinho
+  - pure_de_jerimum_assado
+  target_sensory_profile:
+    acidity: 2
+    saltiness: 1
+    sweetness: 7
+    bitterness: 2
+    umami: 3
+    fat: 0
+    heat: 0
+    aroma: 5
+    freshness: 4
+  texture_targets:
+  - cremoso
+  notes: 'Bloco atômico: um ingrediente, função clara na composição.'
+- id: lagosta_verde
+  name: Lagosta-verde
+  family: litoral
+  ingredient_ids:
+  - lagosta_verde
+  culinary_roles:
+  - protagonista
+  - caldo
+  - brasa
+  compatible_protagonists: []
+  recommended_base_ids: []
+  target_sensory_profile:
+    acidity: 1
+    saltiness: 3
+    sweetness: 4
+    bitterness: 1
+    umami: 9
+    fat: 2
+    heat: 0
+    aroma: 7
+    freshness: 5
+  texture_targets:
+  - firme
+  - tostado
+  notes: 'Bloco atômico: um ingrediente, função clara na composição.'
+- id: lagosta_vermelha
+  name: Lagosta-vermelha
+  family: litoral
+  ingredient_ids:
+  - lagosta_vermelha
+  culinary_roles:
+  - protagonista
+  - caldo
+  - brasa
+  compatible_protagonists:
+  - lagosta_verde
+  - lagosta_vermelha
+  recommended_base_ids:
+  - pure_de_macaxeira
+  target_sensory_profile:
+    acidity: 1
+    saltiness: 3
+    sweetness: 4
+    bitterness: 1
+    umami: 9
+    fat: 2
+    heat: 0
+    aroma: 7
+    freshness: 5
+  texture_targets:
+  - firme
+  - tostado
+  notes: 'Bloco atômico: um ingrediente, função clara na composição.'
+- id: leite_de_coco
+  name: Leite-de-coco
+  family: sertão
+  ingredient_ids:
+  - leite_de_coco
   culinary_roles:
   - molho
-  - umami
-  - aroma
+  - base
+  - emulsão
   compatible_protagonists:
+  - camarao_branco
+  - camurim
+  - caranguejo_uca
+  - cioba
+  - feijao_verde
+  - jaca
+  - jerimum
+  - lagosta_vermelha
+  - pargo
   - peixes
+  - pescada_amarela
+  - sirigado
+  - sururu
+  recommended_base_ids:
+  - arroz_de_coco
+  - creme_de_milho_verde
+  - cuscuz_de_flocao
+  - pure_de_macaxeira
+  target_sensory_profile:
+    acidity: 0
+    saltiness: 1
+    sweetness: 4
+    bitterness: 0
+    umami: 2
+    fat: 9
+    heat: 0
+    aroma: 8
+    freshness: 0
+  texture_targets:
+  - cremoso
+  - untuoso
+  notes: 'Bloco atômico: um ingrediente, função clara na composição.'
+- id: licuri
+  name: Licuri
+  family: sertão
+  ingredient_ids:
+  - licuri
+  culinary_roles:
+  - textura
+  - gordura
+  - molho
+  compatible_protagonists:
+  - cordeiro
+  - jerimum
+  - peixes
+  recommended_base_ids:
+  - pure_de_jerimum_assado
+  target_sensory_profile:
+    acidity: 1
+    saltiness: 1
+    sweetness: 3
+    bitterness: 2
+    umami: 5
+    fat: 9
+    heat: 0
+    aroma: 9
+    freshness: 1
+  texture_targets:
+  - crocante
+  - cremoso
+  - untuoso
+  notes: 'Bloco atômico: um ingrediente, função clara na composição.'
+- id: limao_cravo
+  name: Limão-cravo
+  family: agreste
+  ingredient_ids:
+  - limao_cravo
+  culinary_roles:
+  - acidez
+  - aroma
+  - cura
+  compatible_protagonists:
+  - camurim
+  - crustaceos
+  - jerimum
+  - lagosta_vermelha
+  - pargo
+  - pato
+  - peixes
+  - porco
+  - queijo_coalho
+  - sirigado
+  - tilapia
+  recommended_base_ids:
+  - arroz_de_coco
+  - batata_doce_na_brasa
+  - creme_de_milho_verde
+  - pure_de_jerimum_assado
+  target_sensory_profile:
+    acidity: 9
+    saltiness: 1
+    sweetness: 2
+    bitterness: 2
+    umami: 1
+    fat: 0
+    heat: 0
+    aroma: 10
+    freshness: 9
+  texture_targets:
+  - fresco
+  - aromático
+  notes: 'Bloco atômico: um ingrediente, função clara na composição.'
+- id: limao_galego
+  name: Limão-galego
+  family: agreste
+  ingredient_ids:
+  - limao_galego
+  culinary_roles:
+  - acidez
+  - aroma
+  - cura
+  compatible_protagonists:
+  - camarao_branco
+  - camarao_rosa
+  - camurim
+  - carnes
+  - cioba
+  - cordeiro
+  - lagosta_vermelha
+  - lula
+  - pargo
+  - peixes
+  - pescada_amarela
+  - porco
+  - queijo_coalho
+  - sirigado
+  - tilapia
+  recommended_base_ids:
+  - arroz_de_coco
+  - banana_da_terra_assada
+  - creme_de_milho_verde
+  - farofa_umida_de_cebola
+  - pure_de_macaxeira
+  target_sensory_profile:
+    acidity: 10
+    saltiness: 1
+    sweetness: 1
+    bitterness: 2
+    umami: 1
+    fat: 0
+    heat: 0
+    aroma: 9
+    freshness: 9
+  texture_targets:
+  - fresco
+  - aromático
+  notes: 'Bloco atômico: um ingrediente, função clara na composição.'
+- id: lula
+  name: Lula
+  family: litoral
+  ingredient_ids:
+  - lula
+  culinary_roles:
+  - protagonista
+  - fritura
+  - brasa
+  compatible_protagonists:
+  - lula
+  recommended_base_ids:
+  - farofa_umida_de_cebola
+  target_sensory_profile:
+    acidity: 1
+    saltiness: 3
+    sweetness: 1
+    bitterness: 1
+    umami: 7
+    fat: 1
+    heat: 0
+    aroma: 6
+    freshness: 5
+  texture_targets:
+  - firme
+  - tostado
+  notes: 'Bloco atômico: um ingrediente, função clara na composição.'
+- id: macaxeira
+  name: Macaxeira
+  family: litoral_sertão
+  ingredient_ids:
+  - macaxeira
+  culinary_roles:
+  - base
+  - textura
+  - massa
+  compatible_protagonists:
+  - caranguejo_uca
+  - carne_de_sol
+  - pargo
+  - pescada_amarela
+  - sirigado
+  recommended_base_ids:
+  - pure_de_macaxeira
+  target_sensory_profile:
+    acidity: 1
+    saltiness: 1
+    sweetness: 5
+    bitterness: 1
+    umami: 2
+    fat: 1
+    heat: 0
+    aroma: 3
+    freshness: 2
+  texture_targets:
+  - cremoso
+  - crocante
+  notes: 'Bloco atômico: um ingrediente, função clara na composição.'
+- id: manga_espada
+  name: Manga-espada
+  family: mata
+  ingredient_ids:
+  - manga_espada
+  culinary_roles:
+  - fruta
+  - acidez_verde
+  - molho
+  compatible_protagonists: []
+  recommended_base_ids: []
+  target_sensory_profile:
+    acidity: 4
+    saltiness: 1
+    sweetness: 8
+    bitterness: 1
+    umami: 1
+    fat: 0
+    heat: 0
+    aroma: 9
+    freshness: 7
+  texture_targets:
+  - cremoso
+  - untuoso
+  notes: 'Bloco atômico: um ingrediente, função clara na composição.'
+- id: mangaba
+  name: Mangaba
+  family: agreste
+  ingredient_ids:
+  - mangaba
+  culinary_roles:
+  - acidez
+  - fruta
+  - molho
+  compatible_protagonists:
+  - camarao_branco
+  - jerimum
+  - peixes
+  recommended_base_ids:
+  - arroz_de_coco
+  target_sensory_profile:
+    acidity: 6
+    saltiness: 1
+    sweetness: 7
+    bitterness: 2
+    umami: 1
+    fat: 0
+    heat: 0
+    aroma: 9
+    freshness: 9
+  texture_targets:
+  - fresco
+  - cremoso
+  - untuoso
+  notes: 'Bloco atômico: um ingrediente, função clara na composição.'
+- id: manteiga_de_garrafa
+  name: Manteiga-de-garrafa
+  family: litoral_sertão
+  ingredient_ids:
+  - manteiga_de_garrafa
+  culinary_roles:
+  - gordura
+  - molho
+  - finalização
+  compatible_protagonists:
+  - bode
+  - camarao_branco
+  - carne_de_sol
+  - carnes
+  - cioba
+  - cordeiro
+  - jerimum
+  - lagosta_verde
+  - lagosta_vermelha
+  - pargo
+  - peixes
+  - pescada_amarela
+  - porco
+  - sirigado
+  - tilapia
+  - vegetais
+  recommended_base_ids:
+  - banana_da_terra_assada
+  - creme_de_milho_verde
+  - cuscuz_de_flocao
+  - farofa_umida_de_cebola
+  - pure_de_macaxeira
+  target_sensory_profile:
+    acidity: 0
+    saltiness: 1
+    sweetness: 0
+    bitterness: 0
+    umami: 3
+    fat: 10
+    heat: 0
+    aroma: 8
+    freshness: 0
+  texture_targets:
+  - cremoso
+  - untuoso
+  notes: 'Bloco atômico: um ingrediente, função clara na composição.'
+- id: maracuja_amarelo
+  name: Maracujá-amarelo
+  family: agreste
+  ingredient_ids:
+  - maracuja_amarelo
+  culinary_roles:
+  - acidez
+  - fruta
+  - molho
+  compatible_protagonists: []
+  recommended_base_ids: []
+  target_sensory_profile:
+    acidity: 9
+    saltiness: 1
+    sweetness: 4
+    bitterness: 2
+    umami: 1
+    fat: 0
+    heat: 0
+    aroma: 9
+    freshness: 9
+  texture_targets:
+  - fresco
+  - cremoso
+  - untuoso
+  notes: 'Bloco atômico: um ingrediente, função clara na composição.'
+- id: maracuja_do_mato
+  name: Maracujá-do-mato
+  family: sertão
+  ingredient_ids:
+  - maracuja_do_mato
+  culinary_roles:
+  - acidez
+  - fruta
+  - molho
+  compatible_protagonists: []
+  recommended_base_ids: []
+  target_sensory_profile:
+    acidity: 8
+    saltiness: 1
+    sweetness: 4
+    bitterness: 2
+    umami: 1
+    fat: 0
+    heat: 0
+    aroma: 9
+    freshness: 9
+  texture_targets:
+  - fresco
+  - cremoso
+  - untuoso
+  notes: 'Bloco atômico: um ingrediente, função clara na composição.'
+- id: maxixe
+  name: Maxixe
+  family: litoral_sertão
+  ingredient_ids:
+  - maxixe
+  culinary_roles:
+  - textura
+  - acidez
+  - frescor
+  compatible_protagonists:
+  - carnes
+  - peixes
+  - queijo_coalho
+  recommended_base_ids: []
+  target_sensory_profile:
+    acidity: 2
+    saltiness: 1
+    sweetness: 3
+    bitterness: 3
+    umami: 3
+    fat: 0
+    heat: 0
+    aroma: 5
+    freshness: 8
+  texture_targets:
+  - crocante
+  - fresco
+  - leve
+  notes: 'Bloco atômico: um ingrediente, função clara na composição.'
+- id: mel_de_engenho
+  name: Mel-de-engenho
+  family: agreste
+  ingredient_ids:
+  - mel_de_engenho
+  culinary_roles:
+  - doçura
+  - molho
+  - caramelização
+  compatible_protagonists:
+  - pato
+  - porco
+  - queijo_coalho
+  recommended_base_ids:
+  - batata_doce_na_brasa
+  - tapioca_de_chapa
+  target_sensory_profile:
+    acidity: 1
+    saltiness: 0
+    sweetness: 10
+    bitterness: 3
+    umami: 1
+    fat: 0
+    heat: 0
+    aroma: 9
+    freshness: 0
+  texture_targets:
+  - cremoso
+  - untuoso
+  notes: 'Bloco atômico: um ingrediente, função clara na composição.'
+- id: milho_verde
+  name: Milho-verde
+  family: litoral_sertão
+  ingredient_ids:
+  - milho_verde
+  culinary_roles:
+  - base
+  - textura
+  - doçura
+  compatible_protagonists:
+  - camarao_branco
+  - carne_de_sol
   - galinha_caipira
+  - jerimum
+  - pescada_amarela
+  - queijo_coalho
+  - sirigado
+  - tilapia
+  recommended_base_ids:
+  - creme_de_milho_verde
+  - xerem_cremoso
+  target_sensory_profile:
+    acidity: 1
+    saltiness: 1
+    sweetness: 7
+    bitterness: 1
+    umami: 2
+    fat: 2
+    heat: 0
+    aroma: 4
+    freshness: 6
+  texture_targets:
+  - cremoso
+  - crocante
+  notes: 'Bloco atômico: um ingrediente, função clara na composição.'
+- id: murici
+  name: Murici
+  family: agreste
+  ingredient_ids:
+  - murici
+  culinary_roles:
+  - fruta
+  - molho
+  - fermentado
+  compatible_protagonists:
+  - porco
+  recommended_base_ids:
+  - batata_doce_na_brasa
+  target_sensory_profile:
+    acidity: 6
+    saltiness: 1
+    sweetness: 6
+    bitterness: 2
+    umami: 1
+    fat: 0
+    heat: 0
+    aroma: 10
+    freshness: 9
+  texture_targets:
+  - cremoso
+  - untuoso
+  notes: 'Bloco atômico: um ingrediente, função clara na composição.'
+- id: nata
+  name: Nata
+  family: litoral_sertão
+  ingredient_ids:
+  - nata
+  culinary_roles:
+  - molho
+  - base
+  - sobremesa
+  compatible_protagonists:
+  - carne_de_sol
+  recommended_base_ids:
+  - pure_de_macaxeira
+  target_sensory_profile:
+    acidity: 2
+    saltiness: 5
+    sweetness: 3
+    bitterness: 1
+    umami: 6
+    fat: 9
+    heat: 0
+    aroma: 5
+    freshness: 1
+  texture_targets:
+  - cremoso
+  - untuoso
+  notes: 'Bloco atômico: um ingrediente, função clara na composição.'
+- id: ostra_do_mangue
+  name: Ostra-do-mangue
+  family: litoral
+  ingredient_ids:
+  - ostra_do_mangue
+  culinary_roles:
+  - protagonista
+  - cru
+  - brasa
+  compatible_protagonists: []
+  recommended_base_ids: []
+  target_sensory_profile:
+    acidity: 1
+    saltiness: 5
+    sweetness: 1
+    bitterness: 1
+    umami: 9
+    fat: 2
+    heat: 0
+    aroma: 6
+    freshness: 8
+  texture_targets:
+  - firme
+  - fresco
+  - macio
+  notes: 'Bloco atômico: um ingrediente, função clara na composição.'
+- id: palma_alimenticia
+  name: Palma alimentícia
+  family: sertão
+  ingredient_ids:
+  - palma_alimenticia
+  culinary_roles:
+  - protagonista_vegetal
+  - base
+  - textura
+  compatible_protagonists:
+  - palma_alimenticia
+  recommended_base_ids:
+  - cuscuz_de_flocao
+  target_sensory_profile:
+    acidity: 2
+    saltiness: 1
+    sweetness: 3
+    bitterness: 2
+    umami: 3
+    fat: 0
+    heat: 0
+    aroma: 5
+    freshness: 7
+  texture_targets:
+  - cremoso
+  - crocante
+  notes: 'Bloco atômico: um ingrediente, função clara na composição.'
+- id: pargo
+  name: Pargo
+  family: litoral
+  ingredient_ids:
+  - pargo
+  culinary_roles:
+  - protagonista
+  - caldo
+  - brasa
+  compatible_protagonists:
+  - pargo
+  recommended_base_ids: []
+  target_sensory_profile:
+    acidity: 1
+    saltiness: 2
+    sweetness: 1
+    bitterness: 1
+    umami: 7
+    fat: 2
+    heat: 0
+    aroma: 5
+    freshness: 5
+  texture_targets:
+  - firme
+  - tostado
+  notes: 'Bloco atômico: um ingrediente, função clara na composição.'
+- id: peixe_voador
+  name: Peixe-voador
+  family: litoral
+  ingredient_ids:
+  - peixe_voador
+  culinary_roles:
+  - protagonista
+  - fritura
+  - caldo
+  compatible_protagonists: []
+  recommended_base_ids: []
+  target_sensory_profile:
+    acidity: 1
+    saltiness: 2
+    sweetness: 1
+    bitterness: 1
+    umami: 7
+    fat: 3
+    heat: 0
+    aroma: 5
+    freshness: 5
+  texture_targets:
+  - firme
+  notes: 'Bloco atômico: um ingrediente, função clara na composição.'
+- id: pescada_amarela
+  name: Pescada-amarela
+  family: litoral
+  ingredient_ids:
+  - pescada_amarela
+  culinary_roles:
+  - protagonista
+  - caldo
+  - fritura
+  compatible_protagonists:
+  - pescada_amarela
+  recommended_base_ids: []
+  target_sensory_profile:
+    acidity: 1
+    saltiness: 2
+    sweetness: 1
+    bitterness: 1
+    umami: 7
+    fat: 2
+    heat: 0
+    aroma: 5
+    freshness: 5
+  texture_targets:
+  - firme
+  notes: 'Bloco atômico: um ingrediente, função clara na composição.'
+- id: pimenta_de_cheiro
+  name: Pimenta-de-cheiro
+  family: litoral_sertão
+  ingredient_ids:
+  - pimenta_de_cheiro
+  culinary_roles:
+  - aroma
+  - calor
+  - frescor
+  compatible_protagonists:
+  - camarao_branco
+  - camurim
+  - caranguejo_uca
+  - carnes
+  - cioba
+  - cordeiro
+  - feijao_verde
+  - galinha_caipira
+  - jaca
+  - jerimum
+  - lagosta_vermelha
+  - lula
+  - peixes
+  - pescada_amarela
+  - queijo_coalho
+  - sirigado
+  - tilapia
+  - vegetais
+  recommended_base_ids:
+  - arroz_de_coco
+  - arroz_vermelho_soltinho
+  - creme_de_milho_verde
+  - cuscuz_de_flocao
+  - farofa_umida_de_cebola
+  - pure_de_jerimum_assado
+  - pure_de_macaxeira
+  - tapioca_de_chapa
+  target_sensory_profile:
+    acidity: 2
+    saltiness: 1
+    sweetness: 2
+    bitterness: 1
+    umami: 2
+    fat: 0
+    heat: 3
+    aroma: 10
+    freshness: 8
+  texture_targets:
+  - aromático
+  - fresco
+  - leve
+  notes: 'Bloco atômico: um ingrediente, função clara na composição.'
+- id: pimenta_malagueta
+  name: Pimenta-malagueta
+  family: litoral_sertão
+  ingredient_ids:
+  - pimenta_malagueta
+  culinary_roles:
+  - calor
+  - molho
+  - conserva
+  compatible_protagonists:
+  - camarao_branco
+  - camarao_rosa
+  - cordeiro
+  - jaca
+  - jerimum
+  - lagosta_vermelha
+  - pato
+  - porco
+  - queijo_coalho
+  recommended_base_ids:
+  - arroz_de_coco
+  - banana_da_terra_assada
+  - batata_doce_na_brasa
+  target_sensory_profile:
+    acidity: 2
+    saltiness: 1
+    sweetness: 2
+    bitterness: 1
+    umami: 2
+    fat: 0
+    heat: 10
+    aroma: 8
+    freshness: 8
+  texture_targets:
+  - cremoso
+  - untuoso
+  notes: 'Bloco atômico: um ingrediente, função clara na composição.'
+- id: pimentao
+  name: Pimentão
+  family: agreste
+  ingredient_ids:
+  - pimentao
+  culinary_roles:
+  - aroma
+  - doçura
+  - molho
+  compatible_protagonists:
+  - galinha_caipira
+  - jaca
+  - jerimum
+  - peixes
   - porco
   - vegetais
   recommended_base_ids:
   - arroz_vermelho_soltinho
   target_sensory_profile:
-    acidity: 6
-    saltiness: 4
-    sweetness: 6
-    bitterness: 2
-    umami: 7
-    fat: 3
-    heat: 1
-    aroma: 9
-    freshness: 5
-  texture_targets:
-  - cremoso
-  - rústico
-  notes: ''
-- id: caju_rapadura_e_pimenta
-  name: Caju, rapadura e pimenta
-  family: sertão_litoral
-  ingredient_ids:
-  - caju
-  - rapadura
-  - pimenta_malagueta
-  - limao_galego
-  culinary_roles:
-  - glace
-  - acidez
-  - calor
-  compatible_protagonists:
-  - porco
-  - cordeiro
-  - queijo_coalho
-  recommended_base_ids:
-  - banana_da_terra_assada
-  target_sensory_profile:
-    acidity: 8
-    saltiness: 3
-    sweetness: 8
+    acidity: 2
+    saltiness: 1
+    sweetness: 5
     bitterness: 2
     umami: 3
-    fat: 1
-    heat: 6
-    aroma: 10
+    fat: 0
+    heat: 0
+    aroma: 8
+    freshness: 6
+  texture_targets:
+  - aromático
+  - cremoso
+  - untuoso
+  notes: 'Bloco atômico: um ingrediente, função clara na composição.'
+- id: pinha
+  name: Pinha
+  family: mata
+  ingredient_ids:
+  - pinha
+  culinary_roles:
+  - fruta
+  - sobremesa
+  - doçura
+  compatible_protagonists: []
+  recommended_base_ids: []
+  target_sensory_profile:
+    acidity: 3
+    saltiness: 1
+    sweetness: 9
+    bitterness: 1
+    umami: 1
+    fat: 0
+    heat: 0
+    aroma: 8
     freshness: 7
   texture_targets:
-  - viscoso
-  - fresco
-  notes: ''
-- id: umbu_manteiga_de_garrafa_e_ervas
-  name: Umbu, manteiga de garrafa e ervas
-  family: sertão
-  ingredient_ids:
-  - umbu
-  - manteiga_de_garrafa
-  - coentro
-  - cebolinha
-  culinary_roles:
-  - molho
-  - acidez
-  - aroma
-  compatible_protagonists:
-  - cordeiro
-  - bode
-  - peixes
-  recommended_base_ids:
-  - pure_de_macaxeira
-  target_sensory_profile:
-    acidity: 9
-    saltiness: 4
-    sweetness: 4
-    bitterness: 1
-    umami: 4
-    fat: 7
-    heat: 1
-    aroma: 9
-    freshness: 9
-  texture_targets:
-  - emulsionado
-  - fresco
-  notes: ''
-- id: mangaba_coco_e_pimenta_de_cheiro
-  name: Mangaba, coco e pimenta-de-cheiro
-  family: litoral
-  ingredient_ids:
-  - mangaba
-  - leite_de_coco
-  - pimenta_de_cheiro
-  - coentro
-  culinary_roles:
-  - molho
-  - acidez
-  - aroma
-  compatible_protagonists:
-  - camarao_branco
-  - peixes
-  - jerimum
-  recommended_base_ids:
-  - arroz_de_coco
-  target_sensory_profile:
-    acidity: 7
-    saltiness: 3
-    sweetness: 6
-    bitterness: 1
-    umami: 4
-    fat: 7
-    heat: 2
-    aroma: 10
-    freshness: 8
-  texture_targets:
-  - cremoso
-  - fresco
-  notes: ''
-- id: pitanga_tomate_e_alfavaca
-  name: Pitanga, tomate e alfavaca
-  family: mata_litoral
+  - neutro
+  notes: 'Bloco atômico: um ingrediente, função clara na composição.'
+- id: pitanga
+  name: Pitanga
+  family: agreste
   ingredient_ids:
   - pitanga
-  - tomate
-  - alfavaca
-  - cebola_roxa
   culinary_roles:
-  - molho
   - acidez
-  - aroma
+  - fruta
+  - molho
   compatible_protagonists:
   - peixes
   - porco
@@ -1258,297 +2388,641 @@ flavor_blocks:
   - macaxeira_assada_e_prensada
   target_sensory_profile:
     acidity: 7
-    saltiness: 4
-    sweetness: 5
+    saltiness: 1
+    sweetness: 6
     bitterness: 3
-    umami: 6
-    fat: 2
-    heat: 1
-    aroma: 10
+    umami: 1
+    fat: 0
+    heat: 0
+    aroma: 9
     freshness: 9
   texture_targets:
-  - suculento
   - fresco
-  notes: ''
-- id: acerola_pimenta_e_mel_de_engenho
-  name: Acerola, pimenta e mel de engenho
-  family: regional
+  - cremoso
+  - untuoso
+  notes: 'Bloco atômico: um ingrediente, função clara na composição.'
+- id: polvo
+  name: Polvo
+  family: litoral
   ingredient_ids:
-  - acerola
-  - pimenta_malagueta
-  - mel_de_engenho
-  - limao_cravo
+  - polvo
   culinary_roles:
-  - glace
-  - acidez
-  - calor
+  - protagonista
+  - brasa
+  - ensopado
+  compatible_protagonists:
+  - polvo
+  recommended_base_ids:
+  - feijao_verde_cremoso
+  target_sensory_profile:
+    acidity: 1
+    saltiness: 3
+    sweetness: 1
+    bitterness: 1
+    umami: 8
+    fat: 1
+    heat: 0
+    aroma: 6
+    freshness: 5
+  texture_targets:
+  - firme
+  - tostado
+  notes: 'Bloco atômico: um ingrediente, função clara na composição.'
+- id: porco
+  name: Porco
+  family: litoral_sertão
+  ingredient_ids:
+  - porco
+  culinary_roles:
+  - protagonista
+  - brasa
+  - confit
   compatible_protagonists:
   - porco
-  - pato
-  - queijo_coalho
   recommended_base_ids:
+  - baiao_leve
   - batata_doce_na_brasa
   target_sensory_profile:
-    acidity: 9
-    saltiness: 2
-    sweetness: 7
-    bitterness: 2
-    umami: 2
-    fat: 1
-    heat: 6
-    aroma: 9
-    freshness: 7
-  texture_targets:
-  - viscoso
-  notes: ''
-- id: abacaxi_cominho_e_carne_de_sol
-  name: Abacaxi, cominho e carne de sol
-  family: sertão_tropical
-  ingredient_ids:
-  - abacaxi_perola
-  - cominho
-  - carne_de_sol
-  - cebola_roxa
-  culinary_roles:
-  - acidez
-  - aroma
-  - protagonista
-  compatible_protagonists:
-  - carne_de_sol
-  - porco
-  recommended_base_ids:
-  - cuscuz_de_flocao
-  target_sensory_profile:
-    acidity: 8
-    saltiness: 7
-    sweetness: 7
-    bitterness: 2
+    acidity: 1
+    saltiness: 3
+    sweetness: 1
+    bitterness: 1
     umami: 8
-    fat: 5
-    heat: 1
-    aroma: 9
-    freshness: 7
+    fat: 8
+    heat: 0
+    aroma: 6
+    freshness: 2
   texture_targets:
-  - suculento
-  - granulado
-  notes: ''
-- id: banana_da_terra_queijo_coalho_e_caju
-  name: Banana-da-terra, queijo coalho e caju
-  family: regional
+  - firme
+  - tostado
+  notes: 'Bloco atômico: um ingrediente, função clara na composição.'
+- id: puba
+  name: Puba
+  family: sertão
   ingredient_ids:
-  - banana_da_terra
-  - queijo_coalho
-  - caju
-  - manteiga_de_garrafa
+  - puba
   culinary_roles:
   - base
-  - sal
-  - acidez
+  - massa
+  - fermentado
+  compatible_protagonists: []
+  recommended_base_ids: []
+  target_sensory_profile:
+    acidity: 3
+    saltiness: 1
+    sweetness: 5
+    bitterness: 1
+    umami: 2
+    fat: 2
+    heat: 0
+    aroma: 6
+    freshness: 2
+  texture_targets:
+  - cremoso
+  notes: 'Bloco atômico: um ingrediente, função clara na composição.'
+- id: queijo_coalho
+  name: Queijo-coalho
+  family: litoral_sertão
+  ingredient_ids:
+  - queijo_coalho
+  culinary_roles:
+  - protagonista
+  - textura
+  - base
   compatible_protagonists:
-  - porco
+  - camarao_branco
   - carne_de_sol
+  - jerimum
+  - palma_alimenticia
+  - porco
+  - queijo_coalho
   - vegetais
   recommended_base_ids:
   - banana_da_terra_assada
+  - creme_de_milho_verde
+  - cuscuz_de_flocao
+  - pure_de_jerimum_assado
+  - tapioca_de_chapa
   target_sensory_profile:
-    acidity: 6
-    saltiness: 6
-    sweetness: 8
+    acidity: 2
+    saltiness: 7
+    sweetness: 2
     bitterness: 1
-    umami: 6
+    umami: 7
     fat: 7
-    heat: 1
-    aroma: 8
-    freshness: 5
+    heat: 0
+    aroma: 5
+    freshness: 1
   texture_targets:
-  - caramelizado
-  - tostado
-  notes: ''
-- id: bacuri_crustaceo_e_coco
-  name: Bacuri, crustáceo e coco
-  family: meio_norte
+  - firme
+  - crocante
+  - cremoso
+  notes: 'Bloco atômico: um ingrediente, função clara na composição.'
+- id: queijo_manteiga
+  name: Queijo-manteiga
+  family: sertão
   ingredient_ids:
-  - bacuri
-  - leite_de_coco
-  - pimenta_de_cheiro
-  - coentro
+  - queijo_manteiga
   culinary_roles:
   - molho
-  - acidez
-  - aroma
-  compatible_protagonists:
-  - camarao_branco
-  - lagosta_vermelha
-  recommended_base_ids:
-  - arroz_de_coco
+  - base
+  - finalização
+  compatible_protagonists: []
+  recommended_base_ids: []
   target_sensory_profile:
-    acidity: 7
-    saltiness: 4
-    sweetness: 7
+    acidity: 2
+    saltiness: 6
+    sweetness: 2
     bitterness: 1
-    umami: 6
-    fat: 7
-    heat: 2
-    aroma: 10
-    freshness: 8
+    umami: 7
+    fat: 9
+    heat: 0
+    aroma: 5
+    freshness: 1
   texture_targets:
   - cremoso
-  - suculento
-  notes: ''
-- id: murici_porco_e_rapadura
-  name: Murici, porco e rapadura
-  family: meio_norte
+  - untuoso
+  notes: 'Bloco atômico: um ingrediente, função clara na composição.'
+- id: quiabo
+  name: Quiabo
+  family: agreste
   ingredient_ids:
-  - murici
-  - porco
-  - rapadura
-  - pimenta_malagueta
-  culinary_roles:
-  - protagonista
-  - glace
-  - acidez
-  compatible_protagonists:
-  - porco
-  recommended_base_ids:
-  - batata_doce_na_brasa
-  target_sensory_profile:
-    acidity: 7
-    saltiness: 5
-    sweetness: 8
-    bitterness: 2
-    umami: 7
-    fat: 8
-    heat: 5
-    aroma: 10
-    freshness: 5
-  texture_targets:
-  - suculento
-  - caramelizado
-  notes: ''
-- id: licuri_jerimum_e_vinagreira
-  name: Licuri, jerimum e vinagreira
-  family: sertão_baiano
-  ingredient_ids:
-  - licuri
-  - jerimum
-  - vinagreira
-  - pimenta_de_cheiro
+  - quiabo
   culinary_roles:
   - textura
-  - base
-  - acidez
+  - espessante
+  - protagonista_vegetal
   compatible_protagonists:
-  - jerimum
-  - cordeiro
-  - peixes
+  - galinha_caipira
   recommended_base_ids:
-  - pure_de_jerimum_assado
+  - xerem_cremoso
   target_sensory_profile:
-    acidity: 7
-    saltiness: 4
-    sweetness: 6
-    bitterness: 3
-    umami: 6
-    fat: 7
-    heat: 2
-    aroma: 9
-    freshness: 7
+    acidity: 2
+    saltiness: 1
+    sweetness: 3
+    bitterness: 2
+    umami: 4
+    fat: 0
+    heat: 0
+    aroma: 5
+    freshness: 6
+  texture_targets:
+  - crocante
+  notes: 'Bloco atômico: um ingrediente, função clara na composição.'
+- id: rapadura
+  name: Rapadura
+  family: sertão
+  ingredient_ids:
+  - rapadura
+  culinary_roles:
+  - doçura
+  - molho
+  - caramelização
+  compatible_protagonists:
+  - cordeiro
+  - porco
+  - queijo_coalho
+  recommended_base_ids:
+  - banana_da_terra_assada
+  - batata_doce_na_brasa
+  target_sensory_profile:
+    acidity: 1
+    saltiness: 0
+    sweetness: 10
+    bitterness: 2
+    umami: 1
+    fat: 0
+    heat: 0
+    aroma: 8
+    freshness: 0
   texture_targets:
   - cremoso
-  - crocante
-  notes: ''
-- id: mandacaru_caju_e_coentro
-  name: Mandacaru, caju e coentro
-  family: caatinga
+  - untuoso
+  notes: 'Bloco atômico: um ingrediente, função clara na composição.'
+- id: requeijao_do_sertao
+  name: Requeijão-do-sertão
+  family: sertão
   ingredient_ids:
-  - fruto_do_mandacaru
-  - caju
-  - coentro
-  - pimenta_de_cheiro
+  - requeijao_do_sertao
   culinary_roles:
-  - frescor
+  - molho
+  - base
+  - finalização
+  compatible_protagonists: []
+  recommended_base_ids: []
+  target_sensory_profile:
+    acidity: 2
+    saltiness: 6
+    sweetness: 2
+    bitterness: 1
+    umami: 7
+    fat: 9
+    heat: 0
+    aroma: 5
+    freshness: 1
+  texture_targets:
+  - cremoso
+  - untuoso
+  notes: 'Bloco atômico: um ingrediente, função clara na composição.'
+- id: seriguela
+  name: Seriguela
+  family: litoral_sertão
+  ingredient_ids:
+  - seriguela
+  culinary_roles:
   - acidez
-  - aroma
+  - fruta
+  - molho
+  compatible_protagonists: []
+  recommended_base_ids: []
+  target_sensory_profile:
+    acidity: 7
+    saltiness: 1
+    sweetness: 7
+    bitterness: 2
+    umami: 1
+    fat: 0
+    heat: 0
+    aroma: 8
+    freshness: 9
+  texture_targets:
+  - fresco
+  - cremoso
+  - untuoso
+  notes: 'Bloco atômico: um ingrediente, função clara na composição.'
+- id: serra
+  name: Serra
+  family: litoral
+  ingredient_ids:
+  - serra
+  culinary_roles:
+  - protagonista
+  - cura
+  - brasa
+  compatible_protagonists: []
+  recommended_base_ids: []
+  target_sensory_profile:
+    acidity: 1
+    saltiness: 2
+    sweetness: 1
+    bitterness: 1
+    umami: 8
+    fat: 6
+    heat: 0
+    aroma: 5
+    freshness: 5
+  texture_targets:
+  - firme
+  - tostado
+  notes: 'Bloco atômico: um ingrediente, função clara na composição.'
+- id: siri
+  name: Siri
+  family: litoral
+  ingredient_ids:
+  - siri
+  culinary_roles:
+  - protagonista
+  - caldo
+  - recheio
+  compatible_protagonists: []
+  recommended_base_ids: []
+  target_sensory_profile:
+    acidity: 1
+    saltiness: 3
+    sweetness: 3
+    bitterness: 1
+    umami: 8
+    fat: 2
+    heat: 0
+    aroma: 6
+    freshness: 5
+  texture_targets:
+  - firme
+  notes: 'Bloco atômico: um ingrediente, função clara na composição.'
+- id: sirigado
+  name: Sirigado
+  family: litoral
+  ingredient_ids:
+  - sirigado
+  culinary_roles:
+  - protagonista
+  - caldo
+  - brasa
   compatible_protagonists:
-  - peixes
-  - queijo_coalho
-  - vegetais
+  - sirigado
+  recommended_base_ids:
+  - creme_de_milho_verde
+  target_sensory_profile:
+    acidity: 1
+    saltiness: 2
+    sweetness: 1
+    bitterness: 1
+    umami: 8
+    fat: 3
+    heat: 0
+    aroma: 6
+    freshness: 5
+  texture_targets:
+  - firme
+  - tostado
+  notes: 'Bloco atômico: um ingrediente, função clara na composição.'
+- id: sururu
+  name: Sururu
+  family: litoral
+  ingredient_ids:
+  - sururu
+  culinary_roles:
+  - protagonista
+  - caldo
+  - ensopado
+  compatible_protagonists:
+  - sururu
   recommended_base_ids:
   - cuscuz_de_flocao
   target_sensory_profile:
-    acidity: 7
-    saltiness: 3
-    sweetness: 6
+    acidity: 1
+    saltiness: 4
+    sweetness: 1
     bitterness: 1
-    umami: 3
-    fat: 1
-    heat: 2
-    aroma: 9
-    freshness: 10
+    umami: 9
+    fat: 2
+    heat: 0
+    aroma: 8
+    freshness: 5
   texture_targets:
-  - suculento
-  - fresco
-  notes: ''
-- id: farofa_de_flocao_castanha_e_manteiga
-  name: Farofa de flocão, castanha e manteiga
-  family: sertão
+  - firme
+  notes: 'Bloco atômico: um ingrediente, função clara na composição.'
+- id: tamarindo
+  name: Tamarindo
+  family: litoral_sertão
   ingredient_ids:
-  - flocao_de_milho
-  - castanha_de_caju
-  - manteiga_de_garrafa
-  - cebolinha
+  - tamarindo
   culinary_roles:
-  - textura
-  - gordura
-  - aroma
+  - acidez
+  - molho
+  - doçura
   compatible_protagonists:
+  - bode
+  - cavala
+  - jaca
+  - polvo
+  - porco
+  - serra
+  - xareu
+  recommended_base_ids:
+  - arroz_de_coco
+  - batata_doce_na_brasa
+  - pure_de_jerimum_assado
+  target_sensory_profile:
+    acidity: 9
+    saltiness: 1
+    sweetness: 6
+    bitterness: 2
+    umami: 1
+    fat: 0
+    heat: 0
+    aroma: 8
+    freshness: 9
+  texture_targets:
+  - fresco
+  - cremoso
+  - untuoso
+  notes: 'Bloco atômico: um ingrediente, função clara na composição.'
+- id: tilapia
+  name: Tilápia
+  family: litoral_sertão
+  ingredient_ids:
+  - tilapia
+  culinary_roles:
+  - protagonista
+  - fritura
+  - brasa
+  compatible_protagonists:
+  - tilapia
+  recommended_base_ids: []
+  target_sensory_profile:
+    acidity: 1
+    saltiness: 2
+    sweetness: 1
+    bitterness: 1
+    umami: 5
+    fat: 2
+    heat: 0
+    aroma: 4
+    freshness: 5
+  texture_targets:
+  - firme
+  - tostado
+  notes: 'Bloco atômico: um ingrediente, função clara na composição.'
+- id: tomate
+  name: Tomate
+  family: agreste
+  ingredient_ids:
+  - tomate
+  culinary_roles:
+  - acidez
+  - umami
+  - molho
+  compatible_protagonists:
+  - caranguejo_uca
+  - galinha_caipira
+  - palma_alimenticia
+  - pargo
   - peixes
-  - carnes
+  - pescada_amarela
+  - polvo
+  - porco
+  - queijo_coalho
+  - sururu
   - vegetais
   recommended_base_ids:
-  - farofa_umida_de_cebola
+  - arroz_vermelho_soltinho
+  - creme_de_milho_verde
+  - cuscuz_de_flocao
+  - macaxeira_assada_e_prensada
   target_sensory_profile:
-    acidity: 2
-    saltiness: 5
+    acidity: 6
+    saltiness: 1
     sweetness: 4
     bitterness: 2
     umami: 6
-    fat: 8
-    heat: 1
-    aroma: 8
+    fat: 0
+    heat: 0
+    aroma: 5
+    freshness: 6
+  texture_targets:
+  - fresco
+  - cremoso
+  - untuoso
+  notes: 'Bloco atômico: um ingrediente, função clara na composição.'
+- id: toucinho
+  name: Toucinho
+  family: sertão
+  ingredient_ids:
+  - toucinho
+  culinary_roles:
+  - gordura
+  - textura
+  - tempero
+  compatible_protagonists: []
+  recommended_base_ids: []
+  target_sensory_profile:
+    acidity: 1
+    saltiness: 5
+    sweetness: 1
+    bitterness: 1
+    umami: 7
+    fat: 10
+    heat: 0
+    aroma: 6
     freshness: 2
   texture_targets:
   - crocante
-  - granulado
-  notes: ''
-- id: picles_de_maxixe_e_cebola_roxa
-  name: Picles de maxixe e cebola-roxa
+  notes: 'Bloco atômico: um ingrediente, função clara na composição.'
+- id: umbu
+  name: Umbu
   family: sertão
   ingredient_ids:
-  - maxixe
-  - cebola_roxa
-  - limao_galego
-  - pimenta_de_cheiro
+  - umbu
   culinary_roles:
   - acidez
-  - textura
-  - frescor
+  - fruta
+  - molho
   compatible_protagonists:
-  - carnes
+  - bode
+  - cordeiro
   - peixes
-  - queijo_coalho
+  recommended_base_ids:
+  - arroz_vermelho_soltinho
+  - pure_de_macaxeira
+  target_sensory_profile:
+    acidity: 9
+    saltiness: 1
+    sweetness: 4
+    bitterness: 2
+    umami: 1
+    fat: 0
+    heat: 0
+    aroma: 8
+    freshness: 9
+  texture_targets:
+  - fresco
+  - cremoso
+  - untuoso
+  notes: 'Bloco atômico: um ingrediente, função clara na composição.'
+- id: umbu_caja
+  name: Umbu-cajá
+  family: sertão
+  ingredient_ids:
+  - umbu_caja
+  culinary_roles:
+  - acidez
+  - fruta
+  - molho
+  compatible_protagonists:
+  - cioba
+  - cordeiro
   recommended_base_ids: []
   target_sensory_profile:
     acidity: 9
-    saltiness: 4
-    sweetness: 3
-    bitterness: 3
-    umami: 2
+    saltiness: 1
+    sweetness: 5
+    bitterness: 2
+    umami: 1
     fat: 0
-    heat: 2
+    heat: 0
     aroma: 9
+    freshness: 9
+  texture_targets:
+  - fresco
+  - cremoso
+  - untuoso
+  notes: 'Bloco atômico: um ingrediente, função clara na composição.'
+- id: vinagreira
+  name: Vinagreira
+  family: litoral_sertão
+  ingredient_ids:
+  - vinagreira
+  culinary_roles:
+  - acidez
+  - aroma
+  - folha
+  compatible_protagonists:
+  - camurim
+  - cavala
+  - cordeiro
+  - galinha_caipira
+  - jerimum
+  - pargo
+  - peixes
+  - pescada_amarela
+  - sururu
+  - vegetais
+  recommended_base_ids:
+  - arroz_de_cuxa_simplificado
+  - arroz_vermelho_soltinho
+  - pure_de_jerimum_assado
+  target_sensory_profile:
+    acidity: 7
+    saltiness: 0
+    sweetness: 1
+    bitterness: 3
+    umami: 1
+    fat: 0
+    heat: 0
+    aroma: 8
     freshness: 10
   texture_targets:
+  - fresco
+  - aromático
+  notes: 'Bloco atômico: um ingrediente, função clara na composição.'
+- id: xareu
+  name: Xaréu
+  family: litoral
+  ingredient_ids:
+  - xareu
+  culinary_roles:
+  - protagonista
+  - cura
+  - brasa
+  compatible_protagonists: []
+  recommended_base_ids: []
+  target_sensory_profile:
+    acidity: 1
+    saltiness: 2
+    sweetness: 1
+    bitterness: 1
+    umami: 8
+    fat: 5
+    heat: 0
+    aroma: 7
+    freshness: 5
+  texture_targets:
+  - firme
+  - tostado
+  notes: 'Bloco atômico: um ingrediente, função clara na composição.'
+- id: xerem
+  name: Xerém
+  family: litoral_sertão
+  ingredient_ids:
+  - xerem
+  culinary_roles:
+  - base
+  - textura
+  - espessante
+  compatible_protagonists: []
+  recommended_base_ids: []
+  target_sensory_profile:
+    acidity: 1
+    saltiness: 1
+    sweetness: 4
+    bitterness: 1
+    umami: 2
+    fat: 2
+    heat: 0
+    aroma: 5
+    freshness: 2
+  texture_targets:
+  - cremoso
   - crocante
-  - suculento
-  notes: ''
+  notes: 'Bloco atômico: um ingrediente, função clara na composição.'

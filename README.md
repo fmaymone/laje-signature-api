@@ -6,7 +6,7 @@ Não é um “chat que inventa receitas”. O centro é uma **biblioteca de dado
 
 ## Destaques
 
-- Biblioteca Fernando Nordeste **v0.1.0** — 100 ingredientes, 50 blocos, regras de compatibilidade/conflito
+- Biblioteca Fernando Nordeste **v0.2.0** — 100 ingredientes, 100 blocos atômicos, regras de compatibilidade/conflito
 - Composição determinística (código) + escrita/revisão (LLM)
 - API REST + SSE para apps
 - RAG auxiliar sobre fichas técnicas em `knowledge/`

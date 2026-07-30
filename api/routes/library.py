@@ -36,7 +36,7 @@ def library_summary() -> LibrarySummary:
     version = str(
         metadata.get("version")
         or metadata.get("library_version")
-        or "0.1.0"
+        or "0.2.0"
     )
     counts = {
         key: len(lib[key])
