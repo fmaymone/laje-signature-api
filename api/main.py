@@ -19,6 +19,7 @@ load_dotenv(_ROOT.parent / ".env")
 
 from api.routes import (  # noqa: E402
     auth,
+    block_links,
     blocks,
     compose,
     compose_graphs,
@@ -79,6 +80,7 @@ app.include_router(health.router)
 app.include_router(auth.router)
 app.include_router(library.router)
 app.include_router(blocks.router)
+app.include_router(block_links.router)
 app.include_router(compose.router)
 app.include_router(compose_graphs.router)
 app.include_router(recipes.router)

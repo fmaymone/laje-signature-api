@@ -10,6 +10,7 @@ from pydantic import BaseModel, Field
 
 
 HandleSide = Literal["top", "right", "bottom", "left"]
+LinkWeight = Literal[1, 2, 3]
 
 
 class GraphNodePosition(BaseModel):
@@ -29,6 +30,7 @@ class GraphEdge(BaseModel):
     target: str = Field(min_length=1)
     sourceHandle: HandleSide | None = None
     targetHandle: HandleSide | None = None
+    weight: LinkWeight = 2
 
 
 class CompositionGraphCreate(BaseModel):
