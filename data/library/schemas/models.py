@@ -35,4 +35,5 @@ class FlavorBlock(BaseModel):
     recommended_base_ids: list[str]
     target_sensory_profile: SensoryProfile
     texture_targets: list[str]
+    techniques: list[str] = []
     notes: str = ''

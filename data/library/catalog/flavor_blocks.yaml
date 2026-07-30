@@ -27,6 +27,11 @@ flavor_blocks:
   - fresco
   - cremoso
   - untuoso
+  techniques:
+  - cru
+  - reduzir
+  - fermentar
+  - conservar
   notes: 'Bloco atômico: um ingrediente, função clara na composição.'
 - id: acerola
   name: Acerola
@@ -57,6 +62,11 @@ flavor_blocks:
   - fresco
   - cremoso
   - untuoso
+  techniques:
+  - cru
+  - reduzir
+  - fermentar
+  - conservar
   notes: 'Bloco atômico: um ingrediente, função clara na composição.'
 - id: alfavaca
   name: Alfavaca
@@ -89,6 +99,10 @@ flavor_blocks:
   - aromático
   - fresco
   - leve
+  techniques:
+  - cru
+  - infusionar
+  - óleo_verde
   notes: 'Bloco atômico: um ingrediente, função clara na composição.'
 - id: alho
   name: Alho
@@ -120,6 +134,10 @@ flavor_blocks:
   - aromático
   - cremoso
   - untuoso
+  techniques:
+  - tostar
+  - refogar
+  - infusionar
   notes: 'Bloco atômico: um ingrediente, função clara na composição.'
 - id: amendoim
   name: Amendoim
@@ -146,6 +164,10 @@ flavor_blocks:
   - crocante
   - cremoso
   - untuoso
+  techniques:
+  - tostar
+  - triturar
+  - emulsionar
   notes: 'Bloco atômico: um ingrediente, função clara na composição.'
 - id: araca
   name: Araçá
@@ -172,6 +194,11 @@ flavor_blocks:
   - fresco
   - cremoso
   - untuoso
+  techniques:
+  - cru
+  - reduzir
+  - fermentar
+  - conservar
   notes: 'Bloco atômico: um ingrediente, função clara na composição.'
 - id: ariaco
   name: Ariacó
@@ -197,6 +224,12 @@ flavor_blocks:
   texture_targets:
   - firme
   - tostado
+  techniques:
+  - brasa
+  - grelha
+  - forno
+  - cura_leve
+  - caldo_com_aparas
   notes: 'Bloco atômico: um ingrediente, função clara na composição.'
 - id: arroz_vermelho
   name: Arroz-vermelho
@@ -231,6 +264,11 @@ flavor_blocks:
   texture_targets:
   - cremoso
   - crocante
+  techniques:
+  - hidratar
+  - tostar
+  - cozinhar
+  - fermentar
   notes: 'Bloco atômico: um ingrediente, função clara na composição.'
 - id: azeite_de_dende
   name: Azeite-de-dendê
@@ -261,6 +299,10 @@ flavor_blocks:
     freshness: 0
   texture_targets:
   - aromático
+  techniques:
+  - emulsionar
+  - finalizar
+  - infusionar
   notes: 'Bloco atômico: um ingrediente, função clara na composição.'
 - id: bacuri
   name: Bacuri
@@ -289,6 +331,11 @@ flavor_blocks:
   texture_targets:
   - cremoso
   - untuoso
+  techniques:
+  - cru
+  - reduzir
+  - fermentar
+  - conservar
   notes: 'Bloco atômico: um ingrediente, função clara na composição.'
 - id: banana_da_terra
   name: Banana-da-terra
@@ -318,6 +365,11 @@ flavor_blocks:
   texture_targets:
   - cremoso
   - crocante
+  techniques:
+  - assar
+  - grelhar
+  - reduzir
+  - fermentar
   notes: 'Bloco atômico: um ingrediente, função clara na composição.'
 - id: batata_doce
   name: Batata-doce
@@ -343,6 +395,11 @@ flavor_blocks:
   texture_targets:
   - cremoso
   - crocante
+  techniques:
+  - cozinhar
+  - assar
+  - fritar
+  - processar
   notes: 'Bloco atômico: um ingrediente, função clara na composição.'
 - id: bode
   name: Bode
@@ -371,6 +428,11 @@ flavor_blocks:
   texture_targets:
   - firme
   - tostado
+  techniques:
+  - brasa
+  - panela
+  - baixa_temperatura
+  - desfiar
   notes: 'Bloco atômico: um ingrediente, função clara na composição.'
 - id: buriti
   name: Buriti
@@ -396,6 +458,11 @@ flavor_blocks:
   texture_targets:
   - cremoso
   - untuoso
+  techniques:
+  - assar
+  - grelhar
+  - reduzir
+  - fermentar
   notes: 'Bloco atômico: um ingrediente, função clara na composição.'
 - id: caja
   name: Cajá
@@ -426,6 +493,11 @@ flavor_blocks:
   - fresco
   - cremoso
   - untuoso
+  techniques:
+  - cru
+  - reduzir
+  - fermentar
+  - conservar
   notes: 'Bloco atômico: um ingrediente, função clara na composição.'
 - id: caju
   name: Caju
@@ -476,6 +548,11 @@ flavor_blocks:
   - fresco
   - cremoso
   - untuoso
+  techniques:
+  - cru
+  - reduzir
+  - fermentar
+  - conservar
   notes: 'Bloco atômico: um ingrediente, função clara na composição.'
 - id: cajuina
   name: Cajuína
@@ -511,6 +588,11 @@ flavor_blocks:
     freshness: 7
   texture_targets:
   - neutro
+  techniques:
+  - assar
+  - grelhar
+  - reduzir
+  - fermentar
   notes: 'Bloco atômico: um ingrediente, função clara na composição.'
 - id: camarao_branco
   name: Camarão-branco
@@ -537,6 +619,11 @@ flavor_blocks:
     freshness: 5
   texture_targets:
   - firme
+  techniques:
+  - saltear
+  - brasa
+  - caldo_com_cascas
+  - cozimento_curto
   notes: 'Bloco atômico: um ingrediente, função clara na composição.'
 - id: camarao_rosa
   name: Camarão-rosa
@@ -561,6 +648,11 @@ flavor_blocks:
     freshness: 5
   texture_targets:
   - firme
+  techniques:
+  - saltear
+  - brasa
+  - caldo_com_cascas
+  - cozimento_curto
   notes: 'Bloco atômico: um ingrediente, função clara na composição.'
 - id: camurim
   name: Camurim
@@ -587,6 +679,12 @@ flavor_blocks:
   texture_targets:
   - firme
   - tostado
+  techniques:
+  - brasa
+  - grelha
+  - forno
+  - cura_leve
+  - caldo_com_aparas
   notes: 'Bloco atômico: um ingrediente, função clara na composição.'
 - id: caranguejo_uca
   name: Caranguejo-uçá
@@ -613,6 +711,11 @@ flavor_blocks:
     freshness: 5
   texture_targets:
   - firme
+  techniques:
+  - saltear
+  - brasa
+  - caldo_com_cascas
+  - cozimento_curto
   notes: 'Bloco atômico: um ingrediente, função clara na composição.'
 - id: carne_de_sol
   name: Carne-de-sol
@@ -645,6 +748,11 @@ flavor_blocks:
     freshness: 2
   texture_targets:
   - firme
+  techniques:
+  - brasa
+  - panela
+  - baixa_temperatura
+  - desfiar
   notes: 'Bloco atômico: um ingrediente, função clara na composição.'
 - id: castanha_de_caju
   name: Castanha-de-caju
@@ -693,6 +801,10 @@ flavor_blocks:
   - crocante
   - cremoso
   - untuoso
+  techniques:
+  - tostar
+  - triturar
+  - emulsionar
   notes: 'Bloco atômico: um ingrediente, função clara na composição.'
 - id: cavala
   name: Cavala
@@ -722,6 +834,12 @@ flavor_blocks:
   texture_targets:
   - firme
   - tostado
+  techniques:
+  - brasa
+  - grelha
+  - forno
+  - cura_leve
+  - caldo_com_aparas
   notes: 'Bloco atômico: um ingrediente, função clara na composição.'
 - id: cebola_roxa
   name: Cebola-roxa
@@ -769,6 +887,11 @@ flavor_blocks:
   - aromático
   - fresco
   - crocante
+  techniques:
+  - assar
+  - grelhar
+  - conservar
+  - cru
   notes: 'Bloco atômico: um ingrediente, função clara na composição.'
 - id: cebolinha
   name: Cebolinha
@@ -815,6 +938,10 @@ flavor_blocks:
   - aromático
   - fresco
   - leve
+  techniques:
+  - cru
+  - infusionar
+  - óleo_verde
   notes: 'Bloco atômico: um ingrediente, função clara na composição.'
 - id: charque
   name: Charque
@@ -839,6 +966,11 @@ flavor_blocks:
     freshness: 2
   texture_targets:
   - firme
+  techniques:
+  - brasa
+  - panela
+  - baixa_temperatura
+  - desfiar
   notes: 'Bloco atômico: um ingrediente, função clara na composição.'
 - id: cioba
   name: Cioba
@@ -866,6 +998,12 @@ flavor_blocks:
   - firme
   - fresco
   - macio
+  techniques:
+  - brasa
+  - grelha
+  - forno
+  - cura_leve
+  - caldo_com_aparas
   notes: 'Bloco atômico: um ingrediente, função clara na composição.'
 - id: coco_fresco
   name: Coco-fresco
@@ -906,6 +1044,11 @@ flavor_blocks:
   - crocante
   - cremoso
   - untuoso
+  techniques:
+  - assar
+  - grelhar
+  - reduzir
+  - fermentar
   notes: 'Bloco atômico: um ingrediente, função clara na composição.'
 - id: coentro
   name: Coentro
@@ -963,6 +1106,10 @@ flavor_blocks:
   - aromático
   - fresco
   - leve
+  techniques:
+  - cru
+  - infusionar
+  - óleo_verde
   notes: 'Bloco atômico: um ingrediente, função clara na composição.'
 - id: colorau
   name: Colorau
@@ -992,6 +1139,10 @@ flavor_blocks:
     freshness: 3
   texture_targets:
   - aromático
+  techniques:
+  - tostar
+  - refogar
+  - infusionar
   notes: 'Bloco atômico: um ingrediente, função clara na composição.'
 - id: cominho
   name: Cominho
@@ -1025,6 +1176,10 @@ flavor_blocks:
     freshness: 3
   texture_targets:
   - aromático
+  techniques:
+  - tostar
+  - refogar
+  - infusionar
   notes: 'Bloco atômico: um ingrediente, função clara na composição.'
 - id: cordeiro
   name: Cordeiro
@@ -1053,6 +1208,11 @@ flavor_blocks:
   texture_targets:
   - firme
   - tostado
+  techniques:
+  - brasa
+  - panela
+  - baixa_temperatura
+  - desfiar
   notes: 'Bloco atômico: um ingrediente, função clara na composição.'
 - id: farinha_d_agua
   name: Farinha-d'água
@@ -1078,6 +1238,11 @@ flavor_blocks:
   texture_targets:
   - cremoso
   - crocante
+  techniques:
+  - hidratar
+  - tostar
+  - cozinhar
+  - fermentar
   notes: 'Bloco atômico: um ingrediente, função clara na composição.'
 - id: farinha_de_mandioca
   name: Farinha-de-mandioca
@@ -1105,6 +1270,11 @@ flavor_blocks:
   texture_targets:
   - cremoso
   - crocante
+  techniques:
+  - hidratar
+  - tostar
+  - cozinhar
+  - fermentar
   notes: 'Bloco atômico: um ingrediente, função clara na composição.'
 - id: fava
   name: Fava
@@ -1132,6 +1302,10 @@ flavor_blocks:
     freshness: 3
   texture_targets:
   - cremoso
+  techniques:
+  - cozinhar
+  - refogar
+  - fermentar
   notes: 'Bloco atômico: um ingrediente, função clara na composição.'
 - id: feijao_de_corda
   name: Feijão-de-corda
@@ -1159,6 +1333,10 @@ flavor_blocks:
   texture_targets:
   - cremoso
   - crocante
+  techniques:
+  - cozinhar
+  - refogar
+  - fermentar
   notes: 'Bloco atômico: um ingrediente, função clara na composição.'
 - id: feijao_fradinho
   name: Feijão-fradinho
@@ -1184,6 +1362,10 @@ flavor_blocks:
     freshness: 3
   texture_targets:
   - cremoso
+  techniques:
+  - cozinhar
+  - refogar
+  - fermentar
   notes: 'Bloco atômico: um ingrediente, função clara na composição.'
 - id: feijao_verde
   name: Feijão-verde
@@ -1215,6 +1397,10 @@ flavor_blocks:
   texture_targets:
   - cremoso
   - crocante
+  techniques:
+  - cozinhar
+  - refogar
+  - fermentar
   notes: 'Bloco atômico: um ingrediente, função clara na composição.'
 - id: flocao_de_milho
   name: Flocão-de-milho
@@ -1250,6 +1436,11 @@ flavor_blocks:
   texture_targets:
   - cremoso
   - crocante
+  techniques:
+  - hidratar
+  - tostar
+  - cozinhar
+  - fermentar
   notes: 'Bloco atômico: um ingrediente, função clara na composição.'
 - id: fruto_do_mandacaru
   name: Fruto-do-mandacaru
@@ -1280,6 +1471,11 @@ flavor_blocks:
   - fresco
   - leve
   - cremoso
+  techniques:
+  - assar
+  - grelhar
+  - reduzir
+  - fermentar
   notes: 'Bloco atômico: um ingrediente, função clara na composição.'
 - id: galinha_caipira
   name: Galinha-caipira
@@ -1307,6 +1503,11 @@ flavor_blocks:
     freshness: 2
   texture_targets:
   - firme
+  techniques:
+  - brasa
+  - panela
+  - baixa_temperatura
+  - desfiar
   notes: 'Bloco atômico: um ingrediente, função clara na composição.'
 - id: gergelim
   name: Gergelim
@@ -1339,6 +1540,10 @@ flavor_blocks:
   texture_targets:
   - crocante
   - aromático
+  techniques:
+  - tostar
+  - triturar
+  - emulsionar
   notes: 'Bloco atômico: um ingrediente, função clara na composição.'
 - id: goma_de_tapioca
   name: Goma-de-tapioca
@@ -1364,6 +1569,11 @@ flavor_blocks:
   texture_targets:
   - cremoso
   - crocante
+  techniques:
+  - hidratar
+  - tostar
+  - cozinhar
+  - fermentar
   notes: 'Bloco atômico: um ingrediente, função clara na composição.'
 - id: graviola
   name: Graviola
@@ -1389,6 +1599,11 @@ flavor_blocks:
   texture_targets:
   - cremoso
   - untuoso
+  techniques:
+  - assar
+  - grelhar
+  - reduzir
+  - fermentar
   notes: 'Bloco atômico: um ingrediente, função clara na composição.'
 - id: guaiuba
   name: Guaiúba
@@ -1414,6 +1629,12 @@ flavor_blocks:
   texture_targets:
   - firme
   - tostado
+  techniques:
+  - brasa
+  - grelha
+  - forno
+  - cura_leve
+  - caldo_com_aparas
   notes: 'Bloco atômico: um ingrediente, função clara na composição.'
 - id: inhame
   name: Inhame
@@ -1439,6 +1660,11 @@ flavor_blocks:
   texture_targets:
   - cremoso
   - crocante
+  techniques:
+  - cozinhar
+  - assar
+  - fritar
+  - processar
   notes: 'Bloco atômico: um ingrediente, função clara na composição.'
 - id: jaca
   name: Jaca
@@ -1465,6 +1691,11 @@ flavor_blocks:
     freshness: 7
   texture_targets:
   - crocante
+  techniques:
+  - assar
+  - grelhar
+  - reduzir
+  - fermentar
   notes: 'Bloco atômico: um ingrediente, função clara na composição.'
 - id: jenipapo
   name: Jenipapo
@@ -1490,6 +1721,11 @@ flavor_blocks:
   texture_targets:
   - cremoso
   - untuoso
+  techniques:
+  - cru
+  - reduzir
+  - fermentar
+  - conservar
   notes: 'Bloco atômico: um ingrediente, função clara na composição.'
 - id: jerimum
   name: Jerimum
@@ -1527,6 +1763,11 @@ flavor_blocks:
     freshness: 4
   texture_targets:
   - cremoso
+  techniques:
+  - assar
+  - grelhar
+  - conservar
+  - cru
   notes: 'Bloco atômico: um ingrediente, função clara na composição.'
 - id: lagosta_verde
   name: Lagosta-verde
@@ -1552,6 +1793,11 @@ flavor_blocks:
   texture_targets:
   - firme
   - tostado
+  techniques:
+  - saltear
+  - brasa
+  - caldo_com_cascas
+  - cozimento_curto
   notes: 'Bloco atômico: um ingrediente, função clara na composição.'
 - id: lagosta_vermelha
   name: Lagosta-vermelha
@@ -1580,6 +1826,11 @@ flavor_blocks:
   texture_targets:
   - firme
   - tostado
+  techniques:
+  - saltear
+  - brasa
+  - caldo_com_cascas
+  - cozimento_curto
   notes: 'Bloco atômico: um ingrediente, função clara na composição.'
 - id: leite_de_coco
   name: Leite-de-coco
@@ -1622,6 +1873,10 @@ flavor_blocks:
   texture_targets:
   - cremoso
   - untuoso
+  techniques:
+  - emulsionar
+  - finalizar
+  - infusionar
   notes: 'Bloco atômico: um ingrediente, função clara na composição.'
 - id: licuri
   name: Licuri
@@ -1652,6 +1907,10 @@ flavor_blocks:
   - crocante
   - cremoso
   - untuoso
+  techniques:
+  - tostar
+  - triturar
+  - emulsionar
   notes: 'Bloco atômico: um ingrediente, função clara na composição.'
 - id: limao_cravo
   name: Limão-cravo
@@ -1692,6 +1951,11 @@ flavor_blocks:
   texture_targets:
   - fresco
   - aromático
+  techniques:
+  - cru
+  - reduzir
+  - fermentar
+  - conservar
   notes: 'Bloco atômico: um ingrediente, função clara na composição.'
 - id: limao_galego
   name: Limão-galego
@@ -1737,6 +2001,11 @@ flavor_blocks:
   texture_targets:
   - fresco
   - aromático
+  techniques:
+  - cru
+  - reduzir
+  - fermentar
+  - conservar
   notes: 'Bloco atômico: um ingrediente, função clara na composição.'
 - id: lula
   name: Lula
@@ -1764,6 +2033,10 @@ flavor_blocks:
   texture_targets:
   - firme
   - tostado
+  techniques:
+  - brasa
+  - ensopado
+  - cozimento_controlado
   notes: 'Bloco atômico: um ingrediente, função clara na composição.'
 - id: macaxeira
   name: Macaxeira
@@ -1795,6 +2068,11 @@ flavor_blocks:
   texture_targets:
   - cremoso
   - crocante
+  techniques:
+  - cozinhar
+  - assar
+  - fritar
+  - processar
   notes: 'Bloco atômico: um ingrediente, função clara na composição.'
 - id: manga_espada
   name: Manga-espada
@@ -1820,6 +2098,11 @@ flavor_blocks:
   texture_targets:
   - cremoso
   - untuoso
+  techniques:
+  - assar
+  - grelhar
+  - reduzir
+  - fermentar
   notes: 'Bloco atômico: um ingrediente, função clara na composição.'
 - id: mangaba
   name: Mangaba
@@ -1850,6 +2133,11 @@ flavor_blocks:
   - fresco
   - cremoso
   - untuoso
+  techniques:
+  - cru
+  - reduzir
+  - fermentar
+  - conservar
   notes: 'Bloco atômico: um ingrediente, função clara na composição.'
 - id: manteiga_de_garrafa
   name: Manteiga-de-garrafa
@@ -1896,6 +2184,10 @@ flavor_blocks:
   texture_targets:
   - cremoso
   - untuoso
+  techniques:
+  - emulsionar
+  - finalizar
+  - infusionar
   notes: 'Bloco atômico: um ingrediente, função clara na composição.'
 - id: maracuja_amarelo
   name: Maracujá-amarelo
@@ -1922,6 +2214,11 @@ flavor_blocks:
   - fresco
   - cremoso
   - untuoso
+  techniques:
+  - cru
+  - reduzir
+  - fermentar
+  - conservar
   notes: 'Bloco atômico: um ingrediente, função clara na composição.'
 - id: maracuja_do_mato
   name: Maracujá-do-mato
@@ -1948,6 +2245,11 @@ flavor_blocks:
   - fresco
   - cremoso
   - untuoso
+  techniques:
+  - cru
+  - reduzir
+  - fermentar
+  - conservar
   notes: 'Bloco atômico: um ingrediente, função clara na composição.'
 - id: maxixe
   name: Maxixe
@@ -1977,6 +2279,11 @@ flavor_blocks:
   - crocante
   - fresco
   - leve
+  techniques:
+  - assar
+  - grelhar
+  - conservar
+  - cru
   notes: 'Bloco atômico: um ingrediente, função clara na composição.'
 - id: mel_de_engenho
   name: Mel-de-engenho
@@ -2007,6 +2314,10 @@ flavor_blocks:
   texture_targets:
   - cremoso
   - untuoso
+  techniques:
+  - caramelizar
+  - reduzir
+  - glacear
   notes: 'Bloco atômico: um ingrediente, função clara na composição.'
 - id: milho_verde
   name: Milho-verde
@@ -2042,6 +2353,11 @@ flavor_blocks:
   texture_targets:
   - cremoso
   - crocante
+  techniques:
+  - hidratar
+  - tostar
+  - cozinhar
+  - fermentar
   notes: 'Bloco atômico: um ingrediente, função clara na composição.'
 - id: murici
   name: Murici
@@ -2069,6 +2385,11 @@ flavor_blocks:
   texture_targets:
   - cremoso
   - untuoso
+  techniques:
+  - cru
+  - reduzir
+  - fermentar
+  - conservar
   notes: 'Bloco atômico: um ingrediente, função clara na composição.'
 - id: nata
   name: Nata
@@ -2096,6 +2417,10 @@ flavor_blocks:
   texture_targets:
   - cremoso
   - untuoso
+  techniques:
+  - gratinar
+  - emulsionar
+  - grelhar
   notes: 'Bloco atômico: um ingrediente, função clara na composição.'
 - id: ostra_do_mangue
   name: Ostra-do-mangue
@@ -2122,6 +2447,10 @@ flavor_blocks:
   - firme
   - fresco
   - macio
+  techniques:
+  - brasa
+  - ensopado
+  - cozimento_controlado
   notes: 'Bloco atômico: um ingrediente, função clara na composição.'
 - id: palma_alimenticia
   name: Palma alimentícia
@@ -2149,6 +2478,11 @@ flavor_blocks:
   texture_targets:
   - cremoso
   - crocante
+  techniques:
+  - assar
+  - grelhar
+  - conservar
+  - cru
   notes: 'Bloco atômico: um ingrediente, função clara na composição.'
 - id: pargo
   name: Pargo
@@ -2175,6 +2509,12 @@ flavor_blocks:
   texture_targets:
   - firme
   - tostado
+  techniques:
+  - brasa
+  - grelha
+  - forno
+  - cura_leve
+  - caldo_com_aparas
   notes: 'Bloco atômico: um ingrediente, função clara na composição.'
 - id: peixe_voador
   name: Peixe-voador
@@ -2199,6 +2539,12 @@ flavor_blocks:
     freshness: 5
   texture_targets:
   - firme
+  techniques:
+  - brasa
+  - grelha
+  - forno
+  - cura_leve
+  - caldo_com_aparas
   notes: 'Bloco atômico: um ingrediente, função clara na composição.'
 - id: pescada_amarela
   name: Pescada-amarela
@@ -2224,6 +2570,12 @@ flavor_blocks:
     freshness: 5
   texture_targets:
   - firme
+  techniques:
+  - brasa
+  - grelha
+  - forno
+  - cura_leve
+  - caldo_com_aparas
   notes: 'Bloco atômico: um ingrediente, função clara na composição.'
 - id: pimenta_de_cheiro
   name: Pimenta-de-cheiro
@@ -2276,6 +2628,11 @@ flavor_blocks:
   - aromático
   - fresco
   - leve
+  techniques:
+  - cru
+  - conservar
+  - fermentar
+  - infusionar
   notes: 'Bloco atômico: um ingrediente, função clara na composição.'
 - id: pimenta_malagueta
   name: Pimenta-malagueta
@@ -2313,6 +2670,11 @@ flavor_blocks:
   texture_targets:
   - cremoso
   - untuoso
+  techniques:
+  - cru
+  - conservar
+  - fermentar
+  - infusionar
   notes: 'Bloco atômico: um ingrediente, função clara na composição.'
 - id: pimentao
   name: Pimentão
@@ -2346,6 +2708,11 @@ flavor_blocks:
   - aromático
   - cremoso
   - untuoso
+  techniques:
+  - assar
+  - grelhar
+  - conservar
+  - cru
   notes: 'Bloco atômico: um ingrediente, função clara na composição.'
 - id: pinha
   name: Pinha
@@ -2370,6 +2737,11 @@ flavor_blocks:
     freshness: 7
   texture_targets:
   - neutro
+  techniques:
+  - assar
+  - grelhar
+  - reduzir
+  - fermentar
   notes: 'Bloco atômico: um ingrediente, função clara na composição.'
 - id: pitanga
   name: Pitanga
@@ -2400,6 +2772,11 @@ flavor_blocks:
   - fresco
   - cremoso
   - untuoso
+  techniques:
+  - cru
+  - reduzir
+  - fermentar
+  - conservar
   notes: 'Bloco atômico: um ingrediente, função clara na composição.'
 - id: polvo
   name: Polvo
@@ -2427,6 +2804,10 @@ flavor_blocks:
   texture_targets:
   - firme
   - tostado
+  techniques:
+  - brasa
+  - ensopado
+  - cozimento_controlado
   notes: 'Bloco atômico: um ingrediente, função clara na composição.'
 - id: porco
   name: Porco
@@ -2455,6 +2836,11 @@ flavor_blocks:
   texture_targets:
   - firme
   - tostado
+  techniques:
+  - brasa
+  - panela
+  - baixa_temperatura
+  - desfiar
   notes: 'Bloco atômico: um ingrediente, função clara na composição.'
 - id: puba
   name: Puba
@@ -2479,6 +2865,11 @@ flavor_blocks:
     freshness: 2
   texture_targets:
   - cremoso
+  techniques:
+  - hidratar
+  - tostar
+  - cozinhar
+  - fermentar
   notes: 'Bloco atômico: um ingrediente, função clara na composição.'
 - id: queijo_coalho
   name: Queijo-coalho
@@ -2517,6 +2908,10 @@ flavor_blocks:
   - firme
   - crocante
   - cremoso
+  techniques:
+  - gratinar
+  - emulsionar
+  - grelhar
   notes: 'Bloco atômico: um ingrediente, função clara na composição.'
 - id: queijo_manteiga
   name: Queijo-manteiga
@@ -2542,6 +2937,10 @@ flavor_blocks:
   texture_targets:
   - cremoso
   - untuoso
+  techniques:
+  - gratinar
+  - emulsionar
+  - grelhar
   notes: 'Bloco atômico: um ingrediente, função clara na composição.'
 - id: quiabo
   name: Quiabo
@@ -2568,6 +2967,11 @@ flavor_blocks:
     freshness: 6
   texture_targets:
   - crocante
+  techniques:
+  - assar
+  - grelhar
+  - conservar
+  - cru
   notes: 'Bloco atômico: um ingrediente, função clara na composição.'
 - id: rapadura
   name: Rapadura
@@ -2598,6 +3002,10 @@ flavor_blocks:
   texture_targets:
   - cremoso
   - untuoso
+  techniques:
+  - caramelizar
+  - reduzir
+  - glacear
   notes: 'Bloco atômico: um ingrediente, função clara na composição.'
 - id: requeijao_do_sertao
   name: Requeijão-do-sertão
@@ -2623,6 +3031,10 @@ flavor_blocks:
   texture_targets:
   - cremoso
   - untuoso
+  techniques:
+  - gratinar
+  - emulsionar
+  - grelhar
   notes: 'Bloco atômico: um ingrediente, função clara na composição.'
 - id: seriguela
   name: Seriguela
@@ -2649,6 +3061,11 @@ flavor_blocks:
   - fresco
   - cremoso
   - untuoso
+  techniques:
+  - cru
+  - reduzir
+  - fermentar
+  - conservar
   notes: 'Bloco atômico: um ingrediente, função clara na composição.'
 - id: serra
   name: Serra
@@ -2674,6 +3091,12 @@ flavor_blocks:
   texture_targets:
   - firme
   - tostado
+  techniques:
+  - brasa
+  - grelha
+  - forno
+  - cura_leve
+  - caldo_com_aparas
   notes: 'Bloco atômico: um ingrediente, função clara na composição.'
 - id: siri
   name: Siri
@@ -2698,6 +3121,11 @@ flavor_blocks:
     freshness: 5
   texture_targets:
   - firme
+  techniques:
+  - saltear
+  - brasa
+  - caldo_com_cascas
+  - cozimento_curto
   notes: 'Bloco atômico: um ingrediente, função clara na composição.'
 - id: sirigado
   name: Sirigado
@@ -2725,6 +3153,12 @@ flavor_blocks:
   texture_targets:
   - firme
   - tostado
+  techniques:
+  - brasa
+  - grelha
+  - forno
+  - cura_leve
+  - caldo_com_aparas
   notes: 'Bloco atômico: um ingrediente, função clara na composição.'
 - id: sururu
   name: Sururu
@@ -2751,6 +3185,10 @@ flavor_blocks:
     freshness: 5
   texture_targets:
   - firme
+  techniques:
+  - brasa
+  - ensopado
+  - cozimento_controlado
   notes: 'Bloco atômico: um ingrediente, função clara na composição.'
 - id: tamarindo
   name: Tamarindo
@@ -2787,6 +3225,11 @@ flavor_blocks:
   - fresco
   - cremoso
   - untuoso
+  techniques:
+  - cru
+  - reduzir
+  - fermentar
+  - conservar
   notes: 'Bloco atômico: um ingrediente, função clara na composição.'
 - id: tilapia
   name: Tilápia
@@ -2813,6 +3256,12 @@ flavor_blocks:
   texture_targets:
   - firme
   - tostado
+  techniques:
+  - brasa
+  - grelha
+  - forno
+  - cura_leve
+  - caldo_com_aparas
   notes: 'Bloco atômico: um ingrediente, função clara na composição.'
 - id: tomate
   name: Tomate
@@ -2854,6 +3303,11 @@ flavor_blocks:
   - fresco
   - cremoso
   - untuoso
+  techniques:
+  - assar
+  - grelhar
+  - conservar
+  - cru
   notes: 'Bloco atômico: um ingrediente, função clara na composição.'
 - id: toucinho
   name: Toucinho
@@ -2878,6 +3332,11 @@ flavor_blocks:
     freshness: 2
   texture_targets:
   - crocante
+  techniques:
+  - brasa
+  - panela
+  - baixa_temperatura
+  - desfiar
   notes: 'Bloco atômico: um ingrediente, função clara na composição.'
 - id: umbu
   name: Umbu
@@ -2909,6 +3368,11 @@ flavor_blocks:
   - fresco
   - cremoso
   - untuoso
+  techniques:
+  - cru
+  - reduzir
+  - fermentar
+  - conservar
   notes: 'Bloco atômico: um ingrediente, função clara na composição.'
 - id: umbu_caja
   name: Umbu-cajá
@@ -2937,6 +3401,11 @@ flavor_blocks:
   - fresco
   - cremoso
   - untuoso
+  techniques:
+  - cru
+  - reduzir
+  - fermentar
+  - conservar
   notes: 'Bloco atômico: um ingrediente, função clara na composição.'
 - id: vinagreira
   name: Vinagreira
@@ -2975,6 +3444,10 @@ flavor_blocks:
   texture_targets:
   - fresco
   - aromático
+  techniques:
+  - cru
+  - infusionar
+  - óleo_verde
   notes: 'Bloco atômico: um ingrediente, função clara na composição.'
 - id: xareu
   name: Xaréu
@@ -3000,6 +3473,12 @@ flavor_blocks:
   texture_targets:
   - firme
   - tostado
+  techniques:
+  - brasa
+  - grelha
+  - forno
+  - cura_leve
+  - caldo_com_aparas
   notes: 'Bloco atômico: um ingrediente, função clara na composição.'
 - id: xerem
   name: Xerém
@@ -3025,4 +3504,9 @@ flavor_blocks:
   texture_targets:
   - cremoso
   - crocante
+  techniques:
+  - hidratar
+  - tostar
+  - cozinhar
+  - fermentar
   notes: 'Bloco atômico: um ingrediente, função clara na composição.'

@@ -21,6 +21,7 @@ def _annotate_catalog(block: dict) -> dict:
     item["origin"] = "catalog"
     item["editable"] = True  # pode gerar override
     item["updated_at"] = None
+    item.setdefault("techniques", [])
     return item
 
 
@@ -31,6 +32,7 @@ def _from_record(row: FlavorBlockRecord) -> dict:
     payload["origin"] = "custom" if row.is_custom else "override"
     payload["editable"] = True
     payload["updated_at"] = row.updated_at.isoformat() if row.updated_at else None
+    payload.setdefault("techniques", [])
     if "notes" not in payload:
         payload["notes"] = row.notes or ""
     return payload

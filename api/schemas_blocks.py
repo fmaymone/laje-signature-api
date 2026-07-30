@@ -30,6 +30,7 @@ class FlavorBlockWrite(BaseModel):
     recommended_base_ids: list[str] = Field(default_factory=list)
     target_sensory_profile: SensoryProfileSchema = Field(default_factory=SensoryProfileSchema)
     texture_targets: list[str] = Field(default_factory=list)
+    techniques: list[str] = Field(default_factory=list)
     notes: str = ""
 
 
@@ -42,6 +43,7 @@ class FlavorBlockUpdate(BaseModel):
     recommended_base_ids: list[str] | None = None
     target_sensory_profile: SensoryProfileSchema | None = None
     texture_targets: list[str] | None = None
+    techniques: list[str] | None = None
     notes: str | None = None
 
 
@@ -54,7 +56,8 @@ class FlavorBlockRead(BaseModel):
     compatible_protagonists: list[str]
     recommended_base_ids: list[str]
     target_sensory_profile: SensoryProfileSchema
-    texture_targets: list[str]
+    texture_targets: list[str] = Field(default_factory=list)
+    techniques: list[str] = Field(default_factory=list)
     notes: str = ""
     origin: Literal["catalog", "custom", "override"] = "catalog"
     editable: bool = False

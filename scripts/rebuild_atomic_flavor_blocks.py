@@ -145,6 +145,7 @@ def build_atomic_blocks(
             "recommended_base_ids": sorted(bases_map.get(iid, set())),
             "target_sensory_profile": sensory,
             "texture_targets": _textures_for(roles),
+            "techniques": list(ingredient.get("recommended_techniques") or []),
             "notes": "Bloco atômico: um ingrediente, função clara na composição.",
         }
         blocks.append(block)

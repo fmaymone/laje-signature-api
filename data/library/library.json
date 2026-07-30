@@ -3606,6 +3606,12 @@
         "cremoso",
         "untuoso"
       ],
+      "techniques": [
+        "cru",
+        "reduzir",
+        "fermentar",
+        "conservar"
+      ],
       "notes": "Bloco atômico: um ingrediente, função clara na composição."
     },
     {
@@ -3643,6 +3649,12 @@
         "fresco",
         "cremoso",
         "untuoso"
+      ],
+      "techniques": [
+        "cru",
+        "reduzir",
+        "fermentar",
+        "conservar"
       ],
       "notes": "Bloco atômico: um ingrediente, função clara na composição."
     },
@@ -3684,6 +3696,11 @@
         "fresco",
         "leve"
       ],
+      "techniques": [
+        "cru",
+        "infusionar",
+        "óleo_verde"
+      ],
       "notes": "Bloco atômico: um ingrediente, função clara na composição."
     },
     {
@@ -3723,6 +3740,11 @@
         "cremoso",
         "untuoso"
       ],
+      "techniques": [
+        "tostar",
+        "refogar",
+        "infusionar"
+      ],
       "notes": "Bloco atômico: um ingrediente, função clara na composição."
     },
     {
@@ -3754,6 +3776,11 @@
         "crocante",
         "cremoso",
         "untuoso"
+      ],
+      "techniques": [
+        "tostar",
+        "triturar",
+        "emulsionar"
       ],
       "notes": "Bloco atômico: um ingrediente, função clara na composição."
     },
@@ -3787,6 +3814,12 @@
         "cremoso",
         "untuoso"
       ],
+      "techniques": [
+        "cru",
+        "reduzir",
+        "fermentar",
+        "conservar"
+      ],
       "notes": "Bloco atômico: um ingrediente, função clara na composição."
     },
     {
@@ -3817,6 +3850,13 @@
       "texture_targets": [
         "firme",
         "tostado"
+      ],
+      "techniques": [
+        "brasa",
+        "grelha",
+        "forno",
+        "cura_leve",
+        "caldo_com_aparas"
       ],
       "notes": "Bloco atômico: um ingrediente, função clara na composição."
     },
@@ -3860,6 +3900,12 @@
         "cremoso",
         "crocante"
       ],
+      "techniques": [
+        "hidratar",
+        "tostar",
+        "cozinhar",
+        "fermentar"
+      ],
       "notes": "Bloco atômico: um ingrediente, função clara na composição."
     },
     {
@@ -3898,6 +3944,11 @@
       "texture_targets": [
         "aromático"
       ],
+      "techniques": [
+        "emulsionar",
+        "finalizar",
+        "infusionar"
+      ],
       "notes": "Bloco atômico: um ingrediente, função clara na composição."
     },
     {
@@ -3933,6 +3984,12 @@
       "texture_targets": [
         "cremoso",
         "untuoso"
+      ],
+      "techniques": [
+        "cru",
+        "reduzir",
+        "fermentar",
+        "conservar"
       ],
       "notes": "Bloco atômico: um ingrediente, função clara na composição."
     },
@@ -3971,6 +4028,12 @@
         "cremoso",
         "crocante"
       ],
+      "techniques": [
+        "assar",
+        "grelhar",
+        "reduzir",
+        "fermentar"
+      ],
       "notes": "Bloco atômico: um ingrediente, função clara na composição."
     },
     {
@@ -4001,6 +4064,12 @@
       "texture_targets": [
         "cremoso",
         "crocante"
+      ],
+      "techniques": [
+        "cozinhar",
+        "assar",
+        "fritar",
+        "processar"
       ],
       "notes": "Bloco atômico: um ingrediente, função clara na composição."
     },
@@ -4038,6 +4107,12 @@
         "firme",
         "tostado"
       ],
+      "techniques": [
+        "brasa",
+        "panela",
+        "baixa_temperatura",
+        "desfiar"
+      ],
       "notes": "Bloco atômico: um ingrediente, função clara na composição."
     },
     {
@@ -4068,6 +4143,12 @@
       "texture_targets": [
         "cremoso",
         "untuoso"
+      ],
+      "techniques": [
+        "assar",
+        "grelhar",
+        "reduzir",
+        "fermentar"
       ],
       "notes": "Bloco atômico: um ingrediente, função clara na composição."
     },
@@ -4106,6 +4187,12 @@
         "fresco",
         "cremoso",
         "untuoso"
+      ],
+      "techniques": [
+        "cru",
+        "reduzir",
+        "fermentar",
+        "conservar"
       ],
       "notes": "Bloco atômico: um ingrediente, função clara na composição."
     },
@@ -4165,6 +4252,12 @@
         "cremoso",
         "untuoso"
       ],
+      "techniques": [
+        "cru",
+        "reduzir",
+        "fermentar",
+        "conservar"
+      ],
       "notes": "Bloco atômico: um ingrediente, função clara na composição."
     },
     {
@@ -4207,6 +4300,12 @@
       "texture_targets": [
         "neutro"
       ],
+      "techniques": [
+        "assar",
+        "grelhar",
+        "reduzir",
+        "fermentar"
+      ],
       "notes": "Bloco atômico: um ingrediente, função clara na composição."
     },
     {
@@ -4241,6 +4340,12 @@
       "texture_targets": [
         "firme"
       ],
+      "techniques": [
+        "saltear",
+        "brasa",
+        "caldo_com_cascas",
+        "cozimento_curto"
+      ],
       "notes": "Bloco atômico: um ingrediente, função clara na composição."
     },
     {
@@ -4270,6 +4375,12 @@
       },
       "texture_targets": [
         "firme"
+      ],
+      "techniques": [
+        "saltear",
+        "brasa",
+        "caldo_com_cascas",
+        "cozimento_curto"
       ],
       "notes": "Bloco atômico: um ingrediente, função clara na composição."
     },
@@ -4304,6 +4415,13 @@
         "firme",
         "tostado"
       ],
+      "techniques": [
+        "brasa",
+        "grelha",
+        "forno",
+        "cura_leve",
+        "caldo_com_aparas"
+      ],
       "notes": "Bloco atômico: um ingrediente, função clara na composição."
     },
     {
@@ -4337,6 +4455,12 @@
       },
       "texture_targets": [
         "firme"
+      ],
+      "techniques": [
+        "saltear",
+        "brasa",
+        "caldo_com_cascas",
+        "cozimento_curto"
       ],
       "notes": "Bloco atômico: um ingrediente, função clara na composição."
     },
@@ -4377,6 +4501,12 @@
       },
       "texture_targets": [
         "firme"
+      ],
+      "techniques": [
+        "brasa",
+        "panela",
+        "baixa_temperatura",
+        "desfiar"
       ],
       "notes": "Bloco atômico: um ingrediente, função clara na composição."
     },
@@ -4434,6 +4564,11 @@
         "cremoso",
         "untuoso"
       ],
+      "techniques": [
+        "tostar",
+        "triturar",
+        "emulsionar"
+      ],
       "notes": "Bloco atômico: um ingrediente, função clara na composição."
     },
     {
@@ -4470,6 +4605,13 @@
       "texture_targets": [
         "firme",
         "tostado"
+      ],
+      "techniques": [
+        "brasa",
+        "grelha",
+        "forno",
+        "cura_leve",
+        "caldo_com_aparas"
       ],
       "notes": "Bloco atômico: um ingrediente, função clara na composição."
     },
@@ -4526,6 +4668,12 @@
         "fresco",
         "crocante"
       ],
+      "techniques": [
+        "assar",
+        "grelhar",
+        "conservar",
+        "cru"
+      ],
       "notes": "Bloco atômico: um ingrediente, função clara na composição."
     },
     {
@@ -4580,6 +4728,11 @@
         "fresco",
         "leve"
       ],
+      "techniques": [
+        "cru",
+        "infusionar",
+        "óleo_verde"
+      ],
       "notes": "Bloco atômico: um ingrediente, função clara na composição."
     },
     {
@@ -4609,6 +4762,12 @@
       },
       "texture_targets": [
         "firme"
+      ],
+      "techniques": [
+        "brasa",
+        "panela",
+        "baixa_temperatura",
+        "desfiar"
       ],
       "notes": "Bloco atômico: um ingrediente, função clara na composição."
     },
@@ -4643,6 +4802,13 @@
         "firme",
         "fresco",
         "macio"
+      ],
+      "techniques": [
+        "brasa",
+        "grelha",
+        "forno",
+        "cura_leve",
+        "caldo_com_aparas"
       ],
       "notes": "Bloco atômico: um ingrediente, função clara na composição."
     },
@@ -4691,6 +4857,12 @@
         "crocante",
         "cremoso",
         "untuoso"
+      ],
+      "techniques": [
+        "assar",
+        "grelhar",
+        "reduzir",
+        "fermentar"
       ],
       "notes": "Bloco atômico: um ingrediente, função clara na composição."
     },
@@ -4757,6 +4929,11 @@
         "fresco",
         "leve"
       ],
+      "techniques": [
+        "cru",
+        "infusionar",
+        "óleo_verde"
+      ],
       "notes": "Bloco atômico: um ingrediente, função clara na composição."
     },
     {
@@ -4793,6 +4970,11 @@
       },
       "texture_targets": [
         "aromático"
+      ],
+      "techniques": [
+        "tostar",
+        "refogar",
+        "infusionar"
       ],
       "notes": "Bloco atômico: um ingrediente, função clara na composição."
     },
@@ -4835,6 +5017,11 @@
       "texture_targets": [
         "aromático"
       ],
+      "techniques": [
+        "tostar",
+        "refogar",
+        "infusionar"
+      ],
       "notes": "Bloco atômico: um ingrediente, função clara na composição."
     },
     {
@@ -4871,6 +5058,12 @@
         "firme",
         "tostado"
       ],
+      "techniques": [
+        "brasa",
+        "panela",
+        "baixa_temperatura",
+        "desfiar"
+      ],
       "notes": "Bloco atômico: um ingrediente, função clara na composição."
     },
     {
@@ -4901,6 +5094,12 @@
       "texture_targets": [
         "cremoso",
         "crocante"
+      ],
+      "techniques": [
+        "hidratar",
+        "tostar",
+        "cozinhar",
+        "fermentar"
       ],
       "notes": "Bloco atômico: um ingrediente, função clara na composição."
     },
@@ -4937,6 +5136,12 @@
         "cremoso",
         "crocante"
       ],
+      "techniques": [
+        "hidratar",
+        "tostar",
+        "cozinhar",
+        "fermentar"
+      ],
       "notes": "Bloco atômico: um ingrediente, função clara na composição."
     },
     {
@@ -4971,6 +5176,11 @@
       },
       "texture_targets": [
         "cremoso"
+      ],
+      "techniques": [
+        "cozinhar",
+        "refogar",
+        "fermentar"
       ],
       "notes": "Bloco atômico: um ingrediente, função clara na composição."
     },
@@ -5007,6 +5217,11 @@
         "cremoso",
         "crocante"
       ],
+      "techniques": [
+        "cozinhar",
+        "refogar",
+        "fermentar"
+      ],
       "notes": "Bloco atômico: um ingrediente, função clara na composição."
     },
     {
@@ -5038,6 +5253,11 @@
       },
       "texture_targets": [
         "cremoso"
+      ],
+      "techniques": [
+        "cozinhar",
+        "refogar",
+        "fermentar"
       ],
       "notes": "Bloco atômico: um ingrediente, função clara na composição."
     },
@@ -5077,6 +5297,11 @@
       "texture_targets": [
         "cremoso",
         "crocante"
+      ],
+      "techniques": [
+        "cozinhar",
+        "refogar",
+        "fermentar"
       ],
       "notes": "Bloco atômico: um ingrediente, função clara na composição."
     },
@@ -5121,6 +5346,12 @@
         "cremoso",
         "crocante"
       ],
+      "techniques": [
+        "hidratar",
+        "tostar",
+        "cozinhar",
+        "fermentar"
+      ],
       "notes": "Bloco atômico: um ingrediente, função clara na composição."
     },
     {
@@ -5159,6 +5390,12 @@
         "leve",
         "cremoso"
       ],
+      "techniques": [
+        "assar",
+        "grelhar",
+        "reduzir",
+        "fermentar"
+      ],
       "notes": "Bloco atômico: um ingrediente, função clara na composição."
     },
     {
@@ -5193,6 +5430,12 @@
       },
       "texture_targets": [
         "firme"
+      ],
+      "techniques": [
+        "brasa",
+        "panela",
+        "baixa_temperatura",
+        "desfiar"
       ],
       "notes": "Bloco atômico: um ingrediente, função clara na composição."
     },
@@ -5234,6 +5477,11 @@
         "crocante",
         "aromático"
       ],
+      "techniques": [
+        "tostar",
+        "triturar",
+        "emulsionar"
+      ],
       "notes": "Bloco atômico: um ingrediente, função clara na composição."
     },
     {
@@ -5264,6 +5512,12 @@
       "texture_targets": [
         "cremoso",
         "crocante"
+      ],
+      "techniques": [
+        "hidratar",
+        "tostar",
+        "cozinhar",
+        "fermentar"
       ],
       "notes": "Bloco atômico: um ingrediente, função clara na composição."
     },
@@ -5296,6 +5550,12 @@
         "cremoso",
         "untuoso"
       ],
+      "techniques": [
+        "assar",
+        "grelhar",
+        "reduzir",
+        "fermentar"
+      ],
       "notes": "Bloco atômico: um ingrediente, função clara na composição."
     },
     {
@@ -5327,6 +5587,13 @@
         "firme",
         "tostado"
       ],
+      "techniques": [
+        "brasa",
+        "grelha",
+        "forno",
+        "cura_leve",
+        "caldo_com_aparas"
+      ],
       "notes": "Bloco atômico: um ingrediente, função clara na composição."
     },
     {
@@ -5357,6 +5624,12 @@
       "texture_targets": [
         "cremoso",
         "crocante"
+      ],
+      "techniques": [
+        "cozinhar",
+        "assar",
+        "fritar",
+        "processar"
       ],
       "notes": "Bloco atômico: um ingrediente, função clara na composição."
     },
@@ -5392,6 +5665,12 @@
       "texture_targets": [
         "crocante"
       ],
+      "techniques": [
+        "assar",
+        "grelhar",
+        "reduzir",
+        "fermentar"
+      ],
       "notes": "Bloco atômico: um ingrediente, função clara na composição."
     },
     {
@@ -5422,6 +5701,12 @@
       "texture_targets": [
         "cremoso",
         "untuoso"
+      ],
+      "techniques": [
+        "cru",
+        "reduzir",
+        "fermentar",
+        "conservar"
       ],
       "notes": "Bloco atômico: um ingrediente, função clara na composição."
     },
@@ -5468,6 +5753,12 @@
       "texture_targets": [
         "cremoso"
       ],
+      "techniques": [
+        "assar",
+        "grelhar",
+        "conservar",
+        "cru"
+      ],
       "notes": "Bloco atômico: um ingrediente, função clara na composição."
     },
     {
@@ -5498,6 +5789,12 @@
       "texture_targets": [
         "firme",
         "tostado"
+      ],
+      "techniques": [
+        "saltear",
+        "brasa",
+        "caldo_com_cascas",
+        "cozimento_curto"
       ],
       "notes": "Bloco atômico: um ingrediente, função clara na composição."
     },
@@ -5534,6 +5831,12 @@
       "texture_targets": [
         "firme",
         "tostado"
+      ],
+      "techniques": [
+        "saltear",
+        "brasa",
+        "caldo_com_cascas",
+        "cozimento_curto"
       ],
       "notes": "Bloco atômico: um ingrediente, função clara na composição."
     },
@@ -5585,6 +5888,11 @@
         "cremoso",
         "untuoso"
       ],
+      "techniques": [
+        "emulsionar",
+        "finalizar",
+        "infusionar"
+      ],
       "notes": "Bloco atômico: um ingrediente, função clara na composição."
     },
     {
@@ -5622,6 +5930,11 @@
         "crocante",
         "cremoso",
         "untuoso"
+      ],
+      "techniques": [
+        "tostar",
+        "triturar",
+        "emulsionar"
       ],
       "notes": "Bloco atômico: um ingrediente, função clara na composição."
     },
@@ -5670,6 +5983,12 @@
       "texture_targets": [
         "fresco",
         "aromático"
+      ],
+      "techniques": [
+        "cru",
+        "reduzir",
+        "fermentar",
+        "conservar"
       ],
       "notes": "Bloco atômico: um ingrediente, função clara na composição."
     },
@@ -5724,6 +6043,12 @@
         "fresco",
         "aromático"
       ],
+      "techniques": [
+        "cru",
+        "reduzir",
+        "fermentar",
+        "conservar"
+      ],
       "notes": "Bloco atômico: um ingrediente, função clara na composição."
     },
     {
@@ -5758,6 +6083,11 @@
       "texture_targets": [
         "firme",
         "tostado"
+      ],
+      "techniques": [
+        "brasa",
+        "ensopado",
+        "cozimento_controlado"
       ],
       "notes": "Bloco atômico: um ingrediente, função clara na composição."
     },
@@ -5798,6 +6128,12 @@
         "cremoso",
         "crocante"
       ],
+      "techniques": [
+        "cozinhar",
+        "assar",
+        "fritar",
+        "processar"
+      ],
       "notes": "Bloco atômico: um ingrediente, função clara na composição."
     },
     {
@@ -5828,6 +6164,12 @@
       "texture_targets": [
         "cremoso",
         "untuoso"
+      ],
+      "techniques": [
+        "assar",
+        "grelhar",
+        "reduzir",
+        "fermentar"
       ],
       "notes": "Bloco atômico: um ingrediente, função clara na composição."
     },
@@ -5866,6 +6208,12 @@
         "fresco",
         "cremoso",
         "untuoso"
+      ],
+      "techniques": [
+        "cru",
+        "reduzir",
+        "fermentar",
+        "conservar"
       ],
       "notes": "Bloco atômico: um ingrediente, função clara na composição."
     },
@@ -5921,6 +6269,11 @@
         "cremoso",
         "untuoso"
       ],
+      "techniques": [
+        "emulsionar",
+        "finalizar",
+        "infusionar"
+      ],
       "notes": "Bloco atômico: um ingrediente, função clara na composição."
     },
     {
@@ -5953,6 +6306,12 @@
         "cremoso",
         "untuoso"
       ],
+      "techniques": [
+        "cru",
+        "reduzir",
+        "fermentar",
+        "conservar"
+      ],
       "notes": "Bloco atômico: um ingrediente, função clara na composição."
     },
     {
@@ -5984,6 +6343,12 @@
         "fresco",
         "cremoso",
         "untuoso"
+      ],
+      "techniques": [
+        "cru",
+        "reduzir",
+        "fermentar",
+        "conservar"
       ],
       "notes": "Bloco atômico: um ingrediente, função clara na composição."
     },
@@ -6020,6 +6385,12 @@
         "crocante",
         "fresco",
         "leve"
+      ],
+      "techniques": [
+        "assar",
+        "grelhar",
+        "conservar",
+        "cru"
       ],
       "notes": "Bloco atômico: um ingrediente, função clara na composição."
     },
@@ -6058,6 +6429,11 @@
       "texture_targets": [
         "cremoso",
         "untuoso"
+      ],
+      "techniques": [
+        "caramelizar",
+        "reduzir",
+        "glacear"
       ],
       "notes": "Bloco atômico: um ingrediente, função clara na composição."
     },
@@ -6102,6 +6478,12 @@
         "cremoso",
         "crocante"
       ],
+      "techniques": [
+        "hidratar",
+        "tostar",
+        "cozinhar",
+        "fermentar"
+      ],
       "notes": "Bloco atômico: um ingrediente, função clara na composição."
     },
     {
@@ -6136,6 +6518,12 @@
       "texture_targets": [
         "cremoso",
         "untuoso"
+      ],
+      "techniques": [
+        "cru",
+        "reduzir",
+        "fermentar",
+        "conservar"
       ],
       "notes": "Bloco atômico: um ingrediente, função clara na composição."
     },
@@ -6172,6 +6560,11 @@
         "cremoso",
         "untuoso"
       ],
+      "techniques": [
+        "gratinar",
+        "emulsionar",
+        "grelhar"
+      ],
       "notes": "Bloco atômico: um ingrediente, função clara na composição."
     },
     {
@@ -6203,6 +6596,11 @@
         "firme",
         "fresco",
         "macio"
+      ],
+      "techniques": [
+        "brasa",
+        "ensopado",
+        "cozimento_controlado"
       ],
       "notes": "Bloco atômico: um ingrediente, função clara na composição."
     },
@@ -6239,6 +6637,12 @@
         "cremoso",
         "crocante"
       ],
+      "techniques": [
+        "assar",
+        "grelhar",
+        "conservar",
+        "cru"
+      ],
       "notes": "Bloco atômico: um ingrediente, função clara na composição."
     },
     {
@@ -6272,6 +6676,13 @@
         "firme",
         "tostado"
       ],
+      "techniques": [
+        "brasa",
+        "grelha",
+        "forno",
+        "cura_leve",
+        "caldo_com_aparas"
+      ],
       "notes": "Bloco atômico: um ingrediente, função clara na composição."
     },
     {
@@ -6301,6 +6712,13 @@
       },
       "texture_targets": [
         "firme"
+      ],
+      "techniques": [
+        "brasa",
+        "grelha",
+        "forno",
+        "cura_leve",
+        "caldo_com_aparas"
       ],
       "notes": "Bloco atômico: um ingrediente, função clara na composição."
     },
@@ -6333,6 +6751,13 @@
       },
       "texture_targets": [
         "firme"
+      ],
+      "techniques": [
+        "brasa",
+        "grelha",
+        "forno",
+        "cura_leve",
+        "caldo_com_aparas"
       ],
       "notes": "Bloco atômico: um ingrediente, função clara na composição."
     },
@@ -6394,6 +6819,12 @@
         "fresco",
         "leve"
       ],
+      "techniques": [
+        "cru",
+        "conservar",
+        "fermentar",
+        "infusionar"
+      ],
       "notes": "Bloco atômico: um ingrediente, função clara na composição."
     },
     {
@@ -6439,6 +6870,12 @@
         "cremoso",
         "untuoso"
       ],
+      "techniques": [
+        "cru",
+        "conservar",
+        "fermentar",
+        "infusionar"
+      ],
       "notes": "Bloco atômico: um ingrediente, função clara na composição."
     },
     {
@@ -6480,6 +6917,12 @@
         "cremoso",
         "untuoso"
       ],
+      "techniques": [
+        "assar",
+        "grelhar",
+        "conservar",
+        "cru"
+      ],
       "notes": "Bloco atômico: um ingrediente, função clara na composição."
     },
     {
@@ -6509,6 +6952,12 @@
       },
       "texture_targets": [
         "neutro"
+      ],
+      "techniques": [
+        "assar",
+        "grelhar",
+        "reduzir",
+        "fermentar"
       ],
       "notes": "Bloco atômico: um ingrediente, função clara na composição."
     },
@@ -6548,6 +6997,12 @@
         "cremoso",
         "untuoso"
       ],
+      "techniques": [
+        "cru",
+        "reduzir",
+        "fermentar",
+        "conservar"
+      ],
       "notes": "Bloco atômico: um ingrediente, função clara na composição."
     },
     {
@@ -6582,6 +7037,11 @@
       "texture_targets": [
         "firme",
         "tostado"
+      ],
+      "techniques": [
+        "brasa",
+        "ensopado",
+        "cozimento_controlado"
       ],
       "notes": "Bloco atômico: um ingrediente, função clara na composição."
     },
@@ -6619,6 +7079,12 @@
         "firme",
         "tostado"
       ],
+      "techniques": [
+        "brasa",
+        "panela",
+        "baixa_temperatura",
+        "desfiar"
+      ],
       "notes": "Bloco atômico: um ingrediente, função clara na composição."
     },
     {
@@ -6648,6 +7114,12 @@
       },
       "texture_targets": [
         "cremoso"
+      ],
+      "techniques": [
+        "hidratar",
+        "tostar",
+        "cozinhar",
+        "fermentar"
       ],
       "notes": "Bloco atômico: um ingrediente, função clara na composição."
     },
@@ -6695,6 +7167,11 @@
         "crocante",
         "cremoso"
       ],
+      "techniques": [
+        "gratinar",
+        "emulsionar",
+        "grelhar"
+      ],
       "notes": "Bloco atômico: um ingrediente, função clara na composição."
     },
     {
@@ -6725,6 +7202,11 @@
       "texture_targets": [
         "cremoso",
         "untuoso"
+      ],
+      "techniques": [
+        "gratinar",
+        "emulsionar",
+        "grelhar"
       ],
       "notes": "Bloco atômico: um ingrediente, função clara na composição."
     },
@@ -6759,6 +7241,12 @@
       },
       "texture_targets": [
         "crocante"
+      ],
+      "techniques": [
+        "assar",
+        "grelhar",
+        "conservar",
+        "cru"
       ],
       "notes": "Bloco atômico: um ingrediente, função clara na composição."
     },
@@ -6798,6 +7286,11 @@
         "cremoso",
         "untuoso"
       ],
+      "techniques": [
+        "caramelizar",
+        "reduzir",
+        "glacear"
+      ],
       "notes": "Bloco atômico: um ingrediente, função clara na composição."
     },
     {
@@ -6828,6 +7321,11 @@
       "texture_targets": [
         "cremoso",
         "untuoso"
+      ],
+      "techniques": [
+        "gratinar",
+        "emulsionar",
+        "grelhar"
       ],
       "notes": "Bloco atômico: um ingrediente, função clara na composição."
     },
@@ -6861,6 +7359,12 @@
         "cremoso",
         "untuoso"
       ],
+      "techniques": [
+        "cru",
+        "reduzir",
+        "fermentar",
+        "conservar"
+      ],
       "notes": "Bloco atômico: um ingrediente, função clara na composição."
     },
     {
@@ -6892,6 +7396,13 @@
         "firme",
         "tostado"
       ],
+      "techniques": [
+        "brasa",
+        "grelha",
+        "forno",
+        "cura_leve",
+        "caldo_com_aparas"
+      ],
       "notes": "Bloco atômico: um ingrediente, função clara na composição."
     },
     {
@@ -6921,6 +7432,12 @@
       },
       "texture_targets": [
         "firme"
+      ],
+      "techniques": [
+        "saltear",
+        "brasa",
+        "caldo_com_cascas",
+        "cozimento_curto"
       ],
       "notes": "Bloco atômico: um ingrediente, função clara na composição."
     },
@@ -6957,6 +7474,13 @@
         "firme",
         "tostado"
       ],
+      "techniques": [
+        "brasa",
+        "grelha",
+        "forno",
+        "cura_leve",
+        "caldo_com_aparas"
+      ],
       "notes": "Bloco atômico: um ingrediente, função clara na composição."
     },
     {
@@ -6990,6 +7514,11 @@
       },
       "texture_targets": [
         "firme"
+      ],
+      "techniques": [
+        "brasa",
+        "ensopado",
+        "cozimento_controlado"
       ],
       "notes": "Bloco atômico: um ingrediente, função clara na composição."
     },
@@ -7035,6 +7564,12 @@
         "cremoso",
         "untuoso"
       ],
+      "techniques": [
+        "cru",
+        "reduzir",
+        "fermentar",
+        "conservar"
+      ],
       "notes": "Bloco atômico: um ingrediente, função clara na composição."
     },
     {
@@ -7067,6 +7602,13 @@
       "texture_targets": [
         "firme",
         "tostado"
+      ],
+      "techniques": [
+        "brasa",
+        "grelha",
+        "forno",
+        "cura_leve",
+        "caldo_com_aparas"
       ],
       "notes": "Bloco atômico: um ingrediente, função clara na composição."
     },
@@ -7117,6 +7659,12 @@
         "cremoso",
         "untuoso"
       ],
+      "techniques": [
+        "assar",
+        "grelhar",
+        "conservar",
+        "cru"
+      ],
       "notes": "Bloco atômico: um ingrediente, função clara na composição."
     },
     {
@@ -7146,6 +7694,12 @@
       },
       "texture_targets": [
         "crocante"
+      ],
+      "techniques": [
+        "brasa",
+        "panela",
+        "baixa_temperatura",
+        "desfiar"
       ],
       "notes": "Bloco atômico: um ingrediente, função clara na composição."
     },
@@ -7186,6 +7740,12 @@
         "cremoso",
         "untuoso"
       ],
+      "techniques": [
+        "cru",
+        "reduzir",
+        "fermentar",
+        "conservar"
+      ],
       "notes": "Bloco atômico: um ingrediente, função clara na composição."
     },
     {
@@ -7220,6 +7780,12 @@
         "fresco",
         "cremoso",
         "untuoso"
+      ],
+      "techniques": [
+        "cru",
+        "reduzir",
+        "fermentar",
+        "conservar"
       ],
       "notes": "Bloco atômico: um ingrediente, função clara na composição."
     },
@@ -7267,6 +7833,11 @@
         "fresco",
         "aromático"
       ],
+      "techniques": [
+        "cru",
+        "infusionar",
+        "óleo_verde"
+      ],
       "notes": "Bloco atômico: um ingrediente, função clara na composição."
     },
     {
@@ -7298,6 +7869,13 @@
         "firme",
         "tostado"
       ],
+      "techniques": [
+        "brasa",
+        "grelha",
+        "forno",
+        "cura_leve",
+        "caldo_com_aparas"
+      ],
       "notes": "Bloco atômico: um ingrediente, função clara na composição."
     },
     {
@@ -7328,6 +7906,12 @@
       "texture_targets": [
         "cremoso",
         "crocante"
+      ],
+      "techniques": [
+        "hidratar",
+        "tostar",
+        "cozinhar",
+        "fermentar"
       ],
       "notes": "Bloco atômico: um ingrediente, função clara na composição."
     }

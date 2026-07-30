@@ -85,11 +85,13 @@ def test_create_update_delete_custom_block(client: TestClient):
                 "freshness": 3,
             },
             "texture_targets": ["cremoso"],
+            "techniques": ["brasa", "grelha"],
             "notes": "bloco de teste",
         },
     )
     assert create.status_code == 201, create.text
     assert create.json()["origin"] == "custom"
+    assert create.json()["techniques"] == ["brasa", "grelha"]
 
     updated = client.put(
         "/v1/blocks/teste_atomico",
