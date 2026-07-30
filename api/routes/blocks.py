@@ -17,6 +17,7 @@ from api.schemas_blocks import (
 )
 from app.composition.blocks_store import get_merged_flavor_block, merge_flavor_blocks
 from app.composition.library_v01 import load_library
+from app.composition.tags import tag_id
 from app.db.models import FlavorBlockRecord, User
 from app.db.session import get_db
 
@@ -66,19 +67,34 @@ def list_blocks(
 ) -> FlavorBlockListResponse:
     items = merge_flavor_blocks(db)
     if family:
-        items = [item for item in items if item.get("family") == family]
+        family_needle = tag_id(family) or family.strip().lower()
+        items = [item for item in items if tag_id(item.get("family")) == family_needle]
     if origin:
         items = [item for item in items if item.get("origin") == origin]
     if q:
         needle = q.lower().strip()
-        items = [
-            item
-            for item in items
-            if needle in str(item.get("id", "")).lower()
-            or needle in str(item.get("name", "")).lower()
-            or needle in str(item.get("family", "")).lower()
-            or any(needle in str(role).lower() for role in item.get("culinary_roles") or [])
-        ]
+
+        def _matches(item: dict) -> bool:
+            family_value = item.get("family") or {}
+            family_blob = (
+                f"{family_value.get('id', '')} {family_value.get('title', '')}"
+                if isinstance(family_value, dict)
+                else str(family_value)
+            )
+            techniques = item.get("techniques") or []
+            tech_blob = " ".join(
+                f"{t.get('id', '')} {t.get('title', '')}" if isinstance(t, dict) else str(t)
+                for t in techniques
+            )
+            return (
+                needle in str(item.get("id", "")).lower()
+                or needle in str(item.get("name", "")).lower()
+                or needle in family_blob.lower()
+                or needle in tech_blob.lower()
+                or any(needle in str(role).lower() for role in item.get("culinary_roles") or [])
+            )
+
+        items = [item for item in items if _matches(item)]
     return FlavorBlockListResponse(items=[_to_read(item) for item in items], total=len(items))
 
 

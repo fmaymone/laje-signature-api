@@ -1,5 +1,6 @@
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, field_validator
 from typing import Optional, Any
+
 
 class SensoryProfile(BaseModel):
     acidity: float = Field(ge=0, le=10)
@@ -11,6 +12,12 @@ class SensoryProfile(BaseModel):
     heat: float = Field(ge=0, le=10)
     aroma: float = Field(ge=0, le=10)
     freshness: float = Field(ge=0, le=10)
+
+
+class Tag(BaseModel):
+    id: str
+    title: str
+
 
 class Ingredient(BaseModel):
     id: str
@@ -25,15 +32,31 @@ class Ingredient(BaseModel):
     seasonality_ref: str
     notes: Optional[str] = None
 
+
 class FlavorBlock(BaseModel):
     id: str
     name: str
-    family: str
+    family: Tag
     ingredient_ids: list[str]
     culinary_roles: list[str]
     compatible_protagonists: list[str]
     recommended_base_ids: list[str]
     target_sensory_profile: SensoryProfile
     texture_targets: list[str]
-    techniques: list[str] = []
+    techniques: list[Tag] = []
     notes: str = ''
+
+    @field_validator('family', mode='before')
+    @classmethod
+    def _coerce_family(cls, value: Any) -> Any:
+        from app.composition.tags import FAMILY_TITLES, coerce_tag
+
+        tag = coerce_tag(value, catalog=FAMILY_TITLES)
+        return tag.model_dump() if tag else value
+
+    @field_validator('techniques', mode='before')
+    @classmethod
+    def _coerce_techniques(cls, value: Any) -> Any:
+        from app.composition.tags import TECHNIQUE_TITLES, tags_as_dicts
+
+        return tags_as_dicts(value, catalog=TECHNIQUE_TITLES)

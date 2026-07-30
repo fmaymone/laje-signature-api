@@ -56,7 +56,10 @@ def test_list_blocks_includes_catalog(client: TestClient):
     assert response.status_code == 200
     body = response.json()
     assert body["total"] >= 100
-    assert any(item["id"] == "carne_de_sol" for item in body["items"])
+    carne = next(item for item in body["items"] if item["id"] == "carne_de_sol")
+    assert isinstance(carne["family"], dict)
+    assert "id" in carne["family"] and "title" in carne["family"]
+    assert all(isinstance(t, dict) and "id" in t and "title" in t for t in carne["techniques"])
 
 
 def test_create_update_delete_custom_block(client: TestClient):
@@ -91,7 +94,11 @@ def test_create_update_delete_custom_block(client: TestClient):
     )
     assert create.status_code == 201, create.text
     assert create.json()["origin"] == "custom"
-    assert create.json()["techniques"] == ["brasa", "grelha"]
+    assert create.json()["family"] == {"id": "sertao", "title": "Sertão"}
+    assert create.json()["techniques"] == [
+        {"id": "brasa", "title": "Brasa"},
+        {"id": "grelha", "title": "Grelha"},
+    ]
 
     updated = client.put(
         "/v1/blocks/teste_atomico",

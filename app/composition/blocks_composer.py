@@ -5,6 +5,7 @@ from __future__ import annotations
 from copy import deepcopy
 
 from app.composition.library_v01 import index_library, load_library
+from app.composition.tags import tag_id
 from app.flavor_schemas import (
     DishArchitecture,
     SelectedBlock,
@@ -530,7 +531,7 @@ def _selection_tags(
     tags = set(ingredient_ids) | {_normalize(role) for role in roles} | set(textures)
     for block in blocks:
         tags.add(block["id"])
-        tags.add(_normalize(block.get("family", "")))
+        tags.add(_normalize(tag_id(block.get("family"))))
 
     if {"sirigado", "cioba", "camurim"} & ingredient_ids:
         tags.add("peixe_delicado")
@@ -651,7 +652,7 @@ def selection_to_architecture(selection: dict) -> DishArchitecture:
             role=_primary_role(block.get("culinary_roles", [])),
             chosen_form=block["name"],
             justification=(
-                f"Família {block.get('family')}; papéis: "
+                f"Família {tag_id(block.get('family')) or block.get('family')}; papéis: "
                 f"{', '.join(block.get('culinary_roles', []))}."
             ),
             ingredients=[],
@@ -673,7 +674,7 @@ def selection_to_architecture(selection: dict) -> DishArchitecture:
             "compatibilidade + conflitos."
         ),
         protagonist=selection["protagonist_id"],
-        family_id=blocks[0].get("family") if blocks else None,
+        family_id=tag_id(blocks[0].get("family")) or None if blocks else None,
         blocks=selected,
         sensory_estimate=SensoryProfile(**sensory),
         texture_estimate=TextureProfile(

@@ -10,6 +10,7 @@ from sqlalchemy.exc import SQLAlchemyError
 from sqlalchemy.orm import Session
 
 from app.composition.library_v01 import load_library
+from app.composition.tags import normalize_block_tags
 from app.db.models.flavor_block_record import FlavorBlockRecord
 from app.db.session import SessionLocal
 
@@ -22,7 +23,7 @@ def _annotate_catalog(block: dict) -> dict:
     item["editable"] = True  # pode gerar override
     item["updated_at"] = None
     item.setdefault("techniques", [])
-    return item
+    return normalize_block_tags(item)
 
 
 def _from_record(row: FlavorBlockRecord) -> dict:
@@ -35,7 +36,7 @@ def _from_record(row: FlavorBlockRecord) -> dict:
     payload.setdefault("techniques", [])
     if "notes" not in payload:
         payload["notes"] = row.notes or ""
-    return payload
+    return normalize_block_tags(payload)
 
 
 def _load_records(session: Session) -> list[FlavorBlockRecord]:
