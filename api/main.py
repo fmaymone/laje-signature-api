@@ -17,7 +17,7 @@ if str(_ROOT) not in sys.path:
 load_dotenv(_ROOT / ".env")
 load_dotenv(_ROOT.parent / ".env")
 
-from api.routes import auth, compose, health, library, recipes, users  # noqa: E402
+from api.routes import auth, compose, compose_graphs, health, library, recipes, users  # noqa: E402
 
 
 @asynccontextmanager
@@ -70,6 +70,7 @@ app.include_router(health.router)
 app.include_router(auth.router)
 app.include_router(library.router)
 app.include_router(compose.router)
+app.include_router(compose_graphs.router)
 app.include_router(recipes.router)
 app.include_router(users.router)
 
