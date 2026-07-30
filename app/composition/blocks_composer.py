@@ -136,12 +136,13 @@ def select_flavor_blocks(
     max_blocks: int = 4,
 ) -> dict:
     """Nó 1 — escolhe blocos a partir de flavor_blocks."""
-    lib = load_library()
+    from app.composition.blocks_store import merge_flavor_blocks
+
     idx = index_library()
     tokens = _mention_tokens(mentions + [protagonist_id])
 
     ranked = sorted(
-        lib["flavor_blocks"],
+        merge_flavor_blocks(),
         key=lambda block: _score_block(block, protagonist_id, tokens),
         reverse=True,
     )

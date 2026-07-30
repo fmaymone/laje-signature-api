@@ -45,10 +45,12 @@ def reset_library_cache() -> None:
 
 
 def index_library() -> dict[str, dict[str, dict]]:
+    from app.composition.blocks_store import merge_flavor_blocks
+
     lib = load_library()
     return {
         "ingredients": by_id(lib["ingredients"]),
-        "flavor_blocks": by_id(lib["flavor_blocks"]),
+        "flavor_blocks": by_id(merge_flavor_blocks()),
         "protagonists": by_id(lib["protagonists"]),
         "bases": by_id(lib["bases"]),
         "acidity_sources": by_id(lib["acidity_sources"]),

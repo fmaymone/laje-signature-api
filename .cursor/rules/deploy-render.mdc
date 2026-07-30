@@ -1,0 +1,17 @@
+---
+description: Sempre fazer deploy da API no Render após alterações
+alwaysApply: true
+---
+
+# Deploy automático no Render (API)
+
+Após concluir alterações no **laje-signature-api** (código, migrações, catálogo, testes):
+
+1. **Commit** as mudanças relevantes (sem secrets).
+2. **Push** para `main` em `origin` (o serviço Render tem `autoDeploy` por commit).
+3. **Confirmar** o deploy via Render MCP (`list_deploys` no serviço `laje-signature-api` / `srv-d9keds1t0dsc739i29fg`, workspace Fernando).
+4. Informar o usuário com commit SHA e status do deploy (`build_in_progress` → `live`).
+
+Não esperar o usuário pedir “deploy” — é o fluxo padrão ao terminar trabalho na API.
+
+Exceções: o usuário pediu explicitamente para **não** publicar; ou só há mudanças locais de experimento que ele pediu para manter uncommitted.
