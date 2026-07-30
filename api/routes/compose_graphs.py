@@ -7,6 +7,7 @@ import uuid
 from fastapi import APIRouter, Depends, HTTPException, Query, status
 from sqlalchemy import func, select
 from sqlalchemy.orm import Session
+from sqlalchemy.orm.attributes import flag_modified
 
 from api.routes.auth import get_current_user
 from api.schemas_compose_graph import (
@@ -41,6 +42,7 @@ def _get_owned_graph(
 
 
 @router.post("", response_model=CompositionGraphRead, status_code=status.HTTP_201_CREATED)
+@router.post("/", response_model=CompositionGraphRead, status_code=status.HTTP_201_CREATED, include_in_schema=False)
 def create_graph(
     payload: CompositionGraphCreate,
     db: Session = Depends(get_db),
@@ -60,6 +62,7 @@ def create_graph(
 
 
 @router.get("", response_model=CompositionGraphListResponse)
+@router.get("/", response_model=CompositionGraphListResponse, include_in_schema=False)
 def list_graphs(
     db: Session = Depends(get_db),
     user: User = Depends(get_current_user),
@@ -103,8 +106,10 @@ def update_graph(
         graph.notes = data["notes"]
     if "nodes" in data and data["nodes"] is not None:
         graph.nodes = data["nodes"]
+        flag_modified(graph, "nodes")
     if "edges" in data and data["edges"] is not None:
         graph.edges = data["edges"]
+        flag_modified(graph, "edges")
 
     db.add(graph)
     db.commit()
