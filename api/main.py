@@ -24,6 +24,7 @@ from api.routes import (  # noqa: E402
     compose,
     compose_graphs,
     health,
+    ingredients,
     library,
     recipes,
     recipes_persist,
@@ -47,6 +48,18 @@ async def lifespan(_app: FastAPI):
         alembic_cfg = Config(str(_ROOT / "alembic.ini"))
         alembic_cfg.set_main_option("sqlalchemy.url", get_database_url())
         command.upgrade(alembic_cfg, "head")
+
+        try:
+            from app.composition.ingredient_seed import seed_ingredients
+            from app.db.session import SessionLocal
+
+            db = SessionLocal()
+            try:
+                seed_ingredients(db)
+            finally:
+                db.close()
+        except Exception:  # noqa: BLE001
+            pass
 
     load_library()
     yield
@@ -87,6 +100,7 @@ app.include_router(compose.router)
 app.include_router(compose_graphs.router)
 app.include_router(recipes.router)
 app.include_router(recipes_persist.router)
+app.include_router(ingredients.router)
 app.include_router(services.router)
 app.include_router(users.router)
 

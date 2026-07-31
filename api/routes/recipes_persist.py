@@ -17,7 +17,7 @@ from api.schemas_recipes_persist import (
     RecipeUpdate,
 )
 from app.composition.blocks_store import get_merged_flavor_block
-from app.db.models import CompositionGraph, Recipe, User
+from app.db.models import CompositionGraph, Ingredient, Recipe, User
 from app.db.session import get_db
 
 router = APIRouter(prefix="/v1/recipes", tags=["recipe-records"])
@@ -25,6 +25,29 @@ router = APIRouter(prefix="/v1/recipes", tags=["recipe-records"])
 
 def _dump_steps(steps) -> list[dict]:
     return [step.model_dump() for step in steps]
+
+
+def _dump_ingredients(lines) -> list[dict]:
+    return [line.model_dump(mode="json") for line in lines]
+
+
+def _normalize_ingredients(lines, db: Session) -> list[dict]:
+    seen: set[str] = set()
+    result: list[dict] = []
+    for line in lines:
+        ingredient_id = line.ingredient_id if hasattr(line, "ingredient_id") else line["ingredient_id"]
+        key = str(ingredient_id)
+        if key in seen:
+            continue
+        if db.get(Ingredient, ingredient_id) is None:
+            raise HTTPException(
+                status_code=400,
+                detail=f"Ingrediente '{ingredient_id}' não encontrado.",
+            )
+        seen.add(key)
+        dumped = line.model_dump(mode="json") if hasattr(line, "model_dump") else dict(line)
+        result.append(dumped)
+    return result
 
 
 def _normalize_block_ids(block_ids: list[str], db: Session) -> list[str]:
@@ -76,12 +99,15 @@ def create_recipe(
 ) -> Recipe:
     composition_id = _validate_composition(db, payload.composition_id, user)
     block_ids = _normalize_block_ids(payload.block_ids, db)
+    ingredients = _normalize_ingredients(payload.ingredients, db)
     recipe = Recipe(
         title=payload.title.strip() or "Receita",
         notes=payload.notes,
         owner_id=user.id,
         composition_id=composition_id,
+        servings=payload.servings,
         block_ids=block_ids,
+        ingredients=ingredients,
         steps=_dump_steps(payload.steps),
     )
     db.add(recipe)
@@ -131,9 +157,14 @@ def update_recipe(
         recipe.notes = data["notes"]
     if "composition_id" in data:
         recipe.composition_id = _validate_composition(db, data["composition_id"], user)
+    if "servings" in data and data["servings"] is not None:
+        recipe.servings = int(data["servings"])
     if "block_ids" in data and data["block_ids"] is not None:
         recipe.block_ids = _normalize_block_ids(data["block_ids"], db)
         flag_modified(recipe, "block_ids")
+    if "ingredients" in data and data["ingredients"] is not None:
+        recipe.ingredients = _normalize_ingredients(payload.ingredients or [], db)
+        flag_modified(recipe, "ingredients")
     if "steps" in data and data["steps"] is not None:
         recipe.steps = data["steps"]
         flag_modified(recipe, "steps")

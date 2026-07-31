@@ -6,7 +6,7 @@ import uuid
 from datetime import datetime
 from typing import Any
 
-from sqlalchemy import DateTime, ForeignKey, String, Text, func
+from sqlalchemy import DateTime, ForeignKey, Integer, String, Text, func
 from sqlalchemy.dialects.postgresql import JSONB
 from sqlalchemy.orm import Mapped, mapped_column
 from sqlalchemy.types import JSON, Uuid
@@ -41,13 +41,20 @@ class Recipe(Base):
         nullable=True,
         index=True,
     )
+    servings: Mapped[int] = mapped_column(Integer, nullable=False, default=4)
     # ["block_id", ...]
     block_ids: Mapped[list[str]] = mapped_column(
         _json_type(),
         nullable=False,
         default=lambda: [],
     )
-    # [{ id, process, description?, time_before_service_minutes }]
+    # [{ ingredient_id, quantity, unit, notes? }]
+    ingredients: Mapped[list[dict[str, Any]]] = mapped_column(
+        _json_type(),
+        nullable=False,
+        default=lambda: [],
+    )
+    # [{ id, process, description?, time_before_service_minutes, duration_minutes }]
     steps: Mapped[list[dict[str, Any]]] = mapped_column(
         _json_type(),
         nullable=False,
