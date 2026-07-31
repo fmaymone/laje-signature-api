@@ -26,6 +26,7 @@ from api.routes import (  # noqa: E402
     health,
     library,
     recipes,
+    recipes_persist,
     users,
 )
 
@@ -84,6 +85,7 @@ app.include_router(block_links.router)
 app.include_router(compose.router)
 app.include_router(compose_graphs.router)
 app.include_router(recipes.router)
+app.include_router(recipes_persist.router)
 app.include_router(users.router)
 
 
