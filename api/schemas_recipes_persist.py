@@ -13,6 +13,7 @@ class RecipeStep(BaseModel):
     process: str = Field(min_length=1, max_length=200)
     description: str | None = None
     time_before_service_minutes: int = Field(default=0, ge=0, le=60 * 24 * 14)
+    duration_minutes: int = Field(default=10, ge=1, le=60 * 24)
 
     @field_validator("process")
     @classmethod
@@ -21,6 +22,13 @@ class RecipeStep(BaseModel):
         if not text:
             raise ValueError("process é obrigatório")
         return text
+
+    @field_validator("duration_minutes", mode="before")
+    @classmethod
+    def default_duration(cls, value: object) -> object:
+        if value is None or value == "":
+            return 10
+        return value
 
 
 class RecipeCreate(BaseModel):

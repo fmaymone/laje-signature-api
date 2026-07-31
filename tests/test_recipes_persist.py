@@ -67,6 +67,7 @@ def test_recipe_crud_with_blocks_and_steps(client: TestClient):
                     "process": "brasa",
                     "description": "Grelhar o camarão",
                     "time_before_service_minutes": 20,
+                    "duration_minutes": 15,
                 },
                 {
                     "id": "s2",
@@ -83,6 +84,8 @@ def test_recipe_crud_with_blocks_and_steps(client: TestClient):
     assert body["title"] == "Camarão na brasa"
     assert body["block_ids"] == ["camarao_branco", "coentro"]
     assert len(body["steps"]) == 2
+    assert body["steps"][0]["duration_minutes"] == 15
+    assert body["steps"][1]["duration_minutes"] == 10  # default
     assert body["composition_id"] is None
 
     listed = client.get("/v1/recipes", headers=headers)
