@@ -54,7 +54,13 @@ class Recipe(Base):
         nullable=False,
         default=lambda: [],
     )
-    # [{ id, process, description?, time_before_service_minutes, duration_minutes }]
+    # [{ id, name }] — sempre inclui { id: "main", name: "Principal" }
+    lanes: Mapped[list[dict[str, Any]]] = mapped_column(
+        _json_type(),
+        nullable=False,
+        default=lambda: [{"id": "main", "name": "Principal"}],
+    )
+    # [{ id, process, description?, time_before_service_minutes, duration_minutes, lane_id }]
     steps: Mapped[list[dict[str, Any]]] = mapped_column(
         _json_type(),
         nullable=False,

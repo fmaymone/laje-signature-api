@@ -27,6 +27,10 @@ def _dump_steps(steps) -> list[dict]:
     return [step.model_dump() for step in steps]
 
 
+def _dump_lanes(lanes) -> list[dict]:
+    return [lane.model_dump() for lane in lanes]
+
+
 def _dump_ingredients(lines) -> list[dict]:
     return [line.model_dump(mode="json") for line in lines]
 
@@ -108,6 +112,7 @@ def create_recipe(
         servings=payload.servings,
         block_ids=block_ids,
         ingredients=ingredients,
+        lanes=_dump_lanes(payload.lanes),
         steps=_dump_steps(payload.steps),
     )
     db.add(recipe)
@@ -165,6 +170,9 @@ def update_recipe(
     if "ingredients" in data and data["ingredients"] is not None:
         recipe.ingredients = _normalize_ingredients(payload.ingredients or [], db)
         flag_modified(recipe, "ingredients")
+    if "lanes" in data and data["lanes"] is not None:
+        recipe.lanes = data["lanes"]
+        flag_modified(recipe, "lanes")
     if "steps" in data and data["steps"] is not None:
         recipe.steps = data["steps"]
         flag_modified(recipe, "steps")

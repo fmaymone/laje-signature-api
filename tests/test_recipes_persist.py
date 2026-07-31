@@ -86,6 +86,9 @@ def test_recipe_crud_with_blocks_and_steps(client: TestClient):
     assert len(body["steps"]) == 2
     assert body["steps"][0]["duration_minutes"] == 15
     assert body["steps"][1]["duration_minutes"] == 10  # default
+    assert body["steps"][0]["lane_id"] == "main"
+    assert body["steps"][1]["lane_id"] == "main"
+    assert body["lanes"][0]["id"] == "main"
     assert body["composition_id"] is None
 
     listed = client.get("/v1/recipes", headers=headers)
@@ -168,3 +171,73 @@ def test_recipe_rejects_unknown_block(client: TestClient):
         },
     )
     assert response.status_code == 400
+
+
+def test_recipe_parallel_lanes(client: TestClient):
+    headers = _auth_headers(client, "lanes@laje.com")
+
+    create = client.post(
+        "/v1/recipes",
+        headers=headers,
+        json={
+            "title": "Redução + corte",
+            "lanes": [
+                {"id": "main", "name": "Principal"},
+                {"id": "prep", "name": "Mise"},
+            ],
+            "steps": [
+                {
+                    "id": "s1",
+                    "process": "reduzir",
+                    "time_before_service_minutes": 60,
+                    "duration_minutes": 60,
+                    "lane_id": "main",
+                },
+                {
+                    "id": "s2",
+                    "process": "cortar cebola",
+                    "time_before_service_minutes": 60,
+                    "duration_minutes": 10,
+                    "lane_id": "prep",
+                },
+            ],
+        },
+    )
+    assert create.status_code == 201, create.text
+    body = create.json()
+    assert len(body["lanes"]) == 2
+    assert {lane["id"] for lane in body["lanes"]} == {"main", "prep"}
+    assert body["steps"][0]["lane_id"] == "main"
+    assert body["steps"][1]["lane_id"] == "prep"
+
+    # Passo sem lane_id cai na Principal; lane órfã é materializada na leitura/create.
+    updated = client.put(
+        f"/v1/recipes/{body['id']}",
+        headers=headers,
+        json={
+            "lanes": [
+                {"id": "main", "name": "Principal"},
+                {"id": "prep", "name": "Mise"},
+                {"id": "grill", "name": "Brasa"},
+            ],
+            "steps": [
+                {
+                    "id": "s1",
+                    "process": "reduzir",
+                    "time_before_service_minutes": 60,
+                    "duration_minutes": 60,
+                },
+                {
+                    "id": "s3",
+                    "process": "grelhar",
+                    "time_before_service_minutes": 15,
+                    "duration_minutes": 12,
+                    "lane_id": "grill",
+                },
+            ],
+        },
+    )
+    assert updated.status_code == 200, updated.text
+    updated_body = updated.json()
+    assert updated_body["steps"][0]["lane_id"] == "main"
+    assert any(lane["id"] == "grill" for lane in updated_body["lanes"])
