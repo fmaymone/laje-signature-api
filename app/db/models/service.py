@@ -1,11 +1,11 @@
-"""Serviço: conjunto de receitas em uma data."""
+"""Serviço: conjunto de receitas em uma data/hora."""
 
 from __future__ import annotations
 
 import uuid
-from datetime import date, datetime
+from datetime import datetime
 
-from sqlalchemy import Date, DateTime, ForeignKey, String, Text, func
+from sqlalchemy import DateTime, ForeignKey, String, Text, func
 from sqlalchemy.dialects.postgresql import JSONB
 from sqlalchemy.orm import Mapped, mapped_column
 from sqlalchemy.types import JSON, Uuid
@@ -33,7 +33,11 @@ class Service(Base):
         nullable=True,
         index=True,
     )
-    service_date: Mapped[date] = mapped_column(Date, nullable=False, index=True)
+    service_date: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True),
+        nullable=False,
+        index=True,
+    )
     # ["recipe-uuid", ...]
     recipe_ids: Mapped[list[str]] = mapped_column(
         _json_type(),

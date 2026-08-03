@@ -1,4 +1,4 @@
-"""CRUD de serviços (nome + receitas + data)."""
+"""CRUD de serviços (nome + receitas + data/hora)."""
 
 from __future__ import annotations
 

@@ -76,7 +76,7 @@ def test_service_crud(client: TestClient):
         headers=headers,
         json={
             "name": "Almoço degustação",
-            "service_date": "2026-08-15",
+            "service_date": "2026-08-15T19:30:00-03:00",
             "recipe_ids": [recipe_id],
             "notes": "12 capas",
         },
@@ -85,13 +85,15 @@ def test_service_crud(client: TestClient):
     body = create.json()
     service_id = body["id"]
     assert body["name"] == "Almoço degustação"
-    assert body["service_date"] == "2026-08-15"
+    assert "2026-08-15" in body["service_date"]
+    assert "19:30" in body["service_date"] or "22:30" in body["service_date"]
     assert body["recipe_ids"] == [recipe_id]
 
     listed = client.get("/v1/services", headers=headers)
     assert listed.status_code == 200
     assert listed.json()["total"] >= 1
 
+    # date-only ainda aceito (meio-dia UTC)
     updated = client.put(
         f"/v1/services/{service_id}",
         headers=headers,
@@ -99,7 +101,7 @@ def test_service_crud(client: TestClient):
     )
     assert updated.status_code == 200
     assert updated.json()["name"] == "Jantar"
-    assert updated.json()["service_date"] == "2026-08-16"
+    assert "2026-08-16" in updated.json()["service_date"]
 
     deleted = client.delete(f"/v1/services/{service_id}", headers=headers)
     assert deleted.status_code == 204
