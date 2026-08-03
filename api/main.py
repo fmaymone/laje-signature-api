@@ -85,6 +85,7 @@ app.add_middleware(
         "http://localhost:8000",
         "http://127.0.0.1:8000",
         "https://laje-signature-web.vercel.app",
+        "https://laje-signature-web.onrender.com",
     ],
     allow_credentials=True,
     allow_methods=["*"],
