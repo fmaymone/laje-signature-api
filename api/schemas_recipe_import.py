@@ -89,3 +89,15 @@ class RecipeImageImportResponse(BaseModel):
     steps: list[RecipeStep] = Field(default_factory=list)
     created_ingredient_names: list[str] = Field(default_factory=list)
     warnings: list[str] = Field(default_factory=list)
+
+
+class RecipeGenerateFromTextRequest(BaseModel):
+    prompt: str = Field(min_length=1, max_length=2000)
+
+    @field_validator("prompt")
+    @classmethod
+    def strip_prompt(cls, value: str) -> str:
+        text = value.strip()
+        if not text:
+            raise ValueError("Descreva a receita que você quer.")
+        return text

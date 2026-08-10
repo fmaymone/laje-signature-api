@@ -1,4 +1,4 @@
-"""Resolve nomes de ingredientes do import para o catálogo (match ou cria)."""
+"""Resolve nomes de ingredientes do import/generate para o catálogo (match ou cria)."""
 
 from __future__ import annotations
 
@@ -37,6 +37,14 @@ def slugify_ingredient(value: str) -> str:
     return text.strip("_")[:120] or "ingrediente"
 
 
+def normalize_ingredient_display_name(value: str) -> str:
+    """Nome legível ao criar: strip + capitalização simples da primeira letra."""
+    text = " ".join(value.strip().split())
+    if not text:
+        return "Ingrediente"
+    return text[0].upper() + text[1:] if len(text) > 1 else text.upper()
+
+
 def _ensure_seeded(db: Session) -> None:
     count = db.scalar(select(func.count()).select_from(Ingredient)) or 0
     if count == 0:
@@ -48,16 +56,21 @@ def find_ingredient_by_name(db: Session, name: str) -> Ingredient | None:
     if not cleaned:
         return None
     slug = slugify_ingredient(cleaned)
+
     by_slug = db.scalar(select(Ingredient).where(Ingredient.slug == slug))
     if by_slug:
         return by_slug
+
     by_name = db.scalar(
         select(Ingredient).where(func.lower(Ingredient.name) == cleaned.lower())
     )
     if by_name:
         return by_name
-    # aliases (catálogo pequeno — scan em Python)
+
+    # Scan: slugify(name) e aliases (case/acento-insensitive)
     for item in db.scalars(select(Ingredient)).all():
+        if slugify_ingredient(item.name) == slug:
+            return item
         for alias in item.aliases or []:
             if not isinstance(alias, str):
                 continue
@@ -82,15 +95,16 @@ def get_or_create_ingredient(
     line: RecipeImageIngredientLine,
     user: User,
 ) -> tuple[Ingredient, bool]:
-    """Retorna (ingredient, created)."""
+    """Retorna (ingredient, created). Em match, preserva o nome do catálogo."""
     existing = find_ingredient_by_name(db, line.name)
     if existing:
         return existing, False
-    slug = _unique_slug(db, slugify_ingredient(line.name))
+    display = normalize_ingredient_display_name(line.name)
+    slug = _unique_slug(db, slugify_ingredient(display))
     row = Ingredient(
         id=uuid.uuid4(),
         slug=slug,
-        name=line.name.strip(),
+        name=display,
         aliases=[],
         category="outro",
         default_unit=line.unit,
@@ -101,6 +115,12 @@ def get_or_create_ingredient(
     db.add(row)
     db.flush()
     return row, True
+
+
+def list_catalog_names(db: Session, *, limit: int = 200) -> list[str]:
+    _ensure_seeded(db)
+    rows = db.scalars(select(Ingredient.name).order_by(Ingredient.name.asc()).limit(limit)).all()
+    return [str(name) for name in rows]
 
 
 def resolve_draft_ingredients(

@@ -1,4 +1,4 @@
-"""Importação de receita a partir de print/imagem (vision → draft)."""
+"""Importação / geração de receita para o livro (imagem ou texto → draft)."""
 
 from __future__ import annotations
 
@@ -6,9 +6,13 @@ from fastapi import APIRouter, Depends, File, HTTPException, UploadFile, status
 from sqlalchemy.orm import Session
 
 from api.routes.auth import get_current_user
-from api.schemas_recipe_import import RecipeImageImportResponse
-from app.ingredient_resolve import resolve_draft_ingredients
+from api.schemas_recipe_import import (
+    RecipeGenerateFromTextRequest,
+    RecipeImageImportResponse,
+)
+from app.ingredient_resolve import list_catalog_names, resolve_draft_ingredients
 from app.recipe_image_parser import parse_recipe_from_image
+from app.recipe_text_generator import generate_recipe_from_text
 from app.db.models import User
 from app.db.session import get_db
 
@@ -77,8 +81,11 @@ async def import_recipe_from_image(
             detail=f"Falha ao ler a imagem com a AI: {exc}",
         ) from exc
 
-    ingredients, created_names = resolve_draft_ingredients(db, draft=draft, user=user)
+    return _response_from_draft(db, draft=draft, user=user)
 
+
+def _response_from_draft(db: Session, *, draft, user: User) -> RecipeImageImportResponse:
+    ingredients, created_names = resolve_draft_ingredients(db, draft=draft, user=user)
     return RecipeImageImportResponse(
         title=draft.title,
         notes=draft.notes,
@@ -91,3 +98,33 @@ async def import_recipe_from_image(
         created_ingredient_names=created_names,
         warnings=list(draft.warnings or []),
     )
+
+
+@router.post(
+    "/generate-from-text",
+    response_model=RecipeImageImportResponse,
+    status_code=status.HTTP_200_OK,
+)
+def generate_recipe_from_text_endpoint(
+    body: RecipeGenerateFromTextRequest,
+    db: Session = Depends(get_db),
+    user: User = Depends(get_current_user),
+) -> RecipeImageImportResponse:
+    catalog = list_catalog_names(db, limit=200)
+    try:
+        draft = generate_recipe_from_text(
+            user_prompt=body.prompt,
+            catalog_names=catalog,
+        )
+    except ValueError as exc:
+        raise HTTPException(
+            status_code=status.HTTP_422_UNPROCESSABLE_ENTITY,
+            detail=str(exc),
+        ) from exc
+    except Exception as exc:  # noqa: BLE001 — falha do provider
+        raise HTTPException(
+            status_code=status.HTTP_502_BAD_GATEWAY,
+            detail=f"Falha ao gerar a receita com a AI: {exc}",
+        ) from exc
+
+    return _response_from_draft(db, draft=draft, user=user)
