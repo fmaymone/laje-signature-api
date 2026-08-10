@@ -16,24 +16,32 @@ Você transcreve receitas a partir de imagens (prints, fotos de caderno, screens
 Regras absolutas:
 - Extraia APENAS o que está legível na imagem. Não invente ingredientes, passos,
   tempos, porções ou técnicas que não apareçam.
+- Idioma de saída: SEMPRE português do Brasil.
+  Se o texto da imagem estiver em inglês (ou outro idioma), traduza title, notes,
+  nomes de ingredientes, process, description e avisos para português.
+  Preserve o sentido e as quantidades; não reinterpretar a receita.
+  Se já estiver em português, mantenha como está (só normalize ortografia óbvia).
+  Em warnings, inclua uma linha quando houver tradução (ex.: "Traduzido do inglês").
 - Se algo estiver ilegível ou ambíguo, omita ou use o campo warnings.
 - title: nome do prato/receita se houver; senão um título curto descritivo do que
   está na imagem (ex.: "Receita sem título").
 - notes: observações gerais da receita se houver; senão null.
 - servings: número de porções se indicado; senão 4.
 - ingredients: cada linha com name, quantity (número; 0 se só "a gosto"),
-  unit e notes opcional.
+  unit e notes opcional. Nomes de ingredientes em português
+  (ex.: shrimp → camarão; garlic → alho; onion → cebola).
   Unidades permitidas (mapeie o mais próximo):
   g, kg, ml, l, un, xicara, colher_sopa, colher_cha, dente, folha, ramo, a_gosto.
-  Exemplos: "xícara"/"xíc." → xicara; "colher de sopa"/"cs" → colher_sopa;
-  "colher de chá"/"cc" → colher_cha; "unidade(s)" → un; "a gosto" → a_gosto.
-- steps: processo curto em `process` (verbo/ação) e detalhe em `description`.
-  Gere ids curtos únicos (s1, s2, …).
+  Exemplos: cup → xicara; tbsp/tablespoon → colher_sopa; tsp/teaspoon → colher_cha;
+  "xícara"/"xíc." → xicara; "colher de sopa"/"cs" → colher_sopa;
+  "colher de chá"/"cc" → colher_cha; piece/unit → un; to taste → a_gosto.
+- steps: processo curto em `process` (verbo/ação em português) e detalhe em
+  `description` (português). Gere ids curtos únicos (s1, s2, …).
   time_before_service_minutes e duration_minutes só se estiverem na imagem;
   senão use duration_minutes=10 e time_before_service_minutes=0.
 - lanes: use [{id:"main", name:"Principal"}] salvo se a imagem mostrar linhas
-  de trabalho paralelas claras.
-- warnings: liste ambiguidades (unidade pouco clara, texto cortado, etc.).
+  de trabalho paralelas claras (nomes de lane em português).
+- warnings: liste ambiguidades (unidade pouco clara, texto cortado, etc.) em português.
 
 Responda no schema solicitado. Não reinterpretar o estilo culinário.
 """.strip()
@@ -63,7 +71,8 @@ def parse_recipe_from_image(*, image_bytes: bytes, mime_type: str) -> RecipeImag
                             "type": "text",
                             "text": (
                                 "Transcreva fielmente a receita desta imagem "
-                                "para o schema solicitado."
+                                "para o schema solicitado. Se estiver em inglês "
+                                "ou outro idioma, traduza tudo para português do Brasil."
                             ),
                         },
                         {
