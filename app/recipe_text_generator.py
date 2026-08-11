@@ -21,10 +21,12 @@ Regras:
   Só invente um nome novo se não houver equivalente razoável no catálogo.
 - ingredients: name, quantity (realista), unit e notes opcional.
   Unidades: g, kg, ml, l, un, xicara, colher_sopa, colher_cha, dente, folha, ramo, a_gosto.
-- steps: process curto (verbo), description com o detalhe; ids s1, s2, …
+- steps: process curto (verbo/ação do passo), description com o detalhe; ids s1, s2, …
+  Não use o nome da seção (ex. "ensopado") como process em todos os passos.
   Se o pedido não der tempos, duration_minutes=10 e time_before_service_minutes=0
   (estime uma sequência sensata se fizer sentido para o prato).
-- lanes: [{id:"main", name:"Principal"}] salvo se houver linhas paralelas claras.
+- lanes: se houver componentes (ensopado, molho, guarnição) ou linhas paralelas,
+  crie uma lane por componente e use lane_id. Senão [{id:"main", name:"Principal"}].
 - servings: do pedido; senão 4.
 - notes: dica curta ou contexto do pedido; pode ser null.
 - warnings: ambiguidades ou hipóteses (ex.: "Assumi molho estilo Big Mac caseiro").

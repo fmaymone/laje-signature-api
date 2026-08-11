@@ -23,7 +23,12 @@ Regras absolutas:
 - Se algo estiver ambíguo ou cortado, omita ou use warnings.
 - title, notes, servings, ingredients, steps, lanes: mesmas regras do schema
   (unidades: g, kg, ml, l, un, xicara, colher_sopa, colher_cha, dente, folha,
-  ramo, a_gosto; steps com ids s1, s2, …; lane main/Principal por padrão).
+  ramo, a_gosto; steps com ids s1, s2, …).
+- lanes: se a receita tiver componentes/seções (ex.: ensopado, molho, guarnição),
+  crie uma lane por componente (id slug, name legível) e atribua lane_id nos
+  passos. Não repita o nome da seção em `process` de todos os passos.
+- process: verbo/ação curta daquele passo (refogar, temperar, servir), não o
+  nome da seção inteira.
 - timings só se estiverem no texto; senão duration_minutes=10 e
   time_before_service_minutes=0.
 

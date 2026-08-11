@@ -12,6 +12,7 @@ from api.schemas_recipe_import import (
 )
 from app.ingredient_resolve import list_catalog_names, resolve_draft_ingredients
 from app.recipe_image_parser import parse_recipe_from_image
+from app.recipe_lane_group import group_steps_into_lanes_by_process
 from app.recipe_pdf_import import parse_recipe_from_pdf
 from app.recipe_text_generator import generate_recipe_from_text
 from app.db.models import User
@@ -93,6 +94,7 @@ async def import_recipe_from_image(
 
 
 def _response_from_draft(db: Session, *, draft, user: User) -> RecipeImageImportResponse:
+    draft = group_steps_into_lanes_by_process(draft)
     ingredients, created_names = resolve_draft_ingredients(db, draft=draft, user=user)
     return RecipeImageImportResponse(
         title=draft.title,

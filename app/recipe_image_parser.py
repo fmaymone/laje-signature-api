@@ -37,10 +37,12 @@ Regras absolutas:
   "colher de chá"/"cc" → colher_cha; piece/unit → un; to taste → a_gosto.
 - steps: processo curto em `process` (verbo/ação em português) e detalhe em
   `description` (português). Gere ids curtos únicos (s1, s2, …).
+  `process` é a ação do passo (refogar, temperar), não o nome da seção.
   time_before_service_minutes e duration_minutes só se estiverem na imagem;
   senão use duration_minutes=10 e time_before_service_minutes=0.
-- lanes: use [{id:"main", name:"Principal"}] salvo se a imagem mostrar linhas
-  de trabalho paralelas claras (nomes de lane em português).
+- lanes: se houver componentes/seções (ensopado, molho, guarnição) ou linhas
+  paralelas, crie uma lane por componente e use lane_id nos passos.
+  Senão use [{id:"main", name:"Principal"}].
 - warnings: liste ambiguidades (unidade pouco clara, texto cortado, etc.) em português.
 
 Responda no schema solicitado. Não reinterpretar o estilo culinário.
