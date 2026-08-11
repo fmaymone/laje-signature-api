@@ -1,4 +1,4 @@
-"""Importação / geração de receita para o livro (imagem ou texto → draft)."""
+"""Importação / geração de receita para o livro (imagem, PDF ou texto → draft)."""
 
 from __future__ import annotations
 
@@ -12,6 +12,7 @@ from api.schemas_recipe_import import (
 )
 from app.ingredient_resolve import list_catalog_names, resolve_draft_ingredients
 from app.recipe_image_parser import parse_recipe_from_image
+from app.recipe_pdf_import import parse_recipe_from_pdf
 from app.recipe_text_generator import generate_recipe_from_text
 from app.db.models import User
 from app.db.session import get_db
@@ -23,6 +24,7 @@ ALLOWED_MIME = {
     "image/jpg",
     "image/png",
     "image/webp",
+    "application/pdf",
 }
 MAX_BYTES = 8 * 1024 * 1024  # 8 MB
 
@@ -39,9 +41,11 @@ def _normalize_mime(content_type: str | None, filename: str | None) -> str:
         return "image/png"
     if name.endswith(".webp"):
         return "image/webp"
+    if name.endswith(".pdf"):
+        return "application/pdf"
     raise HTTPException(
         status_code=status.HTTP_400_BAD_REQUEST,
-        detail="Envie uma imagem JPEG, PNG ou WebP.",
+        detail="Envie uma imagem JPEG, PNG, WebP ou um PDF.",
     )
 
 
@@ -60,25 +64,29 @@ async def import_recipe_from_image(
     if not raw:
         raise HTTPException(
             status_code=status.HTTP_400_BAD_REQUEST,
-            detail="Arquivo de imagem vazio.",
+            detail="Arquivo vazio.",
         )
     if len(raw) > MAX_BYTES:
         raise HTTPException(
             status_code=status.HTTP_400_BAD_REQUEST,
-            detail="Imagem maior que 8 MB.",
+            detail="Arquivo maior que 8 MB.",
         )
 
     try:
-        draft = parse_recipe_from_image(image_bytes=raw, mime_type=mime)
+        if mime == "application/pdf":
+            draft = parse_recipe_from_pdf(raw)
+        else:
+            draft = parse_recipe_from_image(image_bytes=raw, mime_type=mime)
     except ValueError as exc:
         raise HTTPException(
             status_code=status.HTTP_422_UNPROCESSABLE_ENTITY,
             detail=str(exc),
         ) from exc
-    except Exception as exc:  # noqa: BLE001 — falha do provider/vision
+    except Exception as exc:  # noqa: BLE001 — falha do provider/vision/pdf
+        kind = "PDF" if mime == "application/pdf" else "imagem"
         raise HTTPException(
             status_code=status.HTTP_502_BAD_GATEWAY,
-            detail=f"Falha ao ler a imagem com a AI: {exc}",
+            detail=f"Falha ao ler o {kind} com a AI: {exc}",
         ) from exc
 
     return _response_from_draft(db, draft=draft, user=user)

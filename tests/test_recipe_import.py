@@ -179,7 +179,72 @@ def test_import_rejects_invalid_type(client: TestClient):
         files=files,
     )
     assert res.status_code == 400
-    assert "JPEG" in res.json()["detail"] or "imagem" in res.json()["detail"].lower()
+    detail = res.json()["detail"].lower()
+    assert "pdf" in detail or "jpeg" in detail or "imagem" in detail
+
+
+def test_import_from_pdf_text_mocked(client: TestClient):
+    headers = _auth_headers(client)
+    client.post("/v1/ingredients/seed", headers=headers)
+    draft = _sample_draft()
+
+    # PDF mínimo válido com texto (via pymupdf)
+    import fitz
+
+    doc = fitz.open()
+    page = doc.new_page()
+    page.insert_text((72, 72), "Moqueca de camarao\n500g camarao\nRefogar o camarao")
+    pdf_bytes = doc.tobytes()
+    doc.close()
+
+    with patch(
+        "api.routes.recipes_import.parse_recipe_from_pdf",
+        return_value=draft,
+    ) as mocked:
+        files = {"file": ("receita.pdf", BytesIO(pdf_bytes), "application/pdf")}
+        res = client.post(
+            "/v1/recipes/import-from-image",
+            headers=headers,
+            files=files,
+        )
+        assert res.status_code == 200, res.text
+        mocked.assert_called_once()
+        assert res.json()["title"] == "Moqueca de camarão"
+
+
+def test_parse_recipe_from_pdf_uses_text_path(monkeypatch):
+    import fitz
+
+    from api.schemas_recipe_import import RecipeImageImportDraft
+    from app import recipe_pdf_import as pdf_mod
+
+    doc = fitz.open()
+    page = doc.new_page()
+    page.insert_text(
+        (72, 72),
+        "Titulo: Molho\n" + ("Ingredientes e modo de preparo. " * 10),
+    )
+    pdf_bytes = doc.tobytes()
+    doc.close()
+
+    called = {"text": False, "image": False}
+
+    def fake_text(text: str):
+        called["text"] = True
+        return RecipeImageImportDraft(title="Molho", servings=2, ingredients=[], steps=[])
+
+    def fake_image(*, image_bytes, mime_type):
+        called["image"] = True
+        raise AssertionError("não deveria usar vision com PDF textual")
+
+    monkeypatch.setattr(pdf_mod, "parse_recipe_from_document_text", fake_text)
+    monkeypatch.setattr(pdf_mod, "parse_recipe_from_image", fake_image)
+
+    draft = pdf_mod.parse_recipe_from_pdf(pdf_bytes)
+    assert called["text"] is True
+    assert called["image"] is False
+    assert draft.title == "Molho"
+    assert any("PDF" in w for w in draft.warnings)
 
 
 def test_import_rejects_oversized(client: TestClient, monkeypatch):
